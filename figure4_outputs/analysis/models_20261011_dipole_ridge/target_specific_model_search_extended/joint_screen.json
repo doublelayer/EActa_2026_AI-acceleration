@@ -1,0 +1,146 @@
+[
+  {
+    "id": "joint_physical_8_rbf",
+    "policy": "physical_8",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.8117951263875794
+  },
+  {
+    "id": "joint_physical_8_matern",
+    "policy": "physical_8",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.8038809986157385
+  },
+  {
+    "id": "joint_compact_4_rbf",
+    "policy": "compact_4",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7914339956132286
+  },
+  {
+    "id": "joint_compact_4_matern",
+    "policy": "compact_4",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.802684235120144
+  },
+  {
+    "id": "joint_metals_rbf",
+    "policy": "metals",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7886722161886708
+  },
+  {
+    "id": "joint_metals_matern",
+    "policy": "metals",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.8035153573349192
+  },
+  {
+    "id": "joint_ranked_3_rbf",
+    "policy": "ranked_3",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7880365397710023
+  },
+  {
+    "id": "joint_ranked_3_matern",
+    "policy": "ranked_3",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.7945468640591977
+  },
+  {
+    "id": "joint_ranked_5_rbf",
+    "policy": "ranked_5",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7881034530049393
+  },
+  {
+    "id": "joint_ranked_5_matern",
+    "policy": "ranked_5",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.7588046157221523
+  },
+  {
+    "id": "joint_ranked_7_rbf",
+    "policy": "ranked_7",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7608347711560373
+  },
+  {
+    "id": "joint_ranked_7_matern",
+    "policy": "ranked_7",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.7678042125839988
+  },
+  {
+    "id": "joint_ranked_10_rbf",
+    "policy": "ranked_10",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7487367336447497
+  },
+  {
+    "id": "joint_ranked_10_matern",
+    "policy": "ranked_10",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.7544704361906158
+  },
+  {
+    "id": "joint_residual_6_rbf",
+    "policy": "residual_6",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "rbf"
+    },
+    "R2": 0.7869215662516998
+  },
+  {
+    "id": "joint_residual_6_matern",
+    "policy": "residual_6",
+    "family": "shared_kernel_gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    },
+    "R2": 0.744052616095555
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "G_OH": {
+    "full_precision_max_error_eV": 8.326672684688674e-16,
+    "displayed_max_error_eV": 3.9009495633735014e-10
+  },
+  "G_O": {
+    "full_precision_max_error_eV": 8.881784197001252e-16,
+    "displayed_max_error_eV": 2.078399674587672e-10
+  },
+  "G_OOH": {
+    "full_precision_max_error_eV": 4.440892098500626e-16,
+    "displayed_max_error_eV": 1.8928991707412024e-10
+  }
+}

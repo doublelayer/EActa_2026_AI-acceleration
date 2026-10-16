@@ -1,0 +1,111 @@
+{
+  "shared_descriptors": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "model_family": "ridge",
+  "acceptance": "CV R2 improves for every target; best mean gain per round",
+  "validation_used_for_selection": false,
+  "descriptor_selection_cohort": {
+    "G_OH": {
+      "structures": 64,
+      "sites": 94
+    },
+    "G_O": {
+      "structures": 64,
+      "sites": 94
+    },
+    "G_OOH": {
+      "structures": 64,
+      "sites": 94
+    }
+  },
+  "descriptor_selection_trial_CV_metrics": {
+    "G_OH": {
+      "R2": 0.7753677943860279,
+      "RMSE_eV": 0.2929082708140706,
+      "MAE_eV": 0.24731018044715392,
+      "pearson_r": 0.8805659151959441
+    },
+    "G_O": {
+      "R2": 0.8655451542798963,
+      "RMSE_eV": 0.39120057038818223,
+      "MAE_eV": 0.30895525566397963,
+      "pearson_r": 0.9304470123831422
+    },
+    "G_OOH": {
+      "R2": 0.6710925878275195,
+      "RMSE_eV": 0.2490043535252131,
+      "MAE_eV": 0.20325624812877444,
+      "pearson_r": 0.8192817882785138
+    }
+  },
+  "current_fit_metrics_path": "shared_descriptor_search/model_metrics.csv",
+  "accepted_operations": [],
+  "selected_input_definitions": [
+    {
+      "key": "q_site",
+      "name": "Adsorption metal charge",
+      "formula": "q_s=Z_s-N_s^{\\mathrm{Bader}}",
+      "units": "e",
+      "description": "Signed Bader charge on the adsorption metal; positive means electron deficiency."
+    },
+    {
+      "key": "q_partner",
+      "name": "Partner metal charge",
+      "formula": "q_p=Z_p-N_p^{\\mathrm{Bader}}",
+      "units": "e",
+      "description": "Signed Bader charge on the other metal."
+    },
+    {
+      "key": "spin_site_abs",
+      "name": "Adsorption metal spin magnitude",
+      "formula": "\\lvert m_s\\rvert",
+      "units": "Bohr magneton",
+      "description": "Absolute calculated atomic magnetic moment of the adsorption metal."
+    },
+    {
+      "key": "site_heteroatom_spin_abs_mean_muB",
+      "name": "Adsorption metal: mean ligand spin magnitude",
+      "formula": "\\operatorname{Mean}_{H_s}(\\lvert m_i\\rvert)",
+      "units": "Bohr magneton",
+      "description": "Mean of absolute atomic magnetic moments on the selected N/O/S neighbors."
+    },
+    {
+      "key": "partner_heteroatom_spin_abs_mean_muB",
+      "name": "Partner metal: mean ligand spin magnitude",
+      "formula": "\\operatorname{Mean}_{H_p}(\\lvert m_i\\rvert)",
+      "units": "Bohr magneton",
+      "description": "Mean of absolute atomic magnetic moments on the selected N/O/S neighbors."
+    },
+    {
+      "key": "metal_metal_distance_A",
+      "name": "Metal separation",
+      "formula": "\\lVert\\mathbf r_s-\\mathbf r_p\\rVert_2",
+      "units": "Angstrom",
+      "description": "Cartesian separation between the two metals."
+    },
+    {
+      "key": "site_terminal_ligand_charge_mean_e",
+      "name": "Adsorption metal: mean terminal ligand charge",
+      "formula": "\\operatorname{Mean}_{H_s\\setminus B}(q_i)",
+      "units": "e",
+      "description": "Mean signed Bader charge of terminal ligands in this metal's shell."
+    },
+    {
+      "key": "site_heteroatom_charge_dipole_proxy_norm_eA",
+      "name": "Adsorption metal: net ligand dipole magnitude",
+      "formula": "\\left\\lVert\\sum_{i\\in H_s}q_i(\\mathbf r_i-\\mathbf r_s)\\right\\rVert_2",
+      "units": "e Angstrom",
+      "description": "Magnitude of the signed vector sum of ligand charge moments around this metal; includes directional cancellation."
+    }
+  ],
+  "similarity_threshold": 0.95,
+  "selection_scores_are_conditional": true
+}

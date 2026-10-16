@@ -1,0 +1,30 @@
+{
+  "cohort_source": "saved current-model cv_predictions.csv and validation_predictions.csv",
+  "feature_source": [
+    "current_site_features.csv",
+    "descriptor_correlation_analysis/descriptor_values.csv",
+    "extended_physical_descriptors.compute"
+  ],
+  "feature_filter": "numeric clean-structure descriptors; exclude empirical lookup, categorical, counts",
+  "feature_selection": "training-only absolute Pearson ranking; k=1..12",
+  "models": [
+    "OLS",
+    "Ridge"
+  ],
+  "ridge_alphas": [
+    0.0,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "outer_repeats": 3,
+  "outer_folds": 5,
+  "inner_repeats_final": 3,
+  "inner_folds": 4,
+  "group": "catalyst name",
+  "seed": 20261008,
+  "validation_used_for_selection": false
+}

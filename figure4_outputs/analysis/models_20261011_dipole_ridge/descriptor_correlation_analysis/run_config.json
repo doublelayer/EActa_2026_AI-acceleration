@@ -1,0 +1,33 @@
+{
+  "seed": 20261011,
+  "bootstrap_resamples": 2000,
+  "bootstrap_unit": "structure",
+  "pairwise_complete": true,
+  "imputation": false,
+  "current_models_changed": false,
+  "main_scope": "common_training",
+  "numpy_version": "2.5.1",
+  "graph_exports": {
+    "pearson_r": [
+      "unused_descriptors_pearson_r.png",
+      "unused_descriptors_pearson_r.svg",
+      "unused_descriptors_pearson_r_66811482.pdf"
+    ],
+    "spearman_rho": [
+      "unused_descriptors_spearman_rho.png",
+      "unused_descriptors_spearman_rho.svg",
+      "unused_descriptors_spearman_rho.pdf"
+    ]
+  },
+  "sha256": {
+    "calculations\\models_20261011_dipole_ridge\\analyze_descriptor_correlations.py": "92bef2c0cd024c0f9b1b4c501671fe17beb062e016b53ee895905b257ebbe47c",
+    "calculations\\models_20261011_dipole_ridge\\descriptor_catalog.py": "abfc93c878a31b86e7134c709d691516ee0bfa4fde95514b3f928ea50e271a15",
+    "calculations\\models_20261011_dipole_ridge\\dipole_site_features.csv": "a70dcb56241da33b0726bbfd61a59efb35ee53e923c529bd5e8a0091cb3c5756",
+    "calculations\\models_20261008_linear_ridge_v2\\clean_site_features.csv": "2c932857c1618d45cdb73a224523e274542af07c162c99a8bb9e7fa7625454e7",
+    "calculations\\review_20261008\\candidate_geometry_diagnostics.csv": "563ae0c74e9faeb015539f5d561859cd9d38db439cf55321645e95398695e1b5",
+    "extracted\\structures_by_target.csv": "5c2d1f5ccf8ccc508613e27e952156b081534f5453034166289d3492ea0c82d6",
+    "extracted\\orr_analysis_energies.csv": "96159402679f421e61c4473f5e782104b2a23677a992684aa03a6bbd58a01b2f",
+    "calculations\\models_20261011_dipole_ridge\\shared_descriptor_search\\cohort_membership.csv": "9869ba8b093521e733036fb6f8e7804981114a4f5606cc01b03a9a5014d4b1af",
+    "calculations\\models_20261011_dipole_ridge\\shared_descriptor_search\\run_config.json": "3feda10caa05026d156193a201fe9161cee0af1ec5c1d46d5e4533a9d0e55e8a"
+  }
+}

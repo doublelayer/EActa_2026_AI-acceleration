@@ -1,0 +1,722 @@
+{
+  "targets": {
+    "G_OH": {
+      "specification": {
+        "id": "candidate_1232",
+        "policy": "ranked_10",
+        "family": "extra_trees",
+        "parameters": {
+          "depth": 5,
+          "leaf": 1
+        }
+      },
+      "descriptors": [
+        "metal_metal_distance_A",
+        "site_bader_electron_population",
+        "spin_site_abs",
+        "q_site",
+        "site_heteroatom_charge_min_e",
+        "site_heteroatom_dipole_contribution_max_eA",
+        "site_metal_ligand_spin_product_muB2",
+        "metal_pair_charge_dipole_axis_eA",
+        "spin_product_muB2",
+        "site_ligand_quadrupole_norm_eA2"
+      ],
+      "training": {
+        "R2": 0.9896401577591567,
+        "RMSE_eV": 0.06024293189465755,
+        "MAE_eV": 0.044010958472281925,
+        "pearson_r": 0.9949248510066463
+      },
+      "validation": {
+        "R2": 0.9133913589992922,
+        "RMSE_eV": 0.14208741744614384,
+        "MAE_eV": 0.11380816034182506,
+        "pearson_r": 0.966170492649066
+      },
+      "cv_repeats": [
+        {
+          "R2": 0.9163444515970264,
+          "RMSE_eV": 0.17118941354884565,
+          "MAE_eV": 0.1309057514127176,
+          "pearson_r": 0.9573329176151156
+        },
+        {
+          "R2": 0.9221661189622078,
+          "RMSE_eV": 0.16512539594515094,
+          "MAE_eV": 0.11978977152081884,
+          "pearson_r": 0.9603704369427783
+        },
+        {
+          "R2": 0.9007903208917734,
+          "RMSE_eV": 0.18642603003861852,
+          "MAE_eV": 0.13445936637367742,
+          "pearson_r": 0.9508343153985922
+        }
+      ],
+      "cv_mean": {
+        "R2": 0.9131002971503358,
+        "RMSE_eV": 0.17424694651087172,
+        "MAE_eV": 0.12838496310240463,
+        "pearson_r": 0.9561792233188288
+      },
+      "final_selection_inner_R2": 0.9431050373216129
+    },
+    "G_O": {
+      "specification": {
+        "id": "candidate_1200",
+        "policy": "ranked_5",
+        "family": "extra_trees",
+        "parameters": {
+          "depth": 5,
+          "leaf": 1
+        }
+      },
+      "descriptors": [
+        "metal_metal_distance_A",
+        "site_bader_electron_population",
+        "spin_site_abs",
+        "q_site",
+        "site_heteroatom_charge_min_e"
+      ],
+      "training": {
+        "R2": 0.9872961332520834,
+        "RMSE_eV": 0.11790973205122937,
+        "MAE_eV": 0.07852310736486677,
+        "pearson_r": 0.9937297869382361
+      },
+      "validation": {
+        "R2": 0.9798178089519181,
+        "RMSE_eV": 0.12042598808163699,
+        "MAE_eV": 0.08866843046936831,
+        "pearson_r": 0.9910970053730576
+      },
+      "cv_repeats": [
+        {
+          "R2": 0.9070706786995122,
+          "RMSE_eV": 0.31890260748164156,
+          "MAE_eV": 0.22257855492478604,
+          "pearson_r": 0.953881009077641
+        },
+        {
+          "R2": 0.9397849242562695,
+          "RMSE_eV": 0.25670498716253465,
+          "MAE_eV": 0.177090285776559,
+          "pearson_r": 0.9697407609883337
+        },
+        {
+          "R2": 0.9253767432915043,
+          "RMSE_eV": 0.28577141607013035,
+          "MAE_eV": 0.19130542100871115,
+          "pearson_r": 0.9632134436294687
+        }
+      ],
+      "cv_mean": {
+        "R2": 0.9240774487490953,
+        "RMSE_eV": 0.28712633690476885,
+        "MAE_eV": 0.19699142057001873,
+        "pearson_r": 0.9622784045651479
+      },
+      "final_selection_inner_R2": 0.9476931987647218
+    },
+    "G_OOH": {
+      "specification": {
+        "id": "candidate_1277",
+        "policy": "ranked_12",
+        "family": "gaussian_process",
+        "parameters": {
+          "kernel": "rbf"
+        }
+      },
+      "descriptors": [
+        "metal_metal_distance_A",
+        "site_bader_electron_population",
+        "spin_site_abs",
+        "q_site",
+        "site_heteroatom_dipole_contribution_max_eA",
+        "site_heteroatom_charge_min_e",
+        "metal_pair_charge_dipole_axis_eA",
+        "site_metal_ligand_spin_product_muB2",
+        "site_ligand_quadrupole_norm_eA2",
+        "spin_product_muB2",
+        "partner_angle_min_deg",
+        "partner_heteroatom_charge_min_e"
+      ],
+      "training": {
+        "R2": 0.9761272391974701,
+        "RMSE_eV": 0.06689922259118991,
+        "MAE_eV": 0.055172635973746574,
+        "pearson_r": 0.9881374281719594
+      },
+      "validation": {
+        "R2": 0.8087592720572954,
+        "RMSE_eV": 0.13973578038909093,
+        "MAE_eV": 0.11991808636881353,
+        "pearson_r": 0.913683514684135
+      },
+      "cv_repeats": [
+        {
+          "R2": 0.8710148020972663,
+          "RMSE_eV": 0.15550332689735932,
+          "MAE_eV": 0.12459781429041626,
+          "pearson_r": 0.933870797774025
+        },
+        {
+          "R2": 0.8898399884030176,
+          "RMSE_eV": 0.1437082610578438,
+          "MAE_eV": 0.11817874866329825,
+          "pearson_r": 0.9439395804529797
+        },
+        {
+          "R2": 0.8325839205535825,
+          "RMSE_eV": 0.1771610850191036,
+          "MAE_eV": 0.13736343538347867,
+          "pearson_r": 0.9136028804617766
+        }
+      ],
+      "cv_mean": {
+        "R2": 0.8644795703512888,
+        "RMSE_eV": 0.15879089099143556,
+        "MAE_eV": 0.1267133327790644,
+        "pearson_r": 0.9304710862295936
+      },
+      "final_selection_inner_R2": 0.886401416771186
+    }
+  },
+  "all_targets_meet_threshold": false,
+  "grid_size": 1349,
+  "descriptor_definitions": {
+    "q_site": {
+      "key": "q_site",
+      "name": "Adsorption metal charge",
+      "formula": "q_s=Z_s-N_s^{\\mathrm{Bader}}",
+      "units": "e",
+      "description": "Signed Bader charge on the adsorption metal; positive means electron deficiency."
+    },
+    "q_partner": {
+      "key": "q_partner",
+      "name": "Partner metal charge",
+      "formula": "q_p=Z_p-N_p^{\\mathrm{Bader}}",
+      "units": "e",
+      "description": "Signed Bader charge on the other metal."
+    },
+    "metal_metal_distance_A": {
+      "key": "metal_metal_distance_A",
+      "name": "Metal separation",
+      "formula": "\\lVert\\mathbf r_s-\\mathbf r_p\\rVert_2",
+      "units": "Angstrom",
+      "description": "Cartesian separation between the two metals."
+    },
+    "site_heteroatom_dipole_contribution_mean_eA": {
+      "key": "site_heteroatom_dipole_contribution_mean_eA",
+      "name": "Adsorption metal: mean ligand dipole magnitude",
+      "formula": "\\operatorname{Mean}_{H_s}(p_{is})",
+      "units": "e Angstrom",
+      "description": "Mean of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "site_heteroatom_dipole_contribution_std_eA": {
+      "key": "site_heteroatom_dipole_contribution_std_eA",
+      "name": "Adsorption metal: spread ligand dipole magnitude",
+      "formula": "\\operatorname{SD}_{H_s}(p_{is})",
+      "units": "e Angstrom",
+      "description": "Spread of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "site_heteroatom_dipole_contribution_min_eA": {
+      "key": "site_heteroatom_dipole_contribution_min_eA",
+      "name": "Adsorption metal: minimum ligand dipole magnitude",
+      "formula": "\\operatorname{Min}_{H_s}(p_{is})",
+      "units": "e Angstrom",
+      "description": "Minimum of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "site_heteroatom_dipole_contribution_max_eA": {
+      "key": "site_heteroatom_dipole_contribution_max_eA",
+      "name": "Adsorption metal: maximum ligand dipole magnitude",
+      "formula": "\\operatorname{Max}_{H_s}(p_{is})",
+      "units": "e Angstrom",
+      "description": "Maximum of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "site_heteroatom_charge_dipole_proxy_norm_eA": {
+      "key": "site_heteroatom_charge_dipole_proxy_norm_eA",
+      "name": "Adsorption metal: net ligand dipole magnitude",
+      "formula": "\\left\\lVert\\sum_{i\\in H_s}q_i(\\mathbf r_i-\\mathbf r_s)\\right\\rVert_2",
+      "units": "e Angstrom",
+      "description": "Magnitude of the signed vector sum of ligand charge moments around this metal; includes directional cancellation."
+    },
+    "site_heteroatom_charge_sum_e": {
+      "key": "site_heteroatom_charge_sum_e",
+      "name": "Adsorption metal: total ligand charge",
+      "formula": "\\sum_{i\\in H_s}q_i",
+      "units": "e",
+      "description": "Total of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "site_heteroatom_charge_mean_e": {
+      "key": "site_heteroatom_charge_mean_e",
+      "name": "Adsorption metal: mean ligand charge",
+      "formula": "\\operatorname{Mean}_{H_s}(q_i)",
+      "units": "e",
+      "description": "Mean of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "site_heteroatom_charge_std_e": {
+      "key": "site_heteroatom_charge_std_e",
+      "name": "Adsorption metal: spread ligand charge",
+      "formula": "\\operatorname{SD}_{H_s}(q_i)",
+      "units": "e",
+      "description": "Spread of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "site_heteroatom_charge_min_e": {
+      "key": "site_heteroatom_charge_min_e",
+      "name": "Adsorption metal: minimum ligand charge",
+      "formula": "\\min_{i\\in H_s}q_i",
+      "units": "e",
+      "description": "Smallest signed Bader charge on the selected N/O/S neighbors; the most negative ligand charge."
+    },
+    "site_heteroatom_charge_max_e": {
+      "key": "site_heteroatom_charge_max_e",
+      "name": "Adsorption metal: maximum ligand charge",
+      "formula": "\\operatorname{Max}_{H_s}(q_i)",
+      "units": "e",
+      "description": "Maximum of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "site_heteroatom_spin_abs_mean_muB": {
+      "key": "site_heteroatom_spin_abs_mean_muB",
+      "name": "Adsorption metal: mean ligand spin magnitude",
+      "formula": "\\operatorname{Mean}_{H_s}(\\lvert m_i\\rvert)",
+      "units": "Bohr magneton",
+      "description": "Mean of absolute atomic magnetic moments on the selected N/O/S neighbors."
+    },
+    "site_heteroatom_spin_abs_sum_muB": {
+      "key": "site_heteroatom_spin_abs_sum_muB",
+      "name": "Adsorption metal: total ligand spin magnitude",
+      "formula": "\\sum_{i\\in H_s}\\lvert m_i\\rvert",
+      "units": "Bohr magneton",
+      "description": "Total of absolute atomic magnetic moments on the selected N/O/S neighbors."
+    },
+    "partner_heteroatom_dipole_contribution_mean_eA": {
+      "key": "partner_heteroatom_dipole_contribution_mean_eA",
+      "name": "Partner metal: mean ligand dipole magnitude",
+      "formula": "\\operatorname{Mean}_{H_p}(p_{ip})",
+      "units": "e Angstrom",
+      "description": "Mean of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "partner_heteroatom_dipole_contribution_std_eA": {
+      "key": "partner_heteroatom_dipole_contribution_std_eA",
+      "name": "Partner metal: spread ligand dipole magnitude",
+      "formula": "\\operatorname{SD}_{H_p}(p_{ip})",
+      "units": "e Angstrom",
+      "description": "Spread of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "partner_heteroatom_dipole_contribution_min_eA": {
+      "key": "partner_heteroatom_dipole_contribution_min_eA",
+      "name": "Partner metal: minimum ligand dipole magnitude",
+      "formula": "\\operatorname{Min}_{H_p}(p_{ip})",
+      "units": "e Angstrom",
+      "description": "Minimum of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "partner_heteroatom_dipole_contribution_max_eA": {
+      "key": "partner_heteroatom_dipole_contribution_max_eA",
+      "name": "Partner metal: maximum ligand dipole magnitude",
+      "formula": "\\operatorname{Max}_{H_p}(p_{ip})",
+      "units": "e Angstrom",
+      "description": "Maximum of individual point-charge contribution magnitudes on the selected N/O/S neighbors; spread is population standard deviation."
+    },
+    "partner_heteroatom_charge_dipole_proxy_norm_eA": {
+      "key": "partner_heteroatom_charge_dipole_proxy_norm_eA",
+      "name": "Partner metal: net ligand dipole magnitude",
+      "formula": "\\left\\lVert\\sum_{i\\in H_p}q_i(\\mathbf r_i-\\mathbf r_p)\\right\\rVert_2",
+      "units": "e Angstrom",
+      "description": "Magnitude of the signed vector sum of ligand charge moments around this metal; includes directional cancellation."
+    },
+    "partner_heteroatom_charge_sum_e": {
+      "key": "partner_heteroatom_charge_sum_e",
+      "name": "Partner metal: total ligand charge",
+      "formula": "\\sum_{i\\in H_p}q_i",
+      "units": "e",
+      "description": "Total of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "partner_heteroatom_charge_mean_e": {
+      "key": "partner_heteroatom_charge_mean_e",
+      "name": "Partner metal: mean ligand charge",
+      "formula": "\\operatorname{Mean}_{H_p}(q_i)",
+      "units": "e",
+      "description": "Mean of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "partner_heteroatom_charge_std_e": {
+      "key": "partner_heteroatom_charge_std_e",
+      "name": "Partner metal: spread ligand charge",
+      "formula": "\\operatorname{SD}_{H_p}(q_i)",
+      "units": "e",
+      "description": "Spread of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "partner_heteroatom_charge_min_e": {
+      "key": "partner_heteroatom_charge_min_e",
+      "name": "Partner metal: minimum ligand charge",
+      "formula": "\\min_{i\\in H_p}q_i",
+      "units": "e",
+      "description": "Smallest signed Bader charge on the selected N/O/S neighbors; the most negative ligand charge."
+    },
+    "partner_heteroatom_charge_max_e": {
+      "key": "partner_heteroatom_charge_max_e",
+      "name": "Partner metal: maximum ligand charge",
+      "formula": "\\operatorname{Max}_{H_p}(q_i)",
+      "units": "e",
+      "description": "Maximum of signed Bader charges on the selected N/O/S neighbors; minimum is the most negative charge and spread is population standard deviation."
+    },
+    "partner_heteroatom_spin_abs_mean_muB": {
+      "key": "partner_heteroatom_spin_abs_mean_muB",
+      "name": "Partner metal: mean ligand spin magnitude",
+      "formula": "\\operatorname{Mean}_{H_p}(\\lvert m_i\\rvert)",
+      "units": "Bohr magneton",
+      "description": "Mean of absolute atomic magnetic moments on the selected N/O/S neighbors."
+    },
+    "partner_heteroatom_spin_abs_sum_muB": {
+      "key": "partner_heteroatom_spin_abs_sum_muB",
+      "name": "Partner metal: total ligand spin magnitude",
+      "formula": "\\sum_{i\\in H_p}\\lvert m_i\\rvert",
+      "units": "Bohr magneton",
+      "description": "Total of absolute atomic magnetic moments on the selected N/O/S neighbors."
+    },
+    "site_angle_mean_deg": {
+      "key": "site_angle_mean_deg",
+      "name": "Mean ligand angle at adsorption metal",
+      "formula": "\\operatorname{Mean}_{P_s}(\\theta_{ij,s})",
+      "units": "degree",
+      "description": "Summary of all distinct ligand-metal-ligand angles at the adsorption metal; each neighbor pair has equal weight."
+    },
+    "site_angle_std_deg": {
+      "key": "site_angle_std_deg",
+      "name": "Spread of ligand angle at adsorption metal",
+      "formula": "\\operatorname{SD}_{P_s}(\\theta_{ij,s})",
+      "units": "degree",
+      "description": "Summary of all distinct ligand-metal-ligand angles at the adsorption metal; each neighbor pair has equal weight."
+    },
+    "site_angle_min_deg": {
+      "key": "site_angle_min_deg",
+      "name": "Smallest ligand angle at adsorption metal",
+      "formula": "\\operatorname{Min}_{P_s}(\\theta_{ij,s})",
+      "units": "degree",
+      "description": "Summary of all distinct ligand-metal-ligand angles at the adsorption metal; each neighbor pair has equal weight."
+    },
+    "site_angle_max_deg": {
+      "key": "site_angle_max_deg",
+      "name": "Largest ligand angle at adsorption metal",
+      "formula": "\\operatorname{Max}_{P_s}(\\theta_{ij,s})",
+      "units": "degree",
+      "description": "Summary of all distinct ligand-metal-ligand angles at the adsorption metal; each neighbor pair has equal weight."
+    },
+    "shared_bridge_angle_mean_deg": {
+      "key": "shared_bridge_angle_mean_deg",
+      "name": "Mean metal-bridge-metal angle",
+      "formula": "\\operatorname{Mean}_B(\\phi_i)",
+      "units": "degree",
+      "description": "Mean angle at each shared ligand between vectors pointing to the two metals."
+    },
+    "shared_bridge_angle_std_deg": {
+      "key": "shared_bridge_angle_std_deg",
+      "name": "Spread of metal-bridge-metal angles",
+      "formula": "\\operatorname{SD}_B(\\phi_i)",
+      "units": "degree",
+      "description": "Population standard deviation of the angles at shared bridging ligands."
+    },
+    "shared_bridge_dipole_contribution_asymmetry_mean_eA": {
+      "key": "shared_bridge_dipole_contribution_asymmetry_mean_eA",
+      "name": "Mean bridge dipole magnitude asymmetry",
+      "formula": "\\operatorname{Mean}_B(\\lvert q_i\\rvert\\,\\lvert d_{is}-d_{ip}\\rvert)",
+      "units": "e Angstrom",
+      "description": "Mean absolute difference between a shared ligand's charge-moment magnitudes about the two metals."
+    },
+    "spin_site_abs": {
+      "key": "spin_site_abs",
+      "name": "Adsorption metal spin magnitude",
+      "formula": "\\lvert m_s\\rvert",
+      "units": "Bohr magneton",
+      "description": "Absolute calculated atomic magnetic moment of the adsorption metal."
+    },
+    "spin_partner_abs": {
+      "key": "spin_partner_abs",
+      "name": "Partner metal spin magnitude",
+      "formula": "\\lvert m_p\\rvert",
+      "units": "Bohr magneton",
+      "description": "Absolute calculated atomic magnetic moment of the other metal."
+    },
+    "spin_product_muB2": {
+      "key": "spin_product_muB2",
+      "name": "Signed metal spin product",
+      "formula": "m_s m_p",
+      "units": "Bohr magneton squared",
+      "description": "Product of signed metal magnetic moments; opposite signs give a negative product."
+    },
+    "support_net_spin_muB": {
+      "key": "support_net_spin_muB",
+      "name": "Net support spin",
+      "formula": "\\sum_{i\\in S}m_i",
+      "units": "Bohr magneton",
+      "description": "Signed sum of magnetic moments over every atom except the two metals, including carbon and hydrogen."
+    },
+    "support_abs_spin_sum_muB": {
+      "key": "support_abs_spin_sum_muB",
+      "name": "Total support spin magnitude",
+      "formula": "\\sum_{i\\in S}\\lvert m_i\\rvert",
+      "units": "Bohr magneton",
+      "description": "Sum of absolute magnetic moments over every atom except the two metals."
+    },
+    "ligand_plane_rms_A": {
+      "key": "ligand_plane_rms_A",
+      "name": "Ligand nonplanarity",
+      "formula": "\\sqrt{\\operatorname{Mean}_{H_s}[((\\mathbf r_i-\\mathbf c)\\cdot\\mathbf n)^2]}",
+      "units": "Angstrom",
+      "description": "RMS perpendicular ligand displacement from the best-fit plane; requires at least three selected ligands."
+    },
+    "metal_height_above_ligand_plane_A": {
+      "key": "metal_height_above_ligand_plane_A",
+      "name": "Metal displacement from ligand plane",
+      "formula": "|(\\mathbf r_s-\\mathbf c)\\cdot\\mathbf n|",
+      "units": "Angstrom",
+      "description": "Absolute distance of adsorption metal from the best-fit ligand plane."
+    },
+    "shared_ligand_count": {
+      "key": "shared_ligand_count",
+      "name": "Shared ligand count",
+      "formula": "\\#(H_s\\cap H_p)",
+      "units": "count",
+      "description": "Number of N/O/S ligands within 2.30 Angstrom of both metals."
+    },
+    "terminal_ligand_count": {
+      "key": "terminal_ligand_count",
+      "name": "Terminal ligand count",
+      "formula": "\\#(H_s\\setminus H_p)",
+      "units": "count",
+      "description": "Number of selected adsorption-metal ligands that do not neighbor the partner metal."
+    },
+    "site_shared_ligand_charge_mean_e": {
+      "key": "site_shared_ligand_charge_mean_e",
+      "name": "Adsorption metal: mean shared ligand charge",
+      "formula": "\\operatorname{Mean}_{B}(q_i)",
+      "units": "e",
+      "description": "Mean signed Bader charge of shared ligands in this metal's shell."
+    },
+    "site_terminal_ligand_charge_mean_e": {
+      "key": "site_terminal_ligand_charge_mean_e",
+      "name": "Adsorption metal: mean terminal ligand charge",
+      "formula": "\\operatorname{Mean}_{H_s\\setminus B}(q_i)",
+      "units": "e",
+      "description": "Mean signed Bader charge of terminal ligands in this metal's shell."
+    },
+    "partner_shared_ligand_charge_mean_e": {
+      "key": "partner_shared_ligand_charge_mean_e",
+      "name": "Partner metal: mean shared ligand charge",
+      "formula": "\\operatorname{Mean}_{B}(q_i)",
+      "units": "e",
+      "description": "Mean signed Bader charge of shared ligands in this metal's shell."
+    },
+    "partner_terminal_ligand_charge_mean_e": {
+      "key": "partner_terminal_ligand_charge_mean_e",
+      "name": "Partner metal: mean terminal ligand charge",
+      "formula": "\\operatorname{Mean}_{H_p\\setminus B}(q_i)",
+      "units": "e",
+      "description": "Mean signed Bader charge of terminal ligands in this metal's shell."
+    },
+    "second_shell_C_2.8A": {
+      "key": "second_shell_C_2.8A",
+      "name": "Second-shell carbon density near 2.8 Angstrom",
+      "formula": "\\sum_i\\exp[-((d_{is}-2.8)/0.45)^2]",
+      "units": "dimensionless",
+      "description": "Sum over the specified support atoms farther than 2.30 Angstrom from the adsorption metal; both metals excluded."
+    },
+    "second_shell_C_3.6A": {
+      "key": "second_shell_C_3.6A",
+      "name": "Second-shell carbon density near 3.6 Angstrom",
+      "formula": "\\sum_i\\exp[-((d_{is}-3.6)/0.45)^2]",
+      "units": "dimensionless",
+      "description": "Sum over the specified support atoms farther than 2.30 Angstrom from the adsorption metal; both metals excluded."
+    },
+    "second_shell_heteroatom_2.8A": {
+      "key": "second_shell_heteroatom_2.8A",
+      "name": "Second-shell N/O/S density near 2.8 Angstrom",
+      "formula": "\\sum_i\\exp[-((d_{is}-2.8)/0.45)^2]",
+      "units": "dimensionless",
+      "description": "Sum over the specified support atoms farther than 2.30 Angstrom from the adsorption metal; both metals excluded."
+    },
+    "second_shell_heteroatom_3.6A": {
+      "key": "second_shell_heteroatom_3.6A",
+      "name": "Second-shell N/O/S density near 3.6 Angstrom",
+      "formula": "\\sum_i\\exp[-((d_{is}-3.6)/0.45)^2]",
+      "units": "dimensionless",
+      "description": "Sum over the specified support atoms farther than 2.30 Angstrom from the adsorption metal; both metals excluded."
+    },
+    "partner_angle_mean_deg": {
+      "key": "partner_angle_mean_deg",
+      "name": "Mean ligand angle at partner metal",
+      "formula": "\\operatorname{Mean}_{P_p}(\\theta_{ij,p})",
+      "units": "degree",
+      "description": "Summary over all unique selected ligand pairs, with the partner metal as the angle vertex."
+    },
+    "partner_angle_std_deg": {
+      "key": "partner_angle_std_deg",
+      "name": "Spread of ligand angle at partner metal",
+      "formula": "\\operatorname{SD}_{P_p}(\\theta_{ij,p})",
+      "units": "degree",
+      "description": "Summary over all unique selected ligand pairs, with the partner metal as the angle vertex."
+    },
+    "partner_angle_min_deg": {
+      "key": "partner_angle_min_deg",
+      "name": "Smallest ligand angle at partner metal",
+      "formula": "\\operatorname{Min}_{P_p}(\\theta_{ij,p})",
+      "units": "degree",
+      "description": "Summary over all unique selected ligand pairs, with the partner metal as the angle vertex."
+    },
+    "partner_angle_max_deg": {
+      "key": "partner_angle_max_deg",
+      "name": "Largest ligand angle at partner metal",
+      "formula": "\\operatorname{Max}_{P_p}(\\theta_{ij,p})",
+      "units": "degree",
+      "description": "Summary over all unique selected ligand pairs, with the partner metal as the angle vertex."
+    },
+    "metal_pair_net_spin_abs_muB": {
+      "feature": "metal_pair_net_spin_abs_muB",
+      "name": "Net metal-pair magnetic moment magnitude",
+      "units": "\u00b5B",
+      "formula": "|m_s+m_p|",
+      "description": "Magnitude of the sum of the two signed local metal moments."
+    },
+    "metal_pair_spin_imbalance_muB": {
+      "feature": "metal_pair_spin_imbalance_muB",
+      "name": "Metal magnetic moment imbalance",
+      "units": "\u00b5B",
+      "formula": "||m_s|-|m_p||",
+      "description": "Difference between the magnitudes of the two local metal moments."
+    },
+    "total_clean_magnetic_moment_abs_muB": {
+      "feature": "total_clean_magnetic_moment_abs_muB",
+      "name": "Total clean-structure magnetic moment magnitude",
+      "units": "\u00b5B",
+      "formula": "|M_{\\mathrm{DFT}}|",
+      "description": "Absolute stored post_opt_rpbe_d4_total_magmom; a whole-system DFT quantity, not a sum asserted equal to partitioned atomic moments."
+    },
+    "site_support_spin_product_muB2": {
+      "feature": "site_support_spin_product_muB2",
+      "name": "Adsorption metal\u2013support spin product",
+      "units": "\u00b5B\u00b2",
+      "formula": "m_s\\sum_{i\\ge2}m_i",
+      "description": "Signed alignment proxy for the metal and the remaining clean support; not an exchange energy."
+    },
+    "metal_pair_charge_dipole_axis_eA": {
+      "feature": "metal_pair_charge_dipole_axis_eA",
+      "name": "Metal-pair axial charge dipole",
+      "units": "e \u00c5",
+      "formula": "(q_s-q_p)d_{sp}/2",
+      "description": "Metal-only Bader-charge moment about the metal midpoint, projected toward the adsorption metal."
+    },
+    "site_heteroatom_net_spin_abs_mean_muB": {
+      "feature": "site_heteroatom_net_spin_abs_mean_muB",
+      "name": "Adsorption-site net ligand magnetic moment per atom",
+      "units": "\u00b5B",
+      "formula": "|\\sum_{i\\in H_s}m_i|/n_s",
+      "description": "Cancellation-aware magnitude of the signed mean ligand moment."
+    },
+    "site_metal_ligand_spin_product_muB2": {
+      "feature": "site_metal_ligand_spin_product_muB2",
+      "name": "Adsorption-site metal\u2013ligand spin product",
+      "units": "\u00b5B\u00b2",
+      "formula": "m_s\\sum_{i\\in H_s}m_i/n_s",
+      "description": "Signed collinear metal\u2013ligand alignment proxy; not an exchange energy."
+    },
+    "site_heteroatom_dipole_axis_eA": {
+      "feature": "site_heteroatom_dipole_axis_eA",
+      "name": "Adsorption-site axial ligand charge dipole",
+      "units": "e \u00c5",
+      "formula": "\\boldsymbol\\mu_s\\cdot\\mathbf e_s",
+      "description": "Signed ligand Bader-charge moment projected along the metal-pair axis away from the other metal."
+    },
+    "site_heteroatom_dipole_transverse_eA": {
+      "feature": "site_heteroatom_dipole_transverse_eA",
+      "name": "Adsorption-site transverse ligand charge dipole",
+      "units": "e \u00c5",
+      "formula": "\\|\\boldsymbol\\mu_s-(\\boldsymbol\\mu_s\\cdot\\mathbf e_s)\\mathbf e_s\\|",
+      "description": "Magnitude of the ligand charge moment perpendicular to the metal-pair axis."
+    },
+    "site_ligand_quadrupole_norm_eA2": {
+      "feature": "site_ligand_quadrupole_norm_eA2",
+      "name": "Adsorption-site ligand charge quadrupole magnitude",
+      "units": "e \u00c5\u00b2",
+      "formula": "\\sqrt{\\sum_{a,b}(Q_{s,ab})^2}",
+      "description": "Frobenius norm of the traceless Bader-charge quadrupole tensor about this metal."
+    },
+    "site_ligand_quadrupole_axis_eA2": {
+      "feature": "site_ligand_quadrupole_axis_eA2",
+      "name": "Adsorption-site axial ligand charge quadrupole",
+      "units": "e \u00c5\u00b2",
+      "formula": "\\mathbf e_s^\\mathsf T Q_s\\mathbf e_s",
+      "description": "Quadrupole tensor projected along the metal-pair axis."
+    },
+    "partner_heteroatom_net_spin_abs_mean_muB": {
+      "feature": "partner_heteroatom_net_spin_abs_mean_muB",
+      "name": "Partner-site net ligand magnetic moment per atom",
+      "units": "\u00b5B",
+      "formula": "|\\sum_{i\\in H_p}m_i|/n_p",
+      "description": "Cancellation-aware magnitude of the signed mean ligand moment."
+    },
+    "partner_metal_ligand_spin_product_muB2": {
+      "feature": "partner_metal_ligand_spin_product_muB2",
+      "name": "Partner-site metal\u2013ligand spin product",
+      "units": "\u00b5B\u00b2",
+      "formula": "m_p\\sum_{i\\in H_p}m_i/n_p",
+      "description": "Signed collinear metal\u2013ligand alignment proxy; not an exchange energy."
+    },
+    "partner_heteroatom_dipole_axis_eA": {
+      "feature": "partner_heteroatom_dipole_axis_eA",
+      "name": "Partner-site axial ligand charge dipole",
+      "units": "e \u00c5",
+      "formula": "\\boldsymbol\\mu_p\\cdot\\mathbf e_p",
+      "description": "Signed ligand Bader-charge moment projected along the metal-pair axis away from the other metal."
+    },
+    "partner_heteroatom_dipole_transverse_eA": {
+      "feature": "partner_heteroatom_dipole_transverse_eA",
+      "name": "Partner-site transverse ligand charge dipole",
+      "units": "e \u00c5",
+      "formula": "\\|\\boldsymbol\\mu_p-(\\boldsymbol\\mu_p\\cdot\\mathbf e_p)\\mathbf e_p\\|",
+      "description": "Magnitude of the ligand charge moment perpendicular to the metal-pair axis."
+    },
+    "partner_ligand_quadrupole_norm_eA2": {
+      "feature": "partner_ligand_quadrupole_norm_eA2",
+      "name": "Partner-site ligand charge quadrupole magnitude",
+      "units": "e \u00c5\u00b2",
+      "formula": "\\sqrt{\\sum_{a,b}(Q_{p,ab})^2}",
+      "description": "Frobenius norm of the traceless Bader-charge quadrupole tensor about this metal."
+    },
+    "partner_ligand_quadrupole_axis_eA2": {
+      "feature": "partner_ligand_quadrupole_axis_eA2",
+      "name": "Partner-site axial ligand charge quadrupole",
+      "units": "e \u00c5\u00b2",
+      "formula": "\\mathbf e_p^\\mathsf T Q_p\\mathbf e_p",
+      "description": "Quadrupole tensor projected along the metal-pair axis."
+    },
+    "site_bader_electron_population": {
+      "feature": "site_bader_electron_population",
+      "name": "Adsorption metal Bader electron population",
+      "units": "electrons",
+      "formula": "N_s^{\\mathrm{Bader}}",
+      "description": "Stored DFT Bader electron population from data.bader_electrons, including the core convention of the source calculation."
+    },
+    "site_ligand_bader_electron_mean": {
+      "feature": "site_ligand_bader_electron_mean",
+      "name": "Adsorption metal mean ligand Bader electron population",
+      "units": "electrons",
+      "formula": "\\sum_{i\\in H_s}N_i^{\\mathrm{Bader}}/n_s",
+      "description": "Mean stored Bader electron population of selected N/O/S ligands."
+    },
+    "partner_bader_electron_population": {
+      "feature": "partner_bader_electron_population",
+      "name": "Partner metal Bader electron population",
+      "units": "electrons",
+      "formula": "N_p^{\\mathrm{Bader}}",
+      "description": "Stored DFT Bader electron population from data.bader_electrons, including the core convention of the source calculation."
+    },
+    "partner_ligand_bader_electron_mean": {
+      "feature": "partner_ligand_bader_electron_mean",
+      "name": "Partner metal mean ligand Bader electron population",
+      "units": "electrons",
+      "formula": "\\sum_{i\\in H_p}N_i^{\\mathrm{Bader}}/n_p",
+      "description": "Mean stored Bader electron population of selected N/O/S ligands."
+    }
+  }
+}

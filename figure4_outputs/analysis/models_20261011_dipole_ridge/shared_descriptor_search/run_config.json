@@ -1,0 +1,86 @@
+{
+  "shared_descriptors": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_model_family": "ridge",
+  "descriptor_sets": {
+    "current_shared_descriptors": [
+      "q_site",
+      "q_partner",
+      "spin_site_abs",
+      "site_heteroatom_spin_abs_mean_muB",
+      "partner_heteroatom_spin_abs_mean_muB",
+      "metal_metal_distance_A",
+      "site_terminal_ligand_charge_mean_e",
+      "site_heteroatom_charge_dipole_proxy_norm_eA"
+    ]
+  },
+  "model_families": [
+    "ridge"
+  ],
+  "ridge_alphas": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "descriptor_set_count": 1,
+  "outer_repeats": 3,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "final_inner_repeats": 3,
+  "final_joint_normalized_MSE": 0.24700482210936495,
+  "selected_descriptor_set": "current_shared_descriptors",
+  "objective": "fixed 8 raw descriptors and linear ridge; target-specific alpha minimizes grouped OOF MSE",
+  "descriptor_selection": "current inputs fixed; exploratory selection record in current_descriptor_selection.json; CV conditional on chosen inputs",
+  "descriptor_selection_in_outer_folds": false,
+  "selection_reference_set": null,
+  "selection_scores_are_conditional": true,
+  "required_descriptors": [
+    "metal_metal_distance_A"
+  ],
+  "target_specific_cohorts": false,
+  "additional_pruning": false,
+  "outer_folds_aligned": true,
+  "cohort_policy": "deterministic chemistry-coverage holdout within training descriptor ranges",
+  "split_configuration": "representative_split/split_config.json",
+  "validation_used_for_selection": false,
+  "numpy_version": "2.5.1",
+  "sha256": {
+    "calculations\\models_20261011_dipole_ridge\\run_shared_descriptor_search.py": "ebdbc1d8c6682ff1c318bf2ec0743b5c8da0e04a74270bdc166f7e25af0f3f06",
+    "calculations\\models_20261011_dipole_ridge\\descriptor_catalog.py": "abfc93c878a31b86e7134c709d691516ee0bfa4fde95514b3f928ea50e271a15",
+    "calculations\\models_20261011_dipole_ridge\\build_shared_report.py": "642b49d172ae36ca760385b7e4ba9c7cc62b65fa8ac389e682672f1d318e65d7",
+    "calculations\\models_20261011_dipole_ridge\\build_current_report.py": "9a870fbc72686ef6dbef2936c203c94c2ff62aed91674305f4b2f74c716c1bdf",
+    "calculations\\models_20261011_dipole_ridge\\dipole_site_features.csv": "a70dcb56241da33b0726bbfd61a59efb35ee53e923c529bd5e8a0091cb3c5756",
+    "calculations\\models_20261011_dipole_ridge\\build_overpotential_report.py": "3da6e8a9606f58d93f7124ed8e9a9bde9d16b16ef3fcfcd7163463166ba234ec",
+    "calculations\\models_20261011_dipole_ridge\\current_site_descriptors.py": "2eb6d1469c9cbf2c32b31719eceec53317d197c115d9982d57ca65b3b38774a8",
+    "calculations\\models_20261011_dipole_ridge\\current_descriptor_selection.json": "13e9607252058e6f98dd0772a5b9f65a8a5a73d40d751677e889830eef55b886",
+    "calculations\\models_20261011_dipole_ridge\\try_two_descriptors.py": "310ecf76b2a22acec2b1238b81a19fff903595f51a280e04a221f9a157756b2e",
+    "calculations\\models_20261011_dipole_ridge\\select_representative_split.py": "29d92d7f998b4e5631c37aeaff57242061e7866f021b5de85320ea71a97c9958",
+    "calculations\\models_20261011_dipole_ridge\\representative_split\\split_config.json": "b4c45207141fd9ec45ec5639bea638b1b7152e36458b36faca78ef22bac1c100",
+    "calculations\\models_20261011_dipole_ridge\\run_config.json": "4b443a50483129432e35eace9031cd1c5710e84c20189cd25e998aa0c4aca714",
+    "calculations\\models_20261011_dipole_ridge\\cv_predictions.csv": "c891188fe997cd6564a404d52c2e7d0dc3a068334800358e8dacd0d03357b8c6",
+    "calculations\\models_20261011_dipole_ridge\\cohort_membership.csv": "9869ba8b093521e733036fb6f8e7804981114a4f5606cc01b03a9a5014d4b1af",
+    "extracted\\orr_analysis_energies.csv": "96159402679f421e61c4473f5e782104b2a23677a992684aa03a6bbd58a01b2f",
+    "calculations\\models_20261011_dipole_ridge\\current_site_features.csv": "785be467f32e98784c684733325e85143c6e0944fe78064f50dc89886963d8b2",
+    "calculations\\models_20261011_dipole_ridge\\refine_shared_descriptors.py": "2f2de88d4f343818ed60cfd6d2cb1106d92918b53ed9a8771bc7b07d70e05ff5",
+    "calculations\\models_20261011_dipole_ridge\\swap_validation_structures.py": "eb953f641d63ce4be15ad15d89856e8b200bd834506b6b91e12dbc3ed6b04012",
+    "calculations\\models_20261011_dipole_ridge\\optimize_shared_descriptors.py": "c3927e9f0a18fa8b64d365ebb985cb3adb4e0b7c92196218e108a86c0263c5a8",
+    "calculations\\models_20261011_dipole_ridge\\apply_relative_distance_exclusions.py": "5205102a2e0a3a9e7a3c265f737e26bcdf5faeb96263015e60524d5fd9167f67",
+    "calculations\\models_20261011_dipole_ridge\\representative_split\\relative_distance_exclusions.json": "9e69cc3ec85a2d8147c955693411ba2cada16c2f37ef544d130718964ebbf0dc",
+    "calculations\\models_20261011_dipole_ridge\\representative_split\\data_quality_exclusion_ledger.csv": "25b1c5f00afab118c85c7eec54876b5ada19c1fa2b5a093de1b592f03596b116",
+    "calculations\\models_20261011_dipole_ridge\\representative_split\\selected_endpoint_geometry_checks.csv": "a7b27406940ab1a9318b5e49006ab0fed6fc4506a298f38ed22944182dfefb6a"
+  }
+}

@@ -1,0 +1,661 @@
+scope,target,descriptor_key,readable_name,used_in_current_models,pair_count,structure_count,target_available_count,missing_descriptor_count,pearson_r,spearman_rho,pearson_cluster_CI95_low,pearson_cluster_CI95_high,status
+common_training,G_OH,q_site,Adsorption metal charge,True,69,48,69,0,-0.7708708108955092,-0.7503105590062112,-0.8476974789881611,-0.6790955508736821,ok
+common_training,G_OH,q_partner,Partner metal charge,True,69,48,69,0,-0.10578610578845428,-0.07533796127146512,-0.34183538208444453,0.12902715927749175,ok
+common_training,G_OH,metal_metal_distance_A,Metal separation,True,69,48,69,0,0.17667025727061234,0.15481596133592912,-0.07821251281082578,0.3941986376106394,ok
+common_training,G_OH,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,69,48,69,0,-0.2226383789228913,-0.3192181220314213,-0.4486817451779287,0.011332119387602136,ok
+common_training,G_OH,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,69,48,69,0,0.11718766292622021,0.08041651443185971,-0.1266444240666759,0.3451328908282366,ok
+common_training,G_OH,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,69,48,69,0,-0.17349929505628411,-0.2706613080014615,-0.42319834791258437,0.06804830902806383,ok
+common_training,G_OH,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.522796332327601,-0.4860431128973329,-0.6781326181028691,-0.33822547732147396,ok
+common_training,G_OH,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,69,48,69,0,0.13848017003557248,0.12363902082572162,-0.08408902550743397,0.37046534302950124,ok
+common_training,G_OH,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,69,48,69,0,0.21410726417596643,0.39671172816952877,-0.035437985855695193,0.45531506171817415,ok
+common_training,G_OH,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,69,48,69,0,0.21410726417596643,0.39671172816952877,-0.026386233099829497,0.4322704106437666,ok
+common_training,G_OH,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,69,48,69,0,0.1393473335625854,0.11856046766532702,-0.09517896446193991,0.38979251842457124,ok
+common_training,G_OH,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,69,48,69,0,0.5202831367603783,0.5040966760958928,0.33245212415824704,0.6754546221146505,ok
+common_training,G_OH,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,69,48,69,0,0.17861327976956387,0.3766204150915777,-0.059413891898616664,0.41295298171510714,ok
+common_training,G_OH,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,69,48,69,0,0.10579947655391717,-0.044939715016441374,-0.20517651172986878,0.3587327604612325,ok
+common_training,G_OH,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,69,48,69,0,0.10579947655391717,-0.044939715016441374,-0.2021709782972914,0.3494856228816943,ok
+common_training,G_OH,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,69,48,69,0,-0.1709042400322314,-0.20379978078187802,-0.40551574369871896,0.05796464498386276,ok
+common_training,G_OH,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,69,48,69,0,0.13826463062656663,0.17416879795396423,-0.10237330086913297,0.36571251977628055,ok
+common_training,G_OH,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,69,48,69,0,-0.156000264288836,-0.20482279868469128,-0.381864749204922,0.0790502611209469,ok
+common_training,G_OH,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.20736969190827803,-0.1935330654000731,-0.4173707353575497,0.013352460158142758,ok
+common_training,G_OH,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,69,48,69,0,0.11109349840364098,0.04559736938253562,-0.12598590886219566,0.3553873383469223,ok
+common_training,G_OH,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,69,48,69,0,0.1791589305575282,0.27533796127146515,-0.06560121470920079,0.3977878271871213,ok
+common_training,G_OH,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,69,48,69,0,0.1791589305575282,0.27533796127146515,-0.06177462887553222,0.39871149501132036,ok
+common_training,G_OH,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,69,48,69,0,0.15804967619983223,0.24234563390573627,-0.07059237785129513,0.38666772894767665,ok
+common_training,G_OH,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,69,48,69,0,0.21297915870041245,0.15001963847573646,-0.038523283655470184,0.4158819406838819,ok
+common_training,G_OH,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,69,48,69,0,0.1692677372474863,0.31343924809081725,-0.06254995432680881,0.40188354416399474,ok
+common_training,G_OH,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,69,48,69,0,0.07320156270071436,0.024881256850566313,-0.15384288004218621,0.2754176913900223,ok
+common_training,G_OH,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,69,48,69,0,0.07320156270071436,0.024881256850566313,-0.16618765731668658,0.25711584650494934,ok
+common_training,G_OH,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,69,48,69,0,-0.10221626659136444,-0.1276214833759591,-0.34369627717887324,0.12665157433387658,ok
+common_training,G_OH,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,69,48,69,0,-0.10327718822589216,-0.10672268907563026,-0.33412219044785335,0.14271158761665995,ok
+common_training,G_OH,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,69,48,69,0,-0.153018929889004,-0.12634271099744246,-0.380516676638471,0.07264716923749771,ok
+common_training,G_OH,site_angle_max_deg,Largest ligand angle at adsorption metal,False,69,48,69,0,-0.10176142042913353,-0.12714651077822434,-0.33287152562329025,0.15724569964773755,ok
+common_training,G_OH,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,69,48,69,0,0.23397971577091478,0.1817849639243667,-0.03441655047943,0.4325606106267329,ok
+common_training,G_OH,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,69,48,69,0,0.20486127596899165,0.47252396743874225,0.13147549577676745,0.5019063254211348,ok
+common_training,G_OH,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,69,48,69,0,-0.08164253288565045,-0.1439991256094013,-0.35885279849499174,0.19557471679193472,ok
+common_training,G_OH,spin_site_abs,Adsorption metal spin magnitude,True,69,48,69,0,-0.8236973148969647,-0.8893313847278043,-0.8742076736154484,-0.7725213592922475,ok
+common_training,G_OH,spin_partner_abs,Partner metal spin magnitude,True,69,48,69,0,-0.07340147845723669,-0.06203872853489223,-0.3131332022614034,0.17953390363800623,ok
+common_training,G_OH,spin_product_muB2,Signed metal spin product,False,69,48,69,0,0.3153764140317857,0.29404617795103355,0.04003749871240631,0.5494241398096364,ok
+common_training,G_OH,support_net_spin_muB,Net support spin,False,69,48,69,0,0.26908254435995593,0.22954714059521747,0.01698505393666496,0.471145527990461,ok
+common_training,G_OH,support_abs_spin_sum_muB,Total support spin magnitude,False,69,48,69,0,-0.18270779131516232,-0.14966334702025202,-0.42802866049890287,0.07701976970796374,ok
+common_training,G_OH,ligand_plane_rms_A,Ligand nonplanarity,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_OH,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,69,48,69,0,0.11527583075154427,-0.1679941541834125,-0.26992630308121857,0.23493400359357203,ok
+common_training,G_OH,shared_ligand_count,Shared ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_OH,terminal_ligand_count,Terminal ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_OH,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,69,48,69,0,0.1879752204891319,0.38810879673509624,-0.04772820546035424,0.416788791985796,ok
+common_training,G_OH,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,69,48,69,0,0.44775887836586714,0.4543295579101206,0.2500366514847965,0.6327800787790703,ok
+common_training,G_OH,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,69,48,69,0,0.1879752204891319,0.38810879673509624,-0.0566523618427073,0.41992743031936036,ok
+common_training,G_OH,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,69,48,69,0,-0.04544406010865715,-0.07738399707709172,-0.2664680788161559,0.16886804733157765,ok
+common_training,G_OH,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,69,48,69,0,0.007729837072525582,0.07756667884545122,-0.25684941631732083,0.24497560695932322,ok
+common_training,G_OH,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,69,48,69,0,0.014474315621997564,-0.01223967848008769,-0.22556306298608722,0.2788064945490102,ok
+common_training,G_OH,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,69,48,69,0,-0.17505799802519753,-0.11768359517720133,-0.392557164172803,0.005915330480819538,ok
+common_training,G_OH,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,69,48,69,0,-0.22937745223533748,-0.11768359517720133,-0.429606286139868,0.01887565599995463,ok
+common_training,G_OH,partner_angle_mean_deg,Mean ligand angle at partner metal,False,69,48,69,0,-0.14250262781659045,-0.14775301424917794,-0.3620894948492061,0.09808599668980911,ok
+common_training,G_OH,partner_angle_std_deg,Spread of ligand angle at partner metal,False,69,48,69,0,-0.12276148532905758,-0.12268907563025211,-0.3623519384981125,0.10848340701214479,ok
+common_training,G_OH,partner_angle_min_deg,Smallest ligand angle at partner metal,False,69,48,69,0,-0.20402322216670352,-0.18768724881256854,-0.4282561881341064,0.04276298569634938,ok
+common_training,G_OH,partner_angle_max_deg,Largest ligand angle at partner metal,False,69,48,69,0,-0.1411246947423307,-0.14775301424917794,-0.3772700171513636,0.10529041094687284,ok
+common_training,G_O,q_site,Adsorption metal charge,True,69,48,69,0,-0.8055435805052551,-0.765948118377786,-0.8739107693918307,-0.7183369616690669,ok
+common_training,G_O,q_partner,Partner metal charge,True,69,48,69,0,-0.07809611009080777,-0.07332846181951043,-0.3277117815377469,0.17208467655049303,ok
+common_training,G_O,metal_metal_distance_A,Metal separation,True,69,48,69,0,0.09057342314075299,0.10179154025757832,-0.1713052281543265,0.31696884391822333,ok
+common_training,G_O,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,69,48,69,0,-0.16327411215043136,-0.3259408111070516,-0.381454249128165,0.07714006108050962,ok
+common_training,G_O,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,69,48,69,0,0.0401789794473893,0.07643405188162224,-0.2013288833333655,0.27260663072329433,ok
+common_training,G_O,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,69,48,69,0,-0.1059348225248647,-0.2808184143222507,-0.3338177213698807,0.136700497886063,ok
+common_training,G_O,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.558973630606691,-0.5167336499817319,-0.6921921585561689,-0.38901899736164625,ok
+common_training,G_O,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,69,48,69,0,0.07589211672192182,0.1121666057727439,-0.151181331647929,0.3088200426506206,ok
+common_training,G_O,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,69,48,69,0,0.15034670736344746,0.3928388746803069,-0.09084137974886525,0.37902346505344353,ok
+common_training,G_O,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,69,48,69,0,0.15034670736344746,0.3928388746803069,-0.08608208021363159,0.38602787269137023,ok
+common_training,G_O,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,69,48,69,0,0.060868764884305,0.11275118743149436,-0.17288063130074263,0.2985146223716414,ok
+common_training,G_O,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,69,48,69,0,0.5629511608128035,0.5112944035142367,0.39309781253528653,0.7064352562821651,ok
+common_training,G_O,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,69,48,69,0,0.10804907546401943,0.3769675643608127,-0.123398004014543,0.35526993647363975,ok
+common_training,G_O,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,69,48,69,0,0.09556669858856084,-0.04307636097917429,-0.2311631685681887,0.33413453004438054,ok
+common_training,G_O,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,69,48,69,0,0.09556669858856084,-0.04307636097917429,-0.21516184004979677,0.33824658806981756,ok
+common_training,G_O,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,69,48,69,0,-0.10684114724300679,-0.21987577639751554,-0.3351829326146915,0.12155357522019382,ok
+common_training,G_O,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,69,48,69,0,0.06594534090918676,0.16339057362075268,-0.15797812859441349,0.2988534913852233,ok
+common_training,G_O,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,69,48,69,0,-0.08799847881665164,-0.21994884910485935,-0.3184078695357298,0.15515413027967612,ok
+common_training,G_O,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.20898665827686455,-0.23354037267080752,-0.40126193163724133,0.018604503963392853,ok
+common_training,G_O,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,69,48,69,0,0.04882636895313096,0.03514797223237121,-0.16121517837663943,0.279951410696898,ok
+common_training,G_O,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,69,48,69,0,0.11228944680844659,0.27625137011326273,-0.12192388829259557,0.3360192552784693,ok
+common_training,G_O,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,69,48,69,0,0.11228944680844659,0.27625137011326273,-0.1261549662066633,0.3289484376968013,ok
+common_training,G_O,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,69,48,69,0,0.08286489739569533,0.22499086591158207,-0.1495917708706654,0.31451912540788834,ok
+common_training,G_O,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,69,48,69,0,0.22435602793903714,0.1789932315861259,-0.023189629179438,0.425266119111736,ok
+common_training,G_O,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,69,48,69,0,0.09853872917619888,0.312580510424815,-0.13766727310895668,0.31698640324252436,ok
+common_training,G_O,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,69,48,69,0,0.06491721415646336,0.016843259042747537,-0.17009739742006977,0.2532746903874803,ok
+common_training,G_O,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,69,48,69,0,0.06491721415646336,0.016843259042747537,-0.18169221369171018,0.25022366982775235,ok
+common_training,G_O,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,69,48,69,0,-0.00929140655357992,-0.0772013153087322,-0.27972633218322385,0.22495285570753154,ok
+common_training,G_O,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,69,48,69,0,-0.014131338580908,-0.06061381074168799,-0.2856437781366241,0.22170101048913438,ok
+common_training,G_O,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,69,48,69,0,-0.08799091465929698,-0.08794300328827184,-0.34482535754783644,0.1720871858018913,ok
+common_training,G_O,site_angle_max_deg,Largest ligand angle at adsorption metal,False,69,48,69,0,-0.008790069658070717,-0.07658019729630984,-0.2600969467413463,0.2365561499285665,ok
+common_training,G_O,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,69,48,69,0,0.1768563438773919,0.13208598896464435,-0.08210897854499848,0.39617943638522096,ok
+common_training,G_O,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,69,48,69,0,0.18215957514491196,0.4498305384313985,0.11313283923174977,0.5000811159248459,ok
+common_training,G_O,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,69,48,69,0,-0.07105471340944418,-0.1334746367944013,-0.32375696907158263,0.17853830216990735,ok
+common_training,G_O,spin_site_abs,Adsorption metal spin magnitude,True,69,48,69,0,-0.8976093728664755,-0.9030690537084399,-0.9276561018231094,-0.8651720860564408,ok
+common_training,G_O,spin_partner_abs,Partner metal spin magnitude,True,69,48,69,0,-0.09327522809407732,-0.08085495067592256,-0.34230525532747136,0.1723012540238843,ok
+common_training,G_O,spin_product_muB2,Signed metal spin product,False,69,48,69,0,0.3522351278421139,0.25936652557105083,0.05173889607078516,0.6074534747080521,ok
+common_training,G_O,support_net_spin_muB,Net support spin,False,69,48,69,0,0.23186197464570035,0.18858202961738751,-0.009798354931380546,0.44187791487471634,ok
+common_training,G_O,support_abs_spin_sum_muB,Total support spin magnitude,False,69,48,69,0,-0.1801081472800123,-0.1558757188902173,-0.4011403253677304,0.05472517383146793,ok
+common_training,G_O,ligand_plane_rms_A,Ligand nonplanarity,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_O,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,69,48,69,0,0.11913652547394407,-0.19159663865546217,-0.34585912763543286,0.22994889314076433,ok
+common_training,G_O,shared_ligand_count,Shared ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_O,terminal_ligand_count,Terminal ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_O,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,69,48,69,0,0.11648417528623169,0.3806539504911379,-0.12047319027680432,0.3488222668675485,ok
+common_training,G_O,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,69,48,69,0,0.513375175614267,0.46945560833028865,0.31734920796783883,0.6860584581012529,ok
+common_training,G_O,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,69,48,69,0,0.11648417528623169,0.3806539504911379,-0.13332533205782832,0.3555138270504096,ok
+common_training,G_O,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,69,48,69,0,-0.009763864788628281,-0.03657289002557545,-0.25951951886922453,0.21700498089918724,ok
+common_training,G_O,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,69,48,69,0,0.08816556934690346,0.10774570697844357,-0.15716021742017247,0.3149336728010366,ok
+common_training,G_O,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,69,48,69,0,-0.06500351333317296,-0.05637559371574718,-0.30666913396772605,0.18887267451549125,ok
+common_training,G_O,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,69,48,69,0,-0.12577492796600798,-0.0637924735111436,-0.3663009142720405,0.07359401187748767,ok
+common_training,G_O,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,69,48,69,0,-0.17416653382182024,-0.0637924735111436,-0.38269986730474714,0.07996339117236813,ok
+common_training,G_O,partner_angle_mean_deg,Mean ligand angle at partner metal,False,69,48,69,0,-0.08206475940572662,-0.10577274388016078,-0.3176795537364531,0.16197318585991813,ok
+common_training,G_O,partner_angle_std_deg,Spread of ligand angle at partner metal,False,69,48,69,0,-0.05908340111539502,-0.08268176835951774,-0.2978817206159634,0.18794318506653795,ok
+common_training,G_O,partner_angle_min_deg,Smallest ligand angle at partner metal,False,69,48,69,0,-0.1627844297867822,-0.14968944099378884,-0.4049608924188753,0.09134883157382634,ok
+common_training,G_O,partner_angle_max_deg,Largest ligand angle at partner metal,False,69,48,69,0,-0.08068822262032645,-0.10577274388016078,-0.32102863029895873,0.1767792222666737,ok
+common_training,G_OOH,q_site,Adsorption metal charge,True,69,48,69,0,-0.8014953887669837,-0.7492510047497261,-0.8709492099556794,-0.7169498912240446,ok
+common_training,G_OOH,q_partner,Partner metal charge,True,69,48,69,0,-0.1708832781920101,-0.12499086591158202,-0.4101827800237604,0.07495914415399212,ok
+common_training,G_OOH,metal_metal_distance_A,Metal separation,True,69,48,69,0,0.17485580732537676,0.11227948570863737,-0.09248586562029713,0.4227529924503017,ok
+common_training,G_OOH,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,69,48,69,0,-0.2613230330889464,-0.3571428571428572,-0.47567034902648037,-0.030243734636321278,ok
+common_training,G_OOH,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,69,48,69,0,0.14376151043961716,0.10840336134453783,-0.0972757989577939,0.3775445223951504,ok
+common_training,G_OOH,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,69,48,69,0,-0.207042380151481,-0.29883083668249916,-0.43561756551126407,0.03751867070335447,ok
+common_training,G_OOH,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.5929079914418792,-0.5495798319327732,-0.719022248857737,-0.4345457925896817,ok
+common_training,G_OOH,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,69,48,69,0,0.16610086537216984,0.1121666057727439,-0.06792173643421702,0.4101773372828745,ok
+common_training,G_OOH,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,69,48,69,0,0.25402987293095863,0.42882718304713197,0.011528660949315279,0.4768389543043638,ok
+common_training,G_OOH,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,69,48,69,0,0.25402987293095863,0.42882718304713197,0.023933716621375778,0.4810123698342489,ok
+common_training,G_OOH,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,69,48,69,0,0.1690020931569224,0.16898063573255392,-0.0683583578663472,0.3971981679612114,ok
+common_training,G_OOH,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,69,48,69,0,0.5992369453763661,0.5481964577910253,0.44079908245754884,0.7347062354921147,ok
+common_training,G_OOH,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,69,48,69,0,0.21399619471042297,0.41639641294023455,-0.023500691186486112,0.4385542064128373,ok
+common_training,G_OOH,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,69,48,69,0,0.05573117121035168,-0.09652904640116916,-0.23884896370449418,0.2896225671723117,ok
+common_training,G_OOH,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,69,48,69,0,0.05573117121035168,-0.09652904640116916,-0.25278846586392834,0.2937997057997438,ok
+common_training,G_OOH,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,69,48,69,0,-0.21299914090532485,-0.24746072341980271,-0.42057835287209494,0.023549021292843163,ok
+common_training,G_OOH,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,69,48,69,0,0.17139667644723403,0.2188892948483742,-0.07729159188539896,0.3940296841018618,ok
+common_training,G_OOH,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,69,48,69,0,-0.19433949046374027,-0.2518816222141031,-0.4192480733835381,0.03764325331698144,ok
+common_training,G_OOH,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.26346332891317026,-0.2436974789915967,-0.4552436652443897,-0.0219055597806247,ok
+common_training,G_OOH,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,69,48,69,0,0.1533228952778883,0.05842162952137377,-0.08377520090387112,0.3807565360022601,ok
+common_training,G_OOH,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,69,48,69,0,0.2208782594717683,0.32904640116916334,-0.009915794883654011,0.44565293140139556,ok
+common_training,G_OOH,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,69,48,69,0,0.2208782594717683,0.32904640116916334,-0.023058412878880438,0.435433626802292,ok
+common_training,G_OOH,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,69,48,69,0,0.18621054443476306,0.26192911947387654,-0.04126036971867423,0.41657517570768193,ok
+common_training,G_OOH,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,69,48,69,0,0.3135564231330607,0.24508809909772045,0.06736283560027033,0.49759599859223935,ok
+common_training,G_OOH,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,69,48,69,0,0.20471432262313038,0.3595370168423842,-0.03301167467608772,0.42390032960908436,ok
+common_training,G_OOH,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,69,48,69,0,0.04974727094590191,-0.034271099744245526,-0.18360015456411763,0.256217362411533,ok
+common_training,G_OOH,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,69,48,69,0,0.04974727094590191,-0.034271099744245526,-0.16805751159286836,0.26384323368112994,ok
+common_training,G_OOH,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,69,48,69,0,-0.10189640334312706,-0.10248447204968944,-0.3468060525276076,0.14716237250406905,ok
+common_training,G_OOH,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,69,48,69,0,-0.10382974521376265,-0.08176835951772016,-0.33998889913596225,0.15328123889251766,ok
+common_training,G_OOH,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,69,48,69,0,-0.17419115504501845,-0.11877968578735844,-0.4064302019484534,0.09170975376921546,ok
+common_training,G_OOH,site_angle_max_deg,Largest ligand angle at adsorption metal,False,69,48,69,0,-0.101481841554287,-0.10116916331750092,-0.34085250651949617,0.13691550179154557,ok
+common_training,G_OOH,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,69,48,69,0,0.25793942705144046,0.16018783583525206,-0.00366388657969564,0.4748556174072744,ok
+common_training,G_OOH,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,69,48,69,0,0.15091056895586732,0.4132140877625442,0.0899176042966325,0.4490885985876322,ok
+common_training,G_OOH,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,69,48,69,0,-0.15602278720962812,-0.15532756843110274,-0.40279525285768025,0.10228959446449676,ok
+common_training,G_OOH,spin_site_abs,Adsorption metal spin magnitude,True,69,48,69,0,-0.8334079731037383,-0.9022287175739861,-0.8986208369814017,-0.7732066412158107,ok
+common_training,G_OOH,spin_partner_abs,Partner metal spin magnitude,True,69,48,69,0,-0.14287218683704966,-0.11735476799415419,-0.3703015456301515,0.12075586263437921,ok
+common_training,G_OOH,spin_product_muB2,Signed metal spin product,False,69,48,69,0,0.377637637723113,0.28721256889407176,0.06570763078428876,0.6257803540080762,ok
+common_training,G_OOH,support_net_spin_muB,Net support spin,False,69,48,69,0,0.22029808730165792,0.18025014263884584,-0.007042203853447714,0.4165989431952962,ok
+common_training,G_OOH,support_abs_spin_sum_muB,Total support spin magnitude,False,69,48,69,0,-0.22566336219051392,-0.21076385152955768,-0.4425305002028784,0.008594609218294547,ok
+common_training,G_OOH,ligand_plane_rms_A,Ligand nonplanarity,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_OOH,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,69,48,69,0,0.16065816921919354,-0.23587869930580932,-0.2865456372547247,0.2966010741730284,ok
+common_training,G_OOH,shared_ligand_count,Shared ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_OOH,terminal_ligand_count,Terminal ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,G_OOH,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,69,48,69,0,0.22292209972763022,0.42063239064256164,-0.0216636648110153,0.44815274263262994,ok
+common_training,G_OOH,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,69,48,69,0,0.5325710309173456,0.5058458165875046,0.3658995410231721,0.6875062452908062,ok
+common_training,G_OOH,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,69,48,69,0,0.22292209972763022,0.42063239064256164,-0.016076513344252863,0.44498877955107413,ok
+common_training,G_OOH,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,69,48,69,0,0.0680945184026749,0.03894775301424918,-0.1660758230276103,0.2747149716890002,ok
+common_training,G_OOH,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,69,48,69,0,-0.010647258534264922,0.09623675557179395,-0.27198459815144466,0.2310541359801102,ok
+common_training,G_OOH,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,69,48,69,0,0.03899048874946471,-0.013445378151260508,-0.192896457089059,0.28537798494883954,ok
+common_training,G_OOH,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,69,48,69,0,-0.169318296420135,-0.0763244428206065,-0.4319987978594563,0.056827818287644445,ok
+common_training,G_OOH,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,69,48,69,0,-0.23171020524067568,-0.0763244428206065,-0.4757244566214504,0.04903363609052725,ok
+common_training,G_OOH,partner_angle_mean_deg,Mean ligand angle at partner metal,False,69,48,69,0,-0.1653621505566769,-0.13061746437705518,-0.40891857343830657,0.09397433464098168,ok
+common_training,G_OOH,partner_angle_std_deg,Spread of ligand angle at partner metal,False,69,48,69,0,-0.14623147878197262,-0.10862257946656924,-0.38532762522184194,0.10169188540477173,ok
+common_training,G_OOH,partner_angle_min_deg,Smallest ligand angle at partner metal,False,69,48,69,0,-0.2432974463789022,-0.18560467665327002,-0.4734531865222329,0.03601753362702589,ok
+common_training,G_OOH,partner_angle_max_deg,Largest ligand angle at partner metal,False,69,48,69,0,-0.1640469330740261,-0.13061746437705518,-0.4037885185500659,0.10075079113989133,ok
+common_training,overpotential,q_site,Adsorption metal charge,True,69,48,69,0,-0.18647127045673614,-0.21567409572524665,-0.3658244573573972,0.011039433960157016,ok
+common_training,overpotential,q_partner,Partner metal charge,True,69,48,69,0,0.060206353653427365,0.12290829375228353,-0.1583715622111537,0.28193912479726513,ok
+common_training,overpotential,metal_metal_distance_A,Metal separation,True,69,48,69,0,-0.08490922493722003,-0.08739345486483524,-0.2421344343831099,0.06774721819882694,ok
+common_training,overpotential,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,69,48,69,0,0.17892360074991878,0.20847643405188165,-0.007243403203840575,0.37095445377993364,ok
+common_training,overpotential,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,69,48,69,0,-0.1707137620649767,-0.18805261234928755,-0.37194202408640353,0.031197354015981855,ok
+common_training,overpotential,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,69,48,69,0,0.1767442716030545,0.20624771647789555,-0.0268770077512307,0.37603100363460706,ok
+common_training,overpotential,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,69,48,69,0,0.13163508412406671,0.09269272926561929,-0.04729488564291048,0.3195309720420982,ok
+common_training,overpotential,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,69,48,69,0,-0.14920177242642182,-0.1431494336865181,-0.35638513750175377,0.058029203434759986,ok
+common_training,overpotential,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,69,48,69,0,-0.16194865052577365,-0.1490683229813665,-0.34738023783193944,0.033402215431822126,ok
+common_training,overpotential,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,69,48,69,0,-0.16194865052577365,-0.1490683229813665,-0.35966540377343753,0.022042985462088917,ok
+common_training,overpotential,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,69,48,69,0,-0.16547842896925088,-0.19291194738765072,-0.36763852750981924,0.027781980986396067,ok
+common_training,overpotential,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,69,48,69,0,-0.07271535367473363,-0.05619342522544634,-0.25080434181813255,0.11988811451887978,ok
+common_training,overpotential,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,69,48,69,0,-0.16469427945378737,-0.1555046016030863,-0.37211356356384456,0.025530266806004398,ok
+common_training,overpotential,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,69,48,69,0,0.30795203502558166,0.19123127511874316,0.10870855927196117,0.4631425599852191,ok
+common_training,overpotential,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,69,48,69,0,0.30795203502558166,0.19123127511874316,0.1043425422501097,0.472971433811087,ok
+common_training,overpotential,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,69,48,69,0,0.14439681764440068,0.13894775301424916,-0.0588822672766326,0.34925056478506206,ok
+common_training,overpotential,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,69,48,69,0,-0.17313459747278534,-0.17763975155279504,-0.36511855744130817,0.018063203637961812,ok
+common_training,overpotential,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,69,48,69,0,0.15969293472635418,0.13850931677018635,-0.0404870419894354,0.350345916317976,ok
+common_training,overpotential,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.041197633965698366,0.01896236755571794,-0.27201759092457795,0.19450809047427328,ok
+common_training,overpotential,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,69,48,69,0,-0.17719039413780638,-0.18881987577639756,-0.37870129835563715,0.019235133177954604,ok
+common_training,overpotential,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,69,48,69,0,-0.15554514384799253,-0.13858238947753015,-0.3596271632675464,0.033636101320587135,ok
+common_training,overpotential,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,69,48,69,0,-0.15554514384799253,-0.13858238947753015,-0.35852300642149915,0.027493717573672843,ok
+common_training,overpotential,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,69,48,69,0,-0.15453752227244885,-0.06952868103763245,-0.36111283347471557,0.03854124323759384,ok
+common_training,overpotential,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,69,48,69,0,-0.0946870209271562,-0.14110468674946278,-0.29774476957953544,0.10894949594595561,ok
+common_training,overpotential,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,69,48,69,0,-0.15623020091088347,-0.09345623748088196,-0.36500525761628655,0.03987774592675846,ok
+common_training,overpotential,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,69,48,69,0,0.03359579294098146,0.08991596638655462,-0.11962375035203768,0.1622433265665494,ok
+common_training,overpotential,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,69,48,69,0,0.03359579294098146,0.08991596638655462,-0.1152084653613652,0.16196076311854138,ok
+common_training,overpotential,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,69,48,69,0,0.060355239217698385,0.07413226160029229,-0.1285997113284225,0.25146792682892855,ok
+common_training,overpotential,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,69,48,69,0,0.06487970949488159,0.08911216660577276,-0.12545653447693517,0.24973216350223462,ok
+common_training,overpotential,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,69,48,69,0,0.026311337626915794,0.031457800511508954,-0.14641567142071404,0.20422287352432208,ok
+common_training,overpotential,site_angle_max_deg,Largest ligand angle at adsorption metal,False,69,48,69,0,0.06037953618995885,0.07468030690537086,-0.13794684404862254,0.24902361878235296,ok
+common_training,overpotential,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,69,48,69,0,-0.08670137677322548,-0.06374989839502616,-0.2236139251604458,0.05987259495284725,ok
+common_training,overpotential,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,69,48,69,0,0.13131923401131448,0.22709873521117233,0.07080442461167087,0.3850894427410566,ok
+common_training,overpotential,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,69,48,69,0,0.12642399802561613,0.19282105983454031,-0.09176174134580993,0.3412968570460352,ok
+common_training,overpotential,spin_site_abs,Adsorption metal spin magnitude,True,69,48,69,0,-0.34678488159298543,-0.4807088052612349,-0.5155016157224066,-0.15115293670280575,ok
+common_training,overpotential,spin_partner_abs,Partner metal spin magnitude,True,69,48,69,0,-0.033029197733507196,0.016733649981731824,-0.26515368330279776,0.20413517848839308,ok
+common_training,overpotential,spin_product_muB2,Signed metal spin product,False,69,48,69,0,0.13477636275817337,0.13581341208662354,-0.05848464115068093,0.30936730550097385,ok
+common_training,overpotential,support_net_spin_muB,Net support spin,False,69,48,69,0,0.03366961415549156,-0.02274824405325525,-0.20378656283851798,0.21599616217542333,ok
+common_training,overpotential,support_abs_spin_sum_muB,Total support spin magnitude,False,69,48,69,0,0.09152954703052432,0.10369179518250889,-0.0963897005000904,0.25673032835995185,ok
+common_training,overpotential,ligand_plane_rms_A,Ligand nonplanarity,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,overpotential,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,69,48,69,0,0.043924055584043484,0.2027036901717209,0.01768269647573947,0.3086970956066986,ok
+common_training,overpotential,shared_ligand_count,Shared ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,overpotential,terminal_ligand_count,Terminal ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+common_training,overpotential,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,69,48,69,0,-0.15845935187061555,-0.10665180766172765,-0.35228712457815686,0.040944599095577516,ok
+common_training,overpotential,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,69,48,69,0,-0.12992165418031312,-0.1348191450493241,-0.3269073563619817,0.07720920296000489,ok
+common_training,overpotential,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,69,48,69,0,-0.15845935187061555,-0.10665180766172765,-0.35431243650896144,0.034572598081654964,ok
+common_training,overpotential,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,69,48,69,0,-0.027209846814116537,-0.08100109609061017,-0.26121707939657135,0.2032779564592949,ok
+common_training,overpotential,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,69,48,69,0,0.15266891738818536,0.19627329192546586,-0.05389451515921533,0.36877779134040717,ok
+common_training,overpotential,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,69,48,69,0,-0.1587289228492379,-0.1852758494702229,-0.35939908956843186,0.058054522372427864,ok
+common_training,overpotential,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,69,48,69,0,0.04858924403806733,0.10171720862257948,-0.048111411129381644,0.18346190588905428,ok
+common_training,overpotential,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,69,48,69,0,0.06479450990431128,0.10171720862257948,-0.029032190814666327,0.2013646118597489,ok
+common_training,overpotential,partner_angle_mean_deg,Mean ligand angle at partner metal,False,69,48,69,0,0.12721408648755417,0.17873584216295213,-0.06019311717469427,0.30524539530108724,ok
+common_training,overpotential,partner_angle_std_deg,Spread of ligand angle at partner metal,False,69,48,69,0,0.13794627774816826,0.17117281695286812,-0.04888420199301428,0.32143999712635296,ok
+common_training,overpotential,partner_angle_min_deg,Smallest ligand angle at partner metal,False,69,48,69,0,0.16324100965326904,0.18290098648154915,-0.005508134682606971,0.3324523346966692,ok
+common_training,overpotential,partner_angle_max_deg,Largest ligand angle at partner metal,False,69,48,69,0,0.12850644349828272,0.17873584216295213,-0.04577429095746728,0.3188497598798981,ok
+target_training,G_OH,q_site,Adsorption metal charge,True,81,56,81,0,-0.763871644062838,-0.7638211382113822,-0.8247572111328889,-0.6931683789865449,ok
+target_training,G_OH,q_partner,Partner metal charge,True,81,56,81,0,-0.011596551675243327,0.0031842818428184285,-0.23619730429018324,0.2170556366496678,ok
+target_training,G_OH,metal_metal_distance_A,Metal separation,True,81,56,81,0,0.19247234239479089,0.1861599724921424,-0.02837461265630844,0.39238306183005356,ok
+target_training,G_OH,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,81,56,81,0,-0.26211187810490677,-0.40458446251129176,-0.4517430835619691,-0.0645975308259896,ok
+target_training,G_OH,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,81,56,81,0,0.14232468065829532,0.06422764227642276,-0.06545278356276749,0.34788384031525815,ok
+target_training,G_OH,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,81,56,81,0,-0.2073287046059593,-0.3403794037940379,-0.41559499612749173,-0.0037794018682720874,ok
+target_training,G_OH,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,81,56,81,0,-0.5787831556021471,-0.5610885275519422,-0.6964117752954105,-0.4391236343717569,ok
+target_training,G_OH,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,81,56,81,0,0.1721749029602793,0.16910569105691056,-0.04230861420541279,0.37794898376210456,ok
+target_training,G_OH,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,81,56,81,0,0.24635588706197933,0.465063233965673,0.048351110521855145,0.43322102795436296,ok
+target_training,G_OH,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,81,56,81,0,0.24635588706197933,0.465063233965673,0.047716042707954084,0.43943606733675067,ok
+target_training,G_OH,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,81,56,81,0,0.16249621044067528,0.0955736224028907,-0.03720616077488988,0.37172960251712384,ok
+target_training,G_OH,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,81,56,81,0,0.5580250665162113,0.5600898836161455,0.4311764931347308,0.6884623486951188,ok
+target_training,G_OH,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,81,56,81,0,0.2072876227893569,0.4268250698647148,0.007599205051336514,0.4085623876953497,ok
+target_training,G_OH,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,81,56,81,0,0.03097999058910568,-0.13188798554652212,-0.2903792777183852,0.2740552248087518,ok
+target_training,G_OH,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,81,56,81,0,0.03097999058910568,-0.13188798554652212,-0.27530921985803714,0.2719683098186694,ok
+target_training,G_OH,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,81,56,81,0,-0.18924990584702855,-0.2248419150858175,-0.38279555639847,0.018787623708750985,ok
+target_training,G_OH,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,81,56,81,0,0.1786507706085408,0.23952122854561883,-0.033480079778720695,0.37230938776213707,ok
+target_training,G_OH,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,81,56,81,0,-0.18550172089896222,-0.24728997289972898,-0.3785445833470651,0.021892707300478452,ok
+target_training,G_OH,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,81,56,81,0,-0.12985563902632785,-0.1344850948509485,-0.33346450655394483,0.07902817305802712,ok
+target_training,G_OH,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,81,56,81,0,0.13030869475167592,0.034439927732610655,-0.08394771335843211,0.34577187403011705,ok
+target_training,G_OH,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,81,56,81,0,0.20028108666400773,0.28480126467931344,-0.0015126435385662182,0.3896779535560049,ok
+target_training,G_OH,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,81,56,81,0,0.20028108666400773,0.28480126467931344,-0.0022710338335452133,0.3903443019849631,ok
+target_training,G_OH,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,81,56,81,0,0.1885944354847384,0.28380758807588075,-0.009472759651261778,0.3833447784843667,ok
+target_training,G_OH,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,81,56,81,0,0.1711227665346024,0.1503743267296266,-0.04794370099381266,0.368802898761697,ok
+target_training,G_OH,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,81,56,81,0,0.19537669237941746,0.32297589687085515,0.0016824511749975043,0.39279058790187277,ok
+target_training,G_OH,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,81,56,81,0,0.04486693861712094,0.028500451671183376,-0.17586441510395806,0.23931495672813435,ok
+target_training,G_OH,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,81,56,81,0,0.04486693861712094,0.028500451671183376,-0.17615390300537365,0.23463499233413768,ok
+target_training,G_OH,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,81,56,81,0,-0.14317248450006423,-0.1720189701897019,-0.3538277607783661,0.05212338322105959,ok
+target_training,G_OH,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,81,56,81,0,-0.14786335718096644,-0.15941734417344172,-0.353653475537653,0.06568235213277748,ok
+target_training,G_OH,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,81,56,81,0,-0.17020467434978168,-0.17206413730803974,-0.37052619942795917,0.043959522928432714,ok
+target_training,G_OH,site_angle_max_deg,Largest ligand angle at adsorption metal,False,81,56,81,0,-0.1428280952481628,-0.17172538392050588,-0.35401070761271775,0.05942291914261597,ok
+target_training,G_OH,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,81,56,81,0,0.24095208255468906,0.22128236477863616,0.028961118507997312,0.420078321266246,ok
+target_training,G_OH,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,81,56,81,0,0.19137395751617264,0.3877466934934007,0.12374315374337419,0.4666779648905298,ok
+target_training,G_OH,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,81,56,81,0,-0.07897769809375219,-0.13491064252554802,-0.330239122589565,0.14599434355304422,ok
+target_training,G_OH,spin_site_abs,Adsorption metal spin magnitude,True,81,56,81,0,-0.8347454481928996,-0.8914859981933152,-0.8793043152797217,-0.7858055332368066,ok
+target_training,G_OH,spin_partner_abs,Partner metal spin magnitude,True,81,56,81,0,0.05325321717005986,0.07710027100271002,-0.18532620683334755,0.306001432329234,ok
+target_training,G_OH,spin_product_muB2,Signed metal spin product,False,81,56,81,0,0.214576301272101,0.21242835977779656,-0.02112317437070661,0.45098561384923624,ok
+target_training,G_OH,support_net_spin_muB,Net support spin,False,81,56,81,0,0.2393249652726497,0.2135125236554504,0.007784555959488477,0.44402213537074003,ok
+target_training,G_OH,support_abs_spin_sum_muB,Total support spin magnitude,False,81,56,81,0,-0.20332526702141382,-0.17037183602380854,-0.3965080470783495,0.002509160145150856,ok
+target_training,G_OH,ligand_plane_rms_A,Ligand nonplanarity,False,81,56,81,0,,,,,constant_or_numerically_constant
+target_training,G_OH,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,81,56,81,0,0.10568881224287183,-0.23974706413730804,-0.3009792994858216,0.21398126173959328,ok
+target_training,G_OH,shared_ligand_count,Shared ligand count,False,81,56,81,0,,,,,constant_or_numerically_constant
+target_training,G_OH,terminal_ligand_count,Terminal ligand count,False,81,56,81,0,,,,,constant_or_numerically_constant
+target_training,G_OH,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,81,56,81,0,0.21519547229456212,0.420745931519489,0.009022773203131738,0.41455619158706736,ok
+target_training,G_OH,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,81,56,81,0,0.5084447147971981,0.520483288166215,0.3423342052725307,0.6562743988159605,ok
+target_training,G_OH,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,81,56,81,0,0.21519547229456212,0.420745931519489,0.01663549088263595,0.4094365727215117,ok
+target_training,G_OH,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,81,56,81,0,-0.10778084828367304,-0.11829268292682928,-0.29878392872406817,0.08185801592863721,ok
+target_training,G_OH,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,81,56,81,0,-0.02481365600964084,0.044444444444444446,-0.24906711510247037,0.1858665901309825,ok
+target_training,G_OH,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,81,56,81,0,0.054579967601764964,0.030329719963866308,-0.1702333273154787,0.28375999976632255,ok
+target_training,G_OH,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,81,56,81,0,-0.15469799104209017,-0.16632791327913277,-0.35409658868824384,0.010686156873902529,ok
+target_training,G_OH,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,81,56,81,0,-0.21532958477152808,-0.16632791327913277,-0.39641478648055267,-0.001262687800629789,ok
+target_training,G_OH,partner_angle_mean_deg,Mean ligand angle at partner metal,False,81,56,81,0,-0.16801865198347823,-0.18005871725383918,-0.36570982872224417,0.03470105469503808,ok
+target_training,G_OH,partner_angle_std_deg,Spread of ligand angle at partner metal,False,81,56,81,0,-0.1457904206914364,-0.1506323396567299,-0.34241843939094563,0.05467802280736091,ok
+target_training,G_OH,partner_angle_min_deg,Smallest ligand angle at partner metal,False,81,56,81,0,-0.22540361664007136,-0.23421409214092143,-0.42893806112332933,-0.018158439744011507,ok
+target_training,G_OH,partner_angle_max_deg,Largest ligand angle at partner metal,False,81,56,81,0,-0.1669009579040079,-0.18005871725383918,-0.3678415720661092,0.0357664776000588,ok
+target_training,G_O,q_site,Adsorption metal charge,True,81,56,81,0,-0.7909452234186289,-0.7573396567299006,-0.8531556428233867,-0.723373669781087,ok
+target_training,G_O,q_partner,Partner metal charge,True,81,56,81,0,0.02597415220116183,0.01906052393857272,-0.19610431013112414,0.25578036778083213,ok
+target_training,G_O,metal_metal_distance_A,Metal separation,True,81,56,81,0,0.10564380266683251,0.10995228659205887,-0.12509840195179656,0.31795066795374205,ok
+target_training,G_O,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,81,56,81,0,-0.19824294611693197,-0.37960704607046064,-0.39218517008087045,-0.006677847795284918,ok
+target_training,G_O,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,81,56,81,0,0.06249656466191043,0.03484643179765131,-0.15534669256585118,0.2726954796090865,ok
+target_training,G_O,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,81,56,81,0,-0.1361145566521026,-0.3197606142728094,-0.3371751935919391,0.0632034662555716,ok
+target_training,G_O,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,81,56,81,0,-0.5988858784413545,-0.5679313459801264,-0.7066629699933257,-0.47193765992322345,ok
+target_training,G_O,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,81,56,81,0,0.10510971747187393,0.13014905149051492,-0.08943722041109697,0.30442680817258166,ok
+target_training,G_O,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,81,56,81,0,0.17814662418622035,0.4285907859078591,-0.029160176241539913,0.365462088113712,ok
+target_training,G_O,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,81,56,81,0,0.17814662418622035,0.4285907859078591,-0.01458754240491088,0.3779385605793802,ok
+target_training,G_O,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,81,56,81,0,0.08200300279063237,0.06869918699186991,-0.1227471067501463,0.2823271026316677,ok
+target_training,G_O,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,81,56,81,0,0.5762044790949455,0.5408258901190559,0.4424697146552676,0.691342971583315,ok
+target_training,G_O,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,81,56,81,0,0.1334870712577483,0.3946178230858448,-0.0681148152399008,0.3318728861319429,ok
+target_training,G_O,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,81,56,81,0,0.02365591263757891,-0.11375338753387534,-0.2533700132442751,0.2632776847079254,ok
+target_training,G_O,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,81,56,81,0,0.02365591263757891,-0.11375338753387534,-0.27555078520833676,0.2505733817659916,ok
+target_training,G_O,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,81,56,81,0,-0.12009947648105217,-0.2075880758807588,-0.31130375931628856,0.08609508930712828,ok
+target_training,G_O,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,81,56,81,0,0.1031646948736059,0.2015582655826558,-0.10001120279479245,0.3025617175322378,ok
+target_training,G_O,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,81,56,81,0,-0.11326811670944821,-0.2284327009936766,-0.31996203610324386,0.07921929228411231,ok
+target_training,G_O,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,81,56,81,0,-0.11728554180945291,-0.14916440831074976,-0.3102188856407456,0.08671721152498403,ok
+target_training,G_O,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,81,56,81,0,0.06131465555173232,-0.0007226738934056008,-0.133708487880351,0.2637118944090161,ok
+target_training,G_O,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,81,56,81,0,0.12836617956432345,0.2546070460704607,-0.0698301384953778,0.3283876599450892,ok
+target_training,G_O,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,81,56,81,0,0.12836617956432345,0.2546070460704607,-0.08243986203124652,0.3201207364037325,ok
+target_training,G_O,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,81,56,81,0,0.1101448591008612,0.24171183378500447,-0.08387653188127996,0.3078248781347025,ok
+target_training,G_O,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,81,56,81,0,0.16352316100423397,0.14502196276853607,-0.04421179148446644,0.36838022861391384,ok
+target_training,G_O,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,81,56,81,0,0.12043027586411748,0.2923722367128126,-0.08053049436971632,0.32178538809825646,ok
+target_training,G_O,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,81,56,81,0,0.04331294718495565,0.03134598012646793,-0.1697889167915695,0.23681556787452968,ok
+target_training,G_O,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,81,56,81,0,0.04331294718495565,0.03134598012646793,-0.16681766844358625,0.23067264625959993,ok
+target_training,G_O,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,81,56,81,0,-0.0475311113187842,-0.09076332429990967,-0.2800180363999695,0.16350681627233773,ok
+target_training,G_O,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,81,56,81,0,-0.055525966176145185,-0.0802393857271906,-0.281965080112906,0.1444929699346918,ok
+target_training,G_O,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,81,56,81,0,-0.09822172435813652,-0.10289069557362239,-0.31817172088157053,0.13016489458045344,ok
+target_training,G_O,site_angle_max_deg,Largest ligand angle at adsorption metal,False,81,56,81,0,-0.04714142409534416,-0.09033423667570008,-0.27515791503970377,0.1665276828211469,ok
+target_training,G_O,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,81,56,81,0,0.1794636335025441,0.1484626909962208,-0.051830428035937466,0.36566640049837146,ok
+target_training,G_O,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,81,56,81,0,0.16946514380836564,0.35707389045477783,0.10681949748613163,0.42684307635012053,ok
+target_training,G_O,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,81,56,81,0,-0.06966375281811303,-0.10611253952536824,-0.30465237162761966,0.1519363485090568,ok
+target_training,G_O,spin_site_abs,Adsorption metal spin magnitude,True,81,56,81,0,-0.8968862798635381,-0.8929765130984644,-0.926189316977295,-0.8654115864906434,ok
+target_training,G_O,spin_partner_abs,Partner metal spin magnitude,True,81,56,81,0,0.04301544007599257,0.057971996386630524,-0.19547570727876798,0.2866009169435035,ok
+target_training,G_O,spin_product_muB2,Signed metal spin product,False,81,56,81,0,0.26160710431610196,0.1969338510263273,-0.008302221288823486,0.5084525510718831,ok
+target_training,G_O,support_net_spin_muB,Net support spin,False,81,56,81,0,0.2101324533787019,0.18360767003016568,-0.021412647978714557,0.39605591481435937,ok
+target_training,G_O,support_abs_spin_sum_muB,Total support spin magnitude,False,81,56,81,0,-0.19586769992973133,-0.15365764290997874,-0.39660648704059287,0.008256698077627548,ok
+target_training,G_O,ligand_plane_rms_A,Ligand nonplanarity,False,81,56,81,0,,,,,constant_or_numerically_constant
+target_training,G_O,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,81,56,81,0,0.10886605261546335,-0.2556684733514002,-0.37640327468293416,0.21511519917591457,ok
+target_training,G_O,shared_ligand_count,Shared ligand count,False,81,56,81,0,,,,,constant_or_numerically_constant
+target_training,G_O,terminal_ligand_count,Terminal ligand count,False,81,56,81,0,,,,,constant_or_numerically_constant
+target_training,G_O,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,81,56,81,0,0.1401548906222089,0.3813998174596356,-0.06214080098971992,0.3369086239651411,ok
+target_training,G_O,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,81,56,81,0,0.5532440352986168,0.5155149051490515,0.4111468435449038,0.6846853820365157,ok
+target_training,G_O,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,81,56,81,0,0.1401548906222089,0.3813998174596356,-0.0640882116631438,0.33227680531443843,ok
+target_training,G_O,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,81,56,81,0,-0.09880515235000699,-0.09997741644083107,-0.31418289635426305,0.10263524705899979,ok
+target_training,G_O,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,81,56,81,0,0.06206609920850421,0.09832881662149955,-0.14347099382444226,0.26148860324533035,ok
+target_training,G_O,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,81,56,81,0,-0.031392054130972256,-0.03724028906955736,-0.24553764700267222,0.19568719708975013,ok
+target_training,G_O,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,81,56,81,0,-0.1148879335389291,-0.0901761517615176,-0.3306534886293878,0.05997410630735433,ok
+target_training,G_O,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,81,56,81,0,-0.16629825329567904,-0.0901761517615176,-0.3669226132837553,0.05160187596987622,ok
+target_training,G_O,partner_angle_mean_deg,Mean ligand angle at partner metal,False,81,56,81,0,-0.10014066544475297,-0.11384372177055103,-0.3070506262850153,0.10721474712662019,ok
+target_training,G_O,partner_angle_std_deg,Spread of ligand angle at partner metal,False,81,56,81,0,-0.07436865362972699,-0.08495934959349594,-0.2940991141388236,0.13707102275178917,ok
+target_training,G_O,partner_angle_min_deg,Smallest ligand angle at partner metal,False,81,56,81,0,-0.17347923211623148,-0.17362240289069558,-0.38902367472650673,0.04084319388597078,ok
+target_training,G_O,partner_angle_max_deg,Largest ligand angle at partner metal,False,81,56,81,0,-0.09900879810210625,-0.11384372177055103,-0.310131475661228,0.10306260708127815,ok
+target_training,G_OOH,q_site,Adsorption metal charge,True,70,49,70,0,-0.8075436490660137,-0.7575365234887586,-0.8741122425995752,-0.7243422504142942,ok
+target_training,G_OOH,q_partner,Partner metal charge,True,70,49,70,0,-0.1961478215962858,-0.15209517977429796,-0.41660558127766545,0.0565494640300307,ok
+target_training,G_OOH,metal_metal_distance_A,Metal separation,True,70,49,70,0,0.17091074054157288,0.11451670957781873,-0.11562549309198882,0.403533212654111,ok
+target_training,G_OOH,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,70,49,70,0,-0.28228571581162737,-0.38112151167876823,-0.49550576418273323,-0.05309484825980855,ok
+target_training,G_OOH,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,70,49,70,0,0.162688968709423,0.12990989414749368,-0.07686724564895356,0.40142897938806843,ok
+target_training,G_OOH,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,70,49,70,0,-0.2273735531420861,-0.3255883124835972,-0.44468371615553165,-0.0015742645053764338,ok
+target_training,G_OOH,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,70,49,70,0,-0.6085146746319291,-0.566302160790832,-0.7242080141339633,-0.4576435358100584,ok
+target_training,G_OOH,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,70,49,70,0,0.17808218965822506,0.11640276441256232,-0.04999769297761745,0.4085359838036692,ok
+target_training,G_OOH,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,70,49,70,0,0.27147202280781624,0.4497069372758289,0.040216156059042975,0.47941848926553854,ok
+target_training,G_OOH,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,70,49,70,0,0.27147202280781624,0.4497069372758289,0.03954975389591243,0.48284891314418915,ok
+target_training,G_OOH,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,70,49,70,0,0.1874107071996684,0.1968156766687079,-0.037750399686211876,0.4197053292796825,ok
+target_training,G_OOH,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,70,49,70,0,0.606296855730434,0.5633852102849671,0.4545434683183224,0.7349842306121174,ok
+target_training,G_OOH,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,70,49,70,0,0.23201274555384255,0.43922200445614273,0.006721645761681014,0.45642913373884897,ok
+target_training,G_OOH,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,70,49,70,0,0.06131672709312121,-0.09614206981016535,-0.23952776342588739,0.3031393633038449,ok
+target_training,G_OOH,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,70,49,70,0,0.06131672709312121,-0.09614206981016535,-0.23393315044474575,0.29805601040030316,ok
+target_training,G_OOH,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,70,49,70,0,-0.23625258123840762,-0.27442918379844283,-0.43747776355096946,-0.008987582948751115,ok
+target_training,G_OOH,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,70,49,70,0,0.19045067918144487,0.2487446417636252,-0.04981610513385446,0.40790705102842856,ok
+target_training,G_OOH,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,70,49,70,0,-0.21580257880154052,-0.27995800892310385,-0.4248363928412181,0.02575350549523728,ok
+target_training,G_OOH,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,70,49,70,0,-0.2922569739827446,-0.2701600909806666,-0.4904803382072362,-0.05985959484101413,ok
+target_training,G_OOH,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,70,49,70,0,0.16638814852353645,0.06527862829148806,-0.07329519473923561,0.3996619208064313,ok
+target_training,G_OOH,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,70,49,70,0,0.23980400351549502,0.3533374157991427,0.01285639497317753,0.45276094577332615,ok
+target_training,G_OOH,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,70,49,70,0,0.23980400351549502,0.3533374157991427,0.0034016656604961976,0.45977272705379674,ok
+target_training,G_OOH,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,70,49,70,0,0.2048263914948175,0.28800629866153443,-0.027650418903172724,0.42698383125838574,ok
+target_training,G_OOH,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,70,49,70,0,0.3272530350332741,0.26913016473923496,0.11372007838969132,0.5084383128827797,ok
+target_training,G_OOH,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,70,49,70,0,0.2235797276650118,0.38329556914770324,-0.007382566787466995,0.44213410113333823,ok
+target_training,G_OOH,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,70,49,70,0,0.055097090221643746,-0.03448517190097104,-0.17745221777380737,0.26161774367136204,ok
+target_training,G_OOH,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,70,49,70,0,0.055097090221643746,-0.03448517190097104,-0.17918176950902015,0.2544035746342127,ok
+target_training,G_OOH,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,70,49,70,0,-0.10788905877089949,-0.1095792144169364,-0.3448791477032061,0.14448385604814856,ok
+target_training,G_OOH,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,70,49,70,0,-0.10869513355686378,-0.08931851981453941,-0.35176002793987293,0.12977376457722556,ok
+target_training,G_OOH,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,70,49,70,0,-0.1737720913365481,-0.12826524363572742,-0.3982395205729652,0.09108616983723315,ok
+target_training,G_OOH,site_angle_max_deg,Largest ligand angle at adsorption metal,False,70,49,70,0,-0.10746603745906796,-0.1083194821100516,-0.3378227777004098,0.13564529554695232,ok
+target_training,G_OOH,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,70,49,70,0,0.2535282961108575,0.17209005531605587,-0.005675524295757988,0.46967375544796486,ok
+target_training,G_OOH,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,70,49,70,0,0.1524031615143333,0.3742442467957261,0.09397315438858664,0.4296343724955914,ok
+target_training,G_OOH,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,70,49,70,0,-0.13842895970320707,-0.11518169047084398,-0.4053220958757881,0.10857208372751993,ok
+target_training,G_OOH,spin_site_abs,Adsorption metal spin magnitude,True,70,49,70,0,-0.8392346976922535,-0.9026506867290699,-0.9057796412535354,-0.7754570771566609,ok
+target_training,G_OOH,spin_partner_abs,Partner metal spin magnitude,True,70,49,70,0,-0.1705682539708978,-0.14509666695827136,-0.41051601459673603,0.0954042411992985,ok
+target_training,G_OOH,spin_product_muB2,Signed metal spin product,False,70,49,70,0,0.4122944301188555,0.314290969440346,0.13227613166433125,0.6597788148856062,ok
+target_training,G_OOH,support_net_spin_muB,Net support spin,False,70,49,70,0,0.2221251420694154,0.17926484916185442,-0.0077531425577023845,0.4229014324669251,ok
+target_training,G_OOH,support_abs_spin_sum_muB,Total support spin magnitude,False,70,49,70,0,-0.23318083809958354,-0.21548880833454462,-0.4420449729699555,0.007808062144189149,ok
+target_training,G_OOH,ligand_plane_rms_A,Ligand nonplanarity,False,70,49,70,0,,,,,constant_or_numerically_constant
+target_training,G_OOH,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,70,49,70,0,0.16086219120124431,-0.23754702125798272,-0.320770818446584,0.2971137794460143,ok
+target_training,G_OOH,shared_ligand_count,Shared ligand count,False,70,49,70,0,,,,,constant_or_numerically_constant
+target_training,G_OOH,terminal_ligand_count,Terminal ligand count,False,70,49,70,0,,,,,constant_or_numerically_constant
+target_training,G_OOH,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,70,49,70,0,0.2407754852015418,0.44329726268724085,0.0008301617305674735,0.4638058372745189,ok
+target_training,G_OOH,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,70,49,70,0,0.5393582778865964,0.5183273554369696,0.36560478544479524,0.6915947382986962,ok
+target_training,G_OOH,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,70,49,70,0,0.2407754852015418,0.44329726268724085,-0.0019468088696554344,0.4562760929427702,ok
+target_training,G_OOH,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,70,49,70,0,0.09423392072666559,0.06856792931502055,-0.1326657034828982,0.3081661083565651,ok
+target_training,G_OOH,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,70,49,70,0,-0.012240173721237821,0.09047327442918379,-0.25418725932083674,0.21624536799651634,ok
+target_training,G_OOH,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,70,49,70,0,0.0413200821848346,-0.010795206018721021,-0.1936598803844828,0.30336477492461156,ok
+target_training,G_OOH,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,70,49,70,0,-0.16174032727255291,-0.06559356136820926,-0.42548519867981294,0.05431122591379989,ok
+target_training,G_OOH,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,70,49,70,0,-0.21976598690053584,-0.06559356136820926,-0.46144035986851606,0.051682197858975536,ok
+target_training,G_OOH,partner_angle_mean_deg,Mean ligand angle at partner metal,False,70,49,70,0,-0.1703445743521964,-0.13722334004024145,-0.41345232138758276,0.09219953765028854,ok
+target_training,G_OOH,partner_angle_std_deg,Spread of ligand angle at partner metal,False,70,49,70,0,-0.1504888468217428,-0.11580789082320006,-0.3904509936445874,0.09273232451808922,ok
+target_training,G_OOH,partner_angle_min_deg,Smallest ligand angle at partner metal,False,70,49,70,0,-0.24189798841092802,-0.19184673256932902,-0.4748944995132639,0.023444114865810394,ok
+target_training,G_OOH,partner_angle_max_deg,Largest ligand angle at partner metal,False,70,49,70,0,-0.16903197013762175,-0.1356136820925553,-0.40804784407497013,0.0838231675092478,ok
+target_training,overpotential,q_site,Adsorption metal charge,True,69,48,69,0,-0.18647127045673614,-0.21567409572524665,-0.38222539761392654,0.011153975679431511,ok
+target_training,overpotential,q_partner,Partner metal charge,True,69,48,69,0,0.060206353653427365,0.12290829375228353,-0.16214921807834068,0.2881031155956338,ok
+target_training,overpotential,metal_metal_distance_A,Metal separation,True,69,48,69,0,-0.08490922493722003,-0.08739345486483524,-0.2497797814413939,0.07558303906279001,ok
+target_training,overpotential,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,69,48,69,0,0.17892360074991878,0.20847643405188165,-0.007324322132016739,0.367980956245468,ok
+target_training,overpotential,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,69,48,69,0,-0.1707137620649767,-0.18805261234928755,-0.36280443717771044,0.021195336676612383,ok
+target_training,overpotential,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,69,48,69,0,0.1767442716030545,0.20624771647789555,-0.020598811686873,0.374735276563575,ok
+target_training,overpotential,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,69,48,69,0,0.13163508412406671,0.09269272926561929,-0.047659878315754814,0.3149861244263452,ok
+target_training,overpotential,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,69,48,69,0,-0.14920177242642182,-0.1431494336865181,-0.3642437359037021,0.04642590663735361,ok
+target_training,overpotential,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,69,48,69,0,-0.16194865052577365,-0.1490683229813665,-0.35918396240729455,0.023221623561161017,ok
+target_training,overpotential,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,69,48,69,0,-0.16194865052577365,-0.1490683229813665,-0.35172489033805326,0.026455013051913345,ok
+target_training,overpotential,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,69,48,69,0,-0.16547842896925088,-0.19291194738765072,-0.3581513666580255,0.034672313133850025,ok
+target_training,overpotential,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,69,48,69,0,-0.07271535367473363,-0.05619342522544634,-0.25739764419957717,0.10537841729914825,ok
+target_training,overpotential,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,69,48,69,0,-0.16469427945378737,-0.1555046016030863,-0.3672909948081707,0.02907528226576895,ok
+target_training,overpotential,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,69,48,69,0,0.30795203502558166,0.19123127511874316,0.10458281987585606,0.47580426980271967,ok
+target_training,overpotential,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,69,48,69,0,0.30795203502558166,0.19123127511874316,0.09510597967632343,0.471748386103767,ok
+target_training,overpotential,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,69,48,69,0,0.14439681764440068,0.13894775301424916,-0.04669234296831515,0.34525208740650204,ok
+target_training,overpotential,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,69,48,69,0,-0.17313459747278534,-0.17763975155279504,-0.3640977792339982,0.02102283920666361,ok
+target_training,overpotential,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,69,48,69,0,0.15969293472635418,0.13850931677018635,-0.03675601168767066,0.3671758709240312,ok
+target_training,overpotential,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,69,48,69,0,-0.041197633965698366,0.01896236755571794,-0.26821283970215426,0.19987495251883244,ok
+target_training,overpotential,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,69,48,69,0,-0.17719039413780638,-0.18881987577639756,-0.37612794766770213,0.009635686159119578,ok
+target_training,overpotential,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,69,48,69,0,-0.15554514384799253,-0.13858238947753015,-0.3565245496510777,0.048044517104984065,ok
+target_training,overpotential,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,69,48,69,0,-0.15554514384799253,-0.13858238947753015,-0.34729232161441487,0.03905711092448,ok
+target_training,overpotential,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,69,48,69,0,-0.15453752227244885,-0.06952868103763245,-0.36163320560054296,0.03502206455551842,ok
+target_training,overpotential,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,69,48,69,0,-0.0946870209271562,-0.14110468674946278,-0.2925618363847564,0.12019578205180585,ok
+target_training,overpotential,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,69,48,69,0,-0.15623020091088347,-0.09345623748088196,-0.37432436350783793,0.039020553371281595,ok
+target_training,overpotential,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,69,48,69,0,0.03359579294098146,0.08991596638655462,-0.119845729243604,0.1658523036250064,ok
+target_training,overpotential,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,69,48,69,0,0.03359579294098146,0.08991596638655462,-0.12257103296113235,0.17233471769907793,ok
+target_training,overpotential,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,69,48,69,0,0.060355239217698385,0.07413226160029229,-0.1314361599221797,0.24657708331801204,ok
+target_training,overpotential,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,69,48,69,0,0.06487970949488159,0.08911216660577276,-0.11745818092357616,0.24029180871451344,ok
+target_training,overpotential,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,69,48,69,0,0.026311337626915794,0.031457800511508954,-0.14164636341070871,0.2024232121190891,ok
+target_training,overpotential,site_angle_max_deg,Largest ligand angle at adsorption metal,False,69,48,69,0,0.06037953618995885,0.07468030690537086,-0.12831343482323745,0.24452798461629677,ok
+target_training,overpotential,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,69,48,69,0,-0.08670137677322548,-0.06374989839502616,-0.24565326028491247,0.05473846970883326,ok
+target_training,overpotential,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,69,48,69,0,0.13131923401131448,0.22709873521117233,0.06840377052207083,0.3737863018173669,ok
+target_training,overpotential,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,69,48,69,0,0.12642399802561613,0.19282105983454031,-0.0893843158877391,0.3418084068502369,ok
+target_training,overpotential,spin_site_abs,Adsorption metal spin magnitude,True,69,48,69,0,-0.34678488159298543,-0.4807088052612349,-0.505006098897896,-0.1630780766715096,ok
+target_training,overpotential,spin_partner_abs,Partner metal spin magnitude,True,69,48,69,0,-0.033029197733507196,0.016733649981731824,-0.27688793342703366,0.2053485908800231,ok
+target_training,overpotential,spin_product_muB2,Signed metal spin product,False,69,48,69,0,0.13477636275817337,0.13581341208662354,-0.06233669535593482,0.31098983247718,ok
+target_training,overpotential,support_net_spin_muB,Net support spin,False,69,48,69,0,0.03366961415549156,-0.02274824405325525,-0.1891584857327056,0.22396270748354863,ok
+target_training,overpotential,support_abs_spin_sum_muB,Total support spin magnitude,False,69,48,69,0,0.09152954703052432,0.10369179518250889,-0.10488897639278023,0.26237680499774596,ok
+target_training,overpotential,ligand_plane_rms_A,Ligand nonplanarity,False,69,48,69,0,,,,,constant_or_numerically_constant
+target_training,overpotential,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,69,48,69,0,0.043924055584043484,0.2027036901717209,0.015974968601856526,0.31549182309874346,ok
+target_training,overpotential,shared_ligand_count,Shared ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+target_training,overpotential,terminal_ligand_count,Terminal ligand count,False,69,48,69,0,,,,,constant_or_numerically_constant
+target_training,overpotential,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,69,48,69,0,-0.15845935187061555,-0.10665180766172765,-0.36466264500734774,0.03723186725676133,ok
+target_training,overpotential,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,69,48,69,0,-0.12992165418031312,-0.1348191450493241,-0.3177657823293975,0.07501453651679965,ok
+target_training,overpotential,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,69,48,69,0,-0.15845935187061555,-0.10665180766172765,-0.35014577058173924,0.034324061226516114,ok
+target_training,overpotential,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,69,48,69,0,-0.027209846814116537,-0.08100109609061017,-0.2601512511081503,0.2044325451257635,ok
+target_training,overpotential,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,69,48,69,0,0.15266891738818536,0.19627329192546586,-0.045635123159322395,0.3558322782121072,ok
+target_training,overpotential,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,69,48,69,0,-0.1587289228492379,-0.1852758494702229,-0.35818689399747927,0.04347238398102424,ok
+target_training,overpotential,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,69,48,69,0,0.04858924403806733,0.10171720862257948,-0.0512810691668668,0.1824165796408362,ok
+target_training,overpotential,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,69,48,69,0,0.06479450990431128,0.10171720862257948,-0.03753928262007096,0.20344914820111315,ok
+target_training,overpotential,partner_angle_mean_deg,Mean ligand angle at partner metal,False,69,48,69,0,0.12721408648755417,0.17873584216295213,-0.05285779174388726,0.31908533827758084,ok
+target_training,overpotential,partner_angle_std_deg,Spread of ligand angle at partner metal,False,69,48,69,0,0.13794627774816826,0.17117281695286812,-0.04371255093613718,0.3233425913584,ok
+target_training,overpotential,partner_angle_min_deg,Smallest ligand angle at partner metal,False,69,48,69,0,0.16324100965326904,0.18290098648154915,-0.01461717859469359,0.3443205253731349,ok
+target_training,overpotential,partner_angle_max_deg,Largest ligand angle at partner metal,False,69,48,69,0,0.12850644349828272,0.17873584216295213,-0.04768611111491762,0.3072141099254072,ok
+all_verified_available,G_OH,q_site,Adsorption metal charge,True,136,85,136,0,-0.8026163938866386,-0.8144935833214063,-0.8428124994001902,-0.7592017371236095,ok
+all_verified_available,G_OH,q_partner,Partner metal charge,True,136,85,136,0,-0.05750475812938618,-0.04947760125948188,-0.25049451303610903,0.14228234071231122,ok
+all_verified_available,G_OH,metal_metal_distance_A,Metal separation,True,136,85,136,0,0.11409743506092793,0.1210058817418919,-0.03699610107288317,0.25177909575889534,ok
+all_verified_available,G_OH,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,136,85,136,0,-0.27324577659428123,-0.45858976193883877,-0.42285024952352473,-0.12138184487847326,ok
+all_verified_available,G_OH,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,136,85,136,0,0.13622468586523578,0.10104956824578978,-0.019531373982561603,0.29184740651791813,ok
+all_verified_available,G_OH,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,136,85,136,0,-0.2097337124292788,-0.3890940317732932,-0.3619898671342809,-0.05507381107253539,ok
+all_verified_available,G_OH,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,136,85,136,0,-0.6587494658884017,-0.6877725299365488,-0.7354489364043854,-0.5636799913490125,ok
+all_verified_available,G_OH,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,136,85,136,0,0.18669607868124344,0.21251848671342013,0.029843382110978842,0.33435502389592164,ok
+all_verified_available,G_OH,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,136,85,136,0,0.253073455484959,0.48693287533991697,0.09581158964715436,0.39805487604383855,ok
+all_verified_available,G_OH,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,136,85,136,0,0.253073455484959,0.48693287533991697,0.10919642506577916,0.3972904332686305,ok
+all_verified_available,G_OH,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,136,85,136,0,0.16392340171611178,0.17290205619960877,0.005032009652759188,0.32222499089081114,ok
+all_verified_available,G_OH,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,136,85,136,0,0.6093662263876634,0.6602745836808593,0.5301724139203567,0.6843982985801841,ok
+all_verified_available,G_OH,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,136,85,136,0,0.21112420530870396,0.4436007813485512,0.05534232942600399,0.35522826987039624,ok
+all_verified_available,G_OH,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,136,85,136,0,-0.0005855070690027648,-0.1450741853919183,-0.2065375792894512,0.17247059442793083,ok
+all_verified_available,G_OH,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,136,85,136,0,-0.0005855070690027648,-0.1450741853919183,-0.20780521811723587,0.1778229965357321,ok
+all_verified_available,G_OH,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,136,85,136,0,-0.2001465969507572,-0.27106054100472304,-0.3475419677750093,-0.038300062231557026,ok
+all_verified_available,G_OH,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,136,85,136,0,0.1864904915082556,0.29829206621821475,0.027089951179446237,0.3346186359951643,ok
+all_verified_available,G_OH,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,136,85,136,0,-0.19542976621568173,-0.3202614379084967,-0.3437271487411124,-0.04457257680663387,ok
+all_verified_available,G_OH,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,136,85,136,0,-0.162225460034697,-0.16861790945088495,-0.3234615294683149,0.027564991082480044,ok
+all_verified_available,G_OH,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,136,85,136,0,0.18232568005141275,0.17878917990553886,0.021016393706194597,0.34136744595131174,ok
+all_verified_available,G_OH,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,136,85,136,0,0.2075338699909827,0.3348742903487429,0.046446407655156355,0.3585938943480227,ok
+all_verified_available,G_OH,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,136,85,136,0,0.2075338699909827,0.3348742903487429,0.05592378123169806,0.35818516716840987,ok
+all_verified_available,G_OH,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,136,85,136,0,0.19497822150569177,0.3344926291684557,0.027856489343613587,0.3493852337386995,ok
+all_verified_available,G_OH,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,136,85,136,0,0.19175990382854208,0.20963869504912838,0.00913590064391869,0.35656581295424816,ok
+all_verified_available,G_OH,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,136,85,136,0,0.2026293950318008,0.3706099784957558,0.04579413453431792,0.35116753538029727,ok
+all_verified_available,G_OH,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,136,85,136,0,0.011815322662723435,-0.022274700634511712,-0.16272907257671673,0.16699792618068032,ok
+all_verified_available,G_OH,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,136,85,136,0,0.011815322662723435,-0.022274700634511712,-0.1614508397659762,0.15487995636833973,ok
+all_verified_available,G_OH,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,136,85,136,0,-0.07178334897171092,-0.12629645532178807,-0.22904740470665697,0.0866956236916309,ok
+all_verified_available,G_OH,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,136,85,136,0,-0.08028008234267185,-0.12381088688516768,-0.2447104899302515,0.08246727513521128,ok
+all_verified_available,G_OH,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,136,85,136,0,-0.10958121460620318,-0.11694575640475167,-0.2581697520614704,0.05029166455235928,ok
+all_verified_available,G_OH,site_angle_max_deg,Largest ligand angle at adsorption metal,False,136,85,136,0,-0.07135231073079583,-0.12560469443251754,-0.22756401911146776,0.08714830051583049,ok
+all_verified_available,G_OH,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,136,85,136,0,0.17064345064903813,0.20873604057757086,0.03353422916323621,0.31059429241718023,ok
+all_verified_available,G_OH,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,136,85,136,0,0.15393051902277016,0.21407962214685308,0.07889297727781275,0.24919432675521488,ok
+all_verified_available,G_OH,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,136,85,136,0,-0.10076605389023292,-0.19853075399123649,-0.2814281998448641,0.07700800722460636,ok
+all_verified_available,G_OH,spin_site_abs,Adsorption metal spin magnitude,True,136,85,136,0,-0.8558926503808287,-0.8931300987548303,-0.9029701686268111,-0.7941421898731811,ok
+all_verified_available,G_OH,spin_partner_abs,Partner metal spin magnitude,True,136,85,136,0,-0.010743281511706625,-0.01843423500787176,-0.21481631082413682,0.19148036273071675,ok
+all_verified_available,G_OH,spin_product_muB2,Signed metal spin product,False,136,85,136,0,0.3215732522935116,0.32028807689130867,0.14401750785358242,0.49744388688898533,ok
+all_verified_available,G_OH,support_net_spin_muB,Net support spin,False,136,85,136,0,0.21354605374527752,0.17432242106039922,0.06089197890509106,0.36307833440221904,ok
+all_verified_available,G_OH,support_abs_spin_sum_muB,Total support spin magnitude,False,136,85,136,0,-0.2691868546717767,-0.23732897302820308,-0.41419147522564825,-0.11980113388341244,ok
+all_verified_available,G_OH,ligand_plane_rms_A,Ligand nonplanarity,False,136,85,136,0,,,,,constant_or_numerically_constant
+all_verified_available,G_OH,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,136,85,136,0,0.0971367033604909,-0.3370688421353943,-0.16286975098703918,0.1964601825789689,ok
+all_verified_available,G_OH,shared_ligand_count,Shared ligand count,False,136,85,136,0,,,,,constant_or_numerically_constant
+all_verified_available,G_OH,terminal_ligand_count,Terminal ligand count,False,136,85,136,0,,,,,constant_or_numerically_constant
+all_verified_available,G_OH,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,136,85,136,0,0.21733005516969905,0.4449891407094587,0.05615803403047994,0.3633922127978999,ok
+all_verified_available,G_OH,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,136,85,136,0,0.5764811479053725,0.6219550593960211,0.4758859850454258,0.6694078571060742,ok
+all_verified_available,G_OH,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,136,85,136,0,0.21733005516969905,0.4449891407094587,0.07376114198910824,0.37325099502116876,ok
+all_verified_available,G_OH,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,136,85,136,0,-0.036663132727264576,-0.02762749868803969,-0.20563876760007144,0.13297890641081486,ok
+all_verified_available,G_OH,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,136,85,136,0,0.019840937619524747,0.06938600257621297,-0.15182209490627724,0.18176149525049864,ok
+all_verified_available,G_OH,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,136,85,136,0,-0.005134107938578172,-0.03756023090501407,-0.17774471457509713,0.15983423602163496,ok
+all_verified_available,G_OH,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,136,85,136,0,-0.11721755426862637,-0.10281475120461808,-0.2515181209130582,-0.006551932805469114,ok
+all_verified_available,G_OH,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,136,85,136,0,-0.1295593149037921,-0.10281475120461808,-0.2575585145315915,-0.007982322061228734,ok
+all_verified_available,G_OH,partner_angle_mean_deg,Mean ligand angle at partner metal,False,136,85,136,0,-0.16140013410763518,-0.19123133438290155,-0.3082553020321211,-0.012032393747793614,ok
+all_verified_available,G_OH,partner_angle_std_deg,Spread of ligand angle at partner metal,False,136,85,136,0,-0.14388224589265758,-0.1667239158437097,-0.30192524812865407,0.01110971277334477,ok
+all_verified_available,G_OH,partner_angle_min_deg,Smallest ligand angle at partner metal,False,136,85,136,0,-0.2182929205798272,-0.2551977481990363,-0.35588170062293367,-0.06857284952220188,ok
+all_verified_available,G_OH,partner_angle_max_deg,Largest ligand angle at partner metal,False,136,85,136,0,-0.1601093163617456,-0.18976193883879583,-0.3179283752540626,-0.003254417193238434,ok
+all_verified_available,G_O,q_site,Adsorption metal charge,True,134,85,134,0,-0.692320510767544,-0.6872978466065662,-0.8047394045724545,-0.5638214095803206,ok
+all_verified_available,G_O,q_partner,Partner metal charge,True,134,85,134,0,-0.06872140390377973,-0.08571428571428572,-0.2494102338323028,0.11366548047481774,ok
+all_verified_available,G_O,metal_metal_distance_A,Metal separation,True,134,85,134,0,0.058214400582940966,0.05315104238287696,-0.10981060862058475,0.22493422104696498,ok
+all_verified_available,G_O,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,134,85,134,0,-0.1703640294200093,-0.3504507537500468,-0.3313399025201842,-0.0010743556453812083,ok
+all_verified_available,G_O,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,134,85,134,0,0.05736333972474602,0.07435753563012008,-0.10777086335346679,0.22841590879797544,ok
+all_verified_available,G_O,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,134,85,134,0,-0.11931767136209787,-0.3037519171061983,-0.2877888248588324,0.04679669835840696,ok
+all_verified_available,G_O,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,134,85,134,0,-0.5236301656543764,-0.5337797229391888,-0.6429356874549954,-0.38679874179866586,ok
+all_verified_available,G_O,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,134,85,134,0,0.10630484718753024,0.1552712627339493,-0.06479475627409176,0.2580673843356398,ok
+all_verified_available,G_O,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,134,85,134,0,0.1629266346075722,0.4028354468260203,-0.00157920226279094,0.32354318707778584,ok
+all_verified_available,G_O,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,134,85,134,0,0.1629266346075722,0.4028354468260203,-0.0016555703502842173,0.3202221684226432,ok
+all_verified_available,G_O,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,134,85,134,0,0.08456389542847739,0.14476240352124092,-0.08179195414874386,0.25057264655865924,ok
+all_verified_available,G_O,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,134,85,134,0,0.5006678815522603,0.49703297952099235,0.36654069629351493,0.6214505672097188,ok
+all_verified_available,G_O,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,134,85,134,0,0.1268707308964744,0.3828135426960755,-0.04171166556390666,0.2982659926562472,ok
+all_verified_available,G_O,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,134,85,134,0,0.04245402509407734,-0.05836731131310865,-0.14007442192155817,0.19842138838849532,ok
+all_verified_available,G_O,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,134,85,134,0,0.04245402509407734,-0.05836731131310865,-0.13954546108853866,0.1972720205392217,ok
+all_verified_available,G_O,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,134,85,134,0,-0.12537433192218206,-0.24935223631217351,-0.28360160985688854,0.04537764589585151,ok
+all_verified_available,G_O,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,134,85,134,0,0.09265203395804429,0.2054464519507725,-0.07282398356694103,0.25486284455374025,ok
+all_verified_available,G_O,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,134,85,134,0,-0.11139700041452262,-0.26576640606491353,-0.27915710296915536,0.0506087609367743,ok
+all_verified_available,G_O,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,134,85,134,0,-0.18656597555868717,-0.2296911432810883,-0.348464285653912,-0.01360262801135694,ok
+all_verified_available,G_O,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,134,85,134,0,0.09262925203840387,0.10756493223107522,-0.06766657730018187,0.2490674302315857,ok
+all_verified_available,G_O,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,134,85,134,0,0.1299888038658587,0.29240514220875574,-0.036567728686356125,0.2915657315146305,ok
+all_verified_available,G_O,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,134,85,134,0,0.1299888038658587,0.29240514220875574,-0.03717779989933537,0.29417335026147207,ok
+all_verified_available,G_O,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,134,85,134,0,0.10984970023521881,0.31070462225214784,-0.05322813113628742,0.2670088315816789,ok
+all_verified_available,G_O,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,134,85,134,0,0.17319169947441565,0.18985938605406857,-0.008019527838845813,0.3410137295475912,ok
+all_verified_available,G_O,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,134,85,134,0,0.12104391185067923,0.33518006604789935,-0.05733317804951178,0.2839536249869386,ok
+all_verified_available,G_O,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,134,85,134,0,0.012971262227358416,-0.0006508809336774774,-0.13665310305311382,0.15277393270255984,ok
+all_verified_available,G_O,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,134,85,134,0,0.012971262227358416,-0.0006508809336774774,-0.1358272962599638,0.15587386342127404,ok
+all_verified_available,G_O,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,134,85,134,0,-0.024940401881872028,-0.07968927293357773,-0.19586001263921668,0.1328932357604205,ok
+all_verified_available,G_O,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,134,85,134,0,-0.02383390744651464,-0.06853701417723414,-0.18811703361684395,0.14387737055878524,ok
+all_verified_available,G_O,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,134,85,134,0,-0.09526459481888346,-0.11011858003217,-0.2592907689522227,0.08222215057667973,ok
+all_verified_available,G_O,site_angle_max_deg,Largest ligand angle at adsorption metal,False,134,85,134,0,-0.024536554929168255,-0.07894612152271226,-0.19640477028665923,0.14255118473972547,ok
+all_verified_available,G_O,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,134,85,134,0,0.13598707587356276,0.12592447597579876,-0.03716239273454904,0.2869195620931217,ok
+all_verified_available,G_O,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,134,85,134,0,0.0829952975254245,0.20515723763608412,-0.023940648751014246,0.17491225705817237,ok
+all_verified_available,G_O,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,134,85,134,0,-0.054081451435777125,-0.10815758286695797,-0.20363288235100108,0.1024548019303262,ok
+all_verified_available,G_O,spin_site_abs,Adsorption metal spin magnitude,True,134,85,134,0,-0.7553706524386996,-0.7574034588959963,-0.8786856214658819,-0.6228510668104729,ok
+all_verified_available,G_O,spin_partner_abs,Partner metal spin magnitude,True,134,85,134,0,-0.0843510418399899,-0.11339542887068418,-0.2791272258919161,0.11845531841009799,ok
+all_verified_available,G_O,spin_product_muB2,Signed metal spin product,False,134,85,134,0,0.34126491470627895,0.2826492228519603,0.14973826016823874,0.5189198168767946,ok
+all_verified_available,G_O,support_net_spin_muB,Net support spin,False,134,85,134,0,0.2286884951991682,0.20904779817086674,0.08892683377574391,0.3604409964032195,ok
+all_verified_available,G_O,support_abs_spin_sum_muB,Total support spin magnitude,False,134,85,134,0,-0.16164047955835767,-0.1173004001236972,-0.30447179006661335,-0.004902682323193781,ok
+all_verified_available,G_O,ligand_plane_rms_A,Ligand nonplanarity,False,134,85,134,0,,,,,constant_or_numerically_constant
+all_verified_available,G_O,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,134,85,134,0,0.12340842177070556,-0.26601079813962764,-0.1566305595259278,0.21995057418280392,ok
+all_verified_available,G_O,shared_ligand_count,Shared ligand count,False,134,85,134,0,,,,,constant_or_numerically_constant
+all_verified_available,G_O,terminal_ligand_count,Terminal ligand count,False,134,85,134,0,,,,,constant_or_numerically_constant
+all_verified_available,G_O,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,134,85,134,0,0.1301369966567901,0.36404174439886217,-0.040279437781768374,0.290187730516233,ok
+all_verified_available,G_O,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,134,85,134,0,0.502671382752581,0.49918577538373304,0.36760300555141984,0.6192838701447823,ok
+all_verified_available,G_O,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,134,85,134,0,0.1301369966567901,0.36404174439886217,-0.04282854954650669,0.29249420423441974,ok
+all_verified_available,G_O,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,134,85,134,0,0.05556244764858308,0.08639758600481304,-0.11383701922411944,0.21948441488561204,ok
+all_verified_available,G_O,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,134,85,134,0,0.045276932557290185,0.046202571104377865,-0.13287382201272807,0.2175414569179368,ok
+all_verified_available,G_O,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,134,85,134,0,-0.032707083860797334,-0.03335951819848128,-0.19258304186748934,0.13577816331313602,ok
+all_verified_available,G_O,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,134,85,134,0,-0.13524475671574313,-0.02359879798999988,-0.27091989762496055,-0.005821799017324234,ok
+all_verified_available,G_O,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,134,85,134,0,-0.1563141994830679,-0.02359879798999988,-0.28409975798334197,-0.027070762081089172,ok
+all_verified_available,G_O,partner_angle_mean_deg,Mean ligand angle at partner metal,False,134,85,134,0,-0.04068409104417292,-0.06769909849249992,-0.20005410324288642,0.11453501339096372,ok
+all_verified_available,G_O,partner_angle_std_deg,Spread of ligand angle at partner metal,False,134,85,134,0,-0.027552130460895614,-0.062013242060374826,-0.19151908462725517,0.12938523747003688,ok
+all_verified_available,G_O,partner_angle_min_deg,Smallest ligand angle at partner metal,False,134,85,134,0,-0.113535279436213,-0.10960984550929563,-0.2719440036386203,0.05639152693167742,ok
+all_verified_available,G_O,partner_angle_max_deg,Largest ligand angle at partner metal,False,134,85,134,0,-0.039556470963980475,-0.06579383782840185,-0.19050410078431984,0.12287526544933423,ok
+all_verified_available,G_OOH,q_site,Adsorption metal charge,True,146,88,146,0,-0.7470139950456097,-0.7385557151533264,-0.8020356248060613,-0.6897134379976426,ok
+all_verified_available,G_OOH,q_partner,Partner metal charge,True,146,88,146,0,-0.0904483913325643,-0.06516537649542577,-0.26902815310605477,0.09723958154626818,ok
+all_verified_available,G_OOH,metal_metal_distance_A,Metal separation,True,146,88,146,0,0.11298458361800212,0.04929468845195316,-0.07671640103847648,0.28984037481412334,ok
+all_verified_available,G_OOH,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,146,88,146,0,-0.26656534906346935,-0.42670509866676953,-0.39943388888418596,-0.110602725078934,ok
+all_verified_available,G_OOH,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,146,88,146,0,0.14128828273463404,0.08515515795359242,-0.02525547955349037,0.2879050230168713,ok
+all_verified_available,G_OOH,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,146,88,146,0,-0.20874549621308694,-0.36131414304030546,-0.34449284598146684,-0.056757308276877666,ok
+all_verified_available,G_OOH,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,146,88,146,0,-0.613169732611122,-0.6486788196620169,-0.6845160425355308,-0.5392631878784291,ok
+all_verified_available,G_OOH,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,146,88,146,0,0.18797142928236077,0.16272738665612682,0.02504848725545705,0.3433865245515529,ok
+all_verified_available,G_OOH,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,146,88,146,0,0.25285418220590117,0.44382212025102913,0.10951239883336493,0.3885215176401429,ok
+all_verified_available,G_OOH,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,146,88,146,0,0.25285418220590117,0.44382212025102913,0.09691611916228567,0.3938843484717709,ok
+all_verified_available,G_OOH,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,146,88,146,0,0.16771861847557287,0.18728659153789057,0.005786572050782697,0.3133707404991942,ok
+all_verified_available,G_OOH,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,146,88,146,0,0.5821829932381514,0.58638879732435,0.49910214704481576,0.6631092371853015,ok
+all_verified_available,G_OOH,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,146,88,146,0,0.21305350569680467,0.4126745412933285,0.05202550615946272,0.3535329913139839,ok
+all_verified_available,G_OOH,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,146,88,146,0,0.015033313634971662,-0.11735706091600553,-0.1612337996424353,0.1659520401574011,ok
+all_verified_available,G_OOH,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,146,88,146,0,0.015033313634971662,-0.11735706091600553,-0.1649929462361306,0.17213411228605036,ok
+all_verified_available,G_OOH,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,146,88,146,0,-0.2035693921826754,-0.26036266183374623,-0.34174199767272145,-0.057095358802469395,ok
+all_verified_available,G_OOH,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,146,88,146,0,0.18435410232195712,0.2808036015539896,0.028208980742787177,0.3289974453634986,ok
+all_verified_available,G_OOH,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,146,88,146,0,-0.19707585584058382,-0.30482681499619224,-0.33786500406046405,-0.036947962571440625,ok
+all_verified_available,G_OOH,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,146,88,146,0,-0.1930664565122863,-0.19398070045212232,-0.3401978796941558,-0.03185378595698074,ok
+all_verified_available,G_OOH,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,146,88,146,0,0.1760633587999094,0.1340344923987545,0.011838136269157433,0.3328718324736978,ok
+all_verified_available,G_OOH,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,146,88,146,0,0.213101827498681,0.31699651991169636,0.056481849784799115,0.35608243056293004,ok
+all_verified_available,G_OOH,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,146,88,146,0,0.213101827498681,0.31699651991169636,0.06298226912493621,0.35239637679005553,ok
+all_verified_available,G_OOH,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,146,88,146,0,0.19606972849097773,0.3239759767865578,0.034535702561639216,0.34249371601274625,ok
+all_verified_available,G_OOH,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,146,88,146,0,0.21945403610471542,0.21392971517677198,0.04527392489010196,0.3667821286806653,ok
+all_verified_available,G_OOH,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,146,88,146,0,0.206724538569,0.3605696373354581,0.04947802580816913,0.3563483144701707,ok
+all_verified_available,G_OOH,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,146,88,146,0,0.020573651746197876,-0.008045655673700752,-0.13330079363536773,0.17021545768855786,ok
+all_verified_available,G_OOH,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,146,88,146,0,0.020573651746197876,-0.008045655673700752,-0.13252145119747527,0.17041521607417864,ok
+all_verified_available,G_OOH,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,146,88,146,0,-0.07468179992572416,-0.07750860381942103,-0.2318321016263749,0.08933618218850177,ok
+all_verified_available,G_OOH,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,146,88,146,0,-0.08392382557130176,-0.07256514320418768,-0.23443793277878766,0.08511340553105579,ok
+all_verified_available,G_OOH,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,146,88,146,0,-0.12884077292626267,-0.07533764568652214,-0.30324830756449805,0.060447947736573165,ok
+all_verified_available,G_OOH,site_angle_max_deg,Largest ligand angle at adsorption metal,False,146,88,146,0,-0.07435188089582292,-0.07701888502212412,-0.229169247389271,0.09902122920031763,ok
+all_verified_available,G_OOH,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,146,88,146,0,0.18936414408985044,0.1295475055820163,-0.00857202324890808,0.37145206977943235,ok
+all_verified_available,G_OOH,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,146,88,146,0,0.06809053045948357,0.11895433424684337,0.007068657882712689,0.14610685447545865,ok
+all_verified_available,G_OOH,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,146,88,146,0,-0.16335508472380325,-0.17189705330785135,-0.30827441924514015,-0.039920391760281664,ok
+all_verified_available,G_OOH,spin_site_abs,Adsorption metal spin magnitude,True,146,88,146,0,-0.790682524012888,-0.82237860661506,-0.878408481785953,-0.6959375840534304,ok
+all_verified_available,G_OOH,spin_partner_abs,Partner metal spin magnitude,True,146,88,146,0,-0.03177137787305443,-0.05114862194287257,-0.2160739364644779,0.15856446972686325,ok
+all_verified_available,G_OOH,spin_product_muB2,Signed metal spin product,False,146,88,146,0,0.2734455996711216,0.2334623901720798,0.1025189134349024,0.44299995995169444,ok
+all_verified_available,G_OOH,support_net_spin_muB,Net support spin,False,146,88,146,0,0.18311179072988046,0.12178097952848946,0.034333116492236124,0.33325299282785426,ok
+all_verified_available,G_OOH,support_abs_spin_sum_muB,Total support spin magnitude,False,146,88,146,0,-0.21098836254139178,-0.1891075824920074,-0.33403831054536537,-0.07489032760484937,ok
+all_verified_available,G_OOH,ligand_plane_rms_A,Ligand nonplanarity,False,146,88,146,0,,,,,constant_or_numerically_constant
+all_verified_available,G_OOH,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,146,88,146,0,0.13578084739903798,-0.38894662257912144,-0.20706266807061102,0.24569421297210337,ok
+all_verified_available,G_OOH,shared_ligand_count,Shared ligand count,False,146,88,146,0,,,,,constant_or_numerically_constant
+all_verified_available,G_OOH,terminal_ligand_count,Terminal ligand count,False,146,88,146,0,,,,,constant_or_numerically_constant
+all_verified_available,G_OOH,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,146,88,146,0,0.21818219023098026,0.40994069122153487,0.06269007577122206,0.35484241316407733,ok
+all_verified_available,G_OOH,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,146,88,146,0,0.5655059393166139,0.5812325875083146,0.47922487737221786,0.650727509278947,ok
+all_verified_available,G_OOH,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,146,88,146,0,0.21818219023098026,0.40994069122153487,0.06499845028884933,0.36689910086740796,ok
+all_verified_available,G_OOH,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,146,88,146,0,0.03320467002365556,0.03033750108451506,-0.13847910061603444,0.21488847447193438,ok
+all_verified_available,G_OOH,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,146,88,146,0,-0.0039845480059504295,0.07449702601872114,-0.1654512299288963,0.15278630156547154,ok
+all_verified_available,G_OOH,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,146,88,146,0,0.024942029654138838,-0.047061205209528306,-0.14355758866631227,0.18876527546324756,ok
+all_verified_available,G_OOH,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,146,88,146,0,-0.09388268129293209,-0.026805356058342094,-0.2804789147636667,0.04438177731163891,ok
+all_verified_available,G_OOH,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,146,88,146,0,-0.13906323392981693,-0.026805356058342094,-0.3354746419991353,0.034477541284687684,ok
+all_verified_available,G_OOH,partner_angle_mean_deg,Mean ligand angle at partner metal,False,146,88,146,0,-0.1432096342720666,-0.13247664677585724,-0.2933555044325827,0.021073597104039065,ok
+all_verified_available,G_OOH,partner_angle_std_deg,Spread of ligand angle at partner metal,False,146,88,146,0,-0.127866702044141,-0.1122979186951115,-0.2773600221950881,0.04156714398726985,ok
+all_verified_available,G_OOH,partner_angle_min_deg,Smallest ligand angle at partner metal,False,146,88,146,0,-0.2151822815165557,-0.1832994321961189,-0.36311142678785874,-0.04540326869920842,ok
+all_verified_available,G_OOH,partner_angle_max_deg,Largest ligand angle at partner metal,False,146,88,146,0,-0.14220695455874546,-0.1309033769388719,-0.29183260054236676,0.02565451499190841,ok
+all_verified_available,overpotential,q_site,Adsorption metal charge,True,123,82,123,0,0.023506540267611876,-0.17664547084392052,-0.20205140561214613,0.18836617617615806,ok
+all_verified_available,overpotential,q_partner,Partner metal charge,True,123,82,123,0,-0.018744157601548198,0.014452283602687958,-0.18412929713717222,0.1447377268544238,ok
+all_verified_available,overpotential,metal_metal_distance_A,Metal separation,True,123,82,123,0,-0.08986078044469202,-0.10443932451832276,-0.21995142869865744,0.04039136276667242,ok
+all_verified_available,overpotential,site_heteroatom_dipole_contribution_mean_eA,Adsorption metal: mean ligand dipole magnitude,False,123,82,123,0,0.1611280557565074,0.13388193109852836,-0.0015107362946680859,0.3050780143498547,ok
+all_verified_available,overpotential,site_heteroatom_dipole_contribution_std_eA,Adsorption metal: spread ligand dipole magnitude,False,123,82,123,0,-0.13711109934229077,-0.1563052198475449,-0.2779491323735782,0.025361926976043215,ok
+all_verified_available,overpotential,site_heteroatom_dipole_contribution_min_eA,Adsorption metal: minimum ligand dipole magnitude,False,123,82,123,0,0.14921569653179242,0.1349008783583341,-0.02666556699737879,0.2938453950580831,ok
+all_verified_available,overpotential,site_heteroatom_dipole_contribution_max_eA,Adsorption metal: maximum ligand dipole magnitude,False,123,82,123,0,0.1770130784606601,0.05684822845055527,0.0042403861255706195,0.3166565679952434,ok
+all_verified_available,overpotential,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,False,123,82,123,0,-0.13219435292910256,-0.11599876178560833,-0.278038275321652,0.03281332069461544,ok
+all_verified_available,overpotential,site_heteroatom_charge_sum_e,Adsorption metal: total ligand charge,False,123,82,123,0,-0.14165579979776555,-0.09023487379241853,-0.2784501411925392,0.016796529651327448,ok
+all_verified_available,overpotential,site_heteroatom_charge_mean_e,Adsorption metal: mean ligand charge,False,123,82,123,0,-0.14165579979776555,-0.09023487379241853,-0.2783121776547637,0.011956235524727825,ok
+all_verified_available,overpotential,site_heteroatom_charge_std_e,Adsorption metal: spread ligand charge,False,123,82,123,0,-0.12895615350253992,-0.12672995318001834,-0.26457989978861407,0.04252433960426084,ok
+all_verified_available,overpotential,site_heteroatom_charge_min_e,Adsorption metal: minimum ligand charge,False,123,82,123,0,-0.15160223864316053,-0.0701629364055259,-0.2909593878898616,-0.0017147895928305583,ok
+all_verified_available,overpotential,site_heteroatom_charge_max_e,Adsorption metal: maximum ligand charge,False,123,82,123,0,-0.13523859497935356,-0.09261859894204061,-0.2707947680669794,0.024937626563661632,ok
+all_verified_available,overpotential,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,True,123,82,123,0,0.11186394204947772,0.09319498007248714,0.007717848569604055,0.22935074267660055,ok
+all_verified_available,overpotential,site_heteroatom_spin_abs_sum_muB,Adsorption metal: total ligand spin magnitude,False,123,82,123,0,0.11186394204947772,0.09319498007248714,0.0043993844832900435,0.23241438466306583,ok
+all_verified_available,overpotential,partner_heteroatom_dipole_contribution_mean_eA,Partner metal: mean ligand dipole magnitude,False,123,82,123,0,0.11935513031018598,0.06136900078678207,-0.04977957919448603,0.25760040414792335,ok
+all_verified_available,overpotential,partner_heteroatom_dipole_contribution_std_eA,Partner metal: spread ligand dipole magnitude,False,123,82,123,0,-0.14189858915668455,-0.11582463788678078,-0.2838537941829263,0.014082205746803066,ok
+all_verified_available,overpotential,partner_heteroatom_dipole_contribution_min_eA,Partner metal: minimum ligand dipole magnitude,False,123,82,123,0,0.13123413325023744,0.062375049980008,-0.04427515402142918,0.2716075506529982,ok
+all_verified_available,overpotential,partner_heteroatom_dipole_contribution_max_eA,Partner metal: maximum ligand dipole magnitude,False,123,82,123,0,-0.012598618244351894,-0.03894571203776554,-0.1861622012599269,0.15161358436128702,ok
+all_verified_available,overpotential,partner_heteroatom_charge_dipole_proxy_norm_eA,Partner metal: net ligand dipole magnitude,False,123,82,123,0,-0.13037177616545292,-0.12642684861539258,-0.26824211711476736,0.026357559019730123,ok
+all_verified_available,overpotential,partner_heteroatom_charge_sum_e,Partner metal: total ligand charge,False,123,82,123,0,-0.12691187790504083,-0.07231301027975906,-0.26305012290904367,0.03497254649242315,ok
+all_verified_available,overpotential,partner_heteroatom_charge_mean_e,Partner metal: mean ligand charge,False,123,82,123,0,-0.12691187790504083,-0.07231301027975906,-0.26646864469720927,0.0403439345941584,ok
+all_verified_available,overpotential,partner_heteroatom_charge_std_e,Partner metal: spread ligand charge,False,123,82,123,0,-0.12495622886874005,-0.028059743844397723,-0.25888561351113265,0.04208794186752731,ok
+all_verified_available,overpotential,partner_heteroatom_charge_min_e,Partner metal: minimum ligand charge,False,123,82,123,0,-0.10467432063558531,-0.0723427307439668,-0.2753868917185833,0.08109312094717769,ok
+all_verified_available,overpotential,partner_heteroatom_charge_max_e,Partner metal: maximum ligand charge,False,123,82,123,0,-0.1273392555497649,-0.05089153709711318,-0.2652506409375356,0.03491230233209711,ok
+all_verified_available,overpotential,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,True,123,82,123,0,-0.0525979225165244,-0.001973404186712412,-0.1461157080992976,0.047630507970909584,ok
+all_verified_available,overpotential,partner_heteroatom_spin_abs_sum_muB,Partner metal: total ligand spin magnitude,False,123,82,123,0,-0.0525979225165244,-0.001973404186712412,-0.15039084940768402,0.04458265313670328,ok
+all_verified_available,overpotential,site_angle_mean_deg,Mean ligand angle at adsorption metal,False,123,82,123,0,0.10618867505890946,0.09079593968864068,-0.05411228704952443,0.2641801383460508,ok
+all_verified_available,overpotential,site_angle_std_deg,Spread of ligand angle at adsorption metal,False,123,82,123,0,0.116586491583777,0.10140459945054235,-0.049980745423798066,0.2748168203063271,ok
+all_verified_available,overpotential,site_angle_min_deg,Smallest ligand angle at adsorption metal,False,123,82,123,0,0.06444649382904041,0.041364099521481734,-0.1002723844978504,0.2504693817970018,ok
+all_verified_available,overpotential,site_angle_max_deg,Largest ligand angle at adsorption metal,False,123,82,123,0,0.10597347303363606,0.09095716552088842,-0.04961423778510225,0.25546599512144236,ok
+all_verified_available,overpotential,shared_bridge_angle_mean_deg,Mean metal-bridge-metal angle,False,123,82,123,0,-0.08138770887199608,-0.1007115368521857,-0.25057443859961337,0.059341199914587334,ok
+all_verified_available,overpotential,shared_bridge_angle_std_deg,Spread of metal-bridge-metal angles,False,123,82,123,0,0.025590681248265097,0.15129464873023588,-0.008106381732340993,0.1124100530343155,ok
+all_verified_available,overpotential,shared_bridge_dipole_contribution_asymmetry_mean_eA,Mean bridge dipole magnitude asymmetry,False,123,82,123,0,0.1426643911350097,0.07387533533177684,-0.02189295780472609,0.3171071046016084,ok
+all_verified_available,overpotential,spin_site_abs,Adsorption metal spin magnitude,True,123,82,123,0,-0.03636144241403679,-0.351001534869923,-0.3174103456094528,0.14260211854633803,ok
+all_verified_available,overpotential,spin_partner_abs,Partner metal spin magnitude,True,123,82,123,0,-0.11258847675646079,-0.08744889141117747,-0.27216394628370555,0.06991851164439135,ok
+all_verified_available,overpotential,spin_product_muB2,Signed metal spin product,False,123,82,123,0,0.005651958056573103,0.13382306259257964,-0.1954388185069475,0.18775692711269643,ok
+all_verified_available,overpotential,support_net_spin_muB,Net support spin,False,123,82,123,0,0.039310467789841874,0.06396896534010463,-0.06217869162411131,0.15487737743063398,ok
+all_verified_available,overpotential,support_abs_spin_sum_muB,Total support spin magnitude,False,123,82,123,0,0.0493176643324379,0.03800344086974508,-0.08773772689680608,0.17900164686169273,ok
+all_verified_available,overpotential,ligand_plane_rms_A,Ligand nonplanarity,False,123,82,123,0,,,,,constant_or_numerically_constant
+all_verified_available,overpotential,metal_height_above_ligand_plane_A,Metal displacement from ligand plane,False,123,82,123,0,0.02054811068972919,0.1493144677612826,-0.009387275142275947,0.2253642361412941,ok
+all_verified_available,overpotential,shared_ligand_count,Shared ligand count,False,123,82,123,0,,,,,constant_or_numerically_constant
+all_verified_available,overpotential,terminal_ligand_count,Terminal ligand count,False,123,82,123,0,,,,,constant_or_numerically_constant
+all_verified_available,overpotential,site_shared_ligand_charge_mean_e,Adsorption metal: mean shared ligand charge,False,123,82,123,0,-0.13275556967678695,-0.05563626349815119,-0.27196790116284053,0.0217179806645432,ok
+all_verified_available,overpotential,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,False,123,82,123,0,-0.1871428870422188,-0.13697746707768504,-0.32681246923379786,-0.044272879757085215,ok
+all_verified_available,overpotential,partner_shared_ligand_charge_mean_e,Partner metal: mean shared ligand charge,False,123,82,123,0,-0.13275556967678695,-0.05563626349815119,-0.27407593065967645,0.02351385379201042,ok
+all_verified_available,overpotential,partner_terminal_ligand_charge_mean_e,Partner metal: mean terminal ligand charge,False,123,82,123,0,0.02373684379661367,-0.016967406585752798,-0.18865672841098668,0.2105819384019362,ok
+all_verified_available,overpotential,second_shell_C_2.8A,Second-shell carbon density near 2.8 Angstrom,False,123,82,123,0,0.0643091573355914,0.13938295649482144,-0.09592768617134151,0.21546149206211518,ok
+all_verified_available,overpotential,second_shell_C_3.6A,Second-shell carbon density near 3.6 Angstrom,False,123,82,123,0,-0.09711912904095449,-0.16440520565967162,-0.23989311874096444,0.06465447773115986,ok
+all_verified_available,overpotential,second_shell_heteroatom_2.8A,Second-shell N/O/S density near 2.8 Angstrom,False,123,82,123,0,-0.057861517820675494,0.11585043401994043,-0.1421368318408619,0.03358824180269585,ok
+all_verified_available,overpotential,second_shell_heteroatom_3.6A,Second-shell N/O/S density near 3.6 Angstrom,False,123,82,123,0,-0.04406706390891539,0.11585043401994043,-0.14156711233762267,0.07192210143396663,ok
+all_verified_available,overpotential,partner_angle_mean_deg,Mean ligand angle at partner metal,False,123,82,123,0,0.18878758067558854,0.2162296371773871,0.06318959490500733,0.3161727926891074,ok
+all_verified_available,overpotential,partner_angle_std_deg,Spread of ligand angle at partner metal,False,123,82,123,0,0.18771389484030782,0.19946215062362152,0.05704372204589827,0.31936121199161227,ok
+all_verified_available,overpotential,partner_angle_min_deg,Smallest ligand angle at partner metal,False,123,82,123,0,0.1955223009516039,0.21590718551289162,0.05297837546847809,0.34215629563287037,ok
+all_verified_available,overpotential,partner_angle_max_deg,Largest ligand angle at partner metal,False,123,82,123,0,0.1894236310697789,0.21678425404031937,0.06194336133931345,0.3109148392711092,ok

@@ -1,0 +1,4226 @@
+{
+  "reference_8_inputs": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_001": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_002": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_003": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_004": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_005": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_006": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_007": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_008": [
+    "metal_metal_distance_A"
+  ],
+  "shared_set_009": [
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_010": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_011": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_012": [
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_013": [
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_014": [
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_015": [
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_016": [
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_017": [
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_018": [
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_019": [
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_020": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_021": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_022": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_023": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_024": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_025": [
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_026": [
+    "q_site",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_027": [
+    "q_site",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_028": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_029": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_030": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_031": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_032": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_033": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_034": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_035": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_036": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_037": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_038": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_039": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_040": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_041": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_042": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_043": [
+    "q_site",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_044": [
+    "q_partner",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_045": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_046": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_047": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_048": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_049": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_050": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_051": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_052": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_053": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_054": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_055": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_056": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_057": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_058": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_059": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_060": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_061": [
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_062": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_063": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_064": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_065": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_066": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_067": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_068": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_069": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_070": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_071": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_072": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_073": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_074": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_075": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_076": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_077": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_078": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_079": [
+    "q_site",
+    "q_partner",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_080": [
+    "spin_site_abs",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_081": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_082": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_083": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_084": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_085": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_086": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_087": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_088": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_089": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_090": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_091": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_092": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_093": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_094": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_095": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_096": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_097": [
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_098": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_099": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_100": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_101": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_102": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_103": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_104": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_105": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_106": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_107": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_108": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_109": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_110": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_111": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_112": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_113": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_114": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_115": [
+    "q_site",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_116": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_117": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_118": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_119": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_120": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_121": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_122": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_123": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_124": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_125": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_126": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_127": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_128": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_129": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_130": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_131": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_132": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_133": [
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_134": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_135": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_136": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_137": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_138": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_139": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_140": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_141": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_142": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_143": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_144": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_145": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_146": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_147": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_148": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_149": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_150": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_151": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_152": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_153": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_154": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_155": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_156": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_157": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_158": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_159": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_160": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_161": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_162": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_163": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_164": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_165": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_166": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_167": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_168": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_169": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_170": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_171": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_172": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_173": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_174": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_175": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_176": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_177": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_178": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_179": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_180": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_181": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_182": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_183": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_184": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_185": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_186": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_187": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_188": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_189": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_190": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_191": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_192": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_193": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_194": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_195": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_196": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_197": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_198": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_199": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_200": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_201": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_202": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_203": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_204": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_205": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_206": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_207": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_208": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_209": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_210": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_211": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_212": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_213": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_214": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_215": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_216": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_217": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_218": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_219": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_220": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_221": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_222": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_223": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_224": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_225": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_226": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_227": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_228": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_229": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_230": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_231": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_232": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_233": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_234": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_235": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_236": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_237": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_238": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_239": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_240": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_241": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_242": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_243": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_244": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_245": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_246": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_247": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_248": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_249": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_250": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_251": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_252": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_253": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_254": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_255": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_256": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_257": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_258": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_259": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_260": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_261": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_262": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_263": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_264": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_265": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_266": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_267": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_268": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_269": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_270": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_271": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_272": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_273": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_274": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_275": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_276": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_277": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_278": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_279": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_280": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_281": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_282": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_283": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_284": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_285": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_286": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_287": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_288": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_289": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_290": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_291": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_292": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_293": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_294": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_295": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_296": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_297": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_298": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_299": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_300": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_301": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_302": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_303": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_304": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_305": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_306": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_307": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_308": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_309": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_310": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_311": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_312": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_313": [
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_314": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_315": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_316": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_317": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_318": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_319": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_320": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_321": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_322": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_323": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_324": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_325": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_326": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_327": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_328": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_329": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_330": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_331": [
+    "q_site",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_332": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_333": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_334": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_335": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_336": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_337": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_338": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_339": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_340": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_341": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_342": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_343": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_344": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_345": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_346": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_347": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_348": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_349": [
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_350": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_351": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_352": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_353": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_354": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_355": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_356": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_357": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_358": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_359": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_360": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_361": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_362": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_363": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_364": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_365": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_366": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_367": [
+    "q_site",
+    "q_partner",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_368": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_369": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_370": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_371": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_372": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_373": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_374": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_375": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_376": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_377": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_378": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_379": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_380": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_381": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_382": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_383": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_384": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_385": [
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_386": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_387": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_388": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_389": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_390": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_391": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_392": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_393": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_394": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_395": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_396": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_397": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_398": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_399": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_400": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_401": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_402": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_403": [
+    "q_site",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_404": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_405": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_406": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_407": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_408": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_409": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_410": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_411": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_412": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_413": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_414": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_415": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_416": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_417": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_418": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_419": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_420": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_421": [
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_422": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_423": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_424": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_425": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_426": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_427": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_428": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_429": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_430": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_431": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_432": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_433": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_434": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_435": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_436": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_437": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_438": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_439": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_440": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_441": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_442": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_443": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_444": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_445": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_446": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_447": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_448": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_449": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_450": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_451": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_452": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_453": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_454": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_455": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_456": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_457": [
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_458": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_459": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_460": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_461": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_462": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_463": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_464": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_465": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_466": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_467": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_468": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_469": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_470": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_471": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_472": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_473": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_474": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_475": [
+    "q_site",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_476": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_477": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_478": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_479": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_480": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_481": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_482": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_483": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_484": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_485": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_486": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_487": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_488": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_489": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_490": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_491": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_492": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_493": [
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_494": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_495": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_496": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_497": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_498": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_499": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_500": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_501": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_502": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_503": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_504": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_505": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_506": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_507": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_508": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_509": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_510": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_511": [
+    "q_site",
+    "q_partner",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_512": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_513": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_514": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_515": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_516": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_517": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_518": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_519": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_520": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_521": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_522": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_523": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_524": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_525": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_526": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_527": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_528": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_529": [
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_530": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_531": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_532": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_533": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_534": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_535": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_536": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_537": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_538": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_539": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_540": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_541": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_542": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_543": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_544": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_545": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_546": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_547": [
+    "q_site",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_548": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_549": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_550": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_551": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_552": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_553": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_554": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_555": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_556": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_557": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_558": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_559": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_560": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_561": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_562": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_563": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_564": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_565": [
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_566": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A"
+  ],
+  "shared_set_567": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "spin_product_muB2"
+  ],
+  "shared_set_568": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "shared_set_569": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_dipole_proxy_norm_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_570": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA"
+  ],
+  "shared_set_571": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_dipole_contribution_max_eA",
+    "spin_product_muB2"
+  ],
+  "shared_set_572": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e"
+  ],
+  "shared_set_573": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "spin_product_muB2"
+  ],
+  "shared_set_574": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e"
+  ],
+  "shared_set_575": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_heteroatom_charge_min_e",
+    "spin_product_muB2"
+  ]
+}

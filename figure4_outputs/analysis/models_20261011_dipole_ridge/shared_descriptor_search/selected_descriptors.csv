@@ -1,0 +1,9 @@
+index,key,name,formula,units,description
+1,q_site,Adsorption metal charge,q_s=Z_s-N_s^{\mathrm{Bader}},e,Signed Bader charge on the adsorption metal; positive means electron deficiency.
+2,q_partner,Partner metal charge,q_p=Z_p-N_p^{\mathrm{Bader}},e,Signed Bader charge on the other metal.
+3,spin_site_abs,Adsorption metal spin magnitude,\lvert m_s\rvert,Bohr magneton,Absolute calculated atomic magnetic moment of the adsorption metal.
+4,site_heteroatom_spin_abs_mean_muB,Adsorption metal: mean ligand spin magnitude,\operatorname{Mean}_{H_s}(\lvert m_i\rvert),Bohr magneton,Mean of absolute atomic magnetic moments on the selected N/O/S neighbors.
+5,partner_heteroatom_spin_abs_mean_muB,Partner metal: mean ligand spin magnitude,\operatorname{Mean}_{H_p}(\lvert m_i\rvert),Bohr magneton,Mean of absolute atomic magnetic moments on the selected N/O/S neighbors.
+6,metal_metal_distance_A,Metal separation,\lVert\mathbf r_s-\mathbf r_p\rVert_2,Angstrom,Cartesian separation between the two metals.
+7,site_terminal_ligand_charge_mean_e,Adsorption metal: mean terminal ligand charge,\operatorname{Mean}_{H_s\setminus B}(q_i),e,Mean signed Bader charge of terminal ligands in this metal's shell.
+8,site_heteroatom_charge_dipole_proxy_norm_eA,Adsorption metal: net ligand dipole magnitude,\left\lVert\sum_{i\in H_s}q_i(\mathbf r_i-\mathbf r_s)\right\rVert_2,e Angstrom,Magnitude of the signed vector sum of ligand charge moments around this metal; includes directional cancellation.

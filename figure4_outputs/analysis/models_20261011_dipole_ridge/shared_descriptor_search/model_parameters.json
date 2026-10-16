@@ -1,0 +1,176 @@
+{
+  "G_OH": {
+    "family": "ridge",
+    "parameter": 1.0,
+    "descriptor_keys": [
+      "q_site",
+      "q_partner",
+      "spin_site_abs",
+      "site_heteroatom_spin_abs_mean_muB",
+      "partner_heteroatom_spin_abs_mean_muB",
+      "metal_metal_distance_A",
+      "site_terminal_ligand_charge_mean_e",
+      "site_heteroatom_charge_dipole_proxy_norm_eA"
+    ],
+    "descriptor_names": [
+      "Adsorption metal charge",
+      "Partner metal charge",
+      "Adsorption metal spin magnitude",
+      "Adsorption metal: mean ligand spin magnitude",
+      "Partner metal: mean ligand spin magnitude",
+      "Metal separation",
+      "Adsorption metal: mean terminal ligand charge",
+      "Adsorption metal: net ligand dipole magnitude"
+    ],
+    "raw_intercept": -1.162722959303161,
+    "raw_linear_coefficients": [
+      -0.7463544954920813,
+      -0.23434359636938903,
+      -0.3598939499901523,
+      3.911233854744701,
+      -1.4870621229682996,
+      0.425096288916429,
+      -2.283000429857495,
+      -0.16030217480853592
+    ],
+    "imputation_medians": [
+      1.0556035000000001,
+      1.0624730000000007,
+      1.5146832894095446,
+      0.020312763570098986,
+      0.019581825241681828,
+      3.2704404879896707,
+      -1.1417777499999997,
+      0.984603533272435
+    ],
+    "standardized_intercept": 0.9286965507547129,
+    "standardized_coefficients": [
+      -0.18181666152472784,
+      -0.05251464491081447,
+      -0.4568605824176067,
+      0.07143133747903269,
+      -0.028186355265272148,
+      0.1752636478367387,
+      -0.10686644130346018,
+      -0.16527949319550525
+    ],
+    "training_structures": 50,
+    "training_site_rows": 70
+  },
+  "G_O": {
+    "family": "ridge",
+    "parameter": 1.0,
+    "descriptor_keys": [
+      "q_site",
+      "q_partner",
+      "spin_site_abs",
+      "site_heteroatom_spin_abs_mean_muB",
+      "partner_heteroatom_spin_abs_mean_muB",
+      "metal_metal_distance_A",
+      "site_terminal_ligand_charge_mean_e",
+      "site_heteroatom_charge_dipole_proxy_norm_eA"
+    ],
+    "descriptor_names": [
+      "Adsorption metal charge",
+      "Partner metal charge",
+      "Adsorption metal spin magnitude",
+      "Adsorption metal: mean ligand spin magnitude",
+      "Partner metal: mean ligand spin magnitude",
+      "Metal separation",
+      "Adsorption metal: mean terminal ligand charge",
+      "Adsorption metal: net ligand dipole magnitude"
+    ],
+    "raw_intercept": 2.2583175855401887,
+    "raw_linear_coefficients": [
+      -1.984545202784475,
+      -0.4940124967115429,
+      -0.5383819178774764,
+      10.112886125585362,
+      -5.833638251334267,
+      0.5568456263281272,
+      -2.4256559413090772,
+      -0.3595490261415617
+    ],
+    "imputation_medians": [
+      1.0556035000000001,
+      1.0624730000000007,
+      1.5146832894095446,
+      0.020312763570098986,
+      0.019581825241681828,
+      3.2704404879896707,
+      -1.1417777499999997,
+      0.984603533272435
+    ],
+    "standardized_intercept": 2.735357095034459,
+    "standardized_coefficients": [
+      -0.4834477257047828,
+      -0.11070450077679335,
+      -0.6834387645897971,
+      0.1846928638254148,
+      -0.11057305387684455,
+      0.22958279876065335,
+      -0.11354409525471557,
+      -0.37071287953886456
+    ],
+    "training_structures": 50,
+    "training_site_rows": 70
+  },
+  "G_OOH": {
+    "family": "ridge",
+    "parameter": 10.0,
+    "descriptor_keys": [
+      "q_site",
+      "q_partner",
+      "spin_site_abs",
+      "site_heteroatom_spin_abs_mean_muB",
+      "partner_heteroatom_spin_abs_mean_muB",
+      "metal_metal_distance_A",
+      "site_terminal_ligand_charge_mean_e",
+      "site_heteroatom_charge_dipole_proxy_norm_eA"
+    ],
+    "descriptor_names": [
+      "Adsorption metal charge",
+      "Partner metal charge",
+      "Adsorption metal spin magnitude",
+      "Adsorption metal: mean ligand spin magnitude",
+      "Partner metal: mean ligand spin magnitude",
+      "Metal separation",
+      "Adsorption metal: mean terminal ligand charge",
+      "Adsorption metal: net ligand dipole magnitude"
+    ],
+    "raw_intercept": 5.306471493748181,
+    "raw_linear_coefficients": [
+      -0.5789300466198394,
+      -0.2278080998659672,
+      -0.15842010222759562,
+      0.5890668054620534,
+      -0.5649143490833378,
+      0.10000421004631412,
+      0.6398747737318851,
+      -0.07234355449625493
+    ],
+    "imputation_medians": [
+      1.0556035000000001,
+      1.0624730000000007,
+      1.5146832894095446,
+      0.020312763570098986,
+      0.019581825241681828,
+      3.2704404879896707,
+      -1.1417777499999997,
+      0.984603533272435
+    ],
+    "standardized_intercept": 3.636964796349295,
+    "standardized_coefficients": [
+      -0.14103101002074828,
+      -0.05105008908974532,
+      -0.20110340885790529,
+      0.010758198395018286,
+      -0.01070760682541597,
+      0.04123090017187648,
+      0.02995231146445808,
+      -0.07458979291693138
+    ],
+    "training_structures": 50,
+    "training_site_rows": 70
+  }
+}

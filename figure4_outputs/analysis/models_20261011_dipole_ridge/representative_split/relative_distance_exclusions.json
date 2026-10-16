@@ -1,0 +1,781 @@
+{
+  "relative_threshold": 0.05,
+  "comparison": "distance >= 1.05 * mean for the same metal and adsorbate",
+  "exclusion_scope": "whole structure: both sites and all three targets",
+  "reference_policy": "fixed means from the retained cohort used to identify the approved structures; no iterative reclassification",
+  "reference_site_rows": 108,
+  "reference_structures": 74,
+  "reference_sites": [
+    {
+      "name": "KMC_Co_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Cr_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Cr_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Cr_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Cr_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Cr_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Cu_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2"
+    },
+    {
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Ni_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Ni_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1"
+    },
+    {
+      "name": "KMC_Ni_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1"
+    }
+  ],
+  "reference_means": [
+    {
+      "adsorption_metal": "Co",
+      "adsorbate": "O",
+      "sites": 27,
+      "mean_A": 1.7583422631276076,
+      "threshold_A": 1.846259376283988
+    },
+    {
+      "adsorption_metal": "Co",
+      "adsorbate": "OH",
+      "sites": 27,
+      "mean_A": 1.935778147319526,
+      "threshold_A": 2.032567054685502
+    },
+    {
+      "adsorption_metal": "Co",
+      "adsorbate": "OOH",
+      "sites": 27,
+      "mean_A": 1.9853897122303215,
+      "threshold_A": 2.0846591978418374
+    },
+    {
+      "adsorption_metal": "Cr",
+      "adsorbate": "O",
+      "sites": 19,
+      "mean_A": 1.6539164036620198,
+      "threshold_A": 1.7366122238451207
+    },
+    {
+      "adsorption_metal": "Cr",
+      "adsorbate": "OH",
+      "sites": 19,
+      "mean_A": 1.8642975608894672,
+      "threshold_A": 1.9575124389339407
+    },
+    {
+      "adsorption_metal": "Cr",
+      "adsorbate": "OOH",
+      "sites": 19,
+      "mean_A": 1.8769107778008036,
+      "threshold_A": 1.970756316690844
+    },
+    {
+      "adsorption_metal": "Cu",
+      "adsorbate": "O",
+      "sites": 14,
+      "mean_A": 2.0475158423654833,
+      "threshold_A": 2.1498916344837578
+    },
+    {
+      "adsorption_metal": "Cu",
+      "adsorbate": "OH",
+      "sites": 14,
+      "mean_A": 2.0892397250363817,
+      "threshold_A": 2.1937017112882007
+    },
+    {
+      "adsorption_metal": "Cu",
+      "adsorbate": "OOH",
+      "sites": 14,
+      "mean_A": 2.6992937378155135,
+      "threshold_A": 2.8342584247062894
+    },
+    {
+      "adsorption_metal": "Fe",
+      "adsorbate": "O",
+      "sites": 8,
+      "mean_A": 1.6834009094389497,
+      "threshold_A": 1.7675709549108973
+    },
+    {
+      "adsorption_metal": "Fe",
+      "adsorbate": "OH",
+      "sites": 8,
+      "mean_A": 1.878275004075619,
+      "threshold_A": 1.9721887542794
+    },
+    {
+      "adsorption_metal": "Fe",
+      "adsorbate": "OOH",
+      "sites": 8,
+      "mean_A": 1.9099823430810856,
+      "threshold_A": 2.00548146023514
+    },
+    {
+      "adsorption_metal": "Mn",
+      "adsorbate": "O",
+      "sites": 23,
+      "mean_A": 1.6737129443091139,
+      "threshold_A": 1.7573985915245696
+    },
+    {
+      "adsorption_metal": "Mn",
+      "adsorbate": "OH",
+      "sites": 23,
+      "mean_A": 1.9113600990796782,
+      "threshold_A": 2.0069281040336624
+    },
+    {
+      "adsorption_metal": "Mn",
+      "adsorbate": "OOH",
+      "sites": 23,
+      "mean_A": 1.9904345396048944,
+      "threshold_A": 2.089956266585139
+    },
+    {
+      "adsorption_metal": "Ni",
+      "adsorbate": "O",
+      "sites": 17,
+      "mean_A": 1.9458726479026638,
+      "threshold_A": 2.0431662802977972
+    },
+    {
+      "adsorption_metal": "Ni",
+      "adsorbate": "OH",
+      "sites": 17,
+      "mean_A": 2.036962742427053,
+      "threshold_A": 2.138810879548406
+    },
+    {
+      "adsorption_metal": "Ni",
+      "adsorbate": "OOH",
+      "sites": 17,
+      "mean_A": 2.3793237168116597,
+      "threshold_A": 2.498289902652243
+    }
+  ],
+  "excluded_structures": [
+    "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+    "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+    "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+    "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+    "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+    "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+    "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+    "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+    "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+    "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+    "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+    "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+    "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+    "KMC_Ni_Ni_A2_B1_NNNNOO_q2"
+  ],
+  "flagged_endpoints": [
+    {
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Cu",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "27",
+      "distance_A": 2.9001746890849396,
+      "reference_mean_A": 2.6992937378155135,
+      "threshold_A": 2.8342584247062894,
+      "above_mean_percent": 7.441981895308469
+    },
+    {
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Ni",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "45",
+      "distance_A": 2.9510735155999943,
+      "reference_mean_A": 2.3793237168116597,
+      "threshold_A": 2.498289902652243,
+      "above_mean_percent": 24.029928956219983
+    },
+    {
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Fe",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "70",
+      "distance_A": 2.0208533712396894,
+      "reference_mean_A": 1.9099823430810856,
+      "threshold_A": 2.00548146023514,
+      "above_mean_percent": 5.804819534601169
+    },
+    {
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Ni",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "61",
+      "distance_A": 2.933834621752312,
+      "reference_mean_A": 2.3793237168116597,
+      "threshold_A": 2.498289902652243,
+      "above_mean_percent": 23.305399808467754
+    },
+    {
+      "name": "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Cu",
+      "adsorbate": "O",
+      "selected_endpoint_state": "O",
+      "endpoint_id": "40",
+      "distance_A": 2.479237129949362,
+      "reference_mean_A": 2.0475158423654833,
+      "threshold_A": 2.1498916344837578,
+      "above_mean_percent": 21.08512562643292
+    },
+    {
+      "name": "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Cu",
+      "adsorbate": "O",
+      "selected_endpoint_state": "O",
+      "endpoint_id": "88",
+      "distance_A": 2.2268561414358894,
+      "reference_mean_A": 2.0475158423654833,
+      "threshold_A": 2.1498916344837578,
+      "above_mean_percent": 8.758921194143987
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Fe",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "26",
+      "distance_A": 2.020151229053075,
+      "reference_mean_A": 1.9099823430810856,
+      "threshold_A": 2.00548146023514,
+      "above_mean_percent": 5.7680578237320645
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Cu",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "37",
+      "distance_A": 2.861211317094743,
+      "reference_mean_A": 2.6992937378155135,
+      "threshold_A": 2.8342584247062894,
+      "above_mean_percent": 5.998516464172066
+    },
+    {
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Fe",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "21",
+      "distance_A": 2.0390234666575067,
+      "reference_mean_A": 1.9099823430810856,
+      "threshold_A": 2.00548146023514,
+      "above_mean_percent": 6.756142225286665
+    },
+    {
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Mn",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "11",
+      "distance_A": 2.097059374432666,
+      "reference_mean_A": 1.9904345396048944,
+      "threshold_A": 2.089956266585139,
+      "above_mean_percent": 5.356862167842857
+    },
+    {
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Cu",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "121",
+      "distance_A": 2.8580229913858903,
+      "reference_mean_A": 2.6992937378155135,
+      "threshold_A": 2.8342584247062894,
+      "above_mean_percent": 5.880399429920269
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Ni",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "72",
+      "distance_A": 2.9945968194648387,
+      "reference_mean_A": 2.3793237168116597,
+      "threshold_A": 2.498289902652243,
+      "above_mean_percent": 25.85915898311042
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Ni",
+      "adsorbate": "O",
+      "selected_endpoint_state": "O",
+      "endpoint_id": "55",
+      "distance_A": 2.045476825146642,
+      "reference_mean_A": 1.9458726479026638,
+      "threshold_A": 2.0431662802977972,
+      "above_mean_percent": 5.118740805125932
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "adsorption_metal": "Ni",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHx",
+      "endpoint_id": "67",
+      "distance_A": 2.909140667170046,
+      "reference_mean_A": 2.3793237168116597,
+      "threshold_A": 2.498289902652243,
+      "above_mean_percent": 22.26754378207736
+    },
+    {
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Mn",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "92",
+      "distance_A": 2.1198500235364897,
+      "reference_mean_A": 1.9904345396048944,
+      "threshold_A": 2.089956266585139,
+      "above_mean_percent": 6.501870890829919
+    },
+    {
+      "name": "KMC_Ni_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "adsorption_metal": "Ni",
+      "adsorbate": "OOH",
+      "selected_endpoint_state": "OOHz",
+      "endpoint_id": "22",
+      "distance_A": 2.91174468734301,
+      "reference_mean_A": 2.3793237168116597,
+      "threshold_A": 2.498289902652243,
+      "above_mean_percent": 22.37698749310182
+    }
+  ],
+  "reference_geometry_sha256": "70847e27d0e254b75223ba6f5833e1ad1c5a04ccb5c6932d61b87ebf26fe1b3f"
+}

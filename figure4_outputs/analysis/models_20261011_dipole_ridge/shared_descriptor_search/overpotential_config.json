@@ -1,0 +1,22 @@
+{
+  "equilibrium_potential_V": 1.23,
+  "total_ORR_free_energy_eV": 4.92,
+  "same_site_only": true,
+  "complete_raw_energy_tolerance_eV": 1e-08,
+  "structure_comparison": "minimum overpotential over the same DFT-complete site set for each method",
+  "energy_filter": "record G_OH >= 0 and G_O <= 4.92; retain all complete pathways in main table",
+  "spin_source": "data.post_opt_rpbe_d4_magmoms",
+  "matplotlib_version": "3.11.2",
+  "sha256": {
+    "archive\\ML-article_2026_DAC_ORR_analysis.ipynb": "43a1e83ddb9ec1e7df5a4cf645ea884b62f3ebaaec5695b6a59fe5fff523e203",
+    "calculations\\models_20261011_dipole_ridge\\build_overpotential_report.py": "3da6e8a9606f58d93f7124ed8e9a9bde9d16b16ef3fcfcd7163463166ba234ec",
+    "calculations\\models_20261011_dipole_ridge\\current_site_descriptors.py": "2eb6d1469c9cbf2c32b31719eceec53317d197c115d9982d57ca65b3b38774a8",
+    "archive\\3d_B1B2_ch2_rpbe_d4.db": "0495d854a67ba8ded3658a816b28d6834a29f519c200237c153a4f3c958b3d2f",
+    "extracted\\structures_by_target.csv": "5c2d1f5ccf8ccc508613e27e952156b081534f5453034166289d3492ea0c82d6",
+    "calculations\\models_20261011_dipole_ridge\\shared_descriptor_search\\model_parameters.json": "b476744f044de82a6f7fd95bc4a44f218302a2fb6a9f01be83e2ff17168e98df",
+    "20261007\\3d_B1B2_ch2_OH_rpbe_d4.db": "15407d4e110bcff4a870af4e1542c33e6dc03b265e2ffa64da9dd3ba05e46077",
+    "20261007\\3d_B1B2_ch2_O_rpbe_d4.db": "c8f86f862b0dcd695080dcfc80ff5e44558b7ccb5ebbf72a4c9302a5256f4355",
+    "20261007\\3d_B1B2_ch2_OOHx_rpbe_d4.db": "a7ab7c60c2119ddaa7cf221ba2f196bcf6fa064904b07cb3837084082b03465f",
+    "20261007\\3d_B1B2_ch2_OOHz_rpbe_d4.db": "f0bec1142aaaa98f34ce289f54cd5364dc734fb0e67484b78639adb823baae66"
+  }
+}

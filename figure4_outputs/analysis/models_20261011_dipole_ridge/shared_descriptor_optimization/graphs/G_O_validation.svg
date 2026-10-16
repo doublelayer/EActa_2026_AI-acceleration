@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="650" viewBox="0 0 760 650">
+<rect width="100%" height="100%" fill="white"/>
+<text x="325" y="35" text-anchor="middle" font-family="Arial" font-size="19">G_O: validation</text>
+<line x1="85" y1="565" x2="565" y2="85" stroke="#666" stroke-dasharray="6 5"/>
+<path d="M85,85 V565 H565" fill="none" stroke="#222"/>
+<text x="85.00" y="587" text-anchor="middle" font-family="Arial" font-size="12">1.43</text>
+<text x="75" y="569.00" text-anchor="end" font-family="Arial" font-size="12">1.43</text>
+<text x="181.00" y="587" text-anchor="middle" font-family="Arial" font-size="12">2.06</text>
+<text x="75" y="473.00" text-anchor="end" font-family="Arial" font-size="12">2.06</text>
+<text x="277.00" y="587" text-anchor="middle" font-family="Arial" font-size="12">2.68</text>
+<text x="75" y="377.00" text-anchor="end" font-family="Arial" font-size="12">2.68</text>
+<text x="373.00" y="587" text-anchor="middle" font-family="Arial" font-size="12">3.30</text>
+<text x="75" y="281.00" text-anchor="end" font-family="Arial" font-size="12">3.30</text>
+<text x="469.00" y="587" text-anchor="middle" font-family="Arial" font-size="12">3.92</text>
+<text x="75" y="185.00" text-anchor="end" font-family="Arial" font-size="12">3.92</text>
+<text x="565.00" y="587" text-anchor="middle" font-family="Arial" font-size="12">4.54</text>
+<text x="75" y="89.00" text-anchor="end" font-family="Arial" font-size="12">4.54</text>
+<circle cx="308.97" cy="272.93" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Co_Co_A2_B2_NNNNNN_q2 metal1: observed=2.8843, predicted=3.32544</title></circle>
+<circle cx="313.27" cy="225.75" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Co_Cu_A2_B2_NNNNOO_q2 metal1: observed=2.91215, predicted=3.63112</title></circle>
+<circle cx="535.53" cy="186.61" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Co_Cu_A2_B2_NNNNOO_q2 metal2: observed=4.35199, predicted=3.88467</title></circle>
+<circle cx="310.42" cy="243.27" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Co_Ni_A2_B2_NNNNNN_q2 metal1: observed=2.89367, predicted=3.51759</title></circle>
+<circle cx="509.99" cy="141.82" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Co_Ni_A2_B2_NNNNNN_q2 metal2: observed=4.18655, predicted=4.17483</title></circle>
+<circle cx="284.36" cy="279.11" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Cr_Co_A2_B2_NNNNNN_q2 metal2: observed=2.72488, predicted=3.2854</title></circle>
+<circle cx="121.48" cy="505.50" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Cr_Cr_A2_B2_NNNNSS_q2 metal1: observed=1.66969, predicted=1.81878</title></circle>
+<circle cx="123.44" cy="535.53" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Cr_Mn_A2_B1_NNNNSS_q2 metal1: observed=1.68239, predicted=1.62429</title></circle>
+<circle cx="171.60" cy="490.90" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Cr_Mn_A2_B1_NNNNSS_q2 metal2: observed=1.99434, predicted=1.91341</title></circle>
+<circle cx="222.07" cy="376.53" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Fe_Ni_A2_B1_NNNNSS_q2 metal1: observed=2.3213, predicted=2.65431</title></circle>
+<circle cx="335.62" cy="280.72" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Mn_Co_A2_B1_NNNNOO_q2 metal2: observed=3.05696, predicted=3.27499</title></circle>
+<circle cx="139.39" cy="468.00" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Mn_Mn_A2_B2_NNNNSS_q2 metal1: observed=1.78574, predicted=2.06177</title></circle>
+<circle cx="404.13" cy="191.15" r="3.8" fill="#1769aa" opacity="0.65"><title>KMC_Ni_Ni_A2_B2_NNNNOO_q2 metal1: observed=3.50079, predicted=3.85528</title></circle>
+<text x="325" y="625" text-anchor="middle" font-family="Arial" font-size="15">Observed energy (eV)</text>
+<text x="20" y="325" transform="rotate(-90 20 325)" text-anchor="middle" font-family="Arial" font-size="15">Predicted energy (eV)</text>
+<text x="325" y="62" text-anchor="middle" font-family="Arial" font-size="13">Pooled R2=0.783; RMSE=0.395 eV; 13 predictions</text>
+</svg>

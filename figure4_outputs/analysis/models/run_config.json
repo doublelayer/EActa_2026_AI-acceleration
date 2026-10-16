@@ -1,0 +1,74 @@
+{
+  "data_csv": "../descriptors/model_all_structures_training_data.csv",
+  "split_map_csv": "../descriptors/model_all_structures_split.csv",
+  "feature_selection": "non-intercept target terms from feature_reference_csv",
+  "feature_reference_csv": "../../notebook/model_inputs/final_model_parameters.csv",
+  "alpha_selection": {
+    "method": "minimum mean repeated grouped-CV RMSE on target training rows",
+    "grid": [
+      0.0,
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0,
+      316.22776601683796,
+      1000.0,
+      3162.2776601683795,
+      10000.0
+    ]
+  },
+  "targets": {
+    "G_OH": {
+      "features": [
+        "site_bader_electron_population",
+        "spin_site_abs",
+        "q_site",
+        "site_heteroatom_dipole_contribution_max_eA",
+        "metal_pair_charge_dipole_axis_eA",
+        "site_heteroatom_charge_min_e",
+        "site_terminal_ligand_charge_mean_e",
+        "site_metal_ligand_spin_product_muB2"
+      ],
+      "ridge_alpha": 0.0
+    },
+    "G_O": {
+      "features": [
+        "site_bader_electron_population",
+        "spin_site_abs",
+        "q_site",
+        "metal_pair_charge_dipole_axis_eA",
+        "site_heteroatom_dipole_contribution_max_eA",
+        "site_heteroatom_charge_min_e",
+        "site_terminal_ligand_charge_mean_e",
+        "site_metal_ligand_spin_product_muB2"
+      ],
+      "ridge_alpha": 10.0
+    },
+    "G_OOH": {
+      "features": [
+        "site_bader_electron_population",
+        "spin_site_abs",
+        "q_site",
+        "site_heteroatom_dipole_contribution_max_eA",
+        "site_heteroatom_charge_min_e",
+        "site_terminal_ligand_charge_mean_e"
+      ],
+      "ridge_alpha": 10.0
+    }
+  },
+  "cv": {
+    "grouped_by": "catalyst name",
+    "folds": 5,
+    "repeats": 3,
+    "seed_start": 20261011
+  }
+}

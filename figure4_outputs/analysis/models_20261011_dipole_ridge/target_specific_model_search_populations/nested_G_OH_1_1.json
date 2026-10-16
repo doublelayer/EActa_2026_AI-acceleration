@@ -1,0 +1,165 @@
+{
+  "target": "G_OH",
+  "repeat": 1,
+  "fold": 1,
+  "specification": {
+    "id": "candidate_1270",
+    "policy": "ranked_3",
+    "family": "gaussian_process",
+    "parameters": {
+      "kernel": "matern"
+    }
+  },
+  "inner_R2": 0.9543481080478939,
+  "descriptors": [
+    "metal_metal_distance_A",
+    "site_bader_electron_population",
+    "spin_site_abs"
+  ],
+  "rows": [
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Co_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.1291443501608391,
+      "predicted_eV": 1.1811738195537753
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.1263665854230389,
+      "predicted_eV": 0.16554135756063548
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "observed_eV": 0.5520129546039634,
+      "predicted_eV": 0.5587963458202716
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.2404300632879135,
+      "predicted_eV": 0.21801692882749912
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "observed_eV": 0.7094678094148712,
+      "predicted_eV": 0.641237664815854
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.72429780866808,
+      "predicted_eV": 0.6330583694121732
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "observed_eV": 1.2195449993478569,
+      "predicted_eV": 1.292228878727951
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.6712890593988554,
+      "predicted_eV": 0.5160837294743033
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "observed_eV": 1.5794370915884706,
+      "predicted_eV": 1.101287624919766
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.42251435975769525,
+      "predicted_eV": 0.6083968226102482
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "observed_eV": 0.8035698564714089,
+      "predicted_eV": 1.033719362328133
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.6937340175060562,
+      "predicted_eV": 0.6325477257056793
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "observed_eV": 1.2853933621383185,
+      "predicted_eV": 1.2610231670263865
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "observed_eV": 1.79389604547411,
+      "predicted_eV": 1.9640367272828054
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 0.6849577794048791,
+      "predicted_eV": 0.6356106770986881
+    },
+    {
+      "target": "G_OH",
+      "repeat": 1,
+      "fold": 1,
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "observed_eV": 0.6853323602576715,
+      "predicted_eV": 0.657976835880013
+    }
+  ]
+}

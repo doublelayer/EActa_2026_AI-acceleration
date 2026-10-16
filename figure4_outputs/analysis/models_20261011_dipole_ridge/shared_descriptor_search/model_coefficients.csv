@@ -1,0 +1,28 @@
+target,index,readable_name,descriptor_key,raw_linear_coefficient,standardized_linear_coefficient
+G_OH,0,Intercept,intercept,-1.162722959303161,0.9286965507547129
+G_OH,1,Adsorption metal charge,q_site,-0.7463544954920813,-0.18181666152472784
+G_OH,2,Partner metal charge,q_partner,-0.23434359636938903,-0.05251464491081447
+G_OH,3,Adsorption metal spin magnitude,spin_site_abs,-0.3598939499901523,-0.4568605824176067
+G_OH,4,Adsorption metal: mean ligand spin magnitude,site_heteroatom_spin_abs_mean_muB,3.911233854744701,0.07143133747903269
+G_OH,5,Partner metal: mean ligand spin magnitude,partner_heteroatom_spin_abs_mean_muB,-1.4870621229682996,-0.028186355265272148
+G_OH,6,Metal separation,metal_metal_distance_A,0.425096288916429,0.1752636478367387
+G_OH,7,Adsorption metal: mean terminal ligand charge,site_terminal_ligand_charge_mean_e,-2.283000429857495,-0.10686644130346018
+G_OH,8,Adsorption metal: net ligand dipole magnitude,site_heteroatom_charge_dipole_proxy_norm_eA,-0.16030217480853592,-0.16527949319550525
+G_O,0,Intercept,intercept,2.2583175855401887,2.735357095034459
+G_O,1,Adsorption metal charge,q_site,-1.984545202784475,-0.4834477257047828
+G_O,2,Partner metal charge,q_partner,-0.4940124967115429,-0.11070450077679335
+G_O,3,Adsorption metal spin magnitude,spin_site_abs,-0.5383819178774764,-0.6834387645897971
+G_O,4,Adsorption metal: mean ligand spin magnitude,site_heteroatom_spin_abs_mean_muB,10.112886125585362,0.1846928638254148
+G_O,5,Partner metal: mean ligand spin magnitude,partner_heteroatom_spin_abs_mean_muB,-5.833638251334267,-0.11057305387684455
+G_O,6,Metal separation,metal_metal_distance_A,0.5568456263281272,0.22958279876065335
+G_O,7,Adsorption metal: mean terminal ligand charge,site_terminal_ligand_charge_mean_e,-2.4256559413090772,-0.11354409525471557
+G_O,8,Adsorption metal: net ligand dipole magnitude,site_heteroatom_charge_dipole_proxy_norm_eA,-0.3595490261415617,-0.37071287953886456
+G_OOH,0,Intercept,intercept,5.306471493748181,3.636964796349295
+G_OOH,1,Adsorption metal charge,q_site,-0.5789300466198394,-0.14103101002074828
+G_OOH,2,Partner metal charge,q_partner,-0.2278080998659672,-0.05105008908974532
+G_OOH,3,Adsorption metal spin magnitude,spin_site_abs,-0.15842010222759562,-0.20110340885790529
+G_OOH,4,Adsorption metal: mean ligand spin magnitude,site_heteroatom_spin_abs_mean_muB,0.5890668054620534,0.010758198395018286
+G_OOH,5,Partner metal: mean ligand spin magnitude,partner_heteroatom_spin_abs_mean_muB,-0.5649143490833378,-0.01070760682541597
+G_OOH,6,Metal separation,metal_metal_distance_A,0.10000421004631412,0.04123090017187648
+G_OOH,7,Adsorption metal: mean terminal ligand charge,site_terminal_ligand_charge_mean_e,0.6398747737318851,0.02995231146445808
+G_OOH,8,Adsorption metal: net ligand dipole magnitude,site_heteroatom_charge_dipole_proxy_norm_eA,-0.07234355449625493,-0.07458979291693138

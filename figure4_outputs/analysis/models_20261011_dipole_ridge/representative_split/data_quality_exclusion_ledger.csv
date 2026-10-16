@@ -1,0 +1,149 @@
+name,ads_site,included_after_geometry_checks,source_eligibility,source_exclusion_reason,additional_geometry_exclusion,excluded_whole_structure,current_exclusion_reason
+KMC_Cr_Co_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Cr_Co_A2_B2_NNNNOO_q2,metal2,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Mn_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Cr_Mn_A2_B1_NNNNNN_q2,metal2,False,False,G_OOH: OOH O-O separation > 2.0 A,False,False,G_OOH: OOH O-O separation > 2.0 A
+KMC_Ni_Cu_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Ni_Cu_A2_B1_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Fe_Co_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Fe_Co_A2_B1_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Co_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Cr_Co_A2_B1_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Fe_Co_A2_B2_NNNNSS_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Fe_Co_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Mn_Co_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Mn_Co_A2_B1_NNNNNN_q2,metal2,True,True,,False,False,
+KMC_Cr_Co_A2_B2_NNNNNN_q2,metal1,False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit),False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit)
+KMC_Cr_Co_A2_B2_NNNNNN_q2,metal2,True,True,,False,False,
+KMC_Mn_Co_A2_B2_NNNNNN_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Co_A2_B2_NNNNNN_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Co_Cu_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Co_Cu_A2_B1_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Ni_Cu_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Ni_Cu_A2_B2_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Fe_Cu_A2_B2_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Fe_Cu_A2_B2_NNNNSS_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Ni_Cu_A2_B1_NNNNSS_q2,metal1,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Ni_Cu_A2_B1_NNNNSS_q2,metal2,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Cu_Cu_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Fe_Cu_A2_B1_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Fe_Cu_A2_B1_NNNNSS_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Cu_Cu_A2_B2_NNNNOO_q2,metal1,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Co_Cu_A2_B1_NNNNOO_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Co_Cu_A2_B1_NNNNOO_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Ni_Ni_A2_B1_NNNNOO_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Co_Co_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Co_Ni_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Co_Ni_A2_B1_NNNNSS_q2,metal2,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Mn_Co_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Co_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Cr_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Ni_Ni_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Mn_Cu_A2_B2_NNNNSS_q2,metal1,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Mn_Cu_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Fe_Ni_A2_B2_NNNNSS_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Fe_Ni_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Mn_Co_A2_B1_NNNNOO_q2,metal1,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Mn_Co_A2_B1_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Co_Co_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Co_Ni_A2_B1_NNNNOO_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Co_Ni_A2_B1_NNNNOO_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Ni_Ni_A2_B1_NNNNSS_q2,metal1,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Cu_Cu_A2_B1_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Fe_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Fe_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Co_A2_B2_NNNNSS_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Co_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Cu_A2_B1_NNNNSS_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Cu_A2_B1_NNNNSS_q2,metal2,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Co_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Cr_Co_A2_B1_NNNNNN_q2,metal2,True,True,,False,False,
+KMC_Cr_Co_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Cr_Co_A2_B1_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Co_Co_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Fe_Ni_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Fe_Ni_A2_B1_NNNNSS_q2,metal2,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Mn_Ni_A2_B1_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Ni_A2_B1_NNNNSS_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Co_Ni_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Co_Ni_A2_B2_NNNNSS_q2,metal2,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Mn_Co_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Co_A2_B1_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Co_Ni_A2_B2_NNNNOO_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Co_Ni_A2_B2_NNNNOO_q2,metal2,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Mn_Ni_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Ni_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Ni_A2_B2_NNNNSS_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Ni_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Co_Co_A2_B2_NNNNOO_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Co_Co_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Mn_Ni_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Mn_Ni_A2_B1_NNNNOO_q2,metal2,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Ni_Cu_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Ni_Cu_A2_B2_NNNNSS_q2,metal2,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Cr_Fe_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Cr_Fe_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Ni_Ni_A2_B2_NNNNSS_q2,metal1,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Cr_Fe_A2_B1_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Cr_Fe_A2_B1_NNNNSS_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Co_Co_A2_B2_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Cr_Ni_A2_B1_NNNNSS_q2,metal1,False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit),False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit)
+KMC_Cr_Ni_A2_B1_NNNNSS_q2,metal2,False,False,G_OOH: raw_match_OOH=false; G_OOH: label missing or non-finite,False,False,G_OOH: raw_match_OOH=false; G_OOH: label missing or non-finite
+KMC_Mn_Fe_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Fe_A2_B1_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Mn_Mn_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Mn_Cu_A2_B1_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Cu_A2_B1_NNNNSS_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Co_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Mn_Co_A2_B2_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Mn_Mn_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Cu_Cu_A2_B2_NNNNSS_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Cr_Ni_A2_B1_NNNNOO_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Cr_Ni_A2_B1_NNNNOO_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Cr_Mn_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Cr_Mn_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Mn_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Cr_Mn_A2_B1_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Co_Cu_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Co_Cu_A2_B2_NNNNSS_q2,metal2,True,True,,False,False,
+KMC_Cr_Cr_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Cr_Cr_A2_B2_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Ni_A2_B1_NNNNNN_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Ni_A2_B1_NNNNNN_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Mn_A2_B1_NNNNSS_q2,metal1,True,True,,False,False,
+KMC_Mn_Mn_A2_B2_NNNNNN_q2,metal1,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Co_Ni_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Co_Ni_A2_B1_NNNNNN_q2,metal2,True,True,,False,False,
+KMC_Co_Ni_A2_B2_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Co_Ni_A2_B2_NNNNNN_q2,metal2,True,True,,False,False,
+KMC_Cr_Mn_A2_B2_NNNNNN_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Mn_A2_B2_NNNNNN_q2,metal2,True,True,,False,False,
+KMC_Cr_Ni_A2_B1_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Cr_Ni_A2_B1_NNNNNN_q2,metal2,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Ni_Ni_A2_B1_NNNNNN_q2,metal1,False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Ni_Ni_A2_B2_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Mn_Ni_A2_B2_NNNNNN_q2,metal1,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Mn_Ni_A2_B2_NNNNNN_q2,metal2,False,True,,True,True,whole structure excluded: selected adsorbate distance at least 5% above the fixed same-metal/same-adsorbate mean
+KMC_Cr_Cr_A2_B2_NNNNNN_q2,metal1,True,True,,False,False,
+KMC_Cr_Ni_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Cr_Ni_A2_B2_NNNNOO_q2,metal2,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite; G_OOH: raw_match_OOH=false; G_OOH: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite; G_OOH: raw_match_OOH=false; G_OOH: label missing or non-finite
+KMC_Mn_Mn_A2_B2_NNNNOO_q2,metal1,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite; G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite; G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Mn_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Cr_Mn_A2_B2_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Cr_Cu_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Cr_Cu_A2_B1_NNNNOO_q2,metal2,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite; G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite; G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Cr_A2_B1_NNNNOO_q2,metal1,False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit),False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit)
+KMC_Cr_Ni_A2_B2_NNNNNN_q2,metal1,False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit),False,False,G_O: Detached O*: nearest O-to-support distance > 3.0 A (review endpoint audit)
+KMC_Cr_Ni_A2_B2_NNNNNN_q2,metal2,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite; G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag),False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite; G_OOH: both OOH oxygen atoms > 3.0 A from support (review selected-endpoint flag)
+KMC_Cr_Cr_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Cr_Mn_A2_B1_NNNNOO_q2,metal1,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite,False,False,G_O: raw_match_O=false; G_O: label missing or non-finite
+KMC_Cr_Mn_A2_B1_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Mn_Mn_A2_B1_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Co_Cu_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Co_Cu_A2_B2_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Mn_Cu_A2_B2_NNNNOO_q2,metal1,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite,False,False,G_OH: raw_match_OH=false; G_OH: label missing or non-finite
+KMC_Mn_Cu_A2_B2_NNNNOO_q2,metal2,True,True,,False,False,
+KMC_Mn_Cu_A2_B1_NNNNOO_q2,metal1,False,False,"G_OH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_O: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_OOH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why",False,False,"G_OH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_O: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_OOH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why"
+KMC_Mn_Cu_A2_B1_NNNNOO_q2,metal2,False,False,"G_OH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_O: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_OOH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why",False,False,"G_OH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_O: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why; G_OOH: Entire structure set aside (both site rows, all targets) after extreme metal1 OH* label of -0.386 eV; investigate why"
+KMC_Mn_Ni_A2_B2_NNNNOO_q2,metal1,True,True,,False,False,
+KMC_Mn_Ni_A2_B2_NNNNOO_q2,metal2,True,True,,False,False,

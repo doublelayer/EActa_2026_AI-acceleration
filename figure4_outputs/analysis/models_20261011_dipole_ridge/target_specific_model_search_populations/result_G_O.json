@@ -1,0 +1,57 @@
+{
+  "specification": {
+    "id": "candidate_1200",
+    "policy": "ranked_5",
+    "family": "extra_trees",
+    "parameters": {
+      "depth": 5,
+      "leaf": 1
+    }
+  },
+  "descriptors": [
+    "metal_metal_distance_A",
+    "site_bader_electron_population",
+    "spin_site_abs",
+    "q_site",
+    "site_heteroatom_charge_min_e"
+  ],
+  "training": {
+    "R2": 0.9872961332520834,
+    "RMSE_eV": 0.11790973205122937,
+    "MAE_eV": 0.07852310736486677,
+    "pearson_r": 0.9937297869382361
+  },
+  "validation": {
+    "R2": 0.9798178089519181,
+    "RMSE_eV": 0.12042598808163699,
+    "MAE_eV": 0.08866843046936831,
+    "pearson_r": 0.9910970053730576
+  },
+  "cv_repeats": [
+    {
+      "R2": 0.9070706786995122,
+      "RMSE_eV": 0.31890260748164156,
+      "MAE_eV": 0.22257855492478604,
+      "pearson_r": 0.953881009077641
+    },
+    {
+      "R2": 0.9397849242562695,
+      "RMSE_eV": 0.25670498716253465,
+      "MAE_eV": 0.177090285776559,
+      "pearson_r": 0.9697407609883337
+    },
+    {
+      "R2": 0.9253767432915043,
+      "RMSE_eV": 0.28577141607013035,
+      "MAE_eV": 0.19130542100871115,
+      "pearson_r": 0.9632134436294687
+    }
+  ],
+  "cv_mean": {
+    "R2": 0.9240774487490953,
+    "RMSE_eV": 0.28712633690476885,
+    "MAE_eV": 0.19699142057001873,
+    "pearson_r": 0.9622784045651479
+  },
+  "final_selection_inner_R2": 0.9476931987647218
+}

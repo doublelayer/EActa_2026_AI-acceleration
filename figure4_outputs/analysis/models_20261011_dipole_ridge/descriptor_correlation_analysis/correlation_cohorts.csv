@@ -1,0 +1,13 @@
+scope,target,target_available_sites,target_available_structures
+common_training,G_OH,70,50
+common_training,G_O,70,50
+common_training,G_OOH,70,50
+common_training,overpotential,70,50
+target_training,G_OH,70,50
+target_training,G_O,70,50
+target_training,G_OOH,70,50
+target_training,overpotential,70,50
+all_verified_available,G_OH,136,85
+all_verified_available,G_O,134,85
+all_verified_available,G_OOH,146,88
+all_verified_available,overpotential,123,82

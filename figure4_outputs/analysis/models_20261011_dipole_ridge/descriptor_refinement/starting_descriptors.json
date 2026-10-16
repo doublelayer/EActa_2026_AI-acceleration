@@ -1,0 +1,10 @@
+[
+  "q_site",
+  "q_partner",
+  "spin_site_abs",
+  "site_heteroatom_spin_abs_mean_muB",
+  "partner_heteroatom_spin_abs_mean_muB",
+  "metal_metal_distance_A",
+  "site_terminal_ligand_charge_mean_e",
+  "site_heteroatom_charge_dipole_proxy_norm_eA"
+]

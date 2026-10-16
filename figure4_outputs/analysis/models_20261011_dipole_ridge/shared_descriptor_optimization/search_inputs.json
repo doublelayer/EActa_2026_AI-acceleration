@@ -1,0 +1,2763 @@
+{
+  "starting_descriptors": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "cohort": [
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cu_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cu_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cu_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cu_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_O",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cu_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cu_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Co_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Fe_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Co_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Fe_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Co_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Ni_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cr_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Ni_A2_B2_NNNNNN_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Cr_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Cr_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Mn_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "validation"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Cu_A2_B1_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "excluded_by_data_quality"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "role": "training"
+    },
+    {
+      "target": "G_OOH",
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "role": "training"
+    }
+  ],
+  "baseline_metrics": [
+    {
+      "target": "G_OH",
+      "method": "nested_shared_search",
+      "CV_mean_R2": "0.7470199474383867",
+      "CV_mean_RMSE_eV": "0.297541147940775",
+      "CV_mean_MAE_eV": "0.24360083435038338",
+      "CV_mean_pearson_r": "0.8650206914375578",
+      "CV_min_R2": "0.7237262270427236",
+      "R2": "",
+      "RMSE_eV": "",
+      "MAE_eV": "",
+      "pearson_r": ""
+    },
+    {
+      "target": "G_O",
+      "method": "nested_shared_search",
+      "CV_mean_R2": "0.846663026829607",
+      "CV_mean_RMSE_eV": "0.4095173051144771",
+      "CV_mean_MAE_eV": "0.31153523503778063",
+      "CV_mean_pearson_r": "0.920374874405902",
+      "CV_min_R2": "0.8360674565250805",
+      "R2": "",
+      "RMSE_eV": "",
+      "MAE_eV": "",
+      "pearson_r": ""
+    },
+    {
+      "target": "G_OOH",
+      "method": "nested_shared_search",
+      "CV_mean_R2": "0.6358471906674755",
+      "CV_mean_RMSE_eV": "0.2610188976422229",
+      "CV_mean_MAE_eV": "0.20717359741068322",
+      "CV_mean_pearson_r": "0.7999940158833493",
+      "CV_min_R2": "0.5889748815456501",
+      "R2": "",
+      "RMSE_eV": "",
+      "MAE_eV": "",
+      "pearson_r": ""
+    },
+    {
+      "target": "G_OH",
+      "method": "selected_shared_validation",
+      "CV_mean_R2": "",
+      "CV_mean_RMSE_eV": "",
+      "CV_mean_MAE_eV": "",
+      "CV_mean_pearson_r": "",
+      "CV_min_R2": "",
+      "R2": "0.5966193528178032",
+      "RMSE_eV": "0.30664263478073905",
+      "MAE_eV": "0.2930092310247803",
+      "pearson_r": "0.8242625999264623"
+    },
+    {
+      "target": "G_O",
+      "method": "selected_shared_validation",
+      "CV_mean_R2": "",
+      "CV_mean_RMSE_eV": "",
+      "CV_mean_MAE_eV": "",
+      "CV_mean_pearson_r": "",
+      "CV_min_R2": "",
+      "R2": "0.8933387580868138",
+      "RMSE_eV": "0.27684671835665964",
+      "MAE_eV": "0.24640295803325457",
+      "pearson_r": "0.9604992958405045"
+    },
+    {
+      "target": "G_OOH",
+      "method": "selected_shared_validation",
+      "CV_mean_R2": "",
+      "CV_mean_RMSE_eV": "",
+      "CV_mean_MAE_eV": "",
+      "CV_mean_pearson_r": "",
+      "CV_min_R2": "",
+      "R2": "0.6136452003507583",
+      "RMSE_eV": "0.19861433317911567",
+      "MAE_eV": "0.1668911041618708",
+      "pearson_r": "0.8360399352902221"
+    }
+  ],
+  "sha256": {
+    "cohort_membership.csv": "9869ba8b093521e733036fb6f8e7804981114a4f5606cc01b03a9a5014d4b1af",
+    "current_site_features.csv": "785be467f32e98784c684733325e85143c6e0944fe78064f50dc89886963d8b2",
+    "representative_split\\relative_distance_exclusions.json": "9e69cc3ec85a2d8147c955693411ba2cada16c2f37ef544d130718964ebbf0dc"
+  }
+}

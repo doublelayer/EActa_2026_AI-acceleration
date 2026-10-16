@@ -1,0 +1,159 @@
+{
+  "target": "G_O",
+  "repeat": 1,
+  "fold": 3,
+  "specification": {
+    "id": "candidate_1199",
+    "policy": "ranked_5",
+    "family": "extra_trees",
+    "parameters": {
+      "depth": 3,
+      "leaf": 1
+    }
+  },
+  "inner_R2": 0.9335237632538232,
+  "descriptors": [
+    "metal_metal_distance_A",
+    "site_bader_electron_population",
+    "spin_site_abs",
+    "q_site",
+    "site_heteroatom_charge_min_e"
+  ],
+  "rows": [
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 3.414333615252181,
+      "predicted_eV": 3.4005443564146156
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Co_Cu_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "observed_eV": 4.588369810761256,
+      "predicted_eV": 4.248628832339259
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "observed_eV": 2.935648755077798,
+      "predicted_eV": 2.8707116441810294
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Co_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "observed_eV": 4.22071263838267,
+      "predicted_eV": 3.9331031235925034
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Co_Ni_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 2.8365593292182236,
+      "predicted_eV": 2.8449587552854236
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.3724571512187733,
+      "predicted_eV": 1.5521931917239993
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Cr_Co_A2_B1_NNNNNN_q2",
+      "ads_site": "metal2",
+      "observed_eV": 3.0995941154997606,
+      "predicted_eV": 3.3394053858591017
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.8063724414807805,
+      "predicted_eV": 1.6815037070878673
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Cr_Co_A2_B1_NNNNSS_q2",
+      "ads_site": "metal2",
+      "observed_eV": 3.5767532629175687,
+      "predicted_eV": 3.5354473119822556
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Cr_Cr_A2_B1_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.6379091894674982,
+      "predicted_eV": 1.6960606996497085
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Cr_Ni_A2_B1_NNNNNN_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.679328025391774,
+      "predicted_eV": 1.5446603901740035
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.611493488120507,
+      "predicted_eV": 1.830515840802651
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal1",
+      "observed_eV": 1.6884037900327282,
+      "predicted_eV": 1.8481617003645727
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Mn_Ni_A2_B2_NNNNOO_q2",
+      "ads_site": "metal2",
+      "observed_eV": 3.5340616844238095,
+      "predicted_eV": 3.9079511067012667
+    },
+    {
+      "target": "G_O",
+      "repeat": 1,
+      "fold": 3,
+      "name": "KMC_Ni_Cu_A2_B2_NNNNSS_q2",
+      "ads_site": "metal1",
+      "observed_eV": 4.00572026506085,
+      "predicted_eV": 3.943950705332392
+    }
+  ]
+}

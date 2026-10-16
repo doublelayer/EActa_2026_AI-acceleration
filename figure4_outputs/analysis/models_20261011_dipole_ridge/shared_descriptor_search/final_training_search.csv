@@ -1,0 +1,4 @@
+target,descriptor_set,family,parameter,descriptor_count,joint_normalized_MSE,training_inner_RMSE_eV
+G_OH,current_shared_descriptors,ridge,1.0,8,0.24700482210936495,0.29603965455292625
+G_O,current_shared_descriptors,ridge,1.0,8,0.24700482210936495,0.4071803554703642
+G_OOH,current_shared_descriptors,ridge,10.0,8,0.24700482210936495,0.252225295349044

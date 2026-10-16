@@ -1,0 +1,16 @@
+target,index,name,coefficient,descriptor_key
+G_OH,0,Intercept,0.7475775350476374,
+G_OH,1,Partner metal charge,-0.32276285383549796,q_partner
+G_OH,2,Adsorption metal spin magnitude,-0.4123822788281675,spin_site_abs
+G_OH,3,Metal separation,0.4463527329253378,metal_metal_distance_A
+G_OH,4,Adsorption metal: net ligand dipole magnitude,-0.14010407373145184,site_heteroatom_charge_dipole_proxy_norm_eA
+G_O,0,Intercept,2.7924726936767623,
+G_O,1,Partner metal charge,-0.6174003051913453,q_partner
+G_O,2,Adsorption metal spin magnitude,-0.7641615354120521,spin_site_abs
+G_O,3,Metal separation,0.707310390789917,metal_metal_distance_A
+G_O,4,Adsorption metal: net ligand dipole magnitude,-0.2505371880164877,site_heteroatom_charge_dipole_proxy_norm_eA
+G_OOH,0,Intercept,3.703235723690195,
+G_OOH,1,Partner metal charge,-0.27840607756143465,q_partner
+G_OOH,2,Adsorption metal spin magnitude,-0.28572303344342304,spin_site_abs
+G_OOH,3,Metal separation,0.2533135340774318,metal_metal_distance_A
+G_OOH,4,Adsorption metal: net ligand dipole magnitude,-0.06214463016851171,site_heteroatom_charge_dipole_proxy_norm_eA
