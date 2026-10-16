@@ -1,0 +1,211 @@
+{
+  "policy": "deterministic chemistry-coverage and target-range-spread holdout within training descriptor ranges",
+  "validation_max_structures": 10,
+  "eligible_structures": 60,
+  "eligible_site_rows": 83,
+  "training_structures": 50,
+  "training_site_rows": 70,
+  "validation_structures": [
+    "KMC_Co_Co_A2_B1_NNNNOO_q2",
+    "KMC_Co_Cu_A2_B2_NNNNOO_q2",
+    "KMC_Co_Ni_A2_B2_NNNNNN_q2",
+    "KMC_Cr_Co_A2_B2_NNNNOO_q2",
+    "KMC_Cr_Cr_A2_B1_NNNNNN_q2",
+    "KMC_Fe_Ni_A2_B1_NNNNSS_q2",
+    "KMC_Mn_Co_A2_B1_NNNNNN_q2",
+    "KMC_Mn_Mn_A2_B1_NNNNSS_q2",
+    "KMC_Mn_Ni_A2_B1_NNNNOO_q2",
+    "KMC_Ni_Ni_A2_B2_NNNNOO_q2"
+  ],
+  "validation_site_rows": 13,
+  "validation_metals": [
+    "Co",
+    "Cr",
+    "Cu",
+    "Fe",
+    "Mn",
+    "Ni"
+  ],
+  "validation_metal_pairs": [
+    [
+      "Co",
+      "Co"
+    ],
+    [
+      "Co",
+      "Cr"
+    ],
+    [
+      "Co",
+      "Cu"
+    ],
+    [
+      "Co",
+      "Mn"
+    ],
+    [
+      "Co",
+      "Ni"
+    ],
+    [
+      "Cr",
+      "Cr"
+    ],
+    [
+      "Fe",
+      "Ni"
+    ],
+    [
+      "Mn",
+      "Mn"
+    ],
+    [
+      "Mn",
+      "Ni"
+    ],
+    [
+      "Ni",
+      "Ni"
+    ]
+  ],
+  "validation_environments": [
+    "NNNNNN",
+    "NNNNOO",
+    "NNNNSS"
+  ],
+  "shared_target_cohort": true,
+  "prediction_error_pruning": false,
+  "target_energies_used_for_split": true,
+  "target_value_spread_objective": "minimize mean squared normalized gap error across G_OH, G_O, and G_OOH",
+  "target_value_spread_score": 0.39925103998063394,
+  "coverage_source": "optimized clean structures and retained eligible site labels",
+  "geometry_policy": "preserve every source data-quality exclusion; verify selected OH/O/OOH endpoints before split",
+  "maximum_adsorbate_O_to_intended_metal_A": 3.0,
+  "maximum_adsorbate_O_to_support_A": 3.0,
+  "maximum_OOH_OO_A": 2.0,
+  "newly_rejected_geometry_site_rows": 25,
+  "bounds_features": [
+    "q_site",
+    "q_partner",
+    "spin_site_abs",
+    "site_heteroatom_spin_abs_mean_muB",
+    "partner_heteroatom_spin_abs_mean_muB",
+    "metal_metal_distance_A",
+    "site_terminal_ligand_charge_mean_e",
+    "site_heteroatom_charge_dipole_proxy_norm_eA"
+  ],
+  "bounds_tolerance": 1e-10,
+  "bounds_scope": "current descriptors globally; metal charge/spin also conditioned on metal identity and site role",
+  "geometric_domain_note": "coordinatewise descriptor ranges, not a guarantee of multivariate convex-hull inclusion",
+  "selection_order": "new adsorption metals; new ligand environments; one structure per pair; environment balance; nearest matching training sites; deterministic target-value spread improving swaps; name tie break",
+  "outer_folds": "three repeats of five grouped folds generated from the shared training names",
+  "validation_status": "target-value-spread and chemistry-focused holdout; target labels informed membership, so validation metrics are not an unbiased population estimate or untouched external test",
+  "sha256": {
+    "calculations\\models_20261011_dipole_ridge\\select_representative_split.py": "80f83c0feb1ebf22aa0883046f0e92a3c36529161739b41aeaa1a4be605eab60",
+    "calculations\\models_20261008_linear_ridge_v2\\common_cohort_exclusion_ledger.csv": "3db7d9b0c5c0c68284a976dd2dd733645f651ac2a7179147b52e0daf34410ab5",
+    "extracted\\orr_analysis_energies.csv": "96159402679f421e61c4473f5e782104b2a23677a992684aa03a6bbd58a01b2f",
+    "calculations\\review_20261008\\endpoint_geometry_audit.csv": "e7fc689b32937bbaa4bebedb727d53cd17f336ad626678030622c84717d5e6e4",
+    "extracted\\structures_by_target.csv": "5c2d1f5ccf8ccc508613e27e952156b081534f5453034166289d3492ea0c82d6",
+    "calculations\\models_20261011_dipole_ridge\\current_site_features.csv": "785be467f32e98784c684733325e85143c6e0944fe78064f50dc89886963d8b2",
+    "calculations\\models_20261011_dipole_ridge\\current_descriptor_selection.json": "13e9607252058e6f98dd0772a5b9f65a8a5a73d40d751677e889830eef55b886",
+    "calculations\\models_20261011_dipole_ridge\\representative_split\\relative_distance_exclusions.json": "9e69cc3ec85a2d8147c955693411ba2cada16c2f37ef544d130718964ebbf0dc"
+  },
+  "available_metal_pairs": [
+    [
+      "Co",
+      "Co"
+    ],
+    [
+      "Co",
+      "Cr"
+    ],
+    [
+      "Co",
+      "Cu"
+    ],
+    [
+      "Co",
+      "Fe"
+    ],
+    [
+      "Co",
+      "Mn"
+    ],
+    [
+      "Co",
+      "Ni"
+    ],
+    [
+      "Cr",
+      "Cr"
+    ],
+    [
+      "Cr",
+      "Cu"
+    ],
+    [
+      "Cr",
+      "Fe"
+    ],
+    [
+      "Cr",
+      "Mn"
+    ],
+    [
+      "Cr",
+      "Ni"
+    ],
+    [
+      "Cu",
+      "Cu"
+    ],
+    [
+      "Cu",
+      "Mn"
+    ],
+    [
+      "Cu",
+      "Ni"
+    ],
+    [
+      "Fe",
+      "Mn"
+    ],
+    [
+      "Fe",
+      "Ni"
+    ],
+    [
+      "Mn",
+      "Mn"
+    ],
+    [
+      "Mn",
+      "Ni"
+    ],
+    [
+      "Ni",
+      "Ni"
+    ]
+  ],
+  "relative_distance_exclusion_file": "representative_split/relative_distance_exclusions.json",
+  "relative_distance_threshold": 0.05,
+  "relative_distance_reference_policy": "fixed means from the retained cohort used to identify the approved structures; no iterative reclassification",
+  "excluded_whole_structures": [
+    "KMC_Co_Cu_A2_B1_NNNNOO_q2",
+    "KMC_Co_Ni_A2_B1_NNNNOO_q2",
+    "KMC_Cr_Fe_A2_B1_NNNNSS_q2",
+    "KMC_Cr_Ni_A2_B1_NNNNOO_q2",
+    "KMC_Cu_Cu_A2_B1_NNNNSS_q2",
+    "KMC_Cu_Cu_A2_B2_NNNNSS_q2",
+    "KMC_Fe_Cu_A2_B1_NNNNSS_q2",
+    "KMC_Fe_Cu_A2_B2_NNNNSS_q2",
+    "KMC_Mn_Co_A2_B2_NNNNNN_q2",
+    "KMC_Mn_Cu_A2_B1_NNNNSS_q2",
+    "KMC_Mn_Ni_A2_B1_NNNNNN_q2",
+    "KMC_Mn_Ni_A2_B1_NNNNSS_q2",
+    "KMC_Mn_Ni_A2_B2_NNNNNN_q2",
+    "KMC_Ni_Ni_A2_B1_NNNNOO_q2"
+  ],
+  "excluded_whole_structure_count": 14
+}
