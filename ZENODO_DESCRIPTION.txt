@@ -1,0 +1,39 @@
+TITLE
+DFT Data for “Accelerating Catalyst Discovery with Artificial Intelligence Using Molecular Dual-Atom Site Catalysts as a Case Study”
+
+CREATORS
+Bruno Inácio da Silva Roux Leite (https://orcid.org/0009-0009-4696-4271) — Institute of Chemistry, University of Tartu, Estonia
+Denis Savchenko — Institute of Chemistry, University of Tartu, Estonia
+Timmo-Henrik Pukk — Institute of Chemistry, University of Tartu, Estonia
+Ba Long Nguyen (https://orcid.org/0009-0003-7682-9851) — Institute of Chemistry, University of Tartu, Estonia
+Vladislav Ivanistsev (https://orcid.org/0000-0003-4517-0540) — Department of Chemistry, University of Latvia, Latvia
+Nadezda Kongi (https://orcid.org/0000-0001-9680-0421) — Institute of Chemistry, University of Tartu, Estonia
+
+DESCRIPTION
+This dataset provides density functional theory (DFT) data supporting the study “Accelerating Catalyst Discovery with Artificial Intelligence Using Molecular Dual-Atom Site Catalysts as a Case Study.” It contains 1,348 optimized bare molecular dual-atom site catalysts (DASCs) and optimized adsorption configurations for oxygen reduction reaction (ORR) intermediates O, OH, and OOH. Adsorption calculations were attempted for a subset of catalysts initially selected to generate model training and validation data. The molecular catalysts combine Cr, Mn, Fe, Co, Ni, or Cu with N/O/S bridge atoms and modular ligand components.
+
+The adsorption databases only contain successfully optimized configurations from those calculations. Initial OOH configurations include OOHx, with the O–O bond placed parallel to the catalyst xy plane, and OOHz, with the O–O bond placed perpendicular to that plane. OOHx and OOHz are stored in separate databases; the labels describe the initial adsorption geometries.
+
+The bare catalyst dataset records actual ML usage separately for the O, OH, and OOH models through O_model_role, OH_model_role, and OOH_model_role. Each field takes the value `training`, `validation`, or `prediction`, independently of the other models.
+
+Spin-polarized RPBE calculations were carried out with GPAW v24.6 in plane-wave mode. D4 dispersion corrections were applied with dftd4 v3.6.0 through the ASE SumCalculator. Calculations used a 550 eV plane-wave cutoff, a grid spacing of 0.15 Å, and 6.00 Å of vacuum on every side. Structures were optimized until the maximum force was below 0.05 eV Å⁻¹.
+
+The five collections—bare catalysts, O adsorption, OH adsorption, OOHx adsorption, and OOHz adsorption—are each provided as an Atomic Simulation Environment (ASE) SQLite (.db) database and an equivalent ASE JSON (.json) export. The accompanying `README.md` and `DATA_DICTIONARY.md` document the data organization, metadata definitions, units, and calculation settings.
+
+RELATED WORK
+Parent molecular DASC structure dataset: https://doi.org/10.5281/zenodo.18601379
+Related Data in Brief article: https://doi.org/10.1016/j.dib.2026.112806
+Associated research article: “Accelerating Catalyst Discovery with Artificial Intelligence Using Molecular Dual-Atom Site Catalysts as a Case Study” (publication DOI to be added when available)
+
+KEYWORDS
+Molecular dual-atom site catalysts; oxygen reduction reaction; density functional theory; RPBE-D4; GPAW; ASE; Bader charges; atomic magnetic moments; machine learning; catalyst screening
+
+RESOURCE TYPE
+Dataset
+
+LICENSE
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+CONTACT
+vladislav.ivanistsev@lu.lv; nadezda.kongi@ut.ee
