@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/env python3
-"""Extract unsplit model labels and descriptors from the RPBE-D4 databases.
+"""Extract descriptors and prepare role-split model datasets from RPBE-D4 databases.
 
 The five databases are the script's data inputs. Reference corrections and
 required predictor names are embedded below.
@@ -16,9 +16,15 @@ Run from this directory with:
 
     python extract_model_dataset.py
 
-This writes model_all_structures_data.csv beside this script, using every
-matching target/site record found in the databases. The output has no split
-column; train/validation assignments are added by create_all_structures_split.py.
+The structure-level assignments come from structure_model_roles.csv. Eligible
+target/site labels are limited to the sites retained in the existing
+notebook/model_inputs/cohort_membership.csv manifest. This preserves its data
+quality exclusions while applying the supplied structure-level roles.
+
+The script writes the eligible labeled training/validation table, separate
+target/split CSVs, a structure/site descriptor table for every bare structure,
+and a role map beside this script. Prediction-role structures are included in
+the descriptor table and excluded from the model training files.
 """
 from __future__ import annotations
 
@@ -44,6 +50,11 @@ DATABASES = {
     "OOHz": DATE_DIR / "DASC_OOHz_Adsorption_RPBE_D4.db",
 }
 DEFAULT_OUTPUT = HERE / "model_all_structures_data.csv"
+DEFAULT_DESCRIPTOR_OUTPUT = HERE / "model_structure_descriptors.csv"
+DEFAULT_ROLES = HERE / "structure_model_roles.csv"
+DEFAULT_ELIGIBLE_SITES = DATE_DIR.parent / "notebook" / "model_inputs" / "cohort_membership.csv"
+DEFAULT_TRAINING_OUTPUT = HERE / "model_all_structures_training_data.csv"
+DEFAULT_SPLIT_OUTPUT = HERE / "model_all_structures_split.csv"
 
 # Electronic reference energies for H2 and H2O, in eV.
 E_H2_EV = -6.73
@@ -83,6 +94,12 @@ SOLVATION_CORRECTIONS_EV = {
     "G_OOH": -0.30,
 }
 TARGETS = tuple(ADSORPTION_REFERENCE_OFFSETS_EV)
+ROLE_COLUMN_BY_TARGET = {
+    "G_O": "O_model_role",
+    "G_OH": "OH_model_role",
+    "G_OOH": "OOH_model_role",
+}
+MODEL_ROLES = ("training", "validation", "prediction")
 
 # Export every descriptor for every target. Model predictors are selected from
 # the descriptor columns using training data, without importing an older model's
@@ -123,6 +140,81 @@ def connect_readonly(path: Path):
     if not path.is_file():
         raise FileNotFoundError(path)
     return sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True)
+
+
+def load_structure_roles(path: Path) -> dict[str, dict[str, str]]:
+    """Read target-specific roles from the user-provided structure map."""
+    required_fields = ["name", *ROLE_COLUMN_BY_TARGET.values()]
+    roles = {}
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        reader = csv.DictReader(stream)
+        if reader.fieldnames is None:
+            raise ValueError(f"role CSV has no header: {path}")
+        missing_fields = [field for field in required_fields if field not in reader.fieldnames]
+        if missing_fields:
+            raise ValueError(f"role CSV is missing columns: {', '.join(missing_fields)}")
+        for line_number, row in enumerate(reader, start=2):
+            name = (row.get("name") or "").strip()
+            if not name:
+                raise ValueError(f"role CSV has a blank structure name at line {line_number}")
+            if name in roles:
+                raise ValueError(f"duplicate structure name in role CSV: {name}")
+            target_roles = {}
+            for target, column in ROLE_COLUMN_BY_TARGET.items():
+                role = (row.get(column) or "").strip()
+                if role not in MODEL_ROLES:
+                    raise ValueError(
+                        f"invalid {column} value at line {line_number} for {name}: {role!r}"
+                    )
+                target_roles[target] = role
+            roles[name] = target_roles
+    if not roles:
+        raise ValueError(f"role CSV has no structure rows: {path}")
+    return roles
+
+
+def load_eligible_sites(path: Path, structure_roles: dict[str, dict[str, str]]):
+    """Load target/site labels retained by the existing data-quality manifest."""
+    required_fields = ("target", "name", "ads_site", "role")
+    eligible = set()
+    seen = set()
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        reader = csv.DictReader(stream)
+        if reader.fieldnames is None:
+            raise ValueError(f"eligible-site CSV has no header: {path}")
+        missing_fields = [field for field in required_fields if field not in reader.fieldnames]
+        if missing_fields:
+            raise ValueError(
+                f"eligible-site CSV is missing columns: {', '.join(missing_fields)}"
+            )
+        for line_number, row in enumerate(reader, start=2):
+            target = (row.get("target") or "").strip()
+            name = (row.get("name") or "").strip()
+            site = (row.get("ads_site") or "").strip()
+            membership_role = (row.get("role") or "").strip()
+            if target not in TARGETS or site not in ("metal1", "metal2") or not name:
+                raise ValueError(f"invalid eligible-site row at line {line_number}: {row}")
+            key = (target, name, site)
+            if key in seen:
+                raise ValueError(f"duplicate target/site membership in {path}: {key}")
+            seen.add(key)
+            if membership_role in ("training", "validation"):
+                if name not in structure_roles:
+                    raise ValueError(f"eligible structure is missing from role CSV: {name}")
+                role_from_csv = structure_roles[name][target]
+                if role_from_csv != membership_role:
+                    raise ValueError(
+                        f"role mismatch for {target}, {name}, {site}: "
+                        f"role CSV says {role_from_csv}, eligible-site manifest says {membership_role}"
+                    )
+                eligible.add(key)
+            elif membership_role != "excluded_by_data_quality":
+                raise ValueError(
+                    f"unknown eligible-site status at line {line_number}: {membership_role!r}"
+                )
+    if not eligible:
+        raise ValueError(f"eligible-site CSV has no retained target/site rows: {path}")
+    return eligible
 
 
 def load_clean_database(path: Path) -> dict[str, dict]:
@@ -290,39 +382,69 @@ def compute_site_descriptors(clean: dict, site: str) -> dict[str, float]:
     return result
 
 
-def build_all_structure_rows(clean_records, adsorption_records, descriptor_values):
-    """Build unsplit rows for every target/site pair with a matching clean structure."""
+def build_all_structure_rows(
+    clean_records, adsorption_records, descriptor_values, structure_roles, eligible_sites
+):
+    """Build role-tagged descriptor rows, labeling only retained target/site pairs."""
     rows = []
-    counts = {}
+    eligible_counts = {}
     unmatched_clean = {}
     for target in TARGETS:
         target_records = adsorption_records[target]
-        keys = sorted(key for key in target_records if key[0] in clean_records)
         unmatched_clean[target] = sum(key[0] not in clean_records for key in target_records)
-        counts[target] = len(keys)
-        for key in keys:
-            name, site = key
+        eligible_counts[target] = 0
+        target_sites = sorted(
+            (name, site) for eligible_target, name, site in eligible_sites
+            if eligible_target == target
+        )
+        for name, site in target_sites:
+            key = (name, site)
             clean = clean_records[name]
-            adsorbed = target_records[key]
+            adsorbed = target_records.get(key)
+            if adsorbed is None:
+                raise ValueError(
+                    f"eligible target/site has no adsorption record for {target}, {name}, {site}"
+                )
             assert_metadata_match(adsorbed, clean, key)
             row = {
                 "target": target,
                 "name": name,
                 "ads_site": site,
+                "split": structure_roles[name][target],
                 "observed_eV": calculate_target_value(target, adsorbed, clean),
             }
             features = descriptor_values[key]
             for feature in FEATURES:
                 value = float(features[feature])
-                # Keep every target-labeled site; an undefined descriptor is blank.
                 row[feature] = value if math.isfinite(value) else ""
             rows.append(row)
-    return rows, counts, unmatched_clean
+            eligible_counts[target] += 1
+    return rows, eligible_counts, unmatched_clean
 
 
-def write_csv(path: Path, rows) -> None:
+def build_structure_descriptor_rows(clean_records, descriptor_values, structure_roles):
+    """Build one target-independent descriptor row per structure and metal site."""
+    rows = []
+    for name in sorted(clean_records):
+        for site in ("metal1", "metal2"):
+            row = {
+                "name": name,
+                "ads_site": site,
+                **{
+                    column: structure_roles[name][target]
+                    for target, column in ROLE_COLUMN_BY_TARGET.items()
+                },
+            }
+            for feature, value in descriptor_values[(name, site)].items():
+                row[feature] = value if math.isfinite(value) else ""
+            rows.append(row)
+    return rows
+
+
+def write_csv(path: Path, rows, fields=None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    fields = ["target", "name", "ads_site", "observed_eV", *FEATURES]
+    if fields is None:
+        fields = ["target", "name", "ads_site", "split", "observed_eV", *FEATURES]
     with path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="raise")
         writer.writeheader()
@@ -332,10 +454,32 @@ def write_csv(path: Path, rows) -> None:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT,
-                        help=f"CSV output path (default: {DEFAULT_OUTPUT})")
+                        help=f"labeled training/validation CSV path (default: {DEFAULT_OUTPUT})")
+    parser.add_argument("--descriptor-output", type=Path, default=DEFAULT_DESCRIPTOR_OUTPUT,
+                        help=f"all-structure descriptor CSV path (default: {DEFAULT_DESCRIPTOR_OUTPUT})")
+    parser.add_argument("--roles", type=Path, default=DEFAULT_ROLES,
+                        help=f"structure role CSV path (default: {DEFAULT_ROLES})")
+    parser.add_argument("--eligible-sites", type=Path, default=DEFAULT_ELIGIBLE_SITES,
+                        help=f"retained target/site manifest (default: {DEFAULT_ELIGIBLE_SITES})")
+    parser.add_argument("--training-output", type=Path, default=DEFAULT_TRAINING_OUTPUT,
+                        help=f"labeled training/validation CSV for model fitting (default: {DEFAULT_TRAINING_OUTPUT})")
+    parser.add_argument("--split-output", type=Path, default=DEFAULT_SPLIT_OUTPUT,
+                        help=f"structure role map output path (default: {DEFAULT_SPLIT_OUTPUT})")
     args = parser.parse_args()
 
+    structure_roles = load_structure_roles(args.roles)
+    eligible_sites = load_eligible_sites(args.eligible_sites, structure_roles)
     clean_records = load_clean_database(DATABASES["bare"])
+    missing_roles = set(clean_records) - set(structure_roles)
+    extra_roles = set(structure_roles) - set(clean_records)
+    if missing_roles or extra_roles:
+        raise ValueError(
+            "role CSV and bare catalyst database names differ: "
+            f"missing roles for {len(missing_roles)} clean structures "
+            f"({sorted(missing_roles)[:5]}), "
+            f"unknown role structures {len(extra_roles)} ({sorted(extra_roles)[:5]})"
+        )
+
     adsorption_records = {
         "G_OH": load_adsorption_database(DATABASES["OH"], "OH"),
         "G_O": load_adsorption_database(DATABASES["O"], "O"),
@@ -346,25 +490,82 @@ def main():
         key: value[0] for key, value in select_ooh_records(ooh_x, ooh_z).items()
     }
     all_keys = {
-        key for target_records in adsorption_records.values()
-        for key in target_records if key[0] in clean_records
+        (name, site)
+        for name in clean_records
+        for site in ("metal1", "metal2")
     }
     descriptor_values = {
         key: compute_site_descriptors(clean_records[key[0]], key[1])
         for key in sorted(all_keys)
     }
-    rows, counts, unmatched_clean = build_all_structure_rows(
-        clean_records, adsorption_records, descriptor_values
+    rows, eligible_counts, unmatched_clean = build_all_structure_rows(
+        clean_records, adsorption_records, descriptor_values,
+        structure_roles, eligible_sites,
     )
     output_path = args.output.resolve()
     write_csv(output_path, rows)
-    site_pairs = len(all_keys)
+
+    descriptor_rows = build_structure_descriptor_rows(
+        clean_records, descriptor_values, structure_roles
+    )
+    descriptor_output_path = args.descriptor_output.resolve()
+    write_csv(
+        descriptor_output_path,
+        descriptor_rows,
+        ["name", "ads_site", *ROLE_COLUMN_BY_TARGET.values(), *FEATURES],
+    )
+
+    labeled_training_validation_rows = rows
+    training_output_path = args.training_output.resolve()
+    write_csv(training_output_path, labeled_training_validation_rows)
+
+    split_rows = [
+        {
+            "name": name,
+            **{
+                column: structure_roles[name][target]
+                for target, column in ROLE_COLUMN_BY_TARGET.items()
+            },
+        }
+        for name in sorted(structure_roles)
+    ]
+    split_output_path = args.split_output.resolve()
+    write_csv(
+        split_output_path,
+        split_rows,
+        ["name", *ROLE_COLUMN_BY_TARGET.values()],
+    )
+
+    target_outputs = {}
+    rows_by_target_and_role = {}
+    labeled_rows_by_target_and_role = {}
+    for target in TARGETS:
+        target_outputs[target] = {}
+        rows_by_target_and_role[target] = {}
+        labeled_rows_by_target_and_role[target] = {}
+        target_rows = [row for row in rows if row["target"] == target]
+        for role in ("training", "validation"):
+            role_rows = [row for row in target_rows if row["split"] == role]
+            rows_by_target_and_role[target][role] = len(role_rows)
+            labeled_rows_by_target_and_role[target][role] = len(role_rows)
+            role_output_path = HERE / f"model_{target}_{role}_data.csv"
+            write_csv(role_output_path, role_rows)
+            target_outputs[target][role] = str(role_output_path.resolve())
 
     print(json.dumps({
         "output": str(output_path),
+        "structure_descriptors": str(descriptor_output_path),
+        "training_validation_data": str(training_output_path),
+        "role_map": str(split_output_path),
+        "roles_input": str(args.roles.resolve()),
+        "eligible_site_manifest": str(args.eligible_sites.resolve()),
         "rows": len(rows),
-        "site_pairs": site_pairs,
-        "rows_by_target": counts,
+        "descriptor_site_pairs": len(all_keys),
+        "structure_descriptor_rows": len(descriptor_rows),
+        "eligible_labeled_rows_by_target": eligible_counts,
+        "rows_by_target_and_role": rows_by_target_and_role,
+        "labeled_rows_by_target_and_role": labeled_rows_by_target_and_role,
+        "target_role_outputs": target_outputs,
         "adsorption_keys_without_bare_structure": unmatched_clean,
         "descriptors": list(FEATURES),
         "gas_reference_energies_eV": {"H2": E_H2_EV, "H2O": E_H2O_EV},

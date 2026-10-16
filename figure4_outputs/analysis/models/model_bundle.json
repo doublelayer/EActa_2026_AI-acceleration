@@ -1,178 +1,191 @@
 {
   "model_type": "standardized_ridge",
-  "feature_selection": "non-intercept target terms from feature_reference_csv",
-  "feature_reference_csv": "../../notebook/model_inputs/final_model_parameters.csv",
+  "feature_selection": "descriptor columns with finite values in target training rows",
   "alpha_selection": "minimum mean repeated grouped-CV RMSE on target training rows",
   "targets": {
     "G_OH": {
       "alpha": 0.0,
-      "intercept_eV": 1.0612436172131983,
+      "intercept_eV": 0.9630667276792648,
       "features": [
         {
           "name": "site_bader_electron_population",
-          "standardized_coefficient": 0.7741903671979756,
-          "training_median": 25.945138999999998,
-          "training_mean": 25.33204080357143,
-          "training_sd": 1.9396522622239571
+          "standardized_coefficient": 0.7064579219239498,
+          "training_median": 25.818379999999998,
+          "training_mean": 25.100111899999998,
+          "training_sd": 1.842787256399975
         },
         {
           "name": "spin_site_abs",
-          "standardized_coefficient": 0.18718490152342782,
-          "training_median": 0.8545867043812205,
-          "training_mean": 1.4779757290145779,
-          "training_sd": 1.3006689640224318
+          "standardized_coefficient": 0.18198363554287328,
+          "training_median": 1.155479019170036,
+          "training_mean": 1.643333883719837,
+          "training_sd": 1.2774140963845158
         },
         {
           "name": "q_site",
-          "standardized_coefficient": -0.03651540620587382,
-          "training_median": 1.0524435000000008,
-          "training_mean": 1.087602053571429,
-          "training_sd": 0.23209996047842477
+          "standardized_coefficient": 0.007937103248331093,
+          "training_median": 1.062231500000001,
+          "training_mean": 1.0998881000000003,
+          "training_sd": 0.23587121984283507
         },
         {
           "name": "site_heteroatom_dipole_contribution_max_eA",
-          "standardized_coefficient": -0.2152188805350897,
-          "training_median": 2.1932601670706644,
-          "training_mean": 2.211952303488684,
-          "training_sd": 0.12504352414651915
+          "standardized_coefficient": -0.18519102106250712,
+          "training_median": 2.208687614985144,
+          "training_mean": 2.2181067215846735,
+          "training_sd": 0.13031220378754516
         },
         {
           "name": "metal_pair_charge_dipole_axis_eA",
-          "standardized_coefficient": 0.01770021219182171,
+          "standardized_coefficient": 0.05549697611296189,
           "training_median": -0.0023522053817297784,
-          "training_mean": -0.012498761542788329,
-          "training_sd": 0.4610396293331569
+          "training_mean": -0.056706949822029624,
+          "training_sd": 0.46988352007218515
         },
         {
           "name": "site_heteroatom_charge_min_e",
-          "standardized_coefficient": -0.09651616916370578,
-          "training_median": -1.141585,
-          "training_mean": -1.1463695625,
-          "training_sd": 0.04785838422866195
+          "standardized_coefficient": -0.07131053502415349,
+          "training_median": -1.1471580000000001,
+          "training_mean": -1.1445193,
+          "training_sd": 0.05151432753525964
         },
         {
           "name": "site_terminal_ligand_charge_mean_e",
-          "standardized_coefficient": -0.02751293572854785,
-          "training_median": -1.13475525,
-          "training_mean": -1.131162444196429,
-          "training_sd": 0.0676381815421093
+          "standardized_coefficient": -0.013183592675182036,
+          "training_median": -1.1398092499999999,
+          "training_mean": -1.1249990749999998,
+          "training_sd": 0.08037014572314494
         },
         {
           "name": "site_metal_ligand_spin_product_muB2",
-          "standardized_coefficient": -0.11155862877231085,
-          "training_median": 9.399261918808623e-06,
-          "training_mean": -0.014363262145111312,
-          "training_sd": 0.05131265246881033
+          "standardized_coefficient": -0.044346885303015594,
+          "training_median": 4.7867131157374025e-05,
+          "training_mean": -0.013732894790598258,
+          "training_sd": 0.044162748273356235
         }
       ]
     },
     "G_O": {
-      "alpha": 10.0,
-      "intercept_eV": 3.133000465560003,
+      "alpha": 0.31622776601683794,
+      "intercept_eV": 2.786474244420524,
       "features": [
         {
           "name": "site_bader_electron_population",
-          "standardized_coefficient": 0.6002587060115999,
-          "training_median": 25.981523,
-          "training_mean": 25.454489837837844,
-          "training_sd": 1.9386353437257546
+          "standardized_coefficient": 0.8977601598314441,
+          "training_median": 25.818379999999998,
+          "training_mean": 25.100111899999998,
+          "training_sd": 1.842787256399975
         },
         {
           "name": "spin_site_abs",
-          "standardized_coefficient": -0.19923143037943541,
-          "training_median": 0.8087701970396411,
-          "training_mean": 1.404480910110286,
-          "training_sd": 1.3076637339306791
+          "standardized_coefficient": -0.0877464645953552,
+          "training_median": 1.155479019170036,
+          "training_mean": 1.643333883719837,
+          "training_sd": 1.2774140963845158
         },
         {
           "name": "q_site",
-          "standardized_coefficient": -0.36349043745791076,
-          "training_median": 1.0204540000000009,
-          "training_mean": 1.086050702702703,
-          "training_sd": 0.240205292410906
-        },
-        {
-          "name": "metal_pair_charge_dipole_axis_eA",
-          "standardized_coefficient": 0.02117683645804947,
-          "training_median": -0.0020970986356018554,
-          "training_mean": -0.00991168101814061,
-          "training_sd": 0.4604412864391307
+          "standardized_coefficient": -0.19685581537749725,
+          "training_median": 1.062231500000001,
+          "training_mean": 1.0998881000000003,
+          "training_sd": 0.23587121984283507
         },
         {
           "name": "site_heteroatom_dipole_contribution_max_eA",
-          "standardized_coefficient": 0.05956416809648365,
-          "training_median": 2.190277472290176,
-          "training_mean": 2.207512349754823,
-          "training_sd": 0.12289338577268753
+          "standardized_coefficient": -0.07268265422015874,
+          "training_median": 2.208687614985144,
+          "training_mean": 2.2181067215846735,
+          "training_sd": 0.13031220378754516
+        },
+        {
+          "name": "metal_pair_charge_dipole_axis_eA",
+          "standardized_coefficient": 0.07919601937285191,
+          "training_median": -0.0023522053817297784,
+          "training_mean": -0.056706949822029624,
+          "training_sd": 0.46988352007218515
         },
         {
           "name": "site_heteroatom_charge_min_e",
-          "standardized_coefficient": 0.016848420459305888,
-          "training_median": -1.1411650000000009,
-          "training_mean": -1.1460684594594595,
-          "training_sd": 0.04819811392403175
+          "standardized_coefficient": -0.10984687762311772,
+          "training_median": -1.1471580000000001,
+          "training_mean": -1.1445193,
+          "training_sd": 0.05151432753525964
         },
         {
           "name": "site_terminal_ligand_charge_mean_e",
-          "standardized_coefficient": -0.10021525152639023,
-          "training_median": -1.1321649999999996,
-          "training_mean": -1.1314409256756761,
-          "training_sd": 0.06779328625946414
+          "standardized_coefficient": -0.06551052804001743,
+          "training_median": -1.1398092499999999,
+          "training_mean": -1.1249990749999998,
+          "training_sd": 0.08037014572314494
         },
         {
           "name": "site_metal_ligand_spin_product_muB2",
-          "standardized_coefficient": -0.24732952617212708,
-          "training_median": 7.901548693878969e-05,
-          "training_mean": -0.012404413087570247,
-          "training_sd": 0.04646492250207644
+          "standardized_coefficient": -0.11829238489534417,
+          "training_median": 4.7867131157374025e-05,
+          "training_mean": -0.013732894790598258,
+          "training_sd": 0.044162748273356235
         }
       ]
     },
     "G_OOH": {
-      "alpha": 10.0,
-      "intercept_eV": 3.759305037627482,
+      "alpha": 3.1622776601683795,
+      "intercept_eV": 3.7294379630764767,
       "features": [
         {
           "name": "site_bader_electron_population",
-          "standardized_coefficient": 0.2607105006986541,
-          "training_median": 25.944982,
-          "training_mean": 25.33990407438017,
-          "training_sd": 1.9545297658049463
+          "standardized_coefficient": 0.31301770640346366,
+          "training_median": 25.818379999999998,
+          "training_mean": 25.100111899999998,
+          "training_sd": 1.842787256399975
         },
         {
           "name": "spin_site_abs",
-          "standardized_coefficient": -0.029734813411199188,
-          "training_median": 0.8571380243213669,
-          "training_mean": 1.4921849748582572,
-          "training_sd": 1.3168091646891422
+          "standardized_coefficient": 0.002897596774519321,
+          "training_median": 1.155479019170036,
+          "training_mean": 1.643333883719837,
+          "training_sd": 1.2774140963845158
         },
         {
           "name": "q_site",
-          "standardized_coefficient": -0.1158405453226015,
-          "training_median": 1.0530180000000016,
-          "training_mean": 1.0981124545454546,
-          "training_sd": 0.23553131613934164
+          "standardized_coefficient": -0.0899486052361085,
+          "training_median": 1.062231500000001,
+          "training_mean": 1.0998881000000003,
+          "training_sd": 0.23587121984283507
         },
         {
           "name": "site_heteroatom_dipole_contribution_max_eA",
-          "standardized_coefficient": -0.07425099479030223,
-          "training_median": 2.2003283383365697,
-          "training_mean": 2.21729219315671,
-          "training_sd": 0.12512906736790338
+          "standardized_coefficient": -0.10740062168130894,
+          "training_median": 2.208687614985144,
+          "training_mean": 2.2181067215846735,
+          "training_sd": 0.13031220378754516
+        },
+        {
+          "name": "metal_pair_charge_dipole_axis_eA",
+          "standardized_coefficient": 0.06934592481511105,
+          "training_median": -0.0023522053817297784,
+          "training_mean": -0.056706949822029624,
+          "training_sd": 0.46988352007218515
         },
         {
           "name": "site_heteroatom_charge_min_e",
-          "standardized_coefficient": -0.010945899303910695,
-          "training_median": -1.1452950000000008,
-          "training_mean": -1.1480428016528932,
-          "training_sd": 0.048718932747036314
+          "standardized_coefficient": -0.037479124901449105,
+          "training_median": -1.1471580000000001,
+          "training_mean": -1.1445193,
+          "training_sd": 0.05151432753525964
         },
         {
           "name": "site_terminal_ligand_charge_mean_e",
-          "standardized_coefficient": -0.030601423686184265,
-          "training_median": -1.1376040000000005,
-          "training_mean": -1.132522840909091,
-          "training_sd": 0.06601470790797773
+          "standardized_coefficient": -0.029532213468980887,
+          "training_median": -1.1398092499999999,
+          "training_mean": -1.1249990749999998,
+          "training_sd": 0.08037014572314494
+        },
+        {
+          "name": "site_metal_ligand_spin_product_muB2",
+          "standardized_coefficient": -0.03757264818207932,
+          "training_median": 4.7867131157374025e-05,
+          "training_mean": -0.013732894790598258,
+          "training_sd": 0.044162748273356235
         }
       ]
     }

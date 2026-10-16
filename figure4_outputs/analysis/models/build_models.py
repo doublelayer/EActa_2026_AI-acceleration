@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Fit target-specific ridge models using descriptors and their supplied split.
+"""Fit target-specific ridge models using only descriptors and their split.
 
-Each target's predictors come from the non-intercept terms in the reference
-parameter CSV. Ridge strength is selected by grouped cross-validation on
-training catalysts; the validation split is held out for final evaluation.
+Predictors come from the descriptor CSV columns that have finite training
+values. Ridge strength is selected by grouped cross-validation on training
+catalysts; the validation split is held out for final evaluation.
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import json
+import math
 import os
 from collections import Counter
 from pathlib import Path
@@ -21,9 +22,14 @@ HERE = Path(__file__).resolve().parent
 DATE_DIR = HERE.parent
 DEFAULT_DATA = DATE_DIR / "descriptors" / "model_all_structures_training_data.csv"
 DEFAULT_SPLIT_MAP = DATE_DIR / "descriptors" / "model_all_structures_split.csv"
-DEFAULT_FEATURE_REFERENCE = HERE.parents[1] / "notebook" / "model_inputs" / "final_model_parameters.csv"
 TARGETS = ("G_OH", "G_O", "G_OOH")
 SPLITS = ("training", "validation")
+ROLE_COLUMN_BY_TARGET = {
+    "G_O": "O_model_role",
+    "G_OH": "OH_model_role",
+    "G_OOH": "OOH_model_role",
+}
+ALL_ROLES = (*SPLITS, "prediction")
 CV_REPEATS = 3
 CV_FOLDS = 5
 CV_SEED = 20261011
@@ -46,8 +52,8 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def get_specs(data_rows: list[dict[str, str]], feature_reference: Path) -> dict[str, dict]:
-    """Use each target's descriptor terms from the reference parameter CSV."""
+def get_specs(data_rows: list[dict[str, str]]) -> dict[str, dict]:
+    """Use descriptor columns with finite values in this target's training rows."""
     if not data_rows:
         raise ValueError("descriptor CSV has no data rows")
     reserved = {"target", "name", "ads_site", "split", "observed_eV"}
@@ -55,25 +61,99 @@ def get_specs(data_rows: list[dict[str, str]], feature_reference: Path) -> dict[
     if not feature_columns:
         raise ValueError("descriptor CSV has no predictor columns")
 
-    reference_rows = read_csv(feature_reference)
     specs = {}
     for target in TARGETS:
-        features = [row["term"].strip() for row in reference_rows
-                    if row.get("target") == target
-                    and row.get("term", "").strip()
-                    and row["term"].strip() != "intercept"]
+        training_rows = [row for row in data_rows
+                         if row.get("target") == target and row.get("split") == "training"]
+        if not training_rows:
+            raise ValueError(f"{target} has no training rows for predictor selection")
+        features = []
+        for feature in feature_columns:
+            observed = []
+            for row in data_rows:
+                raw = (row.get(feature) or "").strip()
+                if not raw:
+                    continue
+                try:
+                    value = float(raw)
+                except ValueError as exc:
+                    raise ValueError(f"non-numeric predictor {feature!r}: {raw!r}") from exc
+                if not math.isfinite(value):
+                    raise ValueError(f"non-finite predictor {feature!r}: {raw!r}")
+                if row.get("target") == target and row.get("split") == "training":
+                    observed.append(value)
+            if observed:
+                features.append(feature)
         if not features:
-            raise ValueError(f"{target} has no descriptor terms in {feature_reference}")
-        if len(features) != len(set(features)):
-            raise ValueError(f"{target} has duplicate descriptor terms in {feature_reference}")
-        missing_columns = [feature for feature in features if feature not in feature_columns]
-        if missing_columns:
-            raise ValueError(
-                f"{target} reference descriptors are missing from {feature_reference}: "
-                f"{missing_columns}"
-            )
+            raise ValueError(f"{target} has no predictors with finite training values")
         specs[target] = {"features": features}
     return specs
+
+
+def validate_role_assignments(
+    data_rows: list[dict[str, str]], split_rows: list[dict[str, str]]
+) -> dict[str, dict[str, int]]:
+    """Check labeled rows against the supplied target-specific role map."""
+    if not split_rows:
+        raise ValueError("role map has no structure rows")
+    required = {"name", *ROLE_COLUMN_BY_TARGET.values()}
+    missing = required - set(split_rows[0])
+    if missing:
+        raise ValueError(f"role map is missing columns: {', '.join(sorted(missing))}")
+
+    roles_by_name = {}
+    structure_counts = {target: Counter() for target in TARGETS}
+    for row in split_rows:
+        name = (row.get("name") or "").strip()
+        if not name:
+            raise ValueError("role map contains a blank structure name")
+        if name in roles_by_name:
+            raise ValueError(f"duplicate structure name in role map: {name}")
+        roles_by_name[name] = {}
+        for target, column in ROLE_COLUMN_BY_TARGET.items():
+            role = (row.get(column) or "").strip()
+            if role not in ALL_ROLES:
+                raise ValueError(f"invalid {column} role for {name}: {role!r}")
+            roles_by_name[name][target] = role
+            structure_counts[target][role] += 1
+
+    seen_rows = set()
+    rows_by_target_and_split = {target: Counter() for target in TARGETS}
+    for row in data_rows:
+        target = (row.get("target") or "").strip()
+        name = (row.get("name") or "").strip()
+        site = (row.get("ads_site") or "").strip()
+        split = (row.get("split") or "").strip()
+        if target not in TARGETS or not name or site not in ("metal1", "metal2"):
+            raise ValueError(f"invalid model data row: {row}")
+        if split not in SPLITS:
+            raise ValueError(f"model data must contain only training/validation rows: {row}")
+        if name not in roles_by_name:
+            raise ValueError(f"model data structure is missing from role map: {name}")
+        expected = roles_by_name[name][target]
+        if split != expected:
+            raise ValueError(
+                f"split mismatch for {target}, {name}: data says {split}, role map says {expected}"
+            )
+        key = (target, name, site)
+        if key in seen_rows:
+            raise ValueError(f"duplicate target/site model row: {key}")
+        seen_rows.add(key)
+        try:
+            observed = float(row.get("observed_eV", ""))
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"missing or non-numeric target value in model row: {key}") from exc
+        if not math.isfinite(observed):
+            raise ValueError(f"non-finite target value in model row: {key}")
+        rows_by_target_and_split[target][split] += 1
+
+    for target in TARGETS:
+        for split in SPLITS:
+            if not rows_by_target_and_split[target][split]:
+                raise ValueError(f"{target} has no {split} rows")
+    return {
+        target: dict(counts) for target, counts in structure_counts.items()
+    }
 
 
 def numeric_matrix(rows: list[dict[str, str]], features: list[str]) -> np.ndarray:
@@ -236,15 +316,14 @@ def main() -> None:
                         help=f"combined split data CSV (default: {DEFAULT_DATA})")
     parser.add_argument("--split-map", type=Path, default=DEFAULT_SPLIT_MAP,
                         help=f"catalyst split map (default: {DEFAULT_SPLIT_MAP})")
-    parser.add_argument("--feature-reference", type=Path, default=DEFAULT_FEATURE_REFERENCE,
-                        help=f"parameter CSV whose target terms define predictors (default: {DEFAULT_FEATURE_REFERENCE})")
     parser.add_argument("--output-dir", type=Path, default=HERE,
                         help=f"model artifact directory (default: {HERE})")
     args = parser.parse_args()
 
     data_rows = read_csv(args.data)
     split_rows = read_csv(args.split_map)
-    specs = get_specs(data_rows, args.feature_reference)
+    structures_by_target_role = validate_role_assignments(data_rows, split_rows)
+    specs = get_specs(data_rows)
     output_dir = args.output_dir.resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -256,9 +335,7 @@ def main() -> None:
     cv_predictions = []
     bundle = {
         "model_type": "standardized_ridge",
-        "feature_selection": "non-intercept target terms from feature_reference_csv",
-        "feature_reference_csv": Path(os.path.relpath(
-            args.feature_reference.resolve(), start=output_dir)).as_posix(),
+        "feature_selection": "descriptor columns with finite values in target training rows",
         "alpha_selection": "minimum mean repeated grouped-CV RMSE on target training rows",
         "targets": {},
     }
@@ -371,9 +448,7 @@ def main() -> None:
     manifest = {
         "data_csv": Path(os.path.relpath(args.data.resolve(), start=output_dir)).as_posix(),
         "split_map_csv": Path(os.path.relpath(args.split_map.resolve(), start=output_dir)).as_posix(),
-        "feature_selection": "non-intercept target terms from feature_reference_csv",
-        "feature_reference_csv": Path(os.path.relpath(
-            args.feature_reference.resolve(), start=output_dir)).as_posix(),
+        "feature_selection": "descriptor columns with finite values in target training rows",
         "alpha_selection": {
             "method": "minimum mean repeated grouped-CV RMSE on target training rows",
             "grid": list(ALPHA_GRID),
@@ -384,6 +459,7 @@ def main() -> None:
                                           if row["target"] == target and row["selected"])}
             for target in TARGETS
         },
+        "role_columns": ROLE_COLUMN_BY_TARGET,
         "cv": {"grouped_by": "catalyst name", "folds": CV_FOLDS, "repeats": CV_REPEATS,
                "seed_start": CV_SEED},
     }
@@ -391,7 +467,7 @@ def main() -> None:
 
     print(json.dumps({
         "output_dir": str(output_dir),
-        "catalysts_by_split": dict(Counter(row["split"] for row in split_rows)),
+        "structures_by_target_role": structures_by_target_role,
         "metrics": metric_rows,
         "artifacts": [
             "final_model_parameters.csv", "model_metrics.csv", "alpha_selection.csv", "predictions.csv",

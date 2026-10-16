@@ -1,8 +1,7 @@
 {
   "data_csv": "../descriptors/model_all_structures_training_data.csv",
   "split_map_csv": "../descriptors/model_all_structures_split.csv",
-  "feature_selection": "non-intercept target terms from feature_reference_csv",
-  "feature_reference_csv": "../../notebook/model_inputs/final_model_parameters.csv",
+  "feature_selection": "descriptor columns with finite values in target training rows",
   "alpha_selection": {
     "method": "minimum mean repeated grouped-CV RMSE on target training rows",
     "grid": [
@@ -45,13 +44,13 @@
         "site_bader_electron_population",
         "spin_site_abs",
         "q_site",
-        "metal_pair_charge_dipole_axis_eA",
         "site_heteroatom_dipole_contribution_max_eA",
+        "metal_pair_charge_dipole_axis_eA",
         "site_heteroatom_charge_min_e",
         "site_terminal_ligand_charge_mean_e",
         "site_metal_ligand_spin_product_muB2"
       ],
-      "ridge_alpha": 10.0
+      "ridge_alpha": 0.31622776601683794
     },
     "G_OOH": {
       "features": [
@@ -59,11 +58,18 @@
         "spin_site_abs",
         "q_site",
         "site_heteroatom_dipole_contribution_max_eA",
+        "metal_pair_charge_dipole_axis_eA",
         "site_heteroatom_charge_min_e",
-        "site_terminal_ligand_charge_mean_e"
+        "site_terminal_ligand_charge_mean_e",
+        "site_metal_ligand_spin_product_muB2"
       ],
-      "ridge_alpha": 10.0
+      "ridge_alpha": 3.1622776601683795
     }
+  },
+  "role_columns": {
+    "G_O": "O_model_role",
+    "G_OH": "OH_model_role",
+    "G_OOH": "OOH_model_role"
   },
   "cv": {
     "grouped_by": "catalyst name",
