@@ -1,0 +1,33 @@
+Questions for the human authors, revised 12 October 2026
+
+Recovered author decisions from the earlier project discussion: keep the scope to ORR; make broader predictions the next ML objective; skip the previously proposed item 4; item 5 remains undecided. The current fixed DFT set and planned 1176-catalyst screening are incorporated below. These recorded decisions should not be asked again.
+
+1. What is the central new electrochemical insight from the final DFT set that an Electrochimica Acta reader should remember?
+   Controls the principal Results claim, Abstract, and Conclusions.
+
+2. What precise part of catalyst discovery has AI accelerated in this study: analysis, candidate prioritization, article composition, or an actually completed new search?
+   Controls the title claim and prevents planned screening from being reported as completed discovery.
+
+3. After the coauthor screens 1176 bare catalysts, what finding would genuinely strengthen or change the article's central conclusion?
+   Controls whether the later screening is a core result or a bounded extension.
+
+4. Which structural or electronic feature do you expect to transfer from the A2/B1–B2 DFT training set to the wider library with other dialdehydes, and what outcome would show that it does not transfer?
+   Controls the extrapolation claim and applicability-domain discussion.
+
+5. What scientific decision will you make from the predicted ranking: select structures for new DFT calculations, select molecules for synthesis, or test a mechanistic hypothesis?
+   Controls the interpretation of future predictions and the next-step statement.
+
+6. What should be the main contrast with Ifargan et al.: human-chosen electrochemical questions, source-to-figure traceability, or the ability to regenerate a complete paper from reusable data?
+   Controls the Introduction's novelty claim and the AI-method discussion.
+
+7. Which documented human intervention best demonstrates that the researchers corrected an important scientific error or redirected an unhelpful AI analysis?
+   Controls the evidence for human oversight rather than a generic assurance.
+
+8. What work do the human authors claim as their intellectual contribution, and what was delegated to the LLM?
+   Controls Methods, CRediT, the AI declaration, and the Conclusions.
+
+9. What reusable result would you want an independent researcher to reproduce first from the released ASE and JSON data?
+   Controls the FAIR-data claim and the reanalysis discussion.
+
+10. Which result from the planned 1176-catalyst screening would you consider strong enough to change the paper's interpretation of AI assisted catalyst discovery?
+    Controls whether the screening extends the current narrative or changes its main scientific conclusion.
