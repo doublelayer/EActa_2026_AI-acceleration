@@ -1,0 +1,21 @@
+# Provisional analysis/writing environment; not a tested or pinned lockfile.
+# Install/prepare before the offline generation stage. Final supplied scripts
+# may add packages. No environment installation has been performed here.
+ase
+numpy
+pandas
+scipy
+matplotlib
+plotly
+scikit-learn
+python-docx
+lxml
+Pillow
+PyMuPDF
+nbformat
+nbclient
+ipykernel
+
+# Notebook interactive imports
+ipywidgets
+IPython

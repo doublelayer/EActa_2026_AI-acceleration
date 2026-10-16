@@ -1,0 +1,581 @@
+# Generate the article from this portable package
+
+Treat this directory as the complete task root. Read AGENTS.md, instructions/INDEX.md and article/input_manifest.json. One initiating prompt authorizes the complete draft, successive role turns, three differentiated review rounds, document construction and release checks. Give editors and the Style editor the lead in refinement; the Author integrates their changes into one voice. This prompt authorizes separate role agents when available; record actual execution mode. Keep one current draft and issue log.
+
+Use this prompt, the registered inputs, installed software, declared GitHub downloads, verified online sources and new run artifacts. Online access is authorized. The supplied notebooks are expected to download their inputs from their declared GitHub sources. Web research is also authorized when needed for writing and bibliography verification. Use primary sources, identify source-supported claims and preserve author-supplied scientific decisions. Literature summaries and bibliography below are supplied evidence; no literature PDFs are required. Use the original study's facts without opening any predecessor manuscript or historical generator. Create original prose from the functional sentence slots; fixed metadata, equations, reference titles and figure labels may be reproduced exactly.
+
+Create a new `inputs/run_.../` directory for the manuscript, checkpoints, ledgers, issue log and release report. Keep the package root limited to PROMPT.txt, AGENTS.md, the four supplied notebooks, the reference DOCX and subfolders. Supporting code belongs in tools/; the supplied TOC page image and downloaded scientific data belong in source_data/. The root-level figure notebooks generate publication figures and derived analysis files directly in `inputs/`; the TOC script also writes there. The `inputs/` folder is intentionally empty before execution. Execute the five figure-generation files in the order stated near the end of this prompt. Verify relevant numerical claims from the supplied tables and data. Keep the notebooks' GitHub acquisition cells. Execute notebooks in working copies so supplied notebooks stay unchanged. Save downloaded databases and CSV/JSON inputs in source_data/ with their exact GitHub filenames. This clean-start package contains no predownloaded databases or prediction tables. Record downloaded input hashes and source URLs. Scientific calculations and plotting design remain as declared. No new DFT, model refitting, new descriptors or expanded studies are authorized. Use installed dependencies first; the supplied Colab installation cells may run in Colab. Record package versions and any unavailable dependency.
+
+Produce one editable manuscript DOCX with its standalone generator and text checkpoint, reference-number map, evidence and numerical ledgers, role issue log and release report. Save these in `inputs/run_.../`; name the document `Electrochimica_Acta_research_article_generated.docx`. Keep generated figures and derived plot tables directly in `inputs/`. Internal checkpoints do not consume public version numbers. Leave source notebooks and source inputs unchanged. Final scientific approval and later textual correction status require subsequent human review; record actual execution evidence and time, without invented productivity comparisons.
+
+The specific inputs and paragraph/sentence functions below define the article. Do not copy development manuscript paragraphs or supply drafting notes in the article.
+
+## Fixed identity and contribution
+
+Title, verbatim: **Accelerating Catalyst Discovery with Artificial Intelligence Using Molecular Dual-Atom Site Catalysts as a Case Study**.
+
+Journal: Electrochimica Acta. Type: invited Research Paper on accelerating catalyst discovery. Language: American English.
+
+Journal input: the supplied EActa guideline summary in journal/. It records requirements from the author-provided guide. If an author adds a newer guideline PDF before freezing the manifest, read that source and record precedence. The Journal editor records a requirement map and author drafting exceptions. Literature evidence is supplied as approved summaries, with no literature PDFs required. Identify the supplied or online source type actually used.
+
+Goal: demonstrate that a carefully guided LLM can prepare a complete scientific article from verified research inputs, so researchers can delegate scientific communication and concentrate on scientific investigation. The article itself is the principal demonstration.
+
+Objectives: establish reusable DFT evidence for molecular ORR catalysts; use ML predictions to extend catalyst screening and identify structural trends; generate the complete article from the scientific inputs and one consolidated prompt. The first two objectives constitute genuine catalyst research. The third is the principal methodological contribution.
+
+Organize one connected argument through DFT investigation, ML screening, and LLM manuscript preparation. Preserve both explicit acceleration modes: ML-based screening extends the catalyst evaluation, and guided LLM writing prepares the article. Editorial emphasis on scientific stories motivates the thesis. The completed article tests delegation of scientific writing under our guidance. The synthesis concerns the opportunity for us to focus on scientific methods while an LLM communicates the results. Do not label manuscript sections thesis, antithesis, or synthesis. Attribute editors' positions accurately: their emphasis on narrative does not imply that they endorse weak evidence.
+
+Use **accelerating catalyst discovery with artificial intelligence** in the Abstract, Introduction, and Conclusions. Keep that vocabulary consistent. ML supports candidate screening; the LLM contribution concerns manuscript preparation and associated authorized analysis/code tasks. Use we and our for the authors' choices, actions, guidance, checks, and responsibility; avoid detached phrases such as “human researchers” or “the researchers” for this team. Use surname et al. for multi-author cited groups, never colleagues, coworkers, or others. Claims of measured time savings require actual timing and a suitable comparison; none are currently supplied.
+
+## Author and administrative inputs
+
+Author order and affiliations: Denis Savchenko (1); Bruno Inácio da Silva Roux Leite (1); Timmo-Henrik Pukk (1); Ba Long Nguyen (1); Vladislav Ivanistsev (2, corresponding); Nadezda Kongi (1, corresponding). Denis is first author and Bruno is second; all remaining authors retain their order. Preserve this order in the title page, CRediT statement, and submission metadata. The corresponding-author email order remains Vladislav Ivanistsev, then Nadezda Kongi.
+
+Affiliation 1: Institute of Chemistry, University of Tartu, Ravila 14a, 50411 Tartu, Estonia.
+
+Affiliation 2: Department of Chemistry, University of Latvia, Jelgavas iela 1, Riga, LV-1004, Latvia.
+
+Email order: vladislav.ivanistsev@lu.lv, then nadezda.kongi@ut.ee. Each author name is punctuation-free. Use ordinary text rather than editing/content controls in the generated clean document. Add a separate comma before the superscript affiliation number, no punctuation after the superscript, and a space between authors. Add the corresponding-author dagger immediately after the affiliation number.
+
+Contributions in author order: Savchenko, methodology, software, formal analysis, visualization, and regression-model development; Leite and Pukk, investigation, data curation, formal analysis, and DFT calculations; Nguyen, investigation, software, data curation, formal analysis, visualization, and DFT calculations; Ivanistsev and Kongi, conceptualization, supervision, and funding acquisition. Map to CRediT roles accurately. All human authors review scientific correctness and approve the submission; record actual final approval separately. The LLM is not an author.
+
+No competing interests are declared. In Acknowledgments, include verbatim: “This work was supported by the National Research Program BioPhoT through the project Nr. OSI_PIP_BioPhoT-2025/2-0069.” Preserve the v52 acknowledgments to the Estonian Ministry of Education and Research (TK210), the Estonian Research Council (PRG3174, TEM-TA306), COST Action EU-CONCERT (CA24103), and the University of Latvia Artificial Intelligence and Computing Center and High Performance Computing Center of the University of Tartu. Include the actual generative-AI tool, tasks, and human oversight in the required declaration. Do not infer a model version from a role name.
+
+## Current scientific inputs
+
+### Cohorts and evidence status
+
+The author's resolved article cohort is **88 DFT catalysts; 50 training structures (70 training points); 10 validation structures (13 validation points); 1,260 prediction structures outside the DFT set; and 1,348 total bare structures**. These values combine the author-designated human revisions in v52 with the subsequent explicit split clarification. Earlier 87/1,347 and 75/15 values are superseded. The current Figure 4 CSV contains 1,288 names: 28 overlap the DFT cohort and 1,260 lie outside it. Its 2,216 complete catalyst/adsorption-center combinations are reduced by the established filters to 1,278 names and 2,197 combinations. Preserve these distinctions and their provenance. Obtain scientific results from the registered current CSV, not the superseded 1,176-structure screen.
+
+Count catalyst structures separately from adsorption-center combinations and intermediate-specific samples. The author explicitly confirmed the 70/13 model-point counts and the 50/10 structure counts during the v53 numerical correction. Preserve complete supplied intermediate triples even when a catalyst has only one represented adsorption center. Use the registered GitHub CSV inputs for Figure 4 results.
+
+Model execution mode for this article is supplied predictions with parameter replay when the necessary parameters are supplied. Do not retrain or replace the coauthor's model unless the final input package explicitly requests and specifies training. The existing documented method is adsorbate-specific ridge regression, whose targets are adsorption potential energies. Reconcile the revised model documentation before stating its precise descriptors, regularization, split procedure, or validation performance. A 10-structure validation count alone does not establish any validation metric. Do not import a historical polynomial-feature description.
+
+### Structures and DFT settings
+
+One molecular dual-atom site contains two metal-atom adsorption centers. Use molecular dual-atom site catalyst consistently. Metal order: Cr, Mn, Fe, Co, Ni, Cu. Bridge order: N, O, S.
+
+B1 is the 1,2-phenylenediamine fragment; B2 is the 1,8-naphthalenediamine fragment; A2 is the fixed dialdehyde, 2-hydroxyisophthalaldehyde. Cite DOI `10.1016/j.dib.2026.112806` for this notation when those codes are discussed. Other dialdehyde codes require supplied chemical identities. Introduce the molecular definition near Figure 2.
+
+Use the author-corrected settings: GPAW 24.6 and ASE 3.23.0; spin-polarized PAW DFT; RPBE with D4 dispersion; 550 eV plane-wave cutoff; 0.15 Å grid spacing; 6.00 Å vacuum; full atomic optimization to a maximum force below 0.05 eV Å⁻¹. H₂ and H₂O reference calculations used the stated settings. State versions once. The total molecular charge was +2 for every modeled catalyst, including N bridges. Formal metal oxidation states cannot be inferred from that net charge. Discuss the sampled charge/spin conditions once in Methods and refer back where interpretation needs it.
+
+### Adsorption quantities and thermochemistry
+
+Correction input mode for this candidate: **prompt**. The numerical values below are article-specific supplied inputs, not general knowledge. Alternatively, the final prompt may select **notebook** mode and name the authoritative plotting notebook(s); in that mode read the effective correction parameters, units, reference convention, and supporting sources from those notebooks and report the resolved values in Methods. Freeze the source file hash and cell/function locations in the run's provenance. Do not retain this candidate's numerical table as a fallback when notebook mode is selected. If both modes supply values, follow an explicit author override; otherwise resolve any disagreement before scientific reconstruction. The procedure is defined in `instructions/DATA_AND_CORRECTIONS.md`.
+
+Match each adsorbate to its clean parent and the same `ads_site` value. Keep `(catalyst identity, ads_site)` together throughout all joins and predictions. Choose the lower total electronic energy of available OOH orientations separately for each key; preserve the choice in provenance. Read electronic energies from the declared field; the existing sources use `post_opt_rpbe_d4_E`.
+
+Electronic adsorption energy equals adsorbed total energy minus clean total energy plus the reference offset. Offsets: OH 10.605 eV, O 7.240 eV, OOH 17.845 eV. Electronic gas references: H₂ −6.73 eV and H₂O −13.97 eV. Keep computation at full precision. Implementation offsets belong in reproducible code rather than cluttering the main-text explanation.
+
+For this candidate's prompt mode, apply the following author-supplied rounded corrections exactly once to both calculated and ML-predicted adsorption potential energies:
+
+| Intermediate | ΔZPE − TΔS / eV | Solvation / eV | Net addition / eV |
+|---|---:|---:|---:|
+| OH | 0.35 | −0.30 | 0.05 |
+| O | 0.05 | 0.00 | 0.05 |
+| OOH | 0.40 | −0.30 | 0.10 |
+
+Report the adopted constants in Methods. Use ZPE throughout. Thermochemical table source: DOI `10.1016/j.chemphys.2005.05.038`, 300 K convention. Solvation reference supplied by the author: DOI `10.1039/c1cp21228a`; Use the adopted net correction without a speculative hydrogen-bond explanation in the manuscript. These are transferred empirical corrections, not vibrational/solvent calculations for every molecular catalyst. Separately evaluated H₂O/H₂ ZPE values 0.558/0.273 eV are provenance only and are not added again. Legacy ML columns named G may still contain potential energies; resolve their meaning from source documentation before correction.
+
+Apply filters to electronic adsorption energies: OH ≥ 0.00 eV and O ≤ 4.92 eV. Use corrected free energies for scaling and CHE analysis. The four step-potential terms are (4.92 eV − G_OOH)/e, (G_OOH − G_O)/e, (G_O − G_OH)/e, and G_OH/e. The limiting potential is their minimum; overpotential is 1.23 V minus that minimum. Explain the reaction and editable defining equations in Methods. These are thermodynamic descriptors, not kinetic rates or experimental activity measurements.
+
+### Results to derive
+
+For DFT, derive the three lowest overpotentials from the revised, filtered, complete pathways at full precision. Report human-readable molecular identities and overpotentials; preserve their adsorption-center identity. For ML, emphasize metal, bridge, and diamine patterns in a clearly defined promising pool. The author proposes Fe centers, frequent S bridges, and B1 as useful priorities; check their support in the revised predictions. Treat them as hypotheses until the actual group analysis supports them. Avoid an individual predicted-catalyst list in this discussion.
+
+For continuity with the approved analysis, the promising pool is the lowest ceil(0.10 × retained center combinations), ordered at full precision with stable identity used to break exact ties. State the denominator where needed and compare group representation with the corresponding full population. Inspect joint combinations before proposing a combined design principle. Preserve the distinction between predictions, explicit DFT results, and experimental verification.
+
+### Sources and reuse
+
+Three dataset sources are distinguished: parent structures at DOI `10.5281/zenodo.18601379`; DFT and bare-catalyst databases at `https://github.com/doublelayer/EActa_2026_AI-acceleration`; and the current larger screening dataset at DOI `10.5281/zenodo.23408498`. The author has confirmed the last DOI as the intended current citation; do not request reconfirmation. The earlier DOI `10.5281/zenodo.23320178` belongs to the superseded 1,176-structure screen. For A-series dialdehydes whose expanded names were not supplied, retain the A-number identifiers and cite the project data article (DOI `10.1016/j.dib.2026.112806`) for the component notation; do not invent chemical names. ASE and JSON are the intended reusable formats. Local input snapshots establish the preparation baseline. Notebooks also download from their declared GitHub sources; compare hashes and report changes before adopting changed scientific results.
+
+Use the literature packet below within its stated bounds. Relevant scientific discussion includes Zhang's 60-unit OER study with XGBoost/SISSO (`10.1002/adma.202403549`), the related +4-charge Co–Co preprint (`10.26434/chemrxiv.15001712/v1`), and Sun's Co–Co study (`10.1021/jacs.4c12705`). Differences in reaction, sampling range, charge, and corrections matter to comparisons. A local OOH–OH separation is not a global regression intercept. Jia `10.1002/adfm.77325` is an OER review; Chen `10.1021/acscatal.6c02383` and Benarbia `10.1039/d6ra03405e` are research studies, not reviews.
+
+Keep narrative and communication evidence from the registered editorials, the peer-reviewed Ifargan paper `10.1056/aioa2400555`, and FAIR principles `10.1038/sdata.2016.18`. Publication-delay studies do not measure manuscript-preparation time or this project's time savings. Discuss Calle-Vallejo step symmetry and Exner free energy span as examples of further analyses enabled by reusable adsorption data, not as analyses completed here unless supplied outputs establish that.
+
+
+
+### Latest author decisions for this execution
+
+
+- Introduce communication as an additional route to accelerating catalyst discovery, alongside ML screening. Keep the whole article as the main LLM demonstration.
+- Use the case-study framing, clear we/our for our work, and general researchers for general practice. Treat writing conventions as teachable to early-stage researchers and applicable to guided LLM writing.
+- Preserve the corrected reference structure: Sections 3.1–3.5 address molecular structures, calculated thermodynamics, ML families, literature context and scientific communication; Section 3.6 separately develops data reuse and alternative interpretations.
+- Keep concise explanations that advance the argument. Omit paragraph-ending summaries that merely restate the preceding point, repeated responsibility statements, and introductory inventories of figures whose function is already clear.
+- Keep legitimate author-selected contrasts, including rather, where they communicate a real distinction. The aim is clear scientific prose, not mechanical deletion of every connective.
+
+## Methods and numerical detail
+
+- Retain 88 DFT catalysts and 1,260 additional ML prediction structures. Use 50 training structures and 10 validation structures in the main Methods. Keep 70/13 model points in provenance and the explicit prompt, rather than restoring the deleted bookkeeping sentence to the article.
+- Retain GPAW 24.6, ASE 3.23.0, 550 eV, 0.15 Å, 6 Å vacuum and the 0.05 eV Å⁻¹ force threshold. Numerical presentation should fit the purpose; an exact integer parameter need not acquire unnecessary decimal zeros.
+- Explain that extended structures were selected from the previous molecular dataset and reoptimized at the reported DFT level. The ML targets are adsorption potential energies, converted consistently to free energies afterward.
+- Keep the adopted numerical thermochemical and solvation corrections, with their sources. Omit speculative hydrogen-bond counting and the deleted additive O + OH explanation for OOH from the main text.
+- Retain the matching keyword ads_site where it defines scientific identity. Keep OOH orientation selection in reproducible analysis and provenance; omit the deleted orientation sentence from main-text Methods.
+- Preserve nine displayed equations and introduce the asterisk as the catalyst, including the clean catalyst. Distinguish italic S for entropy from upright S for sulfur by meaning, not by the letter alone.
+- Omit unnecessary A-series enumerations in regression Methods. Define B1/B2/A2 where structural notation is needed and cite the data article.
+
+## Results and captions
+
+- Keep the three calculated catalyst examples and their overpotentials. Merge the concise DFT low-decile comparison with that discussion rather than repeat it in another paragraph.
+- Interpret ML at family level. In the supplied current CSV, Fe dominates the lowest-overpotential pool, S–S bridges and B1 are enriched; preserve the distinction between a group trend and an individual optimum.
+- Captions decode metal colors by their names and marker shapes. Omit hexadecimal color codes from manuscript captions; retain them in plotting configuration and provenance.
+- Keep a concise Zhang comparison in the article; put the detailed literature evidence and comparison boundaries in the prompt.
+
+## Literature and source corrections
+
+- The related +4 Co–Co study supplies context for additional charge states and catalyst possibilities. Its different free-energy corrections prevent a direct common-protocol ranking.
+- A catalyst-specific OH–OOH separation below 3 eV is distinct from a global fitted intercept. Preserve the author's scaling-deviation point with that physical distinction.
+- The prepared Li summary concerns single-metal Fe–N₄ macrocycles, not the same Co DASC as Sun. Use it for ligand/bridge/coordination context and do not repeat the source misidentification in v53.
+- Publication-delay evidence supports a brief months-long interval. Exact PLOS evidence remains 154-day median and 173.36-day mean in the input; avoid assigning a six-month median. Main prose can say several months.
+- The latest author instruction selects existing literature summaries as runtime evidence; no literature PDFs are required. Use their supplied findings and limitations without claiming fresh primary-text inspection.
+- The latest author instruction authorizes Electrochimica Acta numerical citations and bibliography formatting. Allocate numbers by first appearance and keep DOI links in reference entries. This supersedes the earlier DOI-only drafting convention.
+
+## Data availability and demonstration status
+
+- Distinguish parent structures at DOI 10.5281/zenodo.18601379, the present DFT/extended structure dataset at the already author-confirmed DOI 10.5281/zenodo.23408498, and analysis/prediction CSV resources in the project GitHub repository. The repeated parent DOI in annotated v53 is a source-link error; it does not supersede the confirmed current DOI.
+- Distinguish 1,348 total bare structures, 88 DFT parents and 1,260 additional structures. The supplied prediction CSV contains 1,288 names, including 28 DFT parents. These are different populations.
+- The new v53 text reports an SI example of alternative rankings. Preserve this as an author-reported qualitative result in the input, with SI source attachment pending. Do not invent SI tables or numerical rankings. The independent draft may discuss reuse conceptually while the audit records that the SI artifact remains to be supplied.
+- Keep the two-week instruction-development account separate from final execution evidence. Preserve the author's completed-study rehearsal premise in working prose and record actual execution and subsequent human review separately.
+
+
+## Voice and terminology
+
+
+Use the selected Chandler voice with approximately 30% Feynman influence: direct agency, precise observations, clear physical reasoning, connected paragraphs, and restrained vocabulary. Avoid literary imitation, invented anecdotes, decorative metaphors, detached declarations, and prose that reads as a converted checklist. Use we/our naturally outside Methods; all Methods subsections use passive voice. Give each paragraph a scientific purpose and connect its sentences through reasoning.
+
+Prefer dataset, database, DFT calculation, ML prediction, result, data point, molecular structure, scientific communication, and guide. Avoid framework, scaffold, library, envelope, record, and account as substitutes for these terms. Keep reference titles and literal software identifiers intact. Minimize modifier hyphens; retain dual-atom site catalyst. Use upright S and other chemical symbols. Distinguish adsorption potential energy from adsorption free energy. Define AI, DFT, ML, and LLM once under the approved manuscript policy; do not repeatedly expand them. Conclusions use full terms. Prefer positive, concrete statements while preserving qualifications that affect scientific interpretation.
+
+
+
+# Article-specific paragraph and sentence functions
+
+These are functional slots filled from the prompt's facts and evidence. They prescribe the logic, not exact article sentences. Combine or divide slots for natural prose while preserving their order and purpose. Use the same central terms and authorial voice throughout. The article contains connected paragraphs rather than visible lists.
+
+## Abstract: one paragraph, about eight sentences, maximum 250 words
+
+1. Establish accelerating catalyst discovery with artificial intelligence, including scientific communication alongside catalyst screening.
+2. Introduce our real ORR case study on molecular DASCs as the setting for the demonstration.
+3. Connect the DFT investigation of 88 catalysts to ridge-model predictions for 1,260 additional structures; distinguish calculated evidence from predictions.
+4. Give one concise supported family-level result, using Fe and S-containing structures, to establish scientific substance.
+5. State that we guided an LLM to prepare the complete article from verified scientific inputs and explicit writing guidance.
+6. Explain that repeated scientific and editorial review developed the guidance; keep development effort visible without procedural inventory.
+7. Identify the complete article itself as the manuscript-generation demonstration under our guidance.
+8. Resolve the opening through ML screening and scientific writing, with the consequence that researchers can concentrate on scientific questions and methods.
+
+Avoid computational parameter lists, individual catalyst rankings, descriptor counts, data-point bookkeeping and new time-saving estimates. The contribution hierarchy is more important than a fixed sentence count.
+
+## Introduction: seven connected paragraphs
+
+### Paragraph 1: the acceleration question
+
+1. Echo the title and connect production of scientific results with their communication.
+2. Explain how DFT calculations and ML predictions contribute to candidate selection.
+3. Explain why writing is a further stage before results become available for examination and reuse.
+4. Support the months-long publication context briefly with the Björk–Solomon and Ding–Du evidence; distinguish publication intervals from unmeasured writing time in the evidence map.
+
+### Paragraph 2: thesis and editorial context
+
+1. Attribute to the selected editorials the importance of a coherent theme, selected figures and clear interpretation.
+2. State our agreement that readers need the evidence and its meaning explained.
+3. Question how much publication depends on storytelling skill when scientific value rests on methods and data.
+4. State the data-first thesis directly with our agency.
+5. Connect the thesis to guided LLM manuscript preparation as the case-study test.
+
+### Paragraph 3: scientific writing is teachable
+
+1. Establish that scientific-writing conventions are taught to early-stage researchers, citing the supplied writing article/course references.
+2. Explain how we applied article, paragraph and evidence conventions to the LLM.
+3. Explain how these instructions supported writing while we developed and checked the scientific argument.
+
+### Paragraph 4: reusable data
+
+1. Connect delegation of writing to scientific data that can be examined and reused.
+2. Explain that other researchers can combine datasets and ask additional questions, with the FAIR citation.
+3. Contrast the structures and values preserved in a database with an article's selected analysis.
+4. State the consequence for independent scientific questions only if the previous sentences have not already made it explicit.
+
+### Paragraph 5: guided LLM precedent
+
+1. Connect LLM scientific text to the evidence it must communicate.
+2. Use the vocabulary study and narrative caution only to motivate faithful communication; avoid unsupported fraud statistics.
+3. Introduce Ifargan's data-to-paper precedent and its traceable outputs.
+4. Identify our contribution as a complete electrochemistry article from verified DFT, ML, figures and supplied knowledge.
+
+### Paragraph 6: writing process and Figure 1
+
+1. Introduce the seven-stage writing figure.
+2. Explain our use of the LLM throughout manuscript preparation and authorized code assistance.
+3. Show our guidance and scientific checking as concrete actions rather than another responsibility list.
+
+### Paragraph 7: the completed study
+
+1. Introduce the three connected stages as one research process.
+2. State what the DFT stage establishes and how ML extends screening, using the main cohort counts only if needed.
+3. State the complete LLM article-generation achievement.
+4. Connect both acceleration modes to the opening question. Omit an inventory of what each later figure shows.
+
+## Conclusions: three paragraphs
+
+### Paragraph 1: principal achievement
+
+1. State our use of a guided LLM to prepare the complete scientific article from verified research inputs.
+2. Echo accelerating catalyst discovery with artificial intelligence and identify scientific writing alongside catalyst screening as the demonstrated routes.
+
+### Paragraph 2: genuine scientific basis
+
+1. State what the DFT investigation of 88 molecular catalysts established.
+2. Connect the 1,260-structure ML extension to supported Fe and S-containing catalyst families for further investigation.
+
+### Paragraph 3: synthesis
+
+1. Explain how scientific-writing conventions guided manuscript preparation by the LLM.
+2. Return to the Introduction's thesis: scientific methods and data establish the contribution, and guided AI can undertake its communication under scientific oversight.
+3. End with the concrete opportunity for researchers to concentrate on scientific questions and accelerate catalyst discovery with AI assistance in screening and writing.
+
+Use the same terms as the title and Introduction. Add no new scientific result, citation, quantitative productivity claim or administrative checklist. Use full terms where the selected conclusion style calls for them; do not mechanically duplicate the Abstract.
+
+
+# Literature evidence supplied for isolated article generation
+
+Source mode: author-approved summaries, prepared earlier from the local literature and supplied information. The independent run receives these summaries and bibliographic entries rather than literature PDFs. It may use the claims below within their stated bounds and must report summary-based verification accurately. DOI links are identifiers and reader links; they are not instructions to browse.
+
+## Introduction: why scientific communication belongs in acceleration
+
+**Chen, Kamat and coauthors, We Editors Are Authors, Too (2019), DOI 10.1021/acsenergylett.8b02322.** Multi-author ACS Energy Letters editorial. It argues for a coherent theme, carefully composed scientific discussion, and effective graphics. Use with the next three editorials to establish the communication standard we accept and the weight on storytelling we question. Attribute it to its actual authors rather than to a single-author 2018 Kamat article.
+
+**Elements of style (2007), DOI 10.1038/nphys724.** Nature Physics editorial. A scientific story organizes the paper and its figures. Use for the organizing role of narrative, not evidence that storytelling outweighs scientific validity.
+
+**Biegel and Kamat, Five Common Pitfalls to Avoid while Composing Scientific Figures (2021), DOI 10.1021/acsenergylett.1c02401.** Editorial emphasizing quality and selection of data presentation. Figures and captions must support understandable findings rather than accumulate panels. Use for effective communication, not for a causal claim about acceptance rates.
+
+**Storytelling in research (2018), DOI 10.1038/s41551-018-0202-5.** Nature Biomedical Engineering editorial. Data and literal descriptions need purpose, interpretation and significance to become useful scientific communication. Use alongside the previous editorials; preserve their concern for sound evidence.
+
+**Should scientists tell stories? (2013), DOI 10.1038/nmeth.2726.** Nature Methods editorial. Narrative can improve communication while a desire for coherence can encourage omission of conflicting evidence. Supports our data-first thesis and faithful interpretation, not rejection of coherent writing.
+
+**Scientific-writing teaching examples: HESS article DOI 10.5194/hess-20-2965-2016; Coursera course https://www.coursera.org/learn/sciwrite.** The author supplies these as examples of explicit scientific-writing instruction. Use briefly to establish that conventions are taught to early-stage researchers. The prepared HESS metadata lack exact authors and title; retain only supplied fields until corrected. The previously listed University of Sargodha lesson is optional and was removed from the latest Introduction.
+
+**Glasman-Deal (2010), Science Research Writing for Non-Native Speakers of English; Minto (2010), The Minto Pyramid Principle: Logic in Writing and Thinking.** Author-supplied writing resources. The first informs research-article functions and clear scientific explanation; the second informs hierarchical organization of claims and support. Cite as resources that informed our instructions. Do not claim model fine-tuning or training on their full texts. Preserve supplied edition metadata and flag unverified fields in the audit.
+
+**Björk and Solomon (2013), DOI 10.1016/j.joi.2013.09.001.** Study of 2,700 articles in 135 journals; reported chemistry submission-to-publication delay approximately nine months. Does not measure preparation before first submission or the full rejected-submission history.
+
+**Ding and Du (2023), DOI 10.1007/s11192-023-04640-6.** PLOS articles from 2015–2019; chemistry median submission-to-acceptance 126 days, acceptance-to-publication 22 days, submission-to-publication 154 days; mean total 173.36 days. Use as PLOS-specific months-long evidence, not a representative statistic for EActa or every chemistry journal. Main prose can use several months and avoid the exact-day inventory. A six-month median is not the reported statistic.
+
+**Wilkinson et al. (2016), DOI 10.1038/sdata.2016.18.** FAIR principles concern findability, accessibility, interoperability and reuse. Use to explain why structured data support independent analysis and LLM input. This paper supplies no FAIR percentage for our dataset and no guarantee that every released file is automatically interoperable.
+
+**Kobak et al. (2025), DOI 10.1126/sciadv.adt3813.** Biomedical abstract vocabulary shifts are consistent with increased LLM-assisted writing. Supports context for LLM use; it does not measure fabricated articles, prove that individual papers used AI, or quantify research misconduct.
+
+**Ifargan et al. (2025), DOI 10.1056/aioa2400555.** Peer-reviewed NEJM AI article, preceded by arXiv:2404.17605. Its interacting agents formulated hypotheses, developed analyses and code, and produced manuscripts linked to annotated data and outputs. Human guidance became valuable as research questions grew complex. This is the main methodological comparison: explain that our consolidated prompt generates a complete electrochemistry article from reusable DFT/ML inputs after extensive human guidance. Their task-success percentages and timings are not our results. Generation, scientific novelty, and verified accuracy are distinct achievements.
+
+## Results and Discussion: required scientific comparisons
+
+**Nguyen et al. (2026), data article DOI 10.1016/j.dib.2026.112806; parent dataset DOI 10.5281/zenodo.18601379.** Defines the molecular component notation and parent structures. B1 is 1,2-phenylenediamine; B2 is 1,8-naphthalenediamine; A2 is 2-hydroxyisophthalaldehyde. Use for structure/data provenance and the origin of the extended set, not as evidence that its original dataset was optimized with this study's settings. This study's extended structures were reoptimized at the reported DFT level.
+
+**Žoglo et al. (2026), ChemRxiv preprint DOI 10.26434/chemrxiv.15001712/v1.** Related molecular Co–Co study links diamine structure, metal separation, oxygen-intermediate geometry and ORR selectivity, alongside measurements. The author confirms a +4 O-bridged Co–Co calculation, consistent with their experimental interpretation, outside our fixed +2 set. Its lower calculated overpotential uses different empirical correction conventions. Compare structural possibilities and the initial stage of exploration; do not merge the rankings. The synthesis involves a methyl-substituted dialdehyde, not necessarily identical to A2.
+
+**Sun et al. (2024), DOI 10.1021/jacs.4c12705.** Molecularly defined Co₂ system with a bidentate OOH interpretation. The prepared summary reports an OH–OOH separation of 2.73 eV against a conventional 3.15 eV comparison. Use beside Žoglo to discuss particular Co structures with a separation below 3 eV and the potential for scaling deviations. An individual separation is not a global fitted intercept. Our present calculations did not obtain that bidentate OOH geometry.
+
+**Li et al. (2026), DOI 10.1021/acscatal.6c00046.** Study of single-metal Fe–N₄ macrocycles, bridge atoms, metal–nitrogen geometry, axial coordination and ligand effects. Its compounds are not Sun's Co DASC. Use as related coordination/bridge context only, or omit if the comparison distracts from the concise paragraph. Do not describe it as direct evidence for bimetallic cooperation.
+
+**Zhang et al. (2024), DOI 10.1002/adma.202403549.** Closest molecular DFT/ML comparison. Sixty homonuclear salphen catalytic units from ten metals and six coordination environments were examined for OER. Twenty-seven descriptors were assessed with XGBoost and an interpretable SISSO regression was developed; selected Ni/Co units were incorporated in covalent organic materials. This is not ordinary ridge regression and the reaction is OER. Compare our homo- and heteronuclear ORR set and ML extension with their unit-based screening. Keep the main comparison brief; retain detailed facts here for the roles.
+
+Their principal OH–OOH fit has slope 0.96 and intercept 2.98 eV; ours is 0.69 and 3.05 eV. Their additional metals extend the OH binding range into stronger adsorption. A wider range can affect the fitted slope, but reaction and correction differences also affect comparison; do not assert that range alone proves causation. Similar intercepts and different slopes require this context. Source locators in the prepared summary: computational screening, scaling/ML sections, workflow/descriptor figures and supporting descriptor dataset.
+
+**Jia et al. (2026), Advanced Materials, DOI 10.1002/adma.74833.** Extended phthalocyanine dual-atom study: 81 DFT structures supported predictions for 360 additional metal pairs. The prepared summary describes descriptor interpretation, SHAP, LASSO/SISSO and a FeCo experimental test; Fe acts as the adsorption anchor and the neighboring metal as regulator in the studied family. Compare this DFT-to-ML extension with our structural-family screening. Their catalyst class, model and experimental evidence remain their own. Do not transfer validation metrics or experimental confirmation to this study.
+
+**Jia et al. (2026), Advanced Functional Materials, DOI 10.1002/adfm.77325.** Review of data-driven OER research covering DFT/ML, feature design, splits, leakage, domain shifts and uncertainty. Use to establish existing ML screening practice rather than claim our use of ML alone is a new method.
+
+**Chen et al. (2026), DOI 10.1021/acscatal.6c02383.** ORR research article combining DFT, ML and experiment: 52 DFT structures, 104 ML-predicted structures and 156 candidates overall; nine shortlisted systems in the prepared summary. Compare the shared substitution of preliminary adsorption calculations by predictions. This is a research article, not a review; its model performance is not our validation.
+
+**Benarbia et al. (2026), DOI 10.1039/d6ra03405e.** Unsupervised HER candidate classification in more than 108,000 tmQM metal–ligand complexes, using molecular/electronic descriptors and clustering. Use as a different ML screening example, not a supervised ORR activity model or proof of experimental catalyst discovery.
+
+Use the Jia review, Chen and Benarbia studies together briefly to establish that ML screening is already demonstrated. Describe what these supplied studies report; do not claim a general literature-wide priority for our writing demonstration merely because those papers do not discuss it.
+
+**Ivanistsev et al. (2025), DOI 10.1039/D5CS00597C.** Review of adsorption scaling in oxygen electrocatalysis. Supports qualitative discussion of material-dependent slopes and intercepts. Keep quantitative values for our dataset attached to our analysis, not to the review.
+
+## Methods and reusable-data interpretation
+
+**Nørskov et al. (2004), DOI 10.1021/jp047349j.** Computational hydrogen electrode precedent for ORR free-energy analysis. Use for the established thermodynamic method; a limiting potential is distinct from a kinetic rate.
+
+**Rossmeisl, Logadottir and Nørskov (2005), DOI 10.1016/j.chemphys.2005.05.038.** Supplied source for the adopted combined zero-point-energy and entropy convention. Our rounded OH/O/OOH values are supplied study parameters, not quantities newly calculated for each molecule.
+
+**Calle-Vallejo, Martínez and Rossmeisl (2011), DOI 10.1039/c1cp21228a.** Author-selected solvation-reference source. The main text reports the adopted −0.30 eV OH/OOH and zero O correction; omit the deleted speculative hydrogen-bond-count explanation.
+
+**Govindarajan, García-Lastra, Meijer and Calle-Vallejo (2018), DOI 10.1016/j.coelec.2018.03.025.** Electrochemical step symmetry index describes how reaction free energy is distributed among steps. **Razzaq and Exner (2023), DOI 10.1021/acscatal.2c03997.** Free-energy span identifies the largest cumulative uphill change across consecutive states at a selected potential. Compare both with conventional CHE's least favorable single reduction step in Section 3.6. These complementary questions illustrate reuse of the same identified adsorption data, not interchangeable definitions of experimental activity.
+
+**Mortensen et al. (2024), DOI 10.1063/5.0182685; Larsen et al. (2017), DOI 10.1088/1361-648X/aa680e; Caldeweyher et al. (2019), DOI 10.1063/1.5090222.** Cite GPAW, ASE and D4 in Methods. Software versions and settings belong to this study's explicit facts, not the papers' publication dates.
+
+## Bibliography and use limits
+
+The prompt includes supplied bibliographic entries keyed by DOI or stable source key. Assign EActa reference numbers in order of first citation, reuse a number for repeat citations, and number the bibliography accordingly. Include only cited entries, active DOI links, and supplied metadata. Preserve literal source titles even when they contain terms banned from our prose. Never invent missing authors, issue data, pages, book edition or dataset metadata; list consequential incompleteness in the external report.
+
+
+## Bibliography source entries: assign numbers at first citation
+
+These are source entries, not a preassigned citation order. Unknown metadata stay unknown; report them outside the article.
+
+**10.1002/adma.74833**
+S. Jia, L. Yang, C. Wu, B. Xiao, J. Tian, H. Zhu, Q. Tan, Y. Li, A. Li, Machine Learning Reveals Role-Asymmetric Electronic Cooperation in Fe-Based Dual-Atom Catalysts, Adv. Mater. (2026) e74833. https://doi.org/10.1002/adma.74833.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1002/adma.202403549**
+Z. Zhang, Z. Zhang, C. Chen, R. Xu, X.-B. Chen, H. Lu, Z. Shi, Y. Han, S. Feng, Design and Synthesis of Electrocatalysts Base on Catalysis-Unit Engineering, Adv. Mater. 36 (2024) 2403549. https://doi.org/10.1002/adma.202403549.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/acscatal.6c02383**
+X. Chen, Y. Xu, D. Ye, J. Xu, Y. Wang, G. Jia, X. Cui, J. Zhao, Leveraging DFT and Machine Learning for Accelerated Screening of Cluster-Modified Single-Atom Catalysts in Oxygen Reduction Reactions, ACS Catal. 16 (2026) 14399–14410. https://doi.org/10.1021/acscatal.6c02383.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/jp047349j**
+J. K. Nørskov, J. Rossmeisl, A. Logadottir, L. Lindqvist, J. R. Kitchin, T. Bligaard, H. Jónsson, Origin of the Overpotential for Oxygen Reduction at a Fuel-Cell Cathode, J. Phys. Chem. B 108 (2004) 17886–17892. https://doi.org/10.1021/jp047349j.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1002/adfm.77325**
+L. Jia, Z. Jin, Y. Tan, Z. Zhang, Y. Pu, Y. Wang, L. Huang, From Data to Discovery: Crafting Data-Driven Frameworks for Advancing OER Electrocatalysts, Adv. Funct. Mater. 36 (2026) e77325. https://doi.org/10.1002/adfm.77325.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1039/d6ra03405e**
+A. Benarbia, A. Alshami, A. Mustafa, O.S. Tomomewo, Can machine learning uncover viable non-platinum catalysts for hydrogen evolution? An unsupervised clustering approach to transition metal–ligand complexes, RSC Adv. 16 (2026) 42403–42417. https://doi.org/10.1039/d6ra03405e.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/jacs.4c12705**
+Q. Sun et al., Well-Defined Co₂ Dual-Atom Catalyst Breaks Scaling Relations of Oxygen Reduction Reaction, J. Am. Chem. Soc. 146 (2024) 35295–35304. https://doi.org/10.1021/jacs.4c12705.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.26434/chemrxiv.15001712/v1**
+N. Žoglo et al., Intersite Geometry Controls Activity and Selectivity in the Oxygen Reduction Reaction on Dual-Atom-Site Catalysts, ChemRxiv preprint (2026). https://doi.org/10.26434/chemrxiv.15001712/v1.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/acsenergylett.8b02322**
+L. X. Chen, P. Christopher, F. De Angelis, S. Jin, Y.-S. Hu, N.-G. Park, D. Das Sarma, Y.-K. Sun, P. V. Kamat, We Editors Are Authors, Too, ACS Energy Lett. 4 (2019) 249–250. https://doi.org/10.1021/acsenergylett.8b02322.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1038/nphys724**
+Elements of style, Nat. Phys. 3 (2007) 581. https://doi.org/10.1038/nphys724.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/acsenergylett.1c02401**
+C. M. Biegel, P. V. Kamat, Five common pitfalls to avoid while composing scientific figures, ACS Energy Lett. 6 (2021) 4309–4310. https://doi.org/10.1021/acsenergylett.1c02401.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1038/s41551-018-0202-5**
+Storytelling in research, Nat. Biomed. Eng. 2 (2018) 53. https://doi.org/10.1038/s41551-018-0202-5.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1038/nmeth.2726**
+Should scientists tell stories?, Nat. Methods 10 (2013) 1037. https://doi.org/10.1038/nmeth.2726.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1016/j.dib.2026.112806**
+B. L. Nguyen, T. K. Madsen, V. Ivanistsev, N. Kongi, Dataset of molecular dual-atom site complexes for catalysis, Data Brief 66 (2026) 112806. https://doi.org/10.1016/j.dib.2026.112806.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.5281/zenodo.18601379**
+[dataset] B. L. Nguyen, T. K. Madsen, V. Ivanistsev, N. Kongi, Dataset of molecular dual-atom site complexes for catalysis, Zenodo, version 1.0, 2026. https://doi.org/10.5281/zenodo.18601379.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1063/5.0182685**
+J. J. Mortensen et al., GPAW: An open Python package for electronic structure calculations, J. Chem. Phys. 160 (2024) 092503. https://doi.org/10.1063/5.0182685.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1088/1361-648X/aa680e**
+A. H. Larsen et al., The Atomic Simulation Environment—A Python Library for Working with Atoms, J. Phys.: Condens. Matter 29 (2017) 273002. https://doi.org/10.1088/1361-648X/aa680e.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1063/1.5090222**
+E. Caldeweyher, S. Ehlert, A. Hansen, H. Neugebauer, S. Spicher, C. Bannwarth, S. Grimme, A generally applicable atomic-charge dependent London dispersion correction, J. Chem. Phys. 150 (2019) 154122. https://doi.org/10.1063/1.5090222.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1016/j.coelec.2018.03.025**
+N. Govindarajan, J. M. García-Lastra, E. J. Meijer, F. Calle-Vallejo, Does the breaking of adsorption energy scaling relations guarantee enhanced electrocatalysis?, Curr. Opin. Electrochem. 8 (2018) 110–117. https://doi.org/10.1016/j.coelec.2018.03.025.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/acscatal.2c03997**
+S. Razzaq, K. S. Exner, Materials screening by the descriptor Gmax(η): The free energy span model in electrocatalysis, ACS Catal. 13 (2023) 1740–1758. https://doi.org/10.1021/acscatal.2c03997.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1038/sdata.2016.18**
+M. D. Wilkinson et al., The FAIR guiding principles for scientific data management and stewardship, Sci. Data 3 (2016) 160018. https://doi.org/10.1038/sdata.2016.18.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1126/sciadv.adt3813**
+D. Kobak, R. González-Márquez, E.-Á. Horvát, J. Lause, Delving into LLM-assisted writing in biomedical publications through excess vocabulary, Sci. Adv. 11 (2025) eadt3813. https://doi.org/10.1126/sciadv.adt3813.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1056/aioa2400555**
+T. Ifargan, L. Hafner, M. Kern, O. Alcalay, R. Kishony, Autonomous LLM-Driven Research: from Data to Human-Verifiable Research Papers, NEJM AI 2 (2025). https://doi.org/10.1056/aioa2400555.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1016/j.joi.2013.09.001**
+B.-C. Björk, D. Solomon, The publishing delay in scholarly peer-reviewed journals, J. Informetr. 7 (2013) 914–923. https://doi.org/10.1016/j.joi.2013.09.001.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1007/s11192-023-04640-6**
+J. Ding, D. Du, A study of the correlation between publication delays and measurement indicators of journal articles in the social network environment: based on online data in PLOS, Scientometrics 128 (2023) 1711–1743. https://doi.org/10.1007/s11192-023-04640-6.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1016/j.chemphys.2005.05.038**
+J. Rossmeisl, A. Logadottir, J. K. Nørskov, Electrolysis of water on (oxidized) metal surfaces, Chem. Phys. 319 (2005) 178–184. https://doi.org/10.1016/j.chemphys.2005.05.038.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1039/c1cp21228a**
+F. Calle-Vallejo, J. I. Martínez, J. Rossmeisl, Density functional studies of functionalized graphitic materials with late transition metals for oxygen reduction reactions, Physical Chemistry Chem. Phys. 13 (2011) 15639. https://doi.org/10.1039/c1cp21228a.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.5194/hess-20-2965-2016**
+Hydrol. Earth Syst. Sci. 20 (2016), starting at p. 2965. https://doi.org/10.5194/hess-20-2965-2016.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation. Exact title, authors and end page are absent from supplied metadata; do not invent them.
+
+**COURSERA**
+Coursera, Scientific writing course. https://www.coursera.org/learn/sciwrite (author-supplied course reference; date not supplied).
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**GLASMAN2010**
+H. Glasman-Deal, Science Research Writing for Non-Native Speakers of English, Imperial College Press, London and Hackensack, NJ, 2010.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**MINTO2010**
+B. Minto, The Minto Pyramid Principle: Logic in Writing and Thinking, Prentice Hall, 2010.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation. Edition/publisher retained as author-supplied; bibliographic verification pending.
+
+**10.1039/D5CS00597C**
+V. Ivanistsev, R. Cepitis, J. Rossmeisl, N. Kongi, Twenty years after: scaling relations in oxygen electrocatalysis and beyond, Chem. Soc. Rev. 54 (2025) 10956–10976. https://doi.org/10.1039/D5CS00597C.
+Metadata note: Metadata supplied in annotated v53 or prepared literature summaries; not retrieved online in this preparation.
+
+**10.1021/acscatal.6c00046**
+Q. Li, Q. Zhao, A. Pedersen, Z. Lin, M. Zhang, D. Di Tommaso, Y. Xu, M.-M. Titirici, C.R. Jones, Investigating the Effect of the Coordination Environment and Bridging Atoms in Fe–N₄ Macrocycles Applied to Alkaline Oxygen Reduction Reaction, ACS Catal. 16 (2026) 9913–9929. https://doi.org/10.1021/acscatal.6c00046.
+Metadata note: From prepared local summary; single-metal Fe macrocycles, not Sun Co DASCs.
+
+**10.5281/zenodo.23408498**
+[dataset] Zenodo record 23408498 (2026). https://doi.org/10.5281/zenodo.23408498.
+Metadata note: Author-confirmed current dataset DOI. Formal dataset title, creator list and version were not supplied; keep missing metadata explicit in audit.
+
+**PROJECT_REPOSITORY**
+Project analysis and data repository, EActa_2026_AI-acceleration. https://github.com/doublelayer/EActa_2026_AI-acceleration.
+Metadata note: Source location supplied by authors; record actual access date only if accessed.
+
+## Figure and document decisions
+
+
+Figure 1 is the author-reapproved seven-stage writing figure v11. Use its registered image unchanged, or reproduce it from the matching notebook without changing its labels or design. Its 17 cm × 7.18 cm canvas uses 9 pt text. The affine transforms in the notebook apply to the arrow paths only; the text is independent of those transforms. Do not use withdrawn v12, whose smaller arrow-path scale made the unchanged lettering look oversized relative to the arrows. Explain the stages briefly and the LLM's contribution throughout manuscript preparation. Separate actual manuscript preparation from later publication and sharing.
+
+Figure 2 is the approved molecular drawing, width 8.25 cm. Article Figures 3 and 4 are the DFT and ML scaling/volcano figures (historical source-figure labels 2 and 3), each width 17 cm with two square panels in one row. Use Figure 1 v11 unchanged at 17 cm width with its 9 pt text. Newly generated scientific Figures 3 and 4 use 8 pt consistently. OOH: squares; O: circles; volcano points: diamonds. Jmol colors identify adsorption-center metal, and both captions name the colors: Cr blue gray, Mn violet, Fe orange, Co pink, Ni green, Cu brown. Keep hexadecimal codes in plotting configuration only. Integer axis ticks, translucent points, no legends, no central marker strokes or dots. Trend lines extend across the axes and sit behind data. Positive overpotential has a reversed y axis, zero first labeled value, and room above the star at OH free energy 1.23 eV and zero overpotential. Explain the dotted ideal scaling relation separately from the solid CHE curve obtained from fitted scaling relations. Keep panel labels outside axes. Export opaque white 600 dpi PNG, PDF, and SVG; preserve interactive analyses in notebooks.
+
+Captions remain inside one manuscript: bold Figure #., Arial text, plain figure-number references, meaningful symbol and curve explanations. Include required molecular-source attribution in Figure 2's caption; other captions focus on their content. A separate TOC, if requested in the output manifest, uses DFT calculations, ML screening, and LLM writing with the corresponding verified counts.
+
+Build a fresh DOCX and standalone generator from this run's text. A4, 2 cm margins, single column, Cambria body, standard headings, page numbers. Use the approved document style defaults and semantic bold, italic, subscript, and superscript; superscripts/subscripts inherit the text font size. No decorative rules or direct ad hoc styling. Arial captions and equation placement are explicit author exceptions. Use editable Microsoft equations only for displayed equations, centered with consecutive right-aligned numbers on the same line. In running text, use ordinary Word text with semantic super- and subscripts, never inline Microsoft Equation objects. Use upright Greek symbols, italic Latin quantities, upright species/units/descriptive subscripts. In prose use Eq 4 and Eqs 1–3. Display noninteger results to two decimal places unless a method parameter requires its specified precision; percentages use integers when finer precision adds no meaning.
+
+Use Electrochimica Acta citations: square-bracket reference numbers in order of first appearance, reused consistently. Format and number bibliography entries in that order using the supplied metadata, standard journal abbreviations and active DOI links. Include only cited entries. Keep the title and author details fixed. Include required front matter, numbered main sections, Conclusions, CRediT, competing interests, Data Availability, the AI declaration, Acknowledgments, and References. Keep the journal's requested final-submission extras outside this manuscript-generation task unless explicitly included.
+
+
+
+## Team execution and completion
+
+
+The Artist follows the role contract in `FIGURE_PRODUCTION.md`. Receive each approved figure brief, exact immutable asset or generation source, verified result table and requested output version. Preserve the approved artwork and reproduce data figures with the specified quantities, selections, encodings, labels and dimensions. Route scientific changes to the Scientific auditor and source repairs to the Programmer. Work on the requested figures and use the design decisions already given in this prompt.
+
+Inspect the exports at publication size for actual dimensions, font sizes, transformations, clipping, overlap, line and marker visibility, and opaque white PNG backgrounds. Verify matching scientific meanings across related figures and check the Author-integrated captions against the actual visual key. Hand the Builder the exact approved files and dimensions and the Release auditor the matching sources, input provenance and inspection results. Preserve additional notebook analyses and historical releases.
+
+The Builder follows the role contract in `DOCX_PRODUCTION.md`. Receive the approved current Author text, fixed metadata, native equation definitions, exact registered figure files, author decisions and selected document profile. Build from that checkpoint without changing its scientific wording, numerical values or citation associations. Apply the permitted formatting and explicit exceptions defined in this prompt; retain the requested filename and public version number.
+
+Create a self-contained generator from the run's explicit text and declared inputs. Compare the DOCX's accepted reading with the Author checkpoint and verify equation content and editability, figure identities and dimensions, hyperlinks, protected author details, section order and caption placement. Give the Release auditor the artifact, generator, hashes and checks actually performed. Keep technical notes outside the article, route prose corrections through the Author, and follow the isolated test's navigation policy.
+
+The Librarian follows `LIBRARIAN.md`. Resolve the declared article packet, source authority, current approved artifacts, matching sources, selected reusable instructions, journal guideline, and local literature. Register the input allowlist with paths, purposes, versions, and hashes, and check references from the intended working folder. Keep factual values in the explicit article input and use navigation files to locate them. Historical manuscripts and development extracts remain outside the isolated package.
+
+Check transitive dependencies against the allowlist and declared network policy. Route missing code or data dependencies to the Programmer or Scientific auditor, identifying the affected file and requirement. Give the Supervisor and team the resolved input map and precise remaining dependencies. Keep preparation status distinct from execution evidence and preserve the current editorial manuscript and opener during the isolated test.
+
+The Release auditor follows `RELEASE_REVIEW.md`. Inspect the latest actual deliverable against the resolved article packet, numerical ledger, evidence map, guideline map, author-decision checklist, selected document profile, and verified reviewer dispositions. Check central claims and changed facts directly against their registered evidence. Verify the manuscript, figures, equations, links, citations, version, and reproducible sources according to the requested output contract.
+
+Return concrete defects to their responsible roles and verify targeted repairs on the resulting checkpoint. Reuse valid checks for unaffected artifacts. Report passed, failed, pending, not-applicable, and author-approved-exception items separately. Distinguish structural checks from rendered inspection, a generated artifact from an executed regeneration, and internal review from later human approval. Keep the report outside the article and identify the artifact and source with their relevant hashes. Preserve the isolated run's navigation policy and requested public version number.
+
+The Expert follows the role contract in `JOURNAL_AND_EVIDENCE.md`. Use the registered local sources and evidence map to verify literature claims, publication types, passage locations, and the conditions supporting each comparison. Distinguish editorials on narrative, writing courses and books, scientific catalyst studies, and empirical demonstrations of LLM use. Preserve the actual editorial positions that motivate our thesis. Compare catalyst studies through their reactions, molecular structures, quantities, methods, reference states, and sampled ranges; their findings remain attributed to their own datasets.
+
+Provide the Author with relevant evidence entries and comparison boundaries, with DOI identifiers where available. Keep source findings, synthesis, and our interpretation distinct. Verify exact numerical or methodological comparisons against the supplied original passage. After the Author integrates revisions, check the citation association, qualifiers, publication status, and citation-reference correspondence in the latest checkpoint. Send unresolved consequential source questions to the responsible role and retain extraction notes outside the manuscript. Preserve the citation convention specified in this prompt.
+
+The Scientific auditor follows the contract in `DATA_AND_CORRECTIONS.md`. Resolve numerical authority from this packet and its registered sources before drafting. Maintain a numerical ledger with each value's quantity, unit, population, analysis stage, source, precision, and evidential status. Verify identities, intermediate matching, corrections applied once, filters, structure-versus-point counts, and overlap between the DFT and prediction populations. Distinguish the full plotted cohort from the prediction-only structures and retain complete supplied combinations with one represented center.
+
+Use the reader required by each input format and existing checks whose input and code hashes still match. Replay supplied model parameters when the declared inputs support it; keep arithmetic reproduction distinct from predictive validation. Send numerical conflicts to the responsible role with both sources and affected claims identified. Have the Author propagate resolved facts and verify their uses in the current manuscript, captions, and equations before closing the issue. Keep the ledger and discrepancy report outside the article and hand them to the reviewers and Release auditor.
+
+The Supervisor follows `SUPERVISOR.md`. Map the three objectives to their evidence, section purposes, and figures within the approved structure. Preserve complete LLM article generation as the principal demonstration, with genuine DFT results and ML screening as its scientific basis and both acceleration modes visible. Give the Author functions and evidence boundaries while leaving sentence wording to the Author.
+
+Coordinate successive role turns on one current draft and issue log. Resolve conflicts through author decisions and the responsible evidence roles; distinguish essential corrections from optional extensions. Give each role the current checkpoint and relevant sources. Keep work within the requested scope and resource budget, use existing verified outputs before requesting repeated analysis, and follow the protocol's bounded repair procedure. Hand approved text and assets to the Builder and verified issue dispositions to the Release auditor. Keep coordination outside the manuscript.
+
+The Scientific reviewer follows `SCIENTIFIC_REVIEWER.md`. Read the complete current checkpoint and connect each central claim to its scientific evidence and permitted scope. Check the distinction between DFT calculations, ML predictions, and LLM writing; inspect population definitions, dataset overlap, corrections, and the supplied validation procedure where they affect interpretation. For the manuscript-generation demonstration, distinguish a generated article from a reproduced execution, measured acceleration, and subsequent human approval. Preserve the declared contribution and both acceleration modes while testing their evidential support.
+
+Raise prioritized passage-specific issues whose answers change the scientific interpretation or support for the article's contribution. Consult the Author, Scientific auditor, and Expert, and propose a remedy from the available inputs before requesting additional research. Optional extensions remain separate from required corrections. After the Author integrates a correction, inspect the revised evidence and any affected Abstract or Conclusion statement before closing the issue. Check again after language edits and hand verified dispositions to the Release auditor. Keep questions and review exchanges in the separate issue log.
+
+The Journal editor follows `JOURNAL_EDITOR.md`. Before the Author drafts, read the supplied guideline and share a source-linked requirement map with the team. Distinguish mandatory requirements, recommendations, editorial judgments, author drafting exceptions, and separate submission tasks. Assess the complete current draft for electrochemical substance and a supported contribution, preserving this article's principal LLM manuscript-generation achievement and both acceleration modes. Check the same contribution across the title, Abstract, Introduction, Discussion, and Conclusions within the approved section sequence.
+
+Give concrete passage-specific requests and explain the evidence or requirement behind them. Send argument questions to the Author and source or numerical questions to the responsible scientific role; use the Supervisor to resolve conflicts. The Author integrates the findings, and the Journal editor verifies the revised passages and their context in the latest checkpoint. At release, check the artifact against the requirement map and record drafting exceptions and remaining submission tasks outside the manuscript. Report simulated editorial assessment accurately.
+
+The Author follows the reusable contract in `AUTHOR.md`. Before prose is written, the Author receives the resolved facts, verified outputs, evidence map, approved section sequence, and Journal editor's requirement map. The Author gives each section and paragraph a purpose and links the complete article through DFT investigation, ML screening, and LLM manuscript preparation. The principal achievement remains complete article generation; both acceleration modes retain their defined roles. Draft the main text first, then derive the Abstract and Conclusions from the contribution it establishes. Choose original sentences, explanations, and transitions within the supplied constraints.
+
+In every round, the Author integrates the Journal editor's, Scientific reviewer's, and Style editor's findings into the same current draft and replies in the issue log. The Expert supplies literature evidence; the Scientific auditor resolves numerical questions. The Author then reads the revised paragraphs and sections together, checks the title-to-conclusion argument, and hands the corrections back to the originating reviewers. Preserve compliant prose and settled author decisions. Record the actual role turns and their changes outside the manuscript. This role contract supplies duties and checks rather than prescribed article sentences.
+
+The Style editor follows the shared-draft contract in `SCIENTIFIC_STYLE_EDITOR.md` and leads the explanation and voice round. First read the complete current draft for contribution hierarchy, section function, agency, and transitions; then correct specific language defects within the approved structure. Apply the selected voice and controlled terminology consistently. Preserve technical terms, all scientific quantities, citation ownership, meaningful qualifications, and the distinction between our actions and general scientific practice. Send missing scientific explanations to the Author and relevant evidence role.
+
+For each editing turn, retain its source checkpoint and compare the edited candidate against it through EDIT and AUDIT. Give the candidate and concise passage-specific findings to the Author, who integrates them into the shared draft. The Style editor checks the integrated corrections and their neighboring paragraphs before closing the corresponding issues. Keep that verification in the separate log. Manuscript outputs contain article text; internal editorial exchanges belong in the run artifacts.
+
+Audit the actor in every sentence: we and our refer to this article's authors and their work; researchers and scientists refer to the scientific community in general. Use a clear subject when moving from a general practice to the present study. Give the Journal editor and Style editor the lead in paragraph coherence and transitions while preserving the selected section structure.
+
+The Supervisor coordinates the ten operational roles plus the simulated Electrochimica Acta editor and Scientific reviewer. Follow the collaboration protocol: scientific preparation and a complete Author draft; argument/structure review led by the Journal editor and Scientific reviewer; style/explanation revision led by the Style editor; document construction, release audit, and targeted repairs. The Author integrates each round's changes. The roles take turns on the same current draft, exchange evidence and questions, and verify the corrections they requested. Their output must be an improved manuscript and a traceable issue log, not a transcript of imagined discussion.
+
+Keep a human-decision checklist for every constraint in this prompt. The Author answers reviewer findings, the Supervisor resolves conflicting recommendations through evidence, and the originating reviewer confirms corrections. Escalate only missing scientific facts or consequential author decisions. All routine editing and technical repair are already authorized by this prompt. Record pending issues accurately if they prevent completion.
+
+At release, provide the manuscript DOCX and independent generator, figures and analysis sources requested by the manifest, result/evidence maps, role handoffs, issue resolutions, and an execution report with input/output hashes and measured elapsed time. The final test starts in a fresh context with only the allowlisted packet. Record whether separate agents were used, what roles actually ran, and any interruptions or additional human instructions.
+
+A completed generated article is evidence of generation. Human scientific approval and absence of subsequent manual correction require later observation. Record them as pending until the humans review the output. The author-approved rehearsal assumption of successful generation cannot substitute for that record. Do not invent a time-saving estimate or approval. Produce the complete reviewable article and report the actual status of the demonstration separately.
+
+
+## Author's reference decisions and execution boundaries
+
+The corrected comparison document was used during preparation to extract facts and writing preferences. The generation roles must write new prose from this prompt, instructions and evidence. The root `Electrochimica_Acta_research_article_refernce.docx` is excluded from generation inputs and reserved for human comparison after the run. The human may compare them after the generated article is complete. Do not read that document during drafting, review or construction.
+
+Use zero-point energy and scaling-based where those compound modifiers are needed. Prefer concise definite articles rather than repeated unnecessary 'the'. Explain predicted adsorption free energy values explicitly where it resolves ambiguity. These preferences constrain terminology rather than supply article sentences. Apply grammatical judgment: punctuation edits do not authorize an erroneous possessive in an agent/action construction.
+
+All numerical project facts above remain fixed unless new input evidence or an explicit human correction establishes a change. A remote CSV can change: compare its downloaded hash with the supplied local snapshot and report a discrepancy. Preserve the established structure/adsorption-center distinctions. Keep bookkeeping details in the external audit when the article does not need them.
+
+Read the reusable role instructions before the relevant turn. Begin with Librarian input resolution, then Scientific auditor/Expert evidence checks, Supervisor planning and the complete Author draft. Conduct three internal rounds: argument and scientific interpretation led by Journal editor and Scientific reviewer; coherence and language led by Style editor; artifact and evidence verification led by Release auditor. The Author integrates each round, and originating reviewers verify their requested corrections. Programmer, Artist and Builder contribute where their outputs are needed. Record role interactions, decisions and issue closure in the run folder. One initiating prompt authorizes this complete process; a new human prompt is not required for every role.
+
+Use the generated PNG/PDF/SVG figures in `inputs/` and the original notebooks supplied at the root. Keep notebook exports and analysis outputs in `inputs/`. Insert the generated current graphical abstract immediately after the Abstract and before Section 1, as in the corrected reference document. Use `Figure_0_graphical_abstract_v32.png` at its aspect ratio (13.28 × 5.31 cm); it is an uncaptioned graphical abstract, not one of the four numbered main figures. Its source script is `tools/create_graphical_abstract_v32.py`; the publication-page image is in source_data/. It displays 88 catalysts, 1,260 catalysts, and 1 article. Generate it after Figure 4 so it can use the prediction table produced by that notebook. The article has a graphical abstract followed by four numbered main figures. Build the new article from fresh text; preserve the main section structure specified above.
+
+Write the generated manuscript as a clean editable DOCX. Use ordinary active hyperlinks, not HYPERLINK field codes. Remove content controls, tracked revisions, comment anchors, and hidden editing fields from the delivered DOCX. Preserve nine native editable displayed equations. Descriptive equation labels (solv, ZPE, chemical species and units) are upright Roman; Latin physical quantities are italic. Greek symbols follow the author's upright convention. Inline expressions use ordinary text with semantic super/subscripts. Use no manual subscript/superscript font-size reduction.
+
+Web research may fill missing bibliography metadata and support genuinely needed literature claims. Do not open arbitrary sources merely to inflate the literature review. Prefer supplied summaries for the established comparisons, verify DOI identity before adding facts, and keep the bibliography numbered by first citation. The original scientific goal and source-data authority take priority over editorial suggestions from the web.
+
+
+## Fixed section structure and supplied reference facts
+
+Use these section headings and order. Abstract remains unnumbered. 1. Introduction; 2. Computational methods; 2.1. Catalyst structures; 2.2. DFT calculations and adsorption structures; 2.3. Adsorption free energies and ORR thermodynamics; 2.4. Scaling and thermodynamic activity analyses; 2.5. Regression analysis and catalyst family screening; 2.6. LLM manuscript generation; 3. Results and discussion; 3.1. Molecular structures and adsorption centers; 3.2. Adsorption scaling relations and calculated ORR thermodynamics; 3.3. Regression predictions across catalyst families; 3.4. Molecular catalyst design in context; 3.5. Closing the scientific communication gap; 3.6. Data and alternative interpretations; 4. Conclusions. Follow with CRediT, competing interests, Data availability, the generative-AI declaration, Acknowledgments and References. These headings supersede a historical instruction to merge Section 3.6 into 3.5.
+
+Author-supplied regression description in the corrected reference: separate ridge models for OH, O and OOH adsorption potential energies; descriptors describe electron population, charge, spin, metal-pair polarization and ligand environment; eight predictors for OH and O and six for OOH; ridge parameters 0.10 for OH and 1.00 for O and OOH. Training medians, means, standard deviations and standardized coefficients were retained in project parameter tables. The independent run receives supplied predictions rather than a new training task. Historical local model bundles differ from these author-supplied settings and are intentionally excluded. Do not infer coefficients, validation metrics or an asserted parameter replay from the prediction CSV. If precise verification is needed, record this provenance boundary and request the current parameter table rather than silently using an older model.
+
+Established DFT examples from the reference, to verify against the supplied corrected table: Cr–Mn with S–S bridges and B1 at Mn, 0.29 V; Mn–Mn with S–S bridges and B1 at Mn, 0.34 V; Fe–Cu with S–S bridges and B2 at Fe, 0.36 V. The DFT low-decile pool has 12 catalyst/adsorption-center combinations (Co 5, Mn 4, Fe 3; S–S 7, N–N 4, O–O 1). The complete DFT analysis contains 118 retained combinations. OOH–OH slope/intercept are 0.69/3.05 eV; O–OH slope/intercept are 1.66/1.17 eV, with slope dimensionless. Do not substitute these rounded display values for full-precision calculations.
+
+Current Figure 4 lower-decile pool contains 220 combinations: Fe 215 and Co 5; B1 141 and B2 79; S–S 58, N–S 46, O–O 33, O–S 29, N–N 29 and N–O 25. Full-pool denominators and joint combinations must be verified from the supplied CSV before claims of enrichment. Keep main prose concise and family-focused.
+
+The three Conclusions paragraphs have the following functions: principal manuscript-generation achievement and the title's acceleration claim; brief DFT/ML scientific substance; synthesis on teachable writing conventions, methods/data and researchers' opportunity to focus on discovery. The Abstract and Introduction use the earlier sentence-function plan. Instructions define meaning and order, while the Author chooses original sentences and transitions.
+
+
+## Fixed section structure and supplied reference facts
+
+Use these section headings and order. Abstract remains unnumbered. 1. Introduction; 2. Computational methods; 2.1. Catalyst structures; 2.2. DFT calculations and adsorption structures; 2.3. Adsorption free energies and ORR thermodynamics; 2.4. Scaling and thermodynamic activity analyses; 2.5. Regression analysis and catalyst family screening; 2.6. LLM manuscript generation; 3. Results and discussion; 3.1. Molecular structures and adsorption centers; 3.2. Adsorption scaling relations and calculated ORR thermodynamics; 3.3. Regression predictions across catalyst families; 3.4. Molecular catalyst design in context; 3.5. Closing the scientific communication gap; 3.6. Data and alternative interpretations; 4. Conclusions. Follow with CRediT, competing interests, Data availability, the generative-AI declaration, Acknowledgments and References. These headings supersede a historical instruction to merge Section 3.6 into 3.5.
+
+Author-supplied regression description in the corrected reference: separate ridge models for OH, O and OOH adsorption potential energies; descriptors describe electron population, charge, spin, metal-pair polarization and ligand environment; eight predictors for OH and O and six for OOH; ridge parameters 0.10 for OH and 1.00 for O and OOH. Training medians, means, standard deviations and standardized coefficients were retained in project parameter tables. The independent run receives supplied predictions rather than a new training task. Historical local model bundles differ from these author-supplied settings and are intentionally excluded. Do not infer coefficients, validation metrics or an asserted parameter replay from the prediction CSV. If precise verification is needed, record this provenance boundary and request the current parameter table rather than silently using an older model.
+
+Established DFT examples from the reference, to verify against the supplied corrected table: Cr–Mn with S–S bridges and B1 at Mn, 0.29 V; Mn–Mn with S–S bridges and B1 at Mn, 0.34 V; Fe–Cu with S–S bridges and B2 at Fe, 0.36 V. The DFT low-decile pool has 12 catalyst/adsorption-center combinations (Co 5, Mn 4, Fe 3; S–S 7, N–N 4, O–O 1). The complete DFT analysis contains 118 retained combinations. OOH–OH slope/intercept are 0.69/3.05 eV; O–OH slope/intercept are 1.66/1.17 eV, with slope dimensionless. Do not substitute these rounded display values for full-precision calculations.
+
+Current Figure 4 lower-decile pool contains 220 combinations: Fe 215 and Co 5; B1 141 and B2 79; S–S 58, N–S 46, O–O 33, O–S 29, N–N 29 and N–O 25. Full-pool denominators and joint combinations must be verified from the supplied CSV before claims of enrichment. Keep main prose concise and family-focused.
+
+The three Conclusions paragraphs have the following functions: principal manuscript-generation achievement and the title's acceleration claim; brief DFT/ML scientific substance; synthesis on teachable writing conventions, methods/data and researchers' opportunity to focus on discovery. The Abstract and Introduction use the earlier sentence-function plan. Instructions define meaning and order, while the Author chooses original sentences and transitions.
+
+
+## File operation for this run
+
+Start with the empty `inputs/` folder. Run the figure-generation files from the package root in this order: Figure 1 notebook, Figure 2 notebook, Figure 3 notebook, Figure 4 notebook, then `tools/create_graphical_abstract_v32.py`. The Figure 4 notebook writes its derived prediction table into `inputs/`; the TOC script reads that table and writes the graphical abstract into `inputs/`. The other figure notebooks write all PNG/PDF/SVG/HTML and analysis outputs into `inputs/`. For every DFT database, use only the exact `DASC_...db` filenames from GitHub release `v1`. Check the declared local file first and reuse it only after its SQLite signature and expected SHA-256 pass; if it is missing or invalid, download that exact GitHub asset to a temporary sibling, validate it, then replace the target. Report the source URL, release tag, reuse/download status, byte size, row count and SHA-256. Apply this same check/download/validate sequence in Figure 2, Figure 3 and the TOC generator. Do not use legacy `3d_B1B2_...` databases. Do not place generated figures, derived tables, caches, logs, manuscript files or temporary files in the package root. Keep the package's original notebooks and source data intact; execute a working copy if notebook execution modifies notebook state. Save the manuscript and all run-specific files in `inputs/run_.../`. After all five visual assets are generated, build the article from the PNGs in `inputs/`, placing the uncaptioned TOC image after the Abstract and before Section 1. Keep `Electrochimica_Acta_research_article_refernce.docx` excluded from drafting, review and construction; it is a comparison document only.
+
+## Completion signal
+
+When all requested generation, review, and release checks are complete, end the final response with this exact ASCII line: `Mischief managed.`
+
+
+## Clean-start file operations
+
+The root contains only PROMPT.txt, AGENTS.md, four source notebooks, the reference DOCX and supporting subfolders. Download scientific inputs to source_data/ with exact GitHub filenames. Write every generated file under inputs/: figures and derived tables directly there, and executed notebook copies, manuscript files, scripts created during the run, logs, caches, temporary files and reports under inputs/run_.../. Configure Python, Jupyter and Matplotlib caches under inputs/ before execution. Execute notebook working copies with the package root as their working directory. Run the TOC with `python tools/create_graphical_abstract_v32.py`. Before completion, inspect the root and move any run-generated files into inputs/, repair references to moved files, and verify the delivered manuscript opens. Leave the supplied notebooks and reference DOCX intact. The reference DOCX remains excluded from generation.
