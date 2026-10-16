@@ -1,5 +1,5 @@
 {
-  "network": "GitHub downloads and relevant web research permitted",
+  "network": "Local project inputs; relevant web research permitted",
   "generation_executed": false,
   "excluded": [
     "Electrochimica_Acta_research_article_refernce.docx",
@@ -10,218 +10,218 @@
     {
       "path": "AGENTS.md",
       "role": "instructions or metadata",
-      "sha256": "50b4a5a849495e285642316c4ad13e7b131bcd469a380798bd4a0a14e9f43f47",
-      "bytes": 839
-    },
-    {
-      "path": "Figure_1_writing_cycle_v11.ipynb",
-      "role": "scientific input",
-      "sha256": "e5a920c9a73865e1365534b43f796b9026ff7080c12dafd195acee1a6b19269e",
-      "bytes": 8301
-    },
-    {
-      "path": "Leite_2026_DACS_ORR_ML_modular_design_figure_2_v32.ipynb",
-      "role": "scientific input",
-      "sha256": "53e328970fc85bffd7438fa4eccf6d8d54527f9870f552581beeab8b1dcba6ce",
-      "bytes": 43278
-    },
-    {
-      "path": "Leite_2026_DACS_ORR_ML_predicted_scaling_relation_figure_4_v23.ipynb",
-      "role": "scientific input",
-      "sha256": "a53609ec33caee447b055bc1b75620983d112a7b031a175a3bea37cc1b8962b9",
-      "bytes": 30117
-    },
-    {
-      "path": "Leite_2026_DACS_ORR_ML_scaling_relation_figure_3_markers_v27.ipynb",
-      "role": "scientific input",
-      "sha256": "0504234cbfa26dab2321c00662012bd87ae4d7511518028a4e25728c57b2d6ba",
-      "bytes": 125011
-    },
-    {
-      "path": "PROMPT.txt",
-      "role": "instructions or metadata",
-      "sha256": "5e37e4259a54bc6aefa714e699e5bf8778ba6c5d801c11a68d5a34fa2d5f1257",
-      "bytes": 88324
+      "sha256": "68ceaaa55d65a5d105862a9a4f904b4b146da59caa766f4fbec64781ae162e12",
+      "bytes": 1035
     },
     {
       "path": "article/ARTICLE_BRIEF.md",
       "role": "instructions or metadata",
-      "sha256": "a26d1a3d1612cfb2de1a746857aa65b1ba277f3ac2edd4b8739b74196cd1fac6",
-      "bytes": 208
+      "sha256": "ecba3b71e170463d36022dbc75b9afb57a2ea343b11b8b1f92b90b68c83579fa",
+      "bytes": 211
     },
     {
       "path": "article/BIBLIOGRAPHY.json",
       "role": "instructions or metadata",
-      "sha256": "efff7073acd6f52d467405c25a282ed390f2de6c72d7126a1994d3ceeeb75dd3",
-      "bytes": 13265
-    },
-    {
-      "path": "article/INPUTS.md",
-      "role": "instructions or metadata",
-      "sha256": "4fb528f9f34d8fb9375a911112e8f899ad6021657dd2144d676b59ee5fc14d86",
-      "bytes": 853
+      "sha256": "7bcafb3fb27cbebdd800baf30c7ca9245a557f1eabd773943ad1d8ea6eb147bb",
+      "bytes": 13442
     },
     {
       "path": "article/INPUT_CHECKLIST.txt",
       "role": "instructions or metadata",
-      "sha256": "c9f996faaabc0b97a7ea5145664b1298dc30c55ee2f0fc004693408486a5a509",
-      "bytes": 596
+      "sha256": "745eb64e495e7e32fc7334cf8a80e08dda9eaaec4731f9a8d174c540d6c5ff59",
+      "bytes": 838
+    },
+    {
+      "path": "article/INPUTS.md",
+      "role": "instructions or metadata",
+      "sha256": "a1cdb915fb3d9b9fbcdb205a892cebce7415fc6036cbcf0f7808ab87845f814e",
+      "bytes": 995
     },
     {
       "path": "article/PREPARATION_REPORT.md",
       "role": "instructions or metadata",
-      "sha256": "66616c1c146a323259edfdc6c9588f5efe5157bc5e391245cf9833f2e8d5e18b",
-      "bytes": 678
+      "sha256": "51322b246e2d8b84c6631e1083e4d4435242add31bcefed479dd7ee0e61c7f10",
+      "bytes": 845
     },
     {
       "path": "article/READ_ME.md",
       "role": "instructions or metadata",
-      "sha256": "fcf5fa007552ea403e2d9e3627d49d5e9fcb303199a3de7ba1b773105f410001",
-      "bytes": 1041
+      "sha256": "64712ae5afb85a3c1d22a6d2e0e10c2939f6d2c0d046caf40eb3c3cde51b1a84",
+      "bytes": 1134
     },
     {
       "path": "article/SCIENTIFIC_PROVENANCE.md",
       "role": "instructions or metadata",
-      "sha256": "f6ca5c889268ccd5325a58699d5b16fd137dfb9a3a1c9375063df2998cfb7a19",
-      "bytes": 492
+      "sha256": "7fa84a86ed138d6fbc7f51960464b8afab0b54cb7fccf51a935c6a6a87f00920",
+      "bytes": 624
     },
     {
       "path": "article/SENTENCE_PLAN.md",
       "role": "instructions or metadata",
-      "sha256": "ebc263d19b2f58476e651da99c4765858b368fba7d604b729ec4f074236d41ad",
-      "bytes": 6036
+      "sha256": "2ed85b7bff7e822befd6784c152ae152f097ff5b24e338b9ca549c171696b9bc",
+      "bytes": 6122
     },
     {
       "path": "environment/README.md",
       "role": "instructions or metadata",
-      "sha256": "3dd119b9c82c2ba63a71d3c50328460be692519e5ecf87fdbe24cce157d990dc",
-      "bytes": 457
+      "sha256": "ed6e2e16d8a9bf24b14ca1918228ff2c8fc8b5cc7b03bd0753f7079355985361",
+      "bytes": 530
     },
     {
       "path": "environment/requirements.in",
       "role": "instructions or metadata",
-      "sha256": "5d28385086e4f80d4f6c4c00f14dc8dec0d28a8f44d8512aa92500a655ab95a6",
-      "bytes": 393
+      "sha256": "d091ba82f58ca06ba63337f1abdbb5946edd41a6937427bedb72b32f3e88cc26",
+      "bytes": 414
+    },
+    {
+      "path": "Figure_1_writing_cycle_v11.ipynb",
+      "role": "scientific input",
+      "sha256": "43a2007448a8e36cdbd350be14898dbffcbdfaabbd6c8458841715fcbff3f6a0",
+      "bytes": 8569
     },
     {
       "path": "instructions/AUTHOR.md",
       "role": "instructions or metadata",
-      "sha256": "f2d3817c2440eb3b912f8fddec0f2ddf676cd21e0f3ac86da58551337c7f9688",
-      "bytes": 15587
+      "sha256": "c201c6355845d734f87d7211c7e606cc890296e4130065e29c033779ed5a0591",
+      "bytes": 15973
     },
     {
       "path": "instructions/CODE_AND_ENVIRONMENT.md",
       "role": "instructions or metadata",
-      "sha256": "5cbc86bf47ad457f07421f9315f31f5345f96ea2f43b2ba48d8c1681a308d1c9",
-      "bytes": 4476
+      "sha256": "766f3a9d50949fd634524109e18d07906e00df2848d21fa65abe86c6d189b12c",
+      "bytes": 4677
     },
     {
       "path": "instructions/DATA_AND_CORRECTIONS.md",
       "role": "instructions or metadata",
-      "sha256": "1b1fa77abb1fe545ed037a25fadf01b8d7802b89022e049c0cd9dc839356ee32",
-      "bytes": 12721
+      "sha256": "e87e1928b6fd9f2bf93c2460ca0f7143c7b748b290d3daffecd40240dfa6a4f5",
+      "bytes": 12892
     },
     {
       "path": "instructions/DOCX_PRODUCTION.md",
       "role": "instructions or metadata",
-      "sha256": "588ec4963df70bdcba078e0d4b78ae017c04ade08716c101ad8acb31a05c0bf1",
-      "bytes": 7347
+      "sha256": "4dd5d5122e96658a73c62183a89e8bb98957d80228187e14bf966c146bd7fd79",
+      "bytes": 7431
     },
     {
       "path": "instructions/FIGURE_PRODUCTION.md",
       "role": "instructions or metadata",
-      "sha256": "1518dc7f61e9567c124edef1e6e339206136e4cefce184a352f6c56095da8dd3",
-      "bytes": 6296
+      "sha256": "35252beb557d6fbdc45ab332369670279d8baf9853e6c495b719ae8825b143c3",
+      "bytes": 6378
     },
     {
       "path": "instructions/INDEX.md",
       "role": "instructions or metadata",
-      "sha256": "85e4258e1248a541a69773a1e551daa0e7b68e1b3e68c5b6e6fb75ae3e19b4a1",
-      "bytes": 1666
+      "sha256": "f2b8137a7f7a4c59a2af833a39920d94a90b52755e0d8e7620199c70160c4875",
+      "bytes": 1726
     },
     {
       "path": "instructions/JOURNAL_AND_EVIDENCE.md",
       "role": "instructions or metadata",
-      "sha256": "47cc707cfad3041939d2e878ba34a5d9e5bdc3b926c03334684b834518280642",
-      "bytes": 6797
+      "sha256": "d86982b987baa9d3f5ce347acca43a0aff7f6468ba2847c4d34fae3b231de789",
+      "bytes": 6898
     },
     {
       "path": "instructions/JOURNAL_EDITOR.md",
       "role": "instructions or metadata",
-      "sha256": "9e9ebf5b4eaf46d00f6dc19713f9969652ea303011a5f6a0ecefead07aff8de2",
-      "bytes": 5997
+      "sha256": "a14b3c9a8424083154f9da2c93644d39bcbc4c2fd0cfef8a4c956143e1e8758d",
+      "bytes": 6075
     },
     {
       "path": "instructions/LIBRARIAN.md",
       "role": "instructions or metadata",
-      "sha256": "28b0af667b0dc55d0fa78ff3a9dd4b0fdb340c3061bb3e13a0746a48d962f2b3",
-      "bytes": 4797
+      "sha256": "3f2a8c9aab4e95b621ed0ca07e56d2484a6e99d3b4a326670aa74fd871d600c7",
+      "bytes": 4814
     },
     {
       "path": "instructions/PYTHON_AND_COLAB_STYLE.md",
       "role": "instructions or metadata",
-      "sha256": "0ed5a402b3d8eb8a5f56a698a0b601643c1010e2ef2fa3bc7e99bfb06521dfb9",
-      "bytes": 8577
+      "sha256": "fcf5190db6a27629ea433f84d9fcdc7a135e52ec079d07bd0109054cc18a1242",
+      "bytes": 8144
     },
     {
       "path": "instructions/RELEASE_REVIEW.md",
       "role": "instructions or metadata",
-      "sha256": "3e25ecc5e7f202ff6d6281d87184832d5317d47108f4b6b081a247f80defa58c",
-      "bytes": 5668
+      "sha256": "34bfa3f64221c03e502f1095b0f346795b5aa91133a23939059376e45576ed13",
+      "bytes": 5748
     },
     {
       "path": "instructions/ROLE_COLLABORATION.md",
       "role": "instructions or metadata",
-      "sha256": "709d59917022952f02d2179064534560ee109b2c0bfaa7d4399b304b9bb4dfdf",
-      "bytes": 9929
+      "sha256": "1483bf0b00a5fa344ad4c7d3ff4071eca503b59a4f3f7e5a045a1f42e3759441",
+      "bytes": 10036
     },
     {
       "path": "instructions/SCIENTIFIC_REVIEWER.md",
       "role": "instructions or metadata",
-      "sha256": "9a29296d9ce7ea5c4670cc27976136d6dff192f1bd2c08d23ebbba7bb4a981f3",
-      "bytes": 6223
+      "sha256": "c41aea7a6358526e003747bd111bcf52637c27051b9a2e8cc6910ae85879e98f",
+      "bytes": 6301
     },
     {
       "path": "instructions/SCIENTIFIC_STYLE_EDITOR.md",
       "role": "instructions or metadata",
-      "sha256": "6e4eeb2957613546d9ff1e1ce159b95e9e36c7dfdf670fdfd64cea8dbf20f735",
-      "bytes": 22521
+      "sha256": "fea4b227ab184191efe67d92d28348619ef1690b38be5f750418b5e6a3b8f92e",
+      "bytes": 23058
     },
     {
       "path": "instructions/SECTION_FUNCTIONS.md",
       "role": "instructions or metadata",
-      "sha256": "43a3b9cbccec4494bc8ba9b8da3365fa35e2849fcfeb6387e700807132c5f81a",
-      "bytes": 7000
+      "sha256": "1f49c71b4e189b090c61481f7cb0c14651492e4a679ba28b233e502a006e65b1",
+      "bytes": 7098
     },
     {
       "path": "instructions/SUPERVISOR.md",
       "role": "instructions or metadata",
-      "sha256": "4a533d249eefd920fbddbb4b7a9b57db356b436b1827e74f3fb56b8d65c00474",
-      "bytes": 5782
+      "sha256": "366556d3c56fa945c36c02e4b2f02ac03d6ec170dda7516a5af701af0e8e367b",
+      "bytes": 5862
     },
     {
       "path": "instructions/TERMINOLOGY.md",
       "role": "instructions or metadata",
-      "sha256": "9d2440a4e5919d8dfc51e01abe6b72bf65398fd41db6e83539dc0612494c75f3",
-      "bytes": 17661
+      "sha256": "1e13c86add04b607ccf1710ce247dde72015308d705030fc511dc5467952cce5",
+      "bytes": 17877
     },
     {
       "path": "instructions/VOICE_PROFILE.md",
       "role": "instructions or metadata",
-      "sha256": "b059a92b9d8f55acbb9fc37f63d573d09a33b8f938483a4f99e0a7e1fb60df16",
-      "bytes": 4245
+      "sha256": "ce911d38de0064dc40fcf0fe10fb27b6236dcbe04bbd1a1e2048aeae0e31975b",
+      "bytes": 4315
     },
     {
       "path": "journal/EActa_supplied_guide_summary.md",
       "role": "instructions or metadata",
-      "sha256": "324a9040f113edc9601bd111d38261a1ac85b735364e1b1395722ad1c8e5a50b",
-      "bytes": 7840
+      "sha256": "de2c0f18d732ccfe28a4df2b3d54201bb1a8836362adf11f901a61cde45c0314",
+      "bytes": 7891
+    },
+    {
+      "path": "Leite_2026_DACS_ORR_ML_modular_design_figure_2_v32.ipynb",
+      "role": "scientific input",
+      "sha256": "7b5f8563b5d82bb5eabd41d5a5b1f9f6c3233ad4748422b4dc3d7df755644a98",
+      "bytes": 42885
+    },
+    {
+      "path": "Leite_2026_DACS_ORR_ML_predicted_scaling_relation_figure_4_v23.ipynb",
+      "role": "scientific input",
+      "sha256": "f388656fe7ac2b3fdf9e8908dbe8e9d1b6396e70000855601992c271fc9120c1",
+      "bytes": 30367
+    },
+    {
+      "path": "Leite_2026_DACS_ORR_ML_scaling_relation_figure_3_markers_v27.ipynb",
+      "role": "scientific input",
+      "sha256": "ba3fdb3d3d274f6daf0d30fb446d7c503f1ba956a4dded54600e332bc2645b26",
+      "bytes": 125445
     },
     {
       "path": "literature/LITERATURE_ROLES.md",
       "role": "instructions or metadata",
-      "sha256": "367d4171ab60dc86731e18fe2c16e0f4e529c2fc04b8f81a2531694cf01f9777",
-      "bytes": 230
+      "sha256": "fd892633fab0e263ef321928c2a2df35df3989c40367ba0c9403ba20dfd77f80",
+      "bytes": 233
+    },
+    {
+      "path": "PROMPT.txt",
+      "role": "instructions or metadata",
+      "sha256": "f03b224b5abcc7ffdac38a62b4d2cf2a744c4332974d6b6f2deb666d01b44514",
+      "bytes": 89016
     },
     {
       "path": "source_data/reference_EActa_open_article_2020_page1.png",
@@ -232,20 +232,74 @@
     {
       "path": "tools/create_graphical_abstract_v32.py",
       "role": "instructions or metadata",
-      "sha256": "fb731d27ed6c0f28e10cde5f65ac36c034c7c3b5f1ad3b1fa17c8a740d3381b1",
-      "bytes": 18091
+      "sha256": "56195605ad48ea03b56b03fe61e06aa6d809ca4ee908ecfffefeb72155d3ea9e",
+      "bytes": 17931
     },
     {
       "path": "tools/prepare_manifest.py",
       "role": "instructions or metadata",
-      "sha256": "2121c3a9e1677c4a5caab4caf1590cba3d9e4a899ac70cff50c56572b9f804eb",
-      "bytes": 1013
+      "sha256": "cd0901c623eb875c157835f82d8608bc703b788cec3a108aaf26d11ef3fa82c8",
+      "bytes": 1893
     },
     {
       "path": "tools/verify_package.py",
       "role": "instructions or metadata",
-      "sha256": "e1cefad3e0afcb52438c7e9852f3a2cde9608144756a14d155f64e9d691bf720",
-      "bytes": 1167
+      "sha256": "94da977a784b91616bfe18ccd07badd1380c4dd4704635f46d39fa64c7c388ff",
+      "bytes": 1296
+    },
+    {
+      "path": "../DASC_Bare_Catalysts_RPBE_D4.db",
+      "role": "scientific input",
+      "sha256": "9db167f62c25ae18b56637aaf385f62c1fd0d9100989aea038c3051a56a2146f",
+      "bytes": 16187392
+    },
+    {
+      "path": "../DASC_OH_Adsorption_RPBE_D4.db",
+      "role": "scientific input",
+      "sha256": "9f365f2f55270944175f48f2c76e1862371772797b2faffcb2902c4c14e5b286",
+      "bytes": 8548352
+    },
+    {
+      "path": "../DASC_O_Adsorption_RPBE_D4.db",
+      "role": "scientific input",
+      "sha256": "d4cbedd2dada10fbd49ed134853461bba0ffcc4ef1809fd5c0292ca1120af47a",
+      "bytes": 8474624
+    },
+    {
+      "path": "../DASC_OOHx_Adsorption_RPBE_D4.db",
+      "role": "scientific input",
+      "sha256": "2ad476b3b3981753fdd62f435f96a97292f6dbbf165cb22ae6dc6cde568408a8",
+      "bytes": 8990720
+    },
+    {
+      "path": "../DASC_OOHz_Adsorption_RPBE_D4.db",
+      "role": "scientific input",
+      "sha256": "e4c8e121256c3518303c71c2ee17d3c77d05ed9afd64809557f31d7678ad0f9c",
+      "bytes": 7630848
+    },
+    {
+      "path": "../figure4/predictions.csv",
+      "role": "scientific input",
+      "sha256": "e945663a27e930257c2d915f527b0a241bf7c1a5be74d244c97aa2f16d4c9617",
+      "bytes": 2311902
+    },
+    {
+      "path": "../figure4/structure_model_roles.csv",
+      "role": "scientific input",
+      "sha256": "4c7666b41ee02cfbc8a6c743d24e49c30356298e270dd18e4a0058b889d48eea",
+      "bytes": 91423
+    },
+    {
+      "path": "../figure4/model_structure_descriptors.csv",
+      "role": "scientific input",
+      "sha256": "7dd1440e48552d81706a357e100813c79dbb1b7971cba2df0788c5ce7b8940e3",
+      "bytes": 569251
+    },
+    {
+      "path": "../figure4/split_config.json",
+      "role": "scientific input",
+      "sha256": "6070d50740f59b95c890bf527fa549ab1f715f33029357518f2983cbef464d10",
+      "bytes": 5832
     }
   ]
 }

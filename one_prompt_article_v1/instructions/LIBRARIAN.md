@@ -20,7 +20,7 @@ Check path resolution from the intended working folder and the declared dependen
 
 For isolated generation, freeze an explicit allowlist containing the article packet, selected instructions, supplied journal guideline, local literature, scientific inputs, and permitted artwork. Resolve transitive instruction references against that allowlist. Exclude predecessor manuscripts, their generators, conversation transcripts, and development extracts as hidden factual or prose inputs.
 
-Honor the declared network policy. For an offline run, register local inputs and identify any source code that still requires a download. Route that dependency to the Programmer before execution; preparation records an unresolved dependency until the required frozen input or authorized offline read mode exists. A remote address alone does not establish that its content is locally available or verified.
+Use `article/input_manifest.json` to locate and verify the local scientific inputs. If a registered file is missing or its hash differs, report that as an unresolved local-input issue to the Programmer; do not substitute a download. Remote addresses in the bibliography or source notes document provenance and do not establish runtime availability.
 
 ## Maintain a clear workspace
 
@@ -37,4 +37,4 @@ After changes, verify links, registered knowledge paths, artifact/source associa
 
 ## Selected run policy
 
-PROMPT.txt supplies current facts and the execution contract. GitHub input downloads and relevant web research are authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.
+PROMPT.txt supplies current facts and the execution contract. Use the registered local project data files; relevant web research remains authorized when needed. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.

@@ -500,4 +500,4 @@ Return manuscript text only in the manuscript output. Keep any required collabor
 
 ## Selected run policy
 
-PROMPT.txt supplies current facts and the execution contract. GitHub input downloads and relevant web research are authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.
+PROMPT.txt supplies current facts and the execution contract. Use the registered local project data files; relevant web research remains authorized when needed. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.

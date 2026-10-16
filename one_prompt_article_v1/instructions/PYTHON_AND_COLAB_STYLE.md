@@ -12,7 +12,7 @@ Keep the user-designated filename exactly. Do not create a renamed copy unless a
 
 Treat an author- or student-supplied notebook as a protected source. For a narrowly scoped request (for example, changing a data host or removing a call to an older plotting script), make only the necessary cell-level edits. Preserve notebook filename, cell order, cell count, cell IDs, markdown, comment banners, deliberate spacing, and the separation between installation, setup, acquisition, analysis, plotting, and export. Never collapse an existing multi-cell notebook into one large cell or rebuild its analysis from scratch unless the author explicitly requests that restructuring. Before release, compare the notebook against its supplied source and report exactly which cells changed. A previous-script dependency should be removed by placing the required function in its proper existing analysis cell, not by replacing the notebook with an unrelated generated script.
 
-Keep each analysis notebook and its databases in the locations declared by the article manifest. For this project's ordinary revisions, notebooks stay in their designated figure output folders and ASE inputs in `databases/`; resolve paths relative to the notebook. During an isolated regeneration run, use the run's declared output directory. When downloads are authorized in Colab, use `/content/` directly and do not write implicitly to Google Drive. An offline execution must use supplied local files and skip network acquisition cells.
+Use `article/input_manifest.json` as the source map. For this regeneration, the five ASE databases are in the parent project root and the Figure 4 inputs are in `../figure4/`; resolve them relative to this package and use their registered hashes. Do not download or copy scientific inputs into `source_data/`. Keep that folder for the supplied TOC reference-page image. A Colab or other remote runtime must have a local copy of the project checkout and these sibling inputs staged before execution; do not fetch them from GitHub.
 
 ## Notebook organization
 
@@ -29,15 +29,15 @@ Keep each analysis notebook and its databases in the locations declared by the a
 
 - Install Python packages with `!pip install` in the first executable cell.
 - Install system packages with `!apt-get` only when they are actually required.
-- When downloads are authorized, download databases directly to `/content/` with their exact filenames. Do not create an extra database subdirectory. Offline runs use the supplied files.
-- Replace stale runtime copies before downloading so the displayed results correspond to the declared links.
-- Verify that each downloaded database has the SQLite header before opening it with ASE.
+- Read scientific inputs from their registered local project paths; do not download databases or prediction tables to `/content/` or another runtime folder.
+- Compare local input hashes with `article/input_manifest.json` and stop with a clear error if a file is missing or has changed.
+- Verify that each local database has the SQLite header before opening it with ASE.
 - Configure Plotly explicitly for Colab and enable the custom widget manager when `ipywidgets` is used.
 - Use `%matplotlib inline` for static display.
 - Display plots explicitly with `plt.show()` or `figure.show(renderer=...)`.
 - By default, keep data and figures in memory and do not save analysis files. Add an export cell only when the author requests one.
 - Never write to Google Drive implicitly.
-- When a notebook is tied to a published release, resolve that release by its immutable tag and select assets by exact filename. Check the declared local path first; reuse a database only when its file signature and expected SHA-256 both match. If the file is absent or invalid, download the exact asset to a temporary sibling, validate it, and atomically replace the invalid or missing target only after validation succeeds. Report the release tag, asset identifier, whether it was reused or downloaded, byte size, row count where applicable, and SHA-256 hash. Support a token through an environment variable when a release is private; never embed credentials. A release webpage is not a file URL.
+- Retain upstream GitHub and Zenodo links only as scientific provenance and citation metadata. They are not runtime input sources for this local-data workflow.
 - When figure export is requested, use collision-safe versions in the declared output folder. Never overwrite a prior image or interactive export. Export PNG with an opaque white background. Follow the active article figure brief for design and [`../figures/FIGURE_PRODUCTION_CORE.md`](../figures/FIGURE_PRODUCTION_CORE.md) for production; historical figure specifications are not implicit inputs to a fresh-generation run.
 
 ## Dependencies and imports
@@ -48,7 +48,7 @@ Keep each analysis notebook and its databases in the locations declared by the a
 - Import only packages used by the notebook.
 - Use `pathlib.Path` for local paths.
 - Keep database filenames, Google Drive file identifiers, physical constants, and plot-style maps in a clearly labeled configuration cell.
-- Fail with an informative error when a download, database signature, required column, unique-key condition, or validation check fails.
+- Fail with an informative error when a local input, database signature, required column, unique-key condition, hash check, or validation check fails.
 
 ## Data-frame and numerical conventions
 
@@ -79,4 +79,4 @@ Keep each analysis notebook and its databases in the locations declared by the a
 
 ## Selected run policy
 
-PROMPT.txt supplies current facts and the execution contract. GitHub input downloads and relevant web research are authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.
+PROMPT.txt supplies current facts and the execution contract. Use the registered local project data files; relevant web research remains authorized when needed. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.

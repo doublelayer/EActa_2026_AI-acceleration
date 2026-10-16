@@ -2,9 +2,11 @@ from pathlib import Path
 import hashlib,json
 from zipfile import ZipFile
 root=Path(__file__).absolute().parents[1]
+project_root=root.parent.resolve()
 manifest=json.loads((root/'article/input_manifest.json').read_text())
 for item in manifest['files']:
-    path=root/item['path']
+    path=(root/item['path']).resolve()
+    assert path.is_relative_to(project_root),item['path']
     assert path.is_file(),item['path']
     assert hashlib.sha256(path.read_bytes()).hexdigest()==item['sha256'],item['path']
     assert not item['path'].startswith('inputs/'),item['path']

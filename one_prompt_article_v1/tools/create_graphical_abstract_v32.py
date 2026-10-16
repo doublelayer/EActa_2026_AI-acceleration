@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import os
 import hashlib
-import urllib.request
 from pathlib import Path
 from contextlib import contextmanager
 import re
@@ -45,6 +44,7 @@ from ase.io.pov import get_bondpairs
 
 HERE = Path(__file__).absolute().parents[1]
 ROOT = HERE
+PROJECT_ROOT = ROOT.parent
 OUTPUT_DIR = HERE / "inputs"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 BASE = OUTPUT_DIR / "Figure_0_graphical_abstract_v32"
@@ -251,11 +251,6 @@ def draw_volcano(fig, frame):
 
 
 
-GITHUB_REPOSITORY = 'doublelayer/EActa_2026_AI-acceleration'
-GITHUB_RELEASE_TAG = 'v1'
-GITHUB_DATABASE_ROOT = (
-    f'https://raw.githubusercontent.com/{GITHUB_REPOSITORY}/{GITHUB_RELEASE_TAG}'
-)
 DATABASE_SHA256 = {
     'DASC_OH_Adsorption_RPBE_D4.db': '9f365f2f55270944175f48f2c76e1862371772797b2faffcb2902c4c14e5b286',
     'DASC_OOHz_Adsorption_RPBE_D4.db': 'e4c8e121256c3518303c71c2ee17d3c77d05ed9afd64809557f31d7678ad0f9c',
@@ -279,28 +274,18 @@ def valid_database(path, expected_sha256):
     return database_sha256(path) == expected_sha256
 
 
-def obtain_database(filename):
-    path = ROOT / "source_data" / filename
-    path.parent.mkdir(parents=True, exist_ok=True)
+def local_database_path(filename):
+    path = PROJECT_ROOT / filename
     expected_sha256 = DATABASE_SHA256[filename]
-    if valid_database(path, expected_sha256):
-        print(f'Reusing verified GitHub database: {filename}')
-        return path
-    partial = path.with_suffix(path.suffix + '.part')
-    partial.unlink(missing_ok=True)
-    request = urllib.request.Request(
-        f'{GITHUB_DATABASE_ROOT}/{filename}',
-        headers={'User-Agent': 'EActa-2026-TOC-database-loader'},
-    )
-    try:
-        with urllib.request.urlopen(request) as response, partial.open('wb') as handle:
-            shutil.copyfileobj(response, handle)
-        if not valid_database(partial, expected_sha256):
-            raise RuntimeError(f'Database validation failed: {filename}')
-        partial.replace(path)
-    finally:
-        partial.unlink(missing_ok=True)
-    print(f'Downloaded and verified GitHub database: {filename}')
+    if not path.is_file():
+        raise FileNotFoundError(f'Local project database is missing: {path}')
+    if not valid_database(path, expected_sha256):
+        actual_sha256 = database_sha256(path)
+        raise RuntimeError(
+            f'Local project database failed SQLite or SHA-256 validation: {path} '
+            f'(expected {expected_sha256}, found {actual_sha256})'
+        )
+    print(f'Using verified local project database: {path}')
     return path
 
 
@@ -310,7 +295,7 @@ def complete_structure(kind):
         'DASC_OH_Adsorption_RPBE_D4.db' if kind == 'OH'
         else 'DASC_OOHz_Adsorption_RPBE_D4.db'
     )
-    database = obtain_database(database_name)
+    database = local_database_path(database_name)
     suffix = "OOH" if kind == "OOHz" else kind
     name = f"KMC_Co_Co_A2_B1_NNNNOO_q2_{suffix}_metal1"
     with connect(database) as db:
