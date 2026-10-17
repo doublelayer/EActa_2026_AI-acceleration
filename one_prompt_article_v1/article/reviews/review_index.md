@@ -29,8 +29,9 @@ The archive was transcribed on 2026-10-17. Comment counts and tracked-change cou
 | v48 | 2 | 0 | 0 | `DOCX-v48-C0` through `DOCX-v48-C1` | [`review_v48.md`](review_v48.md) |
 | v49 | 13 | 106 | 81 | `DOCX-v49-C0` through `DOCX-v49-C12` | [`review_v49.md`](review_v49.md) |
 | v52 | 0 | 89 | 84 | None | [`review_v52.md`](review_v52.md) |
+| v53 | 0 | 0 | 0 | None | [`review_v53.md`](review_v53.md) |
 
-**Total Word review comments: 54 across 23 full-DOCX review records.** The records also preserve 2,115 tracked insertions and 2,052 tracked deletions. v52 has no Word comment threads, but it does have 89 insertions and 84 deletions; those are included in [`review_v52.md`](review_v52.md). These counts describe archived markup; they are not new reviewer feedback.
+**Total Word review comments: 54 across 24 full-DOCX review records.** The records also preserve 2,115 tracked insertions and 2,052 tracked deletions. v52 has no Word comment threads, but it does have 89 insertions and 84 deletions; those are included in [`review_v52.md`](review_v52.md). These counts describe archived markup; they are not new reviewer feedback.
 
 ## Workflow for new versions
 
