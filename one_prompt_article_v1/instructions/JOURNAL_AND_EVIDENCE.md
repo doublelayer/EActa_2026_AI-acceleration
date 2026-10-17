@@ -33,7 +33,7 @@ Do not use a preprint as peer-reviewed evidence. Label publication status accura
 
 ## Source routing
 
-Use the input manifest and source index to locate the literature selected for the article. Topic-specific summaries supply source-linked context; the article evidence map identifies the claims actually needed. For original wording, exact methods, or numerical results, inspect the supplied original source. During isolated generation, the declared allowlist defines the accessible literature.
+Use the literature source index to locate the sources selected for the article. Topic-specific summaries supply source-linked context; the article evidence map identifies the claims actually needed. For original wording, exact methods, or numerical results, inspect the supplied original source. During isolated generation, the declared allowlist defines the accessible literature.
 
 ## Reliable extraction sequence
 

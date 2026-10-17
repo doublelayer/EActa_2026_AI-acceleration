@@ -8,7 +8,7 @@ Internal review checkpoints do not consume public manuscript version numbers. Pr
 
 ## Builder role contract
 
-Receive the Author's approved current text checkpoint, fixed metadata, numerical and evidence maps, equation definitions, registered figure files, selected document profile, author-edit protections, and requested release filename. Confirm that these inputs belong to the same manuscript checkpoint. Obtain exact figure versions from the approved manifest rather than selecting an image by modification time or version suffix alone.
+Receive the Author's approved current text checkpoint, fixed metadata, numerical and evidence maps, equation definitions, registered figure files, selected document profile, author-edit protections, and requested release filename. Confirm that these inputs belong to the same manuscript checkpoint. Obtain exact figure versions from the approved artifact map and verify them separately; the input manifest is reserved for source database fingerprints.
 
 The Builder constructs the document from those inputs. Return a missing fact, disputed wording, or figure mismatch to the responsible role. Preserve approved prose, quantities, terminology, citation ownership, and article structure during conversion. Keep technical repairs and editorial decisions identifiable in the external issue log.
 

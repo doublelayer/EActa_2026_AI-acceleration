@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import os
-import hashlib
 from pathlib import Path
 from contextlib import contextmanager
 import re
@@ -251,41 +250,20 @@ def draw_volcano(fig, frame):
 
 
 
-DATABASE_SHA256 = {
-    'DASC_OH_Adsorption_RPBE_D4.db': '9f365f2f55270944175f48f2c76e1862371772797b2faffcb2902c4c14e5b286',
-    'DASC_OOHz_Adsorption_RPBE_D4.db': 'e4c8e121256c3518303c71c2ee17d3c77d05ed9afd64809557f31d7678ad0f9c',
-}
-
-
-def database_sha256(path):
-    digest = hashlib.sha256()
-    with path.open('rb') as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b''):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
-def valid_database(path, expected_sha256):
+def valid_database(path):
     if not path.is_file() or path.stat().st_size < 16:
         return False
     with path.open('rb') as handle:
-        if handle.read(16) != b'SQLite format 3\x00':
-            return False
-    return database_sha256(path) == expected_sha256
+        return handle.read(16) == b'SQLite format 3\x00'
 
 
 def local_database_path(filename):
     path = PROJECT_ROOT / filename
-    expected_sha256 = DATABASE_SHA256[filename]
     if not path.is_file():
         raise FileNotFoundError(f'Local project database is missing: {path}')
-    if not valid_database(path, expected_sha256):
-        actual_sha256 = database_sha256(path)
-        raise RuntimeError(
-            f'Local project database failed SQLite or SHA-256 validation: {path} '
-            f'(expected {expected_sha256}, found {actual_sha256})'
-        )
-    print(f'Using verified local project database: {path}')
+    if not valid_database(path):
+        raise RuntimeError(f'Local project database is not a valid SQLite file: {path}')
+    print(f'Using local project database: {path}')
     return path
 
 

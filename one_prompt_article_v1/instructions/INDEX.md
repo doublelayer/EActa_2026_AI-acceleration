@@ -1,6 +1,6 @@
 # Portable role instructions
 
-Read PROMPT.txt for article facts and selected decisions, and article/input_manifest.json for local inputs. Use this folder and the online sources authorized in PROMPT.txt. All roles share the latest draft and issue log.
+Read PROMPT.txt for article facts and selected decisions, and article/input_manifest.json for the five source DASC database paths and fingerprints. Use article/INPUTS.md for other packaged input paths. Use this folder and the online sources authorized in PROMPT.txt. All roles share the latest draft and issue log.
 
 - LIBRARIAN.md: reusable role contract.
 - ROLE_COLLABORATION.md: reusable role contract.

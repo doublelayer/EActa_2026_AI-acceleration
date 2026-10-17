@@ -12,15 +12,15 @@ Resolve author corrections in their stated order and preserve the designated sou
 
 Register a new knowledge source in the index by function before other roles rely on it. Reconcile conflicting duplicates and identify the surviving authority. Preserve historical files when they remain necessary for a revision or provenance; keep them outside a fresh-generation packet unless explicitly selected.
 
-## Resolve the input manifest
+## Resolve local input paths and the database manifest
 
-For each selected input, record its relative path, role, file type, source or persistent identifier, exact version when applicable, and hash. Link it to its declared purpose and expected schema where relevant. Keep the manifest separate from the scientific facts it locates. Record missing required inputs explicitly rather than substituting an older file.
+The `article/input_manifest.json` contains only the five source DASC database paths and SHA-256 fingerprints. Use `article/INPUTS.md` and the source indexes to locate other inputs. Link each input to its purpose, source or persistent identifier, and expected schema where relevant. Keep the manifest separate from the scientific facts it locates. Record missing required inputs explicitly rather than substituting an older file.
 
 Check path resolution from the intended working folder and the declared dependencies of code and notebooks. Confirm that each approved figure has the matching scientific inputs and generation source. Refer code dependencies or data discrepancies to the Programmer or Scientific auditor with the exact affected files.
 
 For isolated generation, freeze an explicit allowlist containing the article packet, selected instructions, supplied journal guideline, local literature, scientific inputs, and permitted artwork. Resolve transitive instruction references against that allowlist. Exclude predecessor manuscripts, their generators, conversation transcripts, and development extracts as hidden factual or prose inputs.
 
-Use `article/input_manifest.json` to locate and verify the local scientific inputs. If a registered file is missing or its hash differs, report that as an unresolved local-input issue to the Programmer; do not substitute a download. Remote addresses in the bibliography or source notes document provenance and do not establish runtime availability.
+Use `article/input_manifest.json` to locate and check the five source DASC databases. Use `article/INPUTS.md` for other packaged input paths; Git tracks those files and their substantive outputs are verified separately. Report missing required paths as unresolved local-input issues to the Programmer; do not substitute a download. Remote addresses in the bibliography or source notes document provenance and do not establish runtime availability.
 
 ## Maintain a clear workspace
 

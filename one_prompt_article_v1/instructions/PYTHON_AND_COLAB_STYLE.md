@@ -12,7 +12,7 @@ Keep the user-designated filename exactly. Do not create a renamed copy unless a
 
 Treat an author- or student-supplied notebook as a protected source. For a narrowly scoped request (for example, changing a data host or removing a call to an older plotting script), make only the necessary cell-level edits. Preserve notebook filename, cell order, cell count, cell IDs, markdown, comment banners, deliberate spacing, and the separation between installation, setup, acquisition, analysis, plotting, and export. Never collapse an existing multi-cell notebook into one large cell or rebuild its analysis from scratch unless the author explicitly requests that restructuring. Before release, compare the notebook against its supplied source and report exactly which cells changed. A previous-script dependency should be removed by placing the required function in its proper existing analysis cell, not by replacing the notebook with an unrelated generated script.
 
-Use `article/input_manifest.json` as the source map. For this regeneration, the five ASE databases are in the parent project root and the Figure 4 inputs are in `../figure4/`; resolve them relative to this package and use their registered hashes. Do not download or copy scientific inputs into `source_data/`. Keep that folder for the supplied TOC reference-page image. A Colab or other remote runtime must have a local copy of the project checkout and these sibling inputs staged before execution; do not fetch them from GitHub.
+Use `article/input_manifest.json` for the five ASE database paths and fingerprints. The Figure 4 input files are packaged in `source_data/figure4/` and documented in `article/INPUTS.md`. Resolve paths relative to the package. Do not download scientific inputs. A Colab or other remote runtime must stage the project checkout, its `source_data/figure4/` directory, and the parent-project databases before execution; do not fetch them from GitHub.
 
 ## Notebook organization
 
@@ -30,7 +30,7 @@ Use `article/input_manifest.json` as the source map. For this regeneration, the 
 - Install Python packages with `!pip install` in the first executable cell.
 - Install system packages with `!apt-get` only when they are actually required.
 - Read scientific inputs from their registered local project paths; do not download databases or prediction tables to `/content/` or another runtime folder.
-- Compare local input hashes with `article/input_manifest.json` and stop with a clear error if a file is missing or has changed.
+- Compare manifest SHA-256 fingerprints only for the five source DASC databases. A changed or missing database produces an alert; verify other inputs and generated artifacts through their separate checks.
 - Verify that each local database has the SQLite header before opening it with ASE.
 - Configure Plotly explicitly for Colab and enable the custom widget manager when `ipywidgets` is used.
 - Use `%matplotlib inline` for static display.
@@ -48,7 +48,7 @@ Use `article/input_manifest.json` as the source map. For this regeneration, the 
 - Import only packages used by the notebook.
 - Use `pathlib.Path` for local paths.
 - Keep database filenames, Google Drive file identifiers, physical constants, and plot-style maps in a clearly labeled configuration cell.
-- Fail with an informative error when a local input, database signature, required column, unique-key condition, hash check, or validation check fails.
+- Fail with an informative error when a local input, database signature, required column, unique-key condition, or applicable validation check fails.
 
 ## Data-frame and numerical conventions
 

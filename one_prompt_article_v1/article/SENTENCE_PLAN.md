@@ -8,7 +8,7 @@ These are functional slots filled from the prompt's facts and evidence. They pre
 2. Introduce our real ORR case study on molecular DASCs as the setting for the demonstration.
 3. Connect the DFT investigation of 88 catalysts to ridge-model predictions for 1,260 additional structures; distinguish calculated evidence from predictions.
 4. Give one concise supported family-level result, using Fe and S-containing structures, to establish scientific substance.
-5. State that we guided an LLM to prepare the complete article from verified scientific inputs and explicit writing guidance.
+5. State that we guided an LLM to prepare the complete article from supplied scientific inputs and explicit writing guidance.
 6. Explain that repeated scientific and editorial review developed the guidance; keep development effort visible without procedural inventory.
 7. Identify the complete article itself as the manuscript-generation demonstration under our guidance.
 8. Resolve the opening through ML screening and scientific writing, with the consequence that researchers can concentrate on scientific questions and methods.
@@ -50,7 +50,7 @@ Avoid computational parameter lists, individual catalyst rankings, descriptor co
 1. Connect LLM scientific text to the evidence it must communicate.
 2. Use the vocabulary study and narrative caution only to motivate faithful communication; avoid unsupported fraud statistics.
 3. Introduce Ifargan's data-to-paper precedent and its traceable outputs.
-4. Identify our contribution as a complete electrochemistry article from verified DFT, ML, figures and supplied knowledge.
+4. Identify our contribution as a complete electrochemistry article from DFT, ML, figures and supplied knowledge.
 
 ### Paragraph 6: writing process and Figure 1
 
@@ -69,7 +69,7 @@ Avoid computational parameter lists, individual catalyst rankings, descriptor co
 
 ### Paragraph 1: principal achievement
 
-1. State our use of a guided LLM to prepare the complete scientific article from verified research inputs.
+1. State our use of a guided LLM to prepare the complete scientific article from supplied research inputs.
 2. Echo accelerating catalyst discovery with artificial intelligence and identify scientific writing alongside catalyst screening as the demonstrated routes.
 
 ### Paragraph 2: genuine scientific basis
