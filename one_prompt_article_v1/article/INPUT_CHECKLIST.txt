@@ -3,7 +3,7 @@ PROMPT.txt; AGENTS.md; four figure notebooks; comparison reference DOCX; role an
 
 AVAILABLE LOCAL SCIENTIFIC INPUTS
 Parent project root: DASC_Bare_Catalysts_RPBE_D4.db, DASC_OH_Adsorption_RPBE_D4.db, DASC_O_Adsorption_RPBE_D4.db, DASC_OOHx_Adsorption_RPBE_D4.db, DASC_OOHz_Adsorption_RPBE_D4.db.
-source_data/figure4/: predictions.csv, structure_model_roles.csv, model_structure_descriptors.csv, split_config.json.
+source_data/figure4/: Leite_2026_DACS_ORR_ML_predicted_scaling_relation_figure_4.ipynb, predictions.csv, structure_model_roles.csv, model_structure_descriptors.csv, split_config.json.
 The input manifest records the five source DASC database fingerprints only. Other packaged inputs are located in the article input notes and tracked by Git; their outputs are verified separately. No GitHub download is required.
 
 GENERATED AT EXECUTION
