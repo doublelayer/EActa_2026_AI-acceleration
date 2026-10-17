@@ -96,4 +96,4 @@ Please cite the Zenodo release DOI when using these data and the related researc
 
 ## Article generation and review
 
-The manuscript's versioning, DOCX review, comment extraction, and archive-update workflow is documented in [ARTICLE_GENERATION_PIPELINE.md](ARTICLE_GENERATION_PIPELINE.md). The operative package instructions remain in `one_prompt_article_v1/PROMPT.txt` and `one_prompt_article_v1/AGENTS.md`.
+The manuscript's versioning, DOCX review, comment extraction, and archive-update workflow is documented in [ARTICLE_GENERATION_PIPELINE.md](ARTICLE_GENERATION_PIPELINE.md). The operative package instructions remain in `one_prompt_article_v1/PROMPT.txt` and `one_prompt_article_v1/AGENTS.md`. Open a terminal in `one_prompt_article_v1` for every article-generation run; commands and artifact paths in the workflow guide are relative to that package directory.

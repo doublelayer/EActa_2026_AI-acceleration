@@ -2,7 +2,7 @@
 
 ## Paths and supplied sources
 
-The directory containing PROMPT.txt, inputs/, and instructions/ is the task root. Resolve supplied relative paths against that root. The entire package must remain usable after relocation; do not embed a user's Windows/WSL home path or a predecessor project path.
+The directory containing PROMPT.txt, inputs/, and instructions/ is the task root and the working directory for every run. Resolve supplied relative paths against that root. Scripts locate it from their own file location rather than a fixed checkout path. The entire package must remain usable after relocation; do not embed an absolute local checkout path or a user's Windows/WSL home path. Registered parent-directory database paths identify inputs and do not change the execution directory.
 
 Read each entry point and its declared inputs before execution. Keep the supplied notebooks at the package root and preserve their deliberate multiple-space alignment. Keep the TOC script in tools/ and its supplied image in source_data/. Read the five DASC databases from the parent project root and Figure 4's four CSV/JSON files from `source_data/figure4/`; do not download or relocate them. Execute notebook working copies from the package root so package-relative input discovery resolves. If a script assumes a different working directory or absolute path, make the smallest necessary adaptation in `inputs/run_.../work/`, record it, and preserve the scientific operations. Retain supported configuration options when possible. Do not invoke old manuscript generators.
 

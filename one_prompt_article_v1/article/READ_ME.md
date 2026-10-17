@@ -1,5 +1,7 @@
 # Package layout
 
+Run every command from the package directory containing `PROMPT.txt`, `AGENTS.md`, and `tools/`. All command arguments and artifact paths in these instructions are relative to that directory. Guides, scripts, and notebook code must use portable paths rather than an absolute local checkout path. The parent-directory DASC databases are registered inputs, not a working directory for execution.
+
 The root contains PROMPT.txt, AGENTS.md, four figure-generation notebooks and Electrochimica_Acta_research_article_refernce.docx. This package now uses review-driven versioning; the reference DOCX is excluded from drafting and construction.
 
 instructions/ contains role and writing guidance. article/ contains facts, bibliography, sentence plan, versioned Markdown/DOCX files, image resources, review records and the database-only input manifest. journal/, literature/ and environment/ contain their declared supporting inputs. tools/ contains the database fingerprint check and TOC generator. source_data/ contains the supplied publication-page image and the Figure 4 source bundle in `source_data/figure4/`. The notebooks and TOC generator read DASC databases from the parent project root and Figure 4 CSV/JSON inputs from the package; none of these inputs are downloaded. `inputs/run_.../` holds run-specific ledgers, checkpoints, integrity results and working files.

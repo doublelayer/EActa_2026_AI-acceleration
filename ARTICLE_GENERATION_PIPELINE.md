@@ -2,6 +2,12 @@
 
 This guide describes the ongoing manuscript workflow in `one_prompt_article_v1`. It is a review-driven versioning process: each new version starts from the latest archived draft and resolves review items from its reviewed DOCX. It does not start a new article from scratch.
 
+## Execution directory
+
+Open the terminal in the `one_prompt_article_v1` package directory before running any command. Every run uses that directory as its working directory. All command arguments and artifact paths below are relative to the package directory, even though this guide is stored outside it.
+
+Keep guides, scripts, and notebook code portable: do not embed an absolute local checkout path. Scripts locate the package from their own file location. The five registered DASC databases are inputs in the parent directory, addressed through relative paths; their location does not change the working directory for a run.
+
 ## Summary of steps
 
 1. Read and verify the latest version's Markdown draft, DOCX, review record, and indexes.
@@ -14,7 +20,7 @@ This guide describes the ongoing manuscript workflow in `one_prompt_article_v1`.
 
 ### 1. Establish the current version
 
-Use `one_prompt_article_v1/article/version_index.md` and the files in `article/manuscript_versions/` to identify the highest archived version. Read its Markdown draft in `article/drafts/`, matching DOCX, corresponding `article/reviews/review_vN.md`, and `article/reviews/review_index.md`. Read user-supplied review files when applicable, preserving their names and contents. Run `python tools/verify_article_archive.py` and save the result in a new `inputs/run_.../` folder.
+Use `article/version_index.md` and the files in `article/manuscript_versions/` to identify the highest archived version. Read its Markdown draft in `article/drafts/`, matching DOCX, corresponding `article/reviews/review_vN.md`, and `article/reviews/review_index.md`. Import every `UNRESOLVED` item in the latest version's indexed review-item dispositions into the new run ledger before processing new feedback; this index entry must contain enough information to continue without opening any previous run folder. Read user-supplied review files when applicable, preserving their names and contents. Run `python tools/verify_package.py` to compare the five DASC database fingerprints recorded in `article/input_manifest.json`, then run `python tools/verify_article_archive.py`. Save both results in a new `inputs/run_.../` folder. Record the package check as `PASS` or nonfatal `ALERT`; do not automatically replace database baselines when a database is missing or has changed.
 
 Never reuse a version number. At the time this guide was written, the archive ends at v52, so the next number is v53; determine it from the archive each time rather than relying on this note.
 
@@ -36,11 +42,11 @@ Compare the latest Markdown draft with the reviewed DOCX. In the new run's ledge
 - Every tracked insertion or deletion, preserving its Word revision ID and distinguishing it from a comment.
 - Direct reviewer text changes visible in the DOCX compared with the Markdown. Assign stable ledger IDs such as `DOCX-DIFF-P001` when Word provides no ID.
 
-For each item, record the affected passage, requested disposition, exact change made, or reason it remains unresolved. If the intended change is ambiguous, ask the author rather than guessing.
+For each current or imported item, record the affected passage, requested disposition, exact change made, or reason it remains unresolved. Keep an item's original ID and provenance across versions. If the intended change is ambiguous, ask the author rather than guessing.
 
 ### 4. Resolve review items only
 
-Use the latest Markdown as the editable text base and the reviewed DOCX plus `review_vN.md` as the review source. Make only changes needed to resolve the current items and local coherence affected by those changes. Do not add unrelated claims, sections, citations, analyses, figures, or stylistic rewrites. Consult registered scientific sources only when an item requires factual verification. If an item needs unsupported new evidence, analysis, or an author decision, mark it unresolved and ask the author.
+Use the latest Markdown as the editable text base and the reviewed DOCX plus `review_vN.md` as the review source. Reassess every imported unresolved item together with the current items. Make only changes needed to resolve those items and local coherence affected by those changes. Do not add unrelated claims, sections, citations, analyses, figures, or stylistic rewrites. Consult registered scientific sources only when an item requires factual verification. If an item needs unsupported new evidence, analysis, or an author decision, keep it unresolved and ask the author. Stop carrying an item forward only after it is resolved or the author explicitly declines it; record the resolution or the author's decision and reason.
 
 If there are no actionable review items, carry the text forward unchanged into the next numbered version and report that no review-driven content changes were needed. Reuse the latest version's image resources for routine revisions; do not rerun notebooks or calculations unless a specific authorized review item requires it.
 
@@ -48,18 +54,18 @@ If there are no actionable review items, carry the text forward unchanged into t
 
 Save the next editable draft as `article/drafts/article_draft_vN.md`. Generate `article/manuscript_versions/Electrochimica_Acta_research_article_draft_vN.docx` from that Markdown. Their article text must align at generation. The new DOCX should be clean of carried-over comments and tracked revisions; the source review and dispositions remain in the review record and run ledger.
 
-Create `article/reviews/review_vN.md` from the generated DOCX. Keep only image assets used by that version in `article/article_resources/vN/`. Add the paths and informational SHA-256 values for the version's draft, DOCX, review record, and applicable image resources to `article/version_index.md`. Update `article/reviews/review_index.md` with the version's comments, tracked edits, and IDs. The archive verifier checks file presence and archive structure; it does not compare these whole-file hashes.
+Create `article/reviews/review_vN.md` from the generated DOCX. Keep only image assets used by that version in `article/article_resources/vN/`. Add the paths and informational SHA-256 values for the version's draft, DOCX, review record, and applicable image resources to `article/version_index.md`. In that version's `Review-item dispositions` block, record every current and imported item with its stable ID, original source and source ID, requested action, status (`UNRESOLVED`, `RESOLVED`, or `DECLINED`), and disposition or reason it remains open. Include sufficient provenance and request detail for the next run to import every unresolved item without relying on a previous run folder. Copy all still-open items into the next version's block with their original ID and provenance. Update `article/reviews/review_index.md` with the version's comments, tracked edits, and IDs. The archive verifier checks file presence and archive structure; it does not compare these whole-file hashes.
 
 ### 6. Verify and return the DOCX for review
 
-Run `python tools/verify_article_archive.py` after updating the archive. Confirm the DOCX opens, its article text matches the Markdown, each review item has a recorded disposition or unresolved status, indexed files are present, and archive structure and review-record content are consistent. Hashes recorded in the indexes and review records are informational only; the archive verifier does not compare them. Keep ledgers, integrity results, and other run-specific records under `inputs/run_.../`.
+Run `python tools/verify_article_archive.py` after updating the archive. Confirm the DOCX opens, its article text matches the Markdown, each review item has a recorded disposition or unresolved status in both the run ledger and the version index, every unresolved item is available for the next run in that index, indexed files are present, and archive structure and review-record content are consistent. Hashes recorded in the indexes and review records are informational only; the archive verifier does not compare them. Keep detailed ledgers, integrity results, and other run-specific records under `inputs/run_.../`; the version index retains the concise durable disposition metadata.
 
 The archived DOCX is then the review copy for the next human review. When reviewers return it, repeat step 2 for that same version before creating another version.
 
 ## Files that are not part of the workflow
 
-Do not create `article/reviews/prior_run_review.md`, `article/reviews/release_review_vN.md`, or another persistent handoff/release-review file. `review_index.md` and `version_index.md` provide archive navigation; the run-specific ledger provides the current change mapping. The root comparison file `Electrochimica_Acta_research_article_refernce.docx` is excluded from drafting and DOCX construction; it is retained for human comparison.
+Do not create `article/reviews/prior_run_review.md`, `article/reviews/release_review_vN.md`, or another persistent handoff/release-review file. `review_index.md` provides review-record navigation and counts; `version_index.md` also carries durable review-item disposition metadata; the run-specific ledger provides the detailed current change mapping. The root comparison file `Electrochimica_Acta_research_article_refernce.docx` is excluded from drafting and DOCX construction; it is retained for human comparison.
 
 ## Package instructions
 
-The operative package instructions are `one_prompt_article_v1/PROMPT.txt`, `one_prompt_article_v1/AGENTS.md`, and `one_prompt_article_v1/article/READ_ME.md`. Follow them if this guide and the package workflow ever diverge.
+The operative package instructions are `PROMPT.txt`, `AGENTS.md`, and `article/READ_ME.md`. Follow them if this guide and the package workflow ever diverge.
