@@ -6,7 +6,7 @@ This file contains reusable procedures for adsorption databases, computational-h
 
 ## Scientific auditor contract
 
-Receive the resolved scientific inputs, their manifest, current author decisions, analysis definitions, and the claims or artifacts to check. Audit within the requested scope. Use a reader appropriate to the source format; a supplied CSV prediction table can be checked without loading atomic-structure software. Prefer existing verified outputs with matching input and code hashes before repeating an analysis.
+Receive the resolved scientific inputs, their manifest, current author decisions, analysis definitions, and the claims or artifacts to check. Audit within the requested scope. Use a reader appropriate to the source format; a supplied CSV prediction table can be checked without loading atomic-structure software. Prefer existing verified outputs whose declared input paths, code version, and analysis settings match before repeating an analysis.
 
 Resolve numerical authority before checking prose. When the author designates an annotated source, extract the human numerical insertions, deletions, and subsequent clarifications into the article packet. Keep their author and date or other provenance. During isolated generation, use the consolidated decisions in the declared packet. Compare them with active data and distinguish a superseded instruction, a different population, and an actual discrepancy. Record disagreements with both sources and affected claims; ask the responsible role or human for a consequential unresolved decision rather than silently changing either source.
 
@@ -58,7 +58,7 @@ The reusable knowledge concerns how electronic energies are converted to free en
 
 In a compatible convention, adsorption free energy is the electronic adsorption energy plus the reaction zero point energy correction, minus temperature times the reaction entropy change, plus any separately adopted solvation correction. Determine which terms are already combined in the supplied constants. Distinguish species-level contributions from reaction-level differences; assemble them with the declared stoichiometry and reference states. Other declared corrections must likewise retain their definition and provenance.
 
-Resolve one correction specification for the run before using it in analysis or prose. For prompt-supplied values, preserve the specified units, precision, and scope. For notebook-supplied values, identify the designated notebook, effective cell or function, parameter names, units, and energy convention; account for later assignments and cell dependencies rather than extracting the first matching number or an old displayed output. Record the file hash and cell identifiers or indices in the execution provenance. Do not silently choose between conflicting notebook definitions or conflicting prompt and notebook values. Apply an explicit author override when present; otherwise report the scientific discrepancy for resolution.
+Resolve one correction specification for the run before using it in analysis or prose. For prompt-supplied values, preserve the specified units, precision, and scope. For notebook-supplied values, identify the designated notebook, effective cell or function, parameter names, units, and energy convention; account for later assignments and cell dependencies rather than extracting the first matching number or an old displayed output. Record the source path and cell identifiers or indices in the execution provenance. Do not silently choose between conflicting notebook definitions or conflicting prompt and notebook values. Apply an explicit author override when present; otherwise report the scientific discrepancy for resolution.
 
 Use the resolved specification consistently in DFT analysis, conversion of ML predictions, figures, and Methods. A plotting notebook may be the authoritative parameter source without turning those values into universal scientific rules. A historical article-specific correction note is provenance, not a default for future studies or replacement inputs.
 
@@ -117,7 +117,7 @@ Before targeted validation, use **prioritized novel candidates** or **machine-le
 
 ## Minimum audit outputs
 
-- input file identity and hash or persistent identifier;
+- input file path, version, or persistent identifier;
 - schema and row count for every source;
 - duplicate-key report;
 - join-stage counts and cardinality checks;

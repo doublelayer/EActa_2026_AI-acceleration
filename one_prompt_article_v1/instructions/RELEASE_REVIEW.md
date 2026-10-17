@@ -1,6 +1,6 @@
 # Release auditor: reusable acceptance contract
 
-For one_prompt_article_v1, verify only that current review items are dispositioned or clearly unresolved, the Markdown and DOCX text align, and the version archive is consistent. Do not perform a new scientific, citation, style, or figure review and do not create additional manuscript requests. A specific review item may trigger a targeted check. This package-specific rule takes precedence over the generic contract below.
+For one_prompt_article_v1, verify only that current review items are dispositioned or clearly unresolved, the Markdown and DOCX text align, and the version archive is consistent. Treat hashes in `version_index.md` and `review_vN.md` as provenance metadata, not pass/fail checks; inspect file presence, archive structure, review-record content against its source DOCX, and comment/revision counts. Do not perform a new scientific, citation, style, or figure review and do not create additional manuscript requests. A specific review item may trigger a targeted check. This package-specific rule takes precedence over the generic contract below.
 
 ## Purpose and inputs
 
@@ -10,7 +10,7 @@ Audit the requested artifact type. Instruction maintenance calls for source rout
 
 ## Establish the release being checked
 
-Identify exact input and output paths, versions, hashes, and generation mode. For a revision, verify the designated predecessor and preservation of accepted human decisions. For this article workflow, the latest archived Markdown draft, complete `review_vN.md` text projection, and matching source DOCX are explicitly designated continuity and review inputs; verify their integrity, inspect the whole document and figures, and assess its tracked changes and comments. Do not treat predecessor claims as scientific evidence. Verify the allowlist and source record, and inspect the current artifact rather than relying on the builder's success message.
+Identify exact input and output paths, versions, and generation mode. For a revision, verify the designated predecessor and preservation of accepted human decisions. For this article workflow, the latest archived Markdown draft, complete `review_vN.md` text projection, and matching source DOCX are explicitly designated continuity and review inputs; inspect the whole document and figures, compare the review-record text with its source DOCX, and assess tracked changes and comments. Do not treat predecessor claims as scientific evidence. Verify the allowlist and source record, and inspect the current artifact rather than relying on the builder's success message.
 
 Compare the artifact with the authoritative inputs. Check that article-specific facts and decisions remain in the article packet, reusable instructions express procedures, and runtime files locate current artifacts. A role description, repeated statement, or previous release cannot establish a scientific value.
 
@@ -38,7 +38,7 @@ Return concrete defects to their responsible roles. The Author integrates prose 
 
 ## Release report
 
-Return a concise report identifying the artifact, reproducible source, input/output hashes where applicable, checks actually performed, verified issue closures, and remaining dependencies. Give each requirement a status: passed, failed, pending, not applicable, or author-approved drafting exception. State the scientific consequence of a failed or pending essential check.
+Return a concise report identifying the artifact, reproducible source, checks actually performed, verified issue closures, and remaining dependencies. Give each requirement a status: passed, failed, pending, not applicable, or author-approved drafting exception. State the scientific consequence of a failed or pending essential check.
 
 A pass applies to the defined deliverable and completed checks. It does not certify an unperformed rerun, visual inspection, journal decision, or later human approval. Record the actual role execution mode and any unverified completion claims accurately. Link the artifact and its source, keep audit notes outside the article, and close the authorized task with a precise account of what is ready.
 

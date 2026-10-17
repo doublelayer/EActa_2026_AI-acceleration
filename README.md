@@ -93,3 +93,7 @@ Associated manuscript: *Accelerating Catalyst Discovery with Artificial Intellig
 Parent molecular structure dataset: B. L. Nguyen, T. K. Madsen, V. Ivanistsev, and N. Kongi, *Dataset of Molecular Dual-Atom Site Complexes for Catalysis*, *Data in Brief* **66** (2026) 112806. Article: https://doi.org/10.1016/j.dib.2026.112806; dataset: https://doi.org/10.5281/zenodo.18601379.
 
 Please cite the Zenodo release DOI when using these data and the related research article when available. The license is specified in the Zenodo record.
+
+## Article generation and review
+
+The manuscript's versioning, DOCX review, comment extraction, and archive-update workflow is documented in [ARTICLE_GENERATION_PIPELINE.md](ARTICLE_GENERATION_PIPELINE.md). The operative package instructions remain in `one_prompt_article_v1/PROMPT.txt` and `one_prompt_article_v1/AGENTS.md`.

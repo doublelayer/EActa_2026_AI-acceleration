@@ -8,7 +8,7 @@ The Journal editor assesses whether the complete article explains a supported co
 
 ## Guideline reading and requirement map
 
-Before section planning and drafting, read the supplied guideline completely. Record its filename, hash, stated date or version when available, and relevant page or section for each applicable requirement. Read supplied policy attachments locally when required. Use the declared offline sources.
+Before section planning and drafting, read the supplied guideline completely. Record its filename, stated date or version when available, and relevant page or section for each applicable requirement. Read supplied policy attachments locally when required. Use the declared offline sources.
 
 Build a compact requirement map covering scope, article type, front matter, section structure, methods, figures, equations, references, data availability, declarations, and submission files. Each entry identifies its source, whether it is mandatory or recommended, its applicability, the responsible role, and the evidence that will establish compliance. Distinguish editorial judgment from a written journal requirement. Typical article lengths and figure counts remain recommendations when the guide presents them that way.
 

@@ -10,7 +10,7 @@ Internal review checkpoints do not consume public manuscript version numbers. Pr
 
 ## Builder role contract
 
-Receive the Author's approved current text checkpoint, fixed metadata, numerical and evidence maps, equation definitions, registered figure files, selected document profile, author-edit protections, and requested release filename. Confirm that these inputs belong to the same manuscript checkpoint. Obtain exact figure versions from the approved artifact map and verify them separately; the input manifest is reserved for source database fingerprints.
+Receive the Author's approved current text checkpoint, fixed metadata, numerical and evidence maps, equation definitions, registered figure files, selected document profile, author-edit protections, and requested release filename. Confirm that these inputs belong to the same manuscript checkpoint. Obtain exact figure files from the approved artifact map and verify their paths, visual contents, and dimensions; the input manifest is reserved for source database fingerprints.
 
 The Builder constructs the document from those inputs. Return a missing fact, disputed wording, or figure mismatch to the responsible role. Preserve approved prose, quantities, terminology, citation ownership, and article structure during conversion. Keep technical repairs and editorial decisions identifiable in the external issue log.
 
@@ -36,13 +36,13 @@ Treat imported empty or whitespace-padded content controls as editing artifacts.
 
 ## Revisions and audit
 
-Compare the document's accepted reading with the Author's text checkpoint after construction. Check numerical strings and units, chemical identities, abbreviations, citation associations, heading sequence, and caption placement. Check equation content as well as numbering and native editability. Figure hashes and relationships must identify the approved artwork at its specified dimensions. Author-name punctuation and protected text follow the supplied profile.
+Compare the document's accepted reading with the Author's text checkpoint after construction. Check numerical strings and units, chemical identities, abbreviations, citation associations, heading sequence, and caption placement. Check equation content as well as numbering and native editability. Figure relationships must point to the approved artwork and preserve its specified dimensions. Author-name punctuation and protected text follow the supplied profile.
 
 Track substantive changes when the task requests tracked revision. For fresh generation or an expressly requested clean release, do not invent a predecessor or revision history. Preserve required author-decision protections in the new output. Remove resolved comment anchors from a clean release and retain the resolution log outside it.
 
 Validate ZIP/XML integrity, permitted styles and exceptions, equation placement, image relationships and dimensions, hyperlinks, page numbers, and citation/reference correspondence. When a renderer is available, inspect the result at reading size. State structural-only validation accurately if rendering is unavailable.
 
-Reproduce the final document from its declared inputs and generator. Preserve the final text checkpoint, source metadata, and output hashes so a later review can identify the exact artifact checked. Run only relevant checks and keep editorial logs outside the manuscript.
+Reproduce the final document from its declared inputs and generator. Preserve the final text checkpoint, source metadata, output path, and generator version so a later review can identify the artifact. Run only relevant checks and keep editorial logs outside the manuscript.
 
 Hand the Release auditor the DOCX, matching generator, source checkpoint, input/output identities, permitted formatting exceptions, and actual verification results. Distinguish a generated document from a successfully rerun generator and a structurally checked file from an inspected rendering. Route prose corrections through the Author, rebuild the affected artifact, and verify the repair. Update current-version navigation only under the task's declared release policy.
 

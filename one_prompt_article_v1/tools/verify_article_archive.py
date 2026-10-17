@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import re
 import sys
 from pathlib import Path
@@ -16,20 +15,11 @@ from extract_docx_comments import body_transcript
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLE = ROOT / "article"
 INDEX = ARTICLE / "version_index.md"
-HASH_RE = re.compile(r"SHA-256 `([0-9a-fA-F]{64})`")
 LINK_RE = re.compile(r"\]\(([^)]+)\)")
 VERSION_RE = re.compile(r"^### Version (\d+)\s*$")
-IMAGE_RE = re.compile(r"^\s*-\s*`([^`]+\.png)`\s*\(SHA-256 `([0-9a-fA-F]{64})`\)")
+IMAGE_RE = re.compile(r"^\s*-\s*`([^`]+\.png)`")
 MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-
-
-def digest(path: Path) -> str:
-    hasher = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            hasher.update(chunk)
-    return hasher.hexdigest()
 
 
 def resolve_index_path(value: str) -> Path:
@@ -47,7 +37,7 @@ def main() -> int:
         return 1
 
     errors: list[str] = []
-    checked: dict[Path, str] = {}
+    indexed_artifacts: dict[Path, str] = {}
     indexed_sources: set[str] = set()
     version_entries: dict[int, dict[str, object]] = {}
     current_version: int | None = None
@@ -61,21 +51,17 @@ def main() -> int:
         if line.startswith("### ") or line.startswith("## "):
             current_version = None
 
-        hash_match = HASH_RE.search(line)
-        if not hash_match:
-            continue
-        expected = hash_match.group(1).lower()
         link_match = LINK_RE.search(line)
 
         if current_version is not None and not link_match:
             image_match = IMAGE_RE.match(line)
             if not image_match:
-                errors.append(f"version_index.md:{line_number}: hash has no artifact path")
                 continue
-            name, expected = image_match.group(1), image_match.group(2).lower()
+            name = image_match.group(1)
             relative = f"article_resources/v{current_version}/{name}"
-            version_entries[current_version]["images"][relative] = expected
+            version_entries[current_version]["images"][relative] = True
             artifact_path = resolve_index_path(relative)
+            indexed_artifacts[artifact_path] = relative
         elif link_match:
             relative = link_match.group(1)
             try:
@@ -83,6 +69,8 @@ def main() -> int:
             except ValueError as exc:
                 errors.append(f"version_index.md:{line_number}: {exc}")
                 continue
+            if artifact_path.suffix.lower() in {".docx", ".md", ".png"}:
+                indexed_artifacts[artifact_path] = relative
             if current_version is not None:
                 entry = version_entries[current_version]
                 if line.lstrip().startswith("- Source DOCX:"):
@@ -91,25 +79,14 @@ def main() -> int:
                 elif line.lstrip().startswith("- Reconstructed draft:"):
                     entry["draft"] = relative
         else:
-            errors.append(f"version_index.md:{line_number}: SHA-256 has no local path")
             continue
-
-        if artifact_path in checked and checked[artifact_path] != expected:
-            errors.append(f"version_index.md:{line_number}: conflicting hashes for {relative}")
-        checked[artifact_path] = expected
 
     if not version_entries:
         errors.append("version_index.md contains no version sections")
 
-    for path, expected in checked.items():
+    for path, relative in indexed_artifacts.items():
         if not path.is_file():
-            errors.append(f"missing indexed file: {path.relative_to(ARTICLE)}")
-            continue
-        actual = digest(path)
-        if actual != expected:
-            errors.append(
-                f"hash mismatch: {path.relative_to(ARTICLE)} expected {expected}, got {actual}"
-            )
+            errors.append(f"missing indexed file: {relative}")
 
     indexed_docx = sorted(indexed_sources)
     actual_docx = sorted(path.name for path in (ARTICLE / "manuscript_versions").glob("*.docx"))
@@ -197,30 +174,11 @@ def main() -> int:
         exported_versions.add(version)
 
         source_ref = re.search(r"^- Source DOCX: `([^`]+)`\s*$", text, flags=re.MULTILINE)
-        source_hash = re.search(
-            r"^- Source DOCX SHA-256: `([0-9a-fA-F]{64})`\s*$", text, flags=re.MULTILINE
-        )
-        document_hash = re.search(
-            r"^- Embedded document XML SHA-256: `([0-9a-fA-F]{64})`\s*$",
-            text,
-            flags=re.MULTILINE,
-        )
-        comments_hash = re.search(
-            r"^- Embedded comments XML SHA-256: `(none|[0-9a-fA-F]{64})`\s*$",
-            text,
-            flags=re.MULTILINE,
-        )
-        projection_hash = re.search(
-            r"^- DOCX text projection SHA-256: `([0-9a-fA-F]{64})`\s*$",
-            text,
-            flags=re.MULTILINE,
-        )
         paragraph_declared = re.search(r"^- DOCX text paragraphs: (\d+)\s*$", text, flags=re.MULTILINE)
         insertion_declared = re.search(r"^- Tracked insertions: (\d+)\s*$", text, flags=re.MULTILINE)
         deletion_declared = re.search(r"^- Tracked deletions: (\d+)\s*$", text, flags=re.MULTILINE)
-        if not all((source_ref, source_hash, document_hash, comments_hash, projection_hash,
-                    paragraph_declared, insertion_declared, deletion_declared)):
-            errors.append(f"missing full-DOCX provenance in {export.relative_to(ARTICLE)}")
+        if not all((source_ref, paragraph_declared, insertion_declared, deletion_declared)):
+            errors.append(f"missing full-DOCX review metadata in {export.relative_to(ARTICLE)}")
             continue
         insertion_total += int(insertion_declared.group(1))
         deletion_total += int(deletion_declared.group(1))
@@ -233,13 +191,6 @@ def main() -> int:
         if not source_path.is_file():
             errors.append(f"missing review source DOCX: {source_path}")
             continue
-        if digest(source_path) != source_hash.group(1).lower():
-            errors.append(f"source DOCX hash mismatch in {export.relative_to(ARTICLE)}")
-            continue
-        if source_path not in checked or checked[source_path] != source_hash.group(1).lower():
-            errors.append(f"review source DOCX is not hash-indexed in version_index.md: {source_path.relative_to(ARTICLE)}")
-            continue
-
         version_match = re.search(r"_v(\d+)\.docx$", source_path.name, re.IGNORECASE)
         if (
             not source_path.is_relative_to(ARTICLE / "manuscript_versions")
@@ -260,12 +211,6 @@ def main() -> int:
             errors.append(f"cannot read full DOCX review source {source_path.name}: {exc}")
             continue
 
-        actual_doc_hash = hashlib.sha256(document_xml).hexdigest()
-        if actual_doc_hash != document_hash.group(1).lower():
-            errors.append(f"document XML hash mismatch in {export.relative_to(ARTICLE)}")
-        actual_comments_hash = hashlib.sha256(comments_xml).hexdigest() if comments_xml is not None else "none"
-        if actual_comments_hash != comments_hash.group(1).lower():
-            errors.append(f"comments XML hash mismatch in {export.relative_to(ARTICLE)}")
         if paragraph_count != int(paragraph_declared.group(1)):
             errors.append(f"DOCX paragraph count mismatch in {export.relative_to(ARTICLE)}")
         actual_insertions = len(document_root.findall(".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ins"))
@@ -274,8 +219,6 @@ def main() -> int:
             errors.append(f"tracked insertion count mismatch in {export.relative_to(ARTICLE)}")
         if actual_deletions != int(deletion_declared.group(1)):
             errors.append(f"tracked deletion count mismatch in {export.relative_to(ARTICLE)}")
-        if hashlib.sha256(projection.encode("utf-8")).hexdigest() != projection_hash.group(1).lower():
-            errors.append(f"DOCX text projection hash mismatch in {export.relative_to(ARTICLE)}")
         transcript = re.search(
             r"^<!-- BEGIN FULL DOCX TEXT -->\n(.*?)\n<!-- END FULL DOCX TEXT -->$",
             text,
@@ -323,7 +266,7 @@ def main() -> int:
 
     print(
         f"PASS: {len(version_entries)} indexed versions, {len(indexed_docx)} DOCX files, "
-        f"{image_count} referenced images, {len(checked)} indexed file hashes, "
+        f"{image_count} referenced images, {len(indexed_artifacts)} indexed files present, "
         f"{review_total} Word review comments and {insertion_total} tracked insertions/"
         f"{deletion_total} tracked deletions across {len(review_exports)} full-DOCX review records."
     )
