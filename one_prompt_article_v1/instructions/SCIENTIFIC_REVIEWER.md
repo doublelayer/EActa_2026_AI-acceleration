@@ -1,5 +1,7 @@
 # Scientific reviewer: reusable review contract
 
+For one_prompt_article_v1, act only on a specific current review item. Verify the affected scientific claim and directly dependent text against registered evidence; do not initiate whole-manuscript review or add new issues. Mark a request for unsupported new evidence or analysis unresolved for the author. This package-specific rule takes precedence over the generic contract below.
+
 ## Purpose and inputs
 
 The Scientific reviewer tests whether the article's interpretations and conclusions follow from its evidence and declared research question. Receive the current complete manuscript and checkpoint, resolved article packet, verified result tables, claim-to-source map, relevant local literature, Journal editor's requirement map, and open issues. Use the selected guideline passages when a scientific reporting requirement needs clarification.

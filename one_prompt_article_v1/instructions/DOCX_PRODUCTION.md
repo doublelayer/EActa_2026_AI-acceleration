@@ -1,8 +1,10 @@
 # Reusable Word manuscript generation
 
+For one_prompt_article_v1, build the next DOCX from the revised Markdown, carrying forward the latest approved layout and assets. Do not compose or rewrite manuscript prose in the Builder. Confirm that generated DOCX text aligns with the Markdown and contains no carried-over reviewer comments or tracked edits. The review record, not the new clean DOCX, preserves prior review history. Keep any conversion script in the run directory; do not archive a standalone generator unless explicitly requested.
+
 ## Inputs and generation modes
 
-Read the article's text, fixed metadata, approved figures, equation definitions, document profile, citation convention, and output filename from the declared input packet. For fresh generation, create a new document and standalone generator. For revision, use only the designated predecessor and preserve human edits according to the revision contract. Never use a predecessor to supply hidden prose during a fresh-generation test.
+Read the article's text, fixed metadata, approved figures, equation definitions, document profile, citation convention, and output filename from the declared input packet. For fresh generation, create a new document and standalone generator. For revision, use the designated predecessor Markdown and, when article instructions require it, the complete predecessor DOCX plus its full text-and-annotations review record. Preserve human decisions and assess tracked edits and comments as review history. Do not use unverified predecessor claims as scientific evidence or copy unsupported prose into the new text.
 
 Internal review checkpoints do not consume public manuscript version numbers. Preserve prior releases unless the user explicitly requests replacement. A test run leaves the current manuscript shortcut unchanged until its result is accepted.
 
@@ -14,7 +16,7 @@ The Builder constructs the document from those inputs. Return a missing fact, di
 
 Before changing a formatting property, identify the selected style rule or explicit author exception that permits it. Apply the existing style defaults and authorized semantic properties. A technical cleanup removes a conflicting override while retaining the text and meaning. Decorative elements, size changes, and extra documents require authorization in the output contract.
 
-Create a generator whose manuscript construction is self-contained and whose declared dependencies are data, text, artwork, document assets, and installed packages. During fresh generation, preserve the Author's text as an explicit run artifact and build from it; exclude predecessor documents and historical build scripts. For an ordinary revision, use the designated predecessor and declared protection utilities. Register any utility required at runtime rather than loading an undeclared historical dependency.
+Create a generator whose manuscript construction is self-contained and whose declared dependencies are data, text, artwork, document assets, and installed packages. During fresh generation, preserve the Author's text as an explicit run artifact and build from it; use the latest archived Markdown and the explicitly designated predecessor DOCX/review record for continuity and review only. These predecessor artifacts are not scientific evidence. Exclude historical build scripts as hidden factual or prose inputs. For an ordinary revision, use the designated predecessor and declared protection utilities. Register any utility required at runtime rather than loading an undeclared historical dependency.
 
 Build into an internal checkpoint, validate it, and publish under the requested filename and version. Preserve the prior artifact according to the version policy when replacement is explicitly requested. If an open file prevents replacement, retain the generated candidate and report the exact save dependency; keep the requested public version number.
 

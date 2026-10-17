@@ -1,8 +1,12 @@
 # Manuscript development by cooperating roles
 
+## Article package revision mode
+
+For `one_prompt_article_v1`, each public version is a review-driven revision of the latest archived Markdown/DOCX pair. The review ledger is the only authorization for manuscript changes. Do not start a fresh draft, broad editorial or scientific review, optional improvement pass, or analysis run. Invoke a role only for a specific review item and keep its work within that item. If a requested change needs new evidence, data, analysis, or an author decision outside the approved inputs, mark it unresolved and request the author's decision. The package's `PROMPT.txt` and `AGENTS.md` control over the generic workflow below.
+
 ## Purpose
 
-One initiating prompt starts a complete manuscript-development run. Roles take successive turns on a shared manuscript, question each other's interpretations, revise the text, and check the revisions. The human author does not need to issue a new instruction for each turn. Internal drafts and review cycles belong to that single run.
+In a generic initial development run, roles may take successive turns on a shared manuscript. For this package, the revision-mode overlay above limits those turns to resolving supplied review items; it replaces the generic full-development sequence below.
 
 This is a reusable orchestration method. Obtain scientific facts, the journal, the voice profile, protected author decisions, and output requirements from the supplied article packet. This file contains no article results or manuscript sentences.
 

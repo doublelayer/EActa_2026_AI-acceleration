@@ -1,5 +1,7 @@
 # Release auditor: reusable acceptance contract
 
+For one_prompt_article_v1, verify only that current review items are dispositioned or clearly unresolved, the Markdown and DOCX text align, and the version archive is consistent. Do not perform a new scientific, citation, style, or figure review and do not create additional manuscript requests. A specific review item may trigger a targeted check. This package-specific rule takes precedence over the generic contract below.
+
 ## Purpose and inputs
 
 The Release auditor checks the actual deliverable against the task's declared requirements and evidence. Receive the latest artifact and checkpoint, input manifest, authoritative facts and author decisions, numerical and literature evidence maps, guideline requirement map, selected output profile, reproducible source, and review issue dispositions.
@@ -8,7 +10,7 @@ Audit the requested artifact type. Instruction maintenance calls for source rout
 
 ## Establish the release being checked
 
-Identify exact input and output paths, versions, hashes, and generation mode. For a revision, verify the designated predecessor and preservation of accepted human decisions. For isolated fresh generation, verify the allowlist and source record; an earlier manuscript is not an implicit input. Inspect the current artifact rather than relying on the builder's success message.
+Identify exact input and output paths, versions, hashes, and generation mode. For a revision, verify the designated predecessor and preservation of accepted human decisions. For this article workflow, the latest archived Markdown draft, complete `review_vN.md` text projection, and matching source DOCX are explicitly designated continuity and review inputs; verify their integrity, inspect the whole document and figures, and assess its tracked changes and comments. Do not treat predecessor claims as scientific evidence. Verify the allowlist and source record, and inspect the current artifact rather than relying on the builder's success message.
 
 Compare the artifact with the authoritative inputs. Check that article-specific facts and decisions remain in the article packet, reusable instructions express procedures, and runtime files locate current artifacts. A role description, repeated statement, or previous release cannot establish a scientific value.
 

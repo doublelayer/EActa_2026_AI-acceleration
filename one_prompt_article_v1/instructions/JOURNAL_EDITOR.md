@@ -1,5 +1,7 @@
 # Journal editor: reusable review contract
 
+For one_prompt_article_v1, act only on an explicit current review item about journal requirements, argument, or structure. Do not start a whole-article review, create optional recommendations, or request unrelated changes. The package-specific review-only rule takes precedence over the generic contract below.
+
 ## Purpose and inputs
 
 The Journal editor assesses whether the complete article explains a supported contribution clearly for its intended readership and article type. Receive the resolved article packet, current draft and checkpoint, evidence map, author decisions, approved section sequence, and supplied journal guidelines. The journal identity, scientific topic, and specific requirements come from those inputs.

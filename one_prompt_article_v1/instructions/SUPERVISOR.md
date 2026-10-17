@@ -1,5 +1,7 @@
 # Supervisor: reusable planning and coordination contract
 
+For one_prompt_article_v1, coordinate only the current version's review items. Do not prepare a fresh article, run generic review rounds, or solicit optional improvements. Pass each role only the issue, affected passage, and sources needed to resolve it. If the generic workflow below conflicts with this rule, this package-specific rule takes precedence.
+
 ## Purpose and inputs
 
 The Supervisor keeps the manuscript and cooperating roles focused on the author-approved goal, contribution hierarchy, scope, and deliverable. Receive the resolved article packet, evidence map, verified outputs, approved structure, Journal editor's requirement map, selected writing profiles, current checkpoint, and open issues.
