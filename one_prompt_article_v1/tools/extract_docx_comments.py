@@ -2,14 +2,14 @@
 """Create a complete text-and-annotations review record from a versioned DOCX.
 
 The historical filename is retained for compatibility. Each output contains a
-text projection of the complete document body, inline tracked insertions and
-deletions, and every embedded Word comment with its paragraph anchor.
+text projection of the complete document body, native Word equations rendered
+with explicit scripts, inline tracked insertions and deletions, and every
+embedded Word comment with its paragraph anchor.
 """
 
 from __future__ import annotations
 
 import argparse
-import hashlib
 import os
 import re
 import zipfile
@@ -23,36 +23,190 @@ ARTICLE = ROOT / "article"
 DOCX_DIR = ARTICLE / "manuscript_versions"
 DEFAULT_OUTPUT = ARTICLE / "reviews"
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-NS = {"w": WORD_NS}
+MATH_NS = "http://schemas.openxmlformats.org/officeDocument/2006/math"
+NS = {"w": WORD_NS, "m": MATH_NS}
 TAG = lambda name: f"{{{WORD_NS}}}{name}"
+MATH_TAG = lambda name: f"{{{MATH_NS}}}{name}"
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+def child_named_from(element: ET.Element, name: str) -> ET.Element | None:
+    return next((child for child in element if child.tag == MATH_TAG(name)), None)
+
+
+def revision_markup(element: ET.Element, text: str) -> str:
+    """Wrap revision text with the Word metadata used in the review transcript."""
+    kind = "INSERT" if element.tag == TAG("ins") else "DELETE"
+    revision_id = element.attrib.get(TAG("id"), "?")
+    author = element.attrib.get(TAG("author"), "not recorded")
+    date = element.attrib.get(TAG("date"), "not recorded")
+    return f"[[{kind} id={revision_id}; author={author}; date={date}: {text}]]"
+
+
+def unsupported_math_markup(
+    element: ET.Element, detail: str = "", content: str | None = None
+) -> str:
+    """Keep unknown math structures visible with their tag, attributes, and text."""
+    local_name = element.tag.rsplit("}", 1)[-1]
+    attributes = []
+    for key, value in element.attrib.items():
+        if key.startswith(f"{{{MATH_NS}}}"):
+            attribute_name = f"m:{key.rsplit('}', 1)[-1]}"
+        elif key.startswith(f"{{{WORD_NS}}}"):
+            attribute_name = f"w:{key.rsplit('}', 1)[-1]}"
+        else:
+            attribute_name = key
+        attributes.append(f"{attribute_name}={value}")
+    metadata = "; ".join(part for part in [detail, *attributes] if part)
+    suffix = f" {metadata}" if metadata else ""
+    if content is None:
+        content = "".join(math_text(child) for child in element)
+    return f"[[UNSUPPORTED MATH m:{local_name}{suffix}: {content}]]"
+
+
+def math_text(element: ET.Element) -> str:
+    """Render native Word math and explicitly flag unsupported structures."""
+    if element.tag in {TAG("ins"), TAG("del")}:
+        return revision_markup(element, "".join(math_text(child) for child in element))
+
+    local_name = element.tag.rsplit("}", 1)[-1]
+    children = list(element)
+
+    if local_name in {"sSub", "sSup", "sSubSup"}:
+        base_node = child_named_from(element, "e")
+        sub_node = child_named_from(element, "sub")
+        sup_node = child_named_from(element, "sup")
+        base = math_text(base_node) if base_node is not None else ""
+        sub = math_text(sub_node) if sub_node is not None else ""
+        sup = math_text(sup_node) if sup_node is not None else ""
+        if sub:
+            base += f"_{{{sub}}}"
+        if sup:
+            base += f"^{{{sup}}}"
+        return base
+    if local_name == "f":
+        numerator_node = child_named_from(element, "num")
+        denominator_node = child_named_from(element, "den")
+        numerator = math_text(numerator_node) if numerator_node is not None else ""
+        denominator = math_text(denominator_node) if denominator_node is not None else ""
+        if numerator_node is None or denominator_node is None:
+            return unsupported_math_markup(
+                element,
+                "incomplete fraction",
+                f"num={numerator}; den={denominator}",
+            )
+
+        properties = child_named_from(element, "fPr")
+        fraction_type_node = (
+            child_named_from(properties, "type") if properties is not None else None
+        )
+        fraction_type = (
+            fraction_type_node.attrib.get(MATH_TAG("val"), "bar")
+            if fraction_type_node is not None
+            else "bar"
+        )
+        if fraction_type != "bar":
+            return unsupported_math_markup(
+                element,
+                f"type={fraction_type}",
+                f"num={numerator}; den={denominator}",
+            )
+        return f"\\frac{{{numerator}}}{{{denominator}}}"
+    if local_name == "eqArr":
+        rows = [math_text(child) for child in children if child.tag == MATH_TAG("e")]
+        return "\n".join(rows)
+    if local_name == "oMath":
+
+        def has_subscript(child: ET.Element, base_text: str, sub_text: str) -> bool:
+            base = child_named_from(child, "e")
+            sub = child_named_from(child, "sub")
+            return (
+                child.tag == MATH_TAG("sSub")
+                and base is not None
+                and math_text(base) == base_text
+                and sub is not None
+                and math_text(sub) == sub_text
+            )
+
+        def is_numbered_potential(child: ET.Element) -> bool:
+            base = child_named_from(child, "e")
+            sub = child_named_from(child, "sub")
+            return (
+                child.tag == MATH_TAG("sSub")
+                and base is not None
+                and math_text(base) == "U"
+                and sub is not None
+                and math_text(sub).isdigit()
+            )
+
+        numbered_potentials = [
+            child
+            for child in children
+            if is_numbered_potential(child)
+        ]
+        first_math_child = next(
+            (child for child in children if not child.tag.rsplit("}", 1)[-1].endswith("Pr")),
+            None,
+        )
+        potential_numbers = [
+            math_text(child_named_from(child, "sub")) for child in numbered_potentials
+        ]
+        separate_potentials = (
+            len(potential_numbers) >= 4
+            and potential_numbers[:4] == ["1", "2", "3", "4"]
+            and numbered_potentials[0] is first_math_child
+        )
+        rendered: list[str] = []
+        for index, child in enumerate(children):
+            starts_second_scaling_relation = (
+                has_subscript(child, "β", "O")
+                and index + 2 < len(children)
+                and math_text(children[index + 1]).strip() == "Δ"
+                and has_subscript(children[index + 2], "G", "OOH")
+            )
+            starts_overpotential_relation = (
+                has_subscript(child, "η", "ideal")
+                and index > 0
+                and "eV" in math_text(children[index - 1])
+            )
+            if separate_potentials and child in numbered_potentials and rendered:
+                rendered[-1] = rendered[-1].rstrip()
+                rendered.append("; ")
+            elif starts_overpotential_relation and rendered:
+                rendered[-1] = rendered[-1].rstrip()
+                rendered.append("; ")
+            rendered.append(math_text(child))
+            if starts_second_scaling_relation:
+                rendered.append(";")
+        return "".join(rendered)
+    if local_name in {"t", "delText"}:
+        return element.text or ""
+    if local_name.endswith("Pr") or local_name in {"ctrlPr", "jc"}:
+        return ""
+    if element.tag.startswith(f"{{{MATH_NS}}}") and local_name not in {
+        "r",
+        "e",
+        "num",
+        "den",
+        "sub",
+        "sup",
+    }:
+        return unsupported_math_markup(element)
+    return "".join(math_text(child) for child in children)
 
 
 def markup_text(element: ET.Element) -> str:
-    """Render Word text while explicitly preserving insertion/deletion markup."""
+    """Render Word text, native equations, and tracked insertion/deletion markup."""
     chunks: list[str] = []
 
     def append(node: ET.Element) -> None:
         if node.tag in {TAG("ins"), TAG("del")}:
-            kind = "INSERT" if node.tag == TAG("ins") else "DELETE"
-            revision_id = node.attrib.get(TAG("id"), "?")
-            author = node.attrib.get(TAG("author"), "not recorded")
-            date = node.attrib.get(TAG("date"), "not recorded")
             payload: list[str] = []
             for child in node:
                 before = len(chunks)
                 append(child)
                 payload.extend(chunks[before:])
                 del chunks[before:]
-            text = "".join(payload)
-            chunks.append(f"[[{kind} id={revision_id}; author={author}; date={date}: {text}]]")
+            chunks.append(revision_markup(node, "".join(payload)))
         elif node.tag in {TAG("t"), TAG("delText")}:
             chunks.append(node.text or "")
         elif node.tag == TAG("tab"):
@@ -63,6 +217,8 @@ def markup_text(element: ET.Element) -> str:
             chunks.append("[embedded figure/image]")
         elif node.tag == TAG("object"):
             chunks.append("[embedded object]")
+        elif node.tag == MATH_TAG("oMath"):
+            chunks.append(f"[[MATH: {math_text(node).strip()}]]")
         else:
             for child in node:
                 append(child)
@@ -168,25 +324,20 @@ def export(docx: Path, output_dir: Path, overwrite: bool = False) -> Path:
     for change in [*insertions, *deletions]:
         author_counts[change.attrib.get(TAG("author"), "(not recorded)")] += 1
 
-    comments_hash = hashlib.sha256(comments_xml).hexdigest() if comments_xml is not None else "none"
     lines = [
         f"# DOCX review record for manuscript version {version}",
         "",
-        "This record preserves a text projection of the complete archived DOCX, including inline tracked insertions and deletions, followed by all embedded Word comments and their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.",
+        "This record preserves a text projection of the complete archived DOCX, including readable native Word equations, inline tracked insertions and deletions, and all embedded Word comments with their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.",
         "",
         f"- Source DOCX: `{Path(os.path.relpath(docx, output_dir.resolve())).as_posix()}`",
-        f"- Source DOCX SHA-256: `{sha256(docx)}`",
-        f"- Embedded document XML SHA-256: `{hashlib.sha256(document_xml).hexdigest()}`",
-        f"- Embedded comments XML SHA-256: `{comments_hash}`",
         f"- DOCX text paragraphs: {paragraph_count}",
-        f"- DOCX text projection SHA-256: `{hashlib.sha256(body_text.encode('utf-8')).hexdigest()}`",
         f"- Word review comments: {len(comments)}",
         f"- Tracked insertions: {len(insertions)}",
         f"- Tracked deletions: {len(deletions)}",
         "",
         "## Full DOCX text and tracked changes",
         "",
-        "Each paragraph is shown in document order. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.",
+        "Each paragraph is shown in document order. `[[MATH: ...]]` renders native Word equations in readable linear notation; unsupported math structures are marked `[[UNSUPPORTED MATH ...]]`. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.",
         "",
     ]
     fence = fence_for(body_text)

@@ -1,4 +1,4 @@
-<!-- Reconstructed from ../manuscript_versions/Electrochimica_Acta_research_article_draft_v44.docx; source DOCX SHA-256: 76679847d0833063ebb7458e185f3c368df7fb565ca6161e176dbfd17fade7bf. -->
+<!-- Reconstructed from ../manuscript_versions/Electrochimica_Acta_research_article_draft_v44.docx. -->
 
 # Accelerating Catalyst Discovery with Artificial Intelligence: Molecular Dual-Atom Site Catalysts as a Case Study
 

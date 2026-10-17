@@ -1,20 +1,16 @@
 # DOCX review record for manuscript version 37
 
-This record preserves a text projection of the complete archived DOCX, including inline tracked insertions and deletions, followed by all embedded Word comments and their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
+This record preserves a text projection of the complete archived DOCX, including readable native Word equations, inline tracked insertions and deletions, and all embedded Word comments with their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
 
 - Source DOCX: `../manuscript_versions/Electrochimica_Acta_research_article_draft_v37.docx`
-- Source DOCX SHA-256: `817b2c77226e92b7847ccd2d888bc53f291ceac101d0fa629df11d3fc9650b4c`
-- Embedded document XML SHA-256: `563240a5e1e5f216a5068203866874a791149c4df705ff88d2b48e8dd1063688`
-- Embedded comments XML SHA-256: `35dba8a8bf102da37447c0e023e99f9439353985770d481a7e178105beace14c`
 - DOCX text paragraphs: 113
-- DOCX text projection SHA-256: `5323ed43e796fce6c281c016380a579473a5cc345f091471be1e11765c842e2e`
 - Word review comments: 4
 - Tracked insertions: 19
 - Tracked deletions: 13
 
 ## Full DOCX text and tracked changes
 
-Each paragraph is shown in document order. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
+Each paragraph is shown in document order. `[[MATH: ...]]` renders native Word equations in readable linear notation; unsupported math structures are marked `[[UNSUPPORTED MATH ...]]`. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
 
 ~~~~~text
 <!-- BEGIN FULL DOCX TEXT -->
@@ -40,33 +36,33 @@ P00019  We performed spin polarized DFT calculations with GPAW 26.7 and ASE 3.29
 P00020
 P00021  We placed O, OH, and OOH at the metal adsorption sites identified in Figure 1 and fully optimized each structure. We calculated gas phase H₂ and H₂O with the same settings. We joined all total energies by catalyst name and adsorption site label, so each reaction pathway refers to one metal atom in one molecular catalyst.
 P00022  We obtained the adsorption energies of O, OH, and OOH from the total energies of the corresponding adsorbed structure, clean catalyst, H₂, and H₂O:
-P00023
+P00023  [[MATH: ΔE_{OH} = E_{*OH} + (1/2) E_{H_{2}} - E_{*} - E_{H_{2}O}]]
 P00024  	(1)
-P00025
+P00025  [[MATH: ΔE_{O} = E_{*O} + E_{H_{2}} - E_{*} - E_{H_{2}O}]]
 P00026  	(2)
-P00027
+P00027  [[MATH: ΔE_{OOH} = E_{*OOH} + (3/2) E_{H_{2}} - E_{*} - 2E_{H_{2}O}]]
 P00028  	(3)
 P00029  In Eqs. (1)–(3), the left side is the adsorption energy of the named intermediate. The terms on the right are the total energies of the adsorbed catalyst, the clean catalyst, gas phase H₂, and gas phase H₂O; * denotes the adsorption site. We used the supplied corrected adsorption free energies for scaling and thermodynamic analyses.
 P00030  2.3. Adsorption free energies and ORR thermodynamics
 P00031  We converted adsorption energies to adsorption free energies by adding the zero point and entropic corrections:
-P00032
+P00032  [[MATH: ΔG_{X} = ΔE_{X} + ΔE_{ZP,X} - TΔS_{X}]]
 P00033  	(4)
 P00034  In Eq. (4), X denotes O, OH, or OOH; E and G denote electronic energy and Gibbs free energy; T is temperature; S is entropy; and ZP identifies the zero point contribution. The supplied adsorption free energies already include these corrections. We evaluated the four reduction potentials for the associative four electron ORR pathway with the computational hydrogen electrode (CHE) method [10.1021/jp047349j]:
-P00035
+P00035  [[MATH: U_{1} = (4.92 eV - ΔG_{OOH}) / e; U_{2} = (ΔG_{OOH} - ΔG_{O}) / e; U_{3} = (ΔG_{O} - ΔG_{OH}) / e; U_{4} = ΔG_{OH} / e]]
 P00036  	(5)
 P00037  Equation (5) lists the positive step reduction potentials for four reductions: O₂ to OOH, OOH to O, O to OH, and OH to H₂O; e is the elementary charge. The limiting potential is the lowest of the four step potentials:
-P00038
+P00038  [[MATH: U_{L} = min(U_{1}, U_{2}, U_{3}, U_{4})]]
 P00039  	(6)
 P00040  The symbol on the left of Eq. (6) is the limiting potential. We evaluated the ORR overpotential relative to the 1.23 V equilibrium potential:
-P00041
+P00041  [[MATH: η_{ORR} = 1.23 V - U_{L}]]
 P00042  	(7)
 P00043  Equation (7) gives the ORR overpotential. Chemical subscripts in Eqs. (5)–(7) identify the adsorbed intermediate or the reaction quantity.
 P00044  2.4. Scaling and thermodynamic activity analyses
 P00045  We described the correlations of O and OOH adsorption free energies with OH adsorption free energy by ordinary least squares:
-P00046
+P00046  [[MATH: ΔG_{O} = α_{O} ΔG_{OH} + β_{O} ΔG_{OOH} = α_{OOH} ΔG_{OH} + β_{OOH}]]
 P00047  	(8)
 P00048  In Eq. (8), α and β are the slope and intercept for the intermediate identified by the subscript. The curves in Figures 2 and 3 propagate the corresponding global fits through the four reaction steps. We also considered the electrochemical step symmetry index and free energy span as complementary thermodynamic interpretations [10.1016/j.coelec.2018.03.025; 10.1021/acscatal.2c03997]. For comparison, we defined an ideal relation with an OOH–OH free energy separation of 2.46 eV and the corresponding two-branch overpotential:
-P00049
+P00049  [[MATH: ΔG_{OOH}^{ideal} = ΔG_{OH} + 2.46 eV η_{ideal} = 1.23 V - min(ΔG_{OH} / e, (2.46 eV - ΔG_{OH}) / e)]]
 P00050  	(9)
 P00051  In Eq. (9), OH removal defines the left branch and OOH formation the right branch. They meet at an OH adsorption free energy of 1.23 eV and zero overpotential. This reference represents balanced binding; the catalyst points and fitted curves use all four reaction steps. Thermodynamic rankings describe reaction free energies, while kinetic activity also depends on activation barriers.
 P00052  2.5. ML regression analysis

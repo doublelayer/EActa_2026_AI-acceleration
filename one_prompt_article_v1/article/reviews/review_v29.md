@@ -1,20 +1,16 @@
 # DOCX review record for manuscript version 29
 
-This record preserves a text projection of the complete archived DOCX, including inline tracked insertions and deletions, followed by all embedded Word comments and their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
+This record preserves a text projection of the complete archived DOCX, including readable native Word equations, inline tracked insertions and deletions, and all embedded Word comments with their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
 
 - Source DOCX: `../manuscript_versions/Electrochimica_Acta_research_article_draft_v29.docx`
-- Source DOCX SHA-256: `dbc9f41cbc40845cb96cc5450cd4bb34c68180256e248acd27919e23607682a3`
-- Embedded document XML SHA-256: `417c7ab433a6514bd149e1aa77671c9e8872f80decb4a376010ac6eef7116eb2`
-- Embedded comments XML SHA-256: `none`
 - DOCX text paragraphs: 95
-- DOCX text projection SHA-256: `d079c16a75f07455d85d8e9ea5e76e3f7dd720de5c488251aade54ce57dbec35`
 - Word review comments: 0
 - Tracked insertions: 0
 - Tracked deletions: 0
 
 ## Full DOCX text and tracked changes
 
-Each paragraph is shown in document order. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
+Each paragraph is shown in document order. `[[MATH: ...]]` renders native Word equations in readable linear notation; unsupported math structures are marked `[[UNSUPPORTED MATH ...]]`. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
 
 ~~~~~text
 <!-- BEGIN FULL DOCX TEXT -->
@@ -41,20 +37,20 @@ P00020  We performed spin polarized DFT calculations with the GPAW and ASE frame
 P00021  2.3. Adsorption structures and database matching
 P00022  We optimized O, OH, and OOH on each available metal atom. Two initial OOH geometries, OOH-x and OOH-z, were tested. We joined records by the exact pair (catalyst name, adsorption site label), selected the lower total energy OOH orientation separately for each pair, and retained its orientation label. A pathway was accepted only when its reconstructed values agreed with the corresponding raw database records within 10⁻⁸ eV. The observation unit throughout the analysis was one catalyst and one adsorption site combination.
 P00023  We calculated adsorption energies from the clean catalyst, adsorbed structures, and gas phase references as follows:
-P00024
-P00025
-P00026
+P00024  [[MATH: ΔE_OH = E_*OH + ½ E_H₂ − E_* − E_H₂O]]
+P00025  [[MATH: ΔE_O = E_*O + E_H₂ − E_* − E_H₂O]]
+P00026  [[MATH: ΔE_OOH = E_*OOH + 3⁄2 E_H₂ − E_* − 2E_H₂O]]
 P00027  2.4. Adsorption free energies and ORR thermodynamics
 P00028  Adsorption free energies were obtained by adding zero point energy and entropic terms to the adsorption energies. The calculation report gives constant corrections of 0.30 eV for OH, 0.07 eV for O, and 0.39 eV for OOH, with reference corrections of −0.14 eV for H₂ and −0.11 eV for H₂O. The computational hydrogen electrode (CHE) treatment represents the chemical potential of a proton and electron pair as one half of the chemical potential of H₂ at zero potential [4].
 P00029  For the associative four electron ORR pathway, the four step free energy differences at zero applied potential are defined below. The limiting potential is the minimum step potential, and the calculated overpotential is referenced to the equilibrium potential of 1.23 V.
-P00030
-P00031
-P00032
-P00033
+P00030  [[MATH: ΔG_X = ΔE_X + ΔZPE_X − TΔS_X]]
+P00031  [[MATH: ΔG₁ = 4.92 − ΔG_OOH;   ΔG₂ = ΔG_OOH − ΔG_O;   ΔG₃ = ΔG_O − ΔG_OH;   ΔG₄ = ΔG_OH]]
+P00032  [[MATH: U_L = min(ΔG₁, ΔG₂, ΔG₃, ΔG₄) / e]]
+P00033  [[MATH: η_ORR = 1.23 V − U_L]]
 P00034  2.5. Scaling and thermodynamic activity analyses
 P00035  We fitted the O–OH and OOH–OH adsorption free energy relations by ordinary least squares. We applied the author specified filters after exact matching: OH adsorption energy at least 0.00 eV and O adsorption energy no greater than 4.92 eV. The final Figure 2 contains the raw scaling relations and the conventional CHE overpotential volcano. The analysis notebook also retains calculations of the oxygen reduction electrochemical step symmetry index proposed by Calle-Vallejo and coauthors and the free energy span descriptor proposed by Exner and coauthors [16,17]. These descriptors use the same matched adsorption data and can be recalculated without repeating DFT when the input energies and conventions are unchanged.
 P00036  A thermodynamic descriptor is not an explicit kinetic barrier. The symmetry index and free energy span provide alternative ways to rank a specified set of reaction free energies; they do not establish reaction rates or replace the conventional limiting potential. The notebook keeps these analyses available for comparison while the current publication figure emphasizes the conventional CHE result.
-P00037
+P00037  [[MATH: ΔG_O = α_O ΔG_OH + β_O;   ΔG_OOH = α_OOH ΔG_OH + β_OOH]]
 P00038  2.6. Regression analysis and manuscript preparation
 P00039  The intended model for this project is linear regression with second-order polynomial features. The current Figure 3 compares model predicted OH adsorption energies with 30 values compiled from literature and reports R² = 0.93, root mean square error = 0.37 eV, and mean absolute error = 0.30 eV. The available source material does not establish that the displayed fit came from the specified model, whether the points were independent of fitting, or whether the analysis used a reproducible split. A separate descriptor report describes ridge regression models and contains conflicts in predictor counts and validation sample counts. We therefore treat Figure 3 as exploratory and do not use it to claim validated prediction or broad transfer.
 P00040  The authors report that they developed the article prompt over approximately two weeks and that execution of the finalized prompt produced an integrated draft in less than one hour. This estimate concerns draft generation, not calculation time, database preparation, source verification, editing, or final approval. No matched, timed human writing comparison was performed. The authors supplied the scientific question, calculation and database records, figures, source material, and writing constraints; they directed the language model to organize and draft the text. Human researchers remained responsible for calculation choices, database integrity, interpretation, and verification of scientific results.

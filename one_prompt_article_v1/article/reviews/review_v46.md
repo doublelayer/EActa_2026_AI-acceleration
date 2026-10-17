@@ -1,20 +1,16 @@
 # DOCX review record for manuscript version 46
 
-This record preserves a text projection of the complete archived DOCX, including inline tracked insertions and deletions, followed by all embedded Word comments and their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
+This record preserves a text projection of the complete archived DOCX, including readable native Word equations, inline tracked insertions and deletions, and all embedded Word comments with their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
 
 - Source DOCX: `../manuscript_versions/Electrochimica_Acta_research_article_draft_v46.docx`
-- Source DOCX SHA-256: `d67390c589cb1ff91959ea518c5bb91a6e6ac86f547c2751fb39be834db9f03b`
-- Embedded document XML SHA-256: `2659681605db2ad8fd2010d2260bf5cc79224f69bd6e98e00e78690ab6385f59`
-- Embedded comments XML SHA-256: `none`
 - DOCX text paragraphs: 120
-- DOCX text projection SHA-256: `bcd321e8f896cbe4267f3851b0c3ed8f1e75d3ae226a2e4a2fbe592a1de854ba`
 - Word review comments: 0
 - Tracked insertions: 0
 - Tracked deletions: 0
 
 ## Full DOCX text and tracked changes
 
-Each paragraph is shown in document order. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
+Each paragraph is shown in document order. `[[MATH: ...]]` renders native Word equations in readable linear notation; unsupported math structures are marked `[[UNSUPPORTED MATH ...]]`. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
 
 ~~~~~text
 <!-- BEGIN FULL DOCX TEXT -->
@@ -41,25 +37,30 @@ P00020  Spin polarized DFT calculations were performed with GPAW 25.7 and ASE 3.
 P00021
 P00022  O, OH, and OOH were placed at either metal-atom adsorption center in the dual-atom site, and each structure was fully optimized. Gas phase H₂ and H₂O reference structures were calculated with the same settings. Total energies were matched by catalyst name and `ads_site`, so each reaction pathway contains values for the same molecular structure and adsorption center.
 P00023  Adsorption energies for O, OH, and OOH were calculated from the total energies of the corresponding adsorbed structure, clean catalyst, H₂, and H₂O:
-P00024  				(1)
-P00025  				(2)
-P00026  				(3)
+P00024  			[[MATH: ΔE_{OH} = E_{*OH} + (1/2) E_{H_{2}} - E_{*} - E_{H_{2}O}]]	(1)
+P00025  			[[MATH: ΔE_{O} = E_{*O} + E_{H_{2}} - E_{*} - E_{H_{2}O}]]	(2)
+P00026  			[[MATH: ΔE_{OOH} = E_{*OOH} + (3/2) E_{H_{2}} - E_{*} - 2E_{H_{2}O}]]	(3)
 P00027  In Eqs. (1)–(3), the left side is the adsorption energy of the named intermediate. The terms on the right are the total energies of the adsorbed catalyst, clean catalyst, gas phase H₂, and gas phase H₂O; * identifies the selected adsorption center. The supplied adsorption free energies were used in the scaling and thermodynamic analyses.
 P00028  2.3. Adsorption free energies and ORR thermodynamics
 P00029  Adsorption energies were converted to adsorption free energies by adding zero point and entropic corrections:
-P00030  				(4)
+P00030  			[[MATH: ΔG_{X} = ΔE_{X} + ΔE_{ZP,X} - TΔS_{X}]]	(4)
 P00031  In Eq. (4), X denotes O, OH, or OOH; E and G denote electronic energy and Gibbs free energy; T is temperature; S is entropy; and ZP identifies the zero point contribution. The supplied adsorption free energies already include these corrections. The four reduction potentials for the associative four electron ORR pathway were evaluated with the computational hydrogen electrode (CHE) method [10.1021/jp047349j]:
-P00032  				(5)
+P00032  			[[MATH: U_{1} = (4.92 eV - ΔG_{OOH}) / e
+U_{2} = (ΔG_{OOH} - ΔG_{O}) / e
+U_{3} = (ΔG_{O} - ΔG_{OH}) / e
+U_{4} = ΔG_{OH} / e]]	(5)
 P00033  Equation (5) defines the positive reduction potentials for the four steps O₂ to OOH, OOH to O, O to OH, and OH to H₂O; * identifies an adsorbed intermediate and e is the elementary charge. The limiting potential is defined as the lowest of the four step potentials:
-P00034  				(6)
+P00034  			[[MATH: U_{L} = min(U_{1}, U_{2}, U_{3}, U_{4})]]	(6)
 P00035  The symbol on the left of Eq. (6) denotes the limiting potential. The ORR overpotential was evaluated relative to the equilibrium potential of 1.23 V:
-P00036  				(7)
+P00036  			[[MATH: η_{ORR} = 1.23 V - U_{L}]]	(7)
 P00037  Equation (7) defines the ORR overpotential. Chemical subscripts in Eqs. (5)–(7) identify the adsorbed intermediate or reaction quantity.
 P00038  2.4. Scaling and thermodynamic activity analyses
 P00039  The relations of O and OOH adsorption free energies to OH adsorption free energy were evaluated by ordinary least squares:
-P00040  				(8)
+P00040  			[[MATH: ΔG_{O} = α_{O} ΔG_{OH} + β_{O}
+ΔG_{OOH} = α_{OOH} ΔG_{OH} + β_{OOH}]]	(8)
 P00041  In Eq. (8), α and β are the slope and intercept for the intermediate identified by the subscript. The fitted relations were propagated through the four ORR steps to obtain the scaling based activity curve in Figures 2 and 3. An ideal reference relation was defined with an OOH–OH free energy separation of 2.46 eV:
-P00042  				(9)
+P00042  			[[MATH: ΔG_{OOH}^{ideal} = ΔG_{OH} + 2.46 eV
+η_{ideal} = 1.23 V - min(ΔG_{OH} / e, (2.46 eV - ΔG_{OH}) / e)]]	(9)
 P00043  In Eq. (9), OH removal defines the left branch and OOH formation defines the right branch. The branches meet at an OH adsorption free energy of 1.23 eV and zero overpotential. Catalyst activity was interpreted thermodynamically; kinetic activity also depends on activation barriers.
 P00044  2.5. Regression analysis and catalyst-family screening
 P00045  The adsorption free energies from the fixed 88 catalyst DFT dataset were used to train separate ridge regression models for OH, O, and OOH. Descriptors of the clean catalysts represented the electron population, charge, spin, metal pair polarization, and ligand environment. Eight predictors were used for OH and O, and six were used for OOH. The parameter tables retain the training medians, means, standard deviations, standardized coefficients, and ridge parameters. The ridge parameter was 0.10 for OH and 1.00 for O and OOH. The models were applied to the separate database of 1176 optimized structures described in Section 2.1.

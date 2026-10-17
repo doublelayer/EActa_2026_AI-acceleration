@@ -1,20 +1,16 @@
 # DOCX review record for manuscript version 35
 
-This record preserves a text projection of the complete archived DOCX, including inline tracked insertions and deletions, followed by all embedded Word comments and their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
+This record preserves a text projection of the complete archived DOCX, including readable native Word equations, inline tracked insertions and deletions, and all embedded Word comments with their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
 
 - Source DOCX: `../manuscript_versions/Electrochimica_Acta_research_article_draft_v35.docx`
-- Source DOCX SHA-256: `e23b01d962ab913920a2c63f7f16fe682f40e1969a9532dab603a3d9a8e135bd`
-- Embedded document XML SHA-256: `e1fdf278a0060fb64cb8f8e7d45bfbce63418b41204eebe6007603955bde001a`
-- Embedded comments XML SHA-256: `e86b08a967810536da360f949cd7600ac0977d01a0da7f3ffac8555c93b82ac4`
 - DOCX text paragraphs: 107
-- DOCX text projection SHA-256: `64d24efd7c290a4c97e110f8ebf5d7c705b3e4d41e63e2ef2fdcc6901b8d159d`
 - Word review comments: 22
 - Tracked insertions: 34
 - Tracked deletions: 31
 
 ## Full DOCX text and tracked changes
 
-Each paragraph is shown in document order. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
+Each paragraph is shown in document order. `[[MATH: ...]]` renders native Word equations in readable linear notation; unsupported math structures are marked `[[UNSUPPORTED MATH ...]]`. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
 
 ~~~~~text
 <!-- BEGIN FULL DOCX TEXT -->
@@ -40,29 +36,29 @@ P00019  We performed spin polarized DFT calculations using GPAW 26.7 and ASE 3.2
 P00020  2.3. Adsorption structures and database matching
 P00021  We placed O, OH, and OOH at the metal adsorption sites identified in Figure 1 and fully optimized each structure. For OOH, we retained the lower energy of the two tested initial orientations at each site. We joined all intermediate energies by catalyst name and adsorption site label. Thus, each reaction pathway refers to one specific metal atom in one molecular catalyst.
 P00022  We defined adsorption energies from the total energies of the clean catalyst, adsorbed structures, and gas phase references using Eqs. (1)–(3). An asterisk denotes the clean adsorption site or a bound intermediate, as appropriate. The analysis used the supplied corrected adsorption free energies directly for scaling, filtering, and thermodynamic activity estimates.
-P00023
+P00023  [[MATH: ΔE_{OH} = E_{*OH} + (1/2) E_{H_{2}} − E_{*} − E_{H_{2}O}]]
 P00024  		(1)
-P00025
+P00025  [[MATH: ΔE_{O} = E_{*O} + E_{H_{2}} − E_{*} − E_{H_{2}O}]]
 P00026  		(2)
-P00027
+P00027  [[MATH: ΔE_{OOH} = E_{*OOH} + (3/2) E_{H_{2}} − E_{*} − 2E_{H_{2}O}]]
 P00028  		(3)
 P00029  2.4. Adsorption free energies and ORR thermodynamics
 P00030  Adsorption free energies include zero point energy and entropy contributions as expressed in Eq. (4), where X denotes O, OH, or OOH, E denotes electronic energy, G Gibbs free energy, T temperature, and S entropy. The subscript ZP denotes the zero point contribution. For this analysis, we treated the supplied values as already corrected. The computational hydrogen electrode (CHE) represents the chemical potential of a proton and electron pair by one half of that of H₂ at zero potential [10.1021/jp047349j].
 P00031  For the associative four electron ORR pathway, Eq. (5) defines the step reduction potentials from the adsorption free energies and the elementary charge. Their minimum gives the limiting potential in Eq. (6). The overpotential in Eq. (7) is referenced to the equilibrium potential of 1.23 V. Chemical subscripts identify the adsorbed intermediate.
-P00032
+P00032  [[MATH: ΔG_{X} = ΔE_{X} + ΔE_{ZP,X} − TΔS_{X}]]
 P00033  		(4)
-P00034
+P00034  [[MATH: U_{1} = (4.92 eV − ΔG_{OOH}) / e; U_{2} = (ΔG_{OOH} − ΔG_{O}) / e; U_{3} = (ΔG_{O} − ΔG_{OH}) / e; U_{4} = ΔG_{OH} / e]]
 P00035  		(5)
-P00036
+P00036  [[MATH: U_{L} = min(U_{1}, U_{2}, U_{3}, U_{4})]]
 P00037  		(6)
-P00038
+P00038  [[MATH: η_{ORR} = 1.23 V − U_{L}]]
 P00039  		(7)
 P00040  2.5. Scaling and thermodynamic activity analyses
 P00041  We fitted O–OH and OOH–OH adsorption free energy scaling relations by ordinary least squares using Eq. (8). We retained sites with OH adsorption free energy of at least 0.00 eV and O adsorption free energy no greater than 4.92 eV. The curves in Figures 2 and 3 propagate the corresponding global scaling fits through all four CHE steps. The electrochemical step symmetry index and free energy span offer complementary thermodynamic interpretations of the same adsorption records [10.1016/j.coelec.2018.03.025; 10.1021/acscatal.2c03997].
 P00042  The dotted ideal reference in Eq. (9) assumes an OOH–OH free energy separation of 2.46 eV. OH removal defines its left branch and OOH formation its right branch. The branches meet at OH adsorption free energy 1.23 eV and zero overpotential. This reference illustrates balanced binding; the catalyst points and fitted volcano curves use all four reaction steps. Thermodynamic rankings describe reaction free energies, while kinetic activity also depends on activation barriers.
-P00043
+P00043  [[MATH: ΔG_{O} = α_{O} ΔG_{OH} + β_{O} ΔG_{OOH} = α_{OOH} ΔG_{OH} + β_{OOH}]]
 P00044  		(8)
-P00045
+P00045  [[MATH: ΔG_{OOH}^{ideal} = ΔG_{OH} + 2.46 eV; η_{ideal} = 1.23 V − min(ΔG_{OH} / e, (2.46 eV − ΔG_{OH}) / e)]]
 P00046  		(9)
 P00047  2.6. ML regression analysis
 P00048  For the ML analysis, we used fitted ridge regression models for OH, O, and OOH adsorption free energies. Their clean catalyst descriptors represent Bader charge and electron population, local spin, and ligand charge distribution. The supplied models contain eight predictors for OH and O and six for OOH. We applied the saved training medians, means, standard deviations, and coefficients to all available catalyst and adsorption site records. We then joined the three predictions at each site, applied the energy filters, and evaluated the overpotential with Eqs. (5)–(7).

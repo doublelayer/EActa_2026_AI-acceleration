@@ -20,6 +20,7 @@ VERSION_RE = re.compile(r"^### Version (\d+)\s*$")
 IMAGE_RE = re.compile(r"^\s*-\s*`([^`]+\.png)`")
 MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+MATH_NS = "http://schemas.openxmlformats.org/officeDocument/2006/math"
 
 
 def resolve_index_path(value: str) -> Path:
@@ -207,12 +208,25 @@ def main() -> int:
                 comments_root = ET.fromstring(comments_xml) if comments_xml is not None else None
                 document_root = ET.fromstring(document_xml)
                 projection, paragraph_count = body_transcript(archive)
+                native_math_count = 0
+                for part_name in archive.namelist():
+                    if re.fullmatch(r"word/(?:document|footnotes|endnotes|header\d+|footer\d+)\.xml", part_name):
+                        part_root = ET.fromstring(archive.read(part_name))
+                        native_math_count += len(
+                            part_root.findall(f".//{{{MATH_NS}}}oMath")
+                        )
         except (KeyError, OSError, ET.ParseError) as exc:
             errors.append(f"cannot read full DOCX review source {source_path.name}: {exc}")
             continue
 
         if paragraph_count != int(paragraph_declared.group(1)):
             errors.append(f"DOCX paragraph count mismatch in {export.relative_to(ARTICLE)}")
+        projected_math_count = projection.count("[[MATH:")
+        if projected_math_count != native_math_count:
+            errors.append(
+                f"native equation projection count mismatch in {export.relative_to(ARTICLE)}; "
+                f"source={native_math_count}, projected={projected_math_count}"
+            )
         actual_insertions = len(document_root.findall(".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ins"))
         actual_deletions = len(document_root.findall(".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}del"))
         if actual_insertions != int(insertion_declared.group(1)):

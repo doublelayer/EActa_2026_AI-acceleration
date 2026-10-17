@@ -1,20 +1,16 @@
 # DOCX review record for manuscript version 38
 
-This record preserves a text projection of the complete archived DOCX, including inline tracked insertions and deletions, followed by all embedded Word comments and their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
+This record preserves a text projection of the complete archived DOCX, including readable native Word equations, inline tracked insertions and deletions, and all embedded Word comments with their anchor paragraphs. The source DOCX remains authoritative for page layout and visual details; embedded figures are marked in the text projection.
 
 - Source DOCX: `../manuscript_versions/Electrochimica_Acta_research_article_draft_v38.docx`
-- Source DOCX SHA-256: `d0daec94246ba1156440fa51129870904467961d80a426b95635ac5d65dbdefd`
-- Embedded document XML SHA-256: `84536d1f8a1b317a06dcd776c9ca33260305249fafc99ec7658ebf95ea4a5c01`
-- Embedded comments XML SHA-256: `none`
 - DOCX text paragraphs: 116
-- DOCX text projection SHA-256: `7c26f96c9b7a112d28b2ed8292b061e51d65c110372e1404b17865283d39910b`
 - Word review comments: 0
 - Tracked insertions: 0
 - Tracked deletions: 0
 
 ## Full DOCX text and tracked changes
 
-Each paragraph is shown in document order. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
+Each paragraph is shown in document order. `[[MATH: ...]]` renders native Word equations in readable linear notation; unsupported math structures are marked `[[UNSUPPORTED MATH ...]]`. `[[INSERT ...]]` and `[[DELETE ...]]` retain the revision text, Word revision ID, author, and timestamp.
 
 ~~~~~text
 <!-- BEGIN FULL DOCX TEXT -->
@@ -42,25 +38,30 @@ P00021  We performed spin polarized DFT calculations with GPAW 26.7 and ASE 3.29
 P00022
 P00023  We placed O, OH, and OOH at either of the two metal-atom adsorption centers in the dual-atom site and fully optimized each structure. We calculated gas phase H₂ and H₂O with the same settings. We matched all total energies by catalyst name and the ads_site center label, so every reaction pathway refers to the same center of the same molecular catalyst.
 P00024  We obtained the adsorption energies of O, OH, and OOH from the total energies of the corresponding adsorbed structure, clean catalyst, H₂, and H₂O:
-P00025  				(1)
-P00026  				(2)
-P00027  				(3)
+P00025  			[[MATH: ΔE_{OH} = E_{*OH} + (1/2) E_{H_{2}} - E_{*} - E_{H_{2}O}]]	(1)
+P00026  			[[MATH: ΔE_{O} = E_{*O} + E_{H_{2}} - E_{*} - E_{H_{2}O}]]	(2)
+P00027  			[[MATH: ΔE_{OOH} = E_{*OOH} + (3/2) E_{H_{2}} - E_{*} - 2E_{H_{2}O}]]	(3)
 P00028  In Eqs. (1)–(3), the left side is the adsorption energy of the named intermediate. The terms on the right are the total energies of the adsorbed catalyst, the clean catalyst, gas phase H₂, and gas phase H₂O; * denotes the chosen adsorption center. We used the supplied corrected adsorption free energies for scaling and thermodynamic analyses.
 P00029  2.3. Adsorption free energies and ORR thermodynamics
 P00030  We converted adsorption energies to adsorption free energies by adding the zero point and entropic corrections:
-P00031  				(4)
+P00031  			[[MATH: ΔG_{X} = ΔE_{X} + ΔE_{ZP,X} - TΔS_{X}]]	(4)
 P00032  In Eq. (4), X denotes O, OH, or OOH; E and G denote electronic energy and Gibbs free energy; T is temperature; S is entropy; and ZP identifies the zero point contribution. The supplied adsorption free energies already include these corrections. We evaluated the four reduction potentials for the associative four electron ORR pathway with the computational hydrogen electrode (CHE) method [10.1021/jp047349j]:
-P00033  				(5)
+P00033  			[[MATH: U_{1} = (4.92 eV - ΔG_{OOH}) / e
+U_{2} = (ΔG_{OOH} - ΔG_{O}) / e
+U_{3} = (ΔG_{O} - ΔG_{OH}) / e
+U_{4} = ΔG_{OH} / e]]	(5)
 P00034  Equation (5) lists the positive step reduction potentials for four reductions: O₂ to OOH, OOH to O, O to OH, and OH to H₂O; e is the elementary charge. The limiting potential is the lowest of the four step potentials:
-P00035  				(6)
+P00035  			[[MATH: U_{L} = min(U_{1}, U_{2}, U_{3}, U_{4})]]	(6)
 P00036  The symbol on the left of Eq. (6) is the limiting potential. We evaluated the ORR overpotential relative to the 1.23 V equilibrium potential:
-P00037  				(7)
+P00037  			[[MATH: η_{ORR} = 1.23 V - U_{L}]]	(7)
 P00038  Equation (7) gives the ORR overpotential. Chemical subscripts in Eqs. (5)–(7) identify the adsorbed intermediate or the reaction quantity.
 P00039  2.4. Scaling and thermodynamic activity analyses
 P00040  We described the correlations of O and OOH adsorption free energies with OH adsorption free energy by ordinary least squares:
-P00041  				(8)
+P00041  			[[MATH: ΔG_{O} = α_{O} ΔG_{OH} + β_{O}
+ΔG_{OOH} = α_{OOH} ΔG_{OH} + β_{OOH}]]	(8)
 P00042  In Eq. (8), α and β are the slope and intercept for the intermediate identified by the subscript. The curves in Figures 2 and 3 propagate the corresponding global fits through the four reaction steps. For comparison, we defined an ideal relation with an OOH–OH free energy separation of 2.46 eV and the corresponding two branch overpotential:
-P00043  				(9)
+P00043  			[[MATH: ΔG_{OOH}^{ideal} = ΔG_{OH} + 2.46 eV
+η_{ideal} = 1.23 V - min(ΔG_{OH} / e, (2.46 eV - ΔG_{OH}) / e)]]	(9)
 P00044  In Eq. (9), OH removal defines the left branch and OOH formation the right branch. They meet at an OH adsorption free energy of 1.23 eV and zero overpotential. This reference represents balanced binding; the catalyst points and fitted curves use all four reaction steps. Thermodynamic rankings describe reaction free energies, while kinetic activity also depends on activation barriers.
 P00045  2.5. Regression analysis and wider screening
 P00046  The wider screening uses the DFT results for the 88 molecular catalysts as training data for linear regression models with second-order polynomial features. The adsorbate-specific models predict OH, O, and OOH adsorption free energies from catalyst descriptors and preserve parent-catalyst grouping during validation. We then apply the trained models to a separate ASE database containing exactly 1176 optimized clean catalysts. Catalyst-name comparison identifies 87 structures shared with the DFT library and 1089 structures outside it. The clean structures in the screening database were calculated with GPAW 25.7 and ASE 3.28.0 using the remaining settings stated in Section 2.2. The wider predictions are pending and are not reported as completed results.
