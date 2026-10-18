@@ -1,0 +1,8 @@
+SUPPLIED
+PROMPT.txt; AGENTS.md; four figure notebooks; comparison reference DOCX; role and writing instructions; article facts, sentence plan and bibliography; literature summaries; journal guide summary; environment guidance; TOC generator and publication-page image; manifest and checks.
+
+DOWNLOADED AT EXECUTION
+GitHub publication DASC databases and Figure 4 predictions/descriptors/roles/split files. Original filenames are retained in source_data/.
+
+GENERATED AT EXECUTION
+Every generated file is saved under inputs/. Independent generation and subsequent human verification remain pending.
