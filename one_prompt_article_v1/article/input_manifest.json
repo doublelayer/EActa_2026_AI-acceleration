@@ -1,0 +1,281 @@
+{
+  "network": "No scientific data downloads; relevant web research permitted",
+  "generation_executed": false,
+  "excluded": [
+    "Electrochimica_Acta_research_article_refernce.docx",
+    "inputs/",
+    "outputs/"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "role": "instructions or metadata",
+      "sha256": "805bb724494df7be677e476390f60c6da6ea9e485ad80af044a45b3373b9ee7c",
+      "bytes": 911
+    },
+    {
+      "path": "article/ARTICLE_BRIEF.md",
+      "role": "instructions or metadata",
+      "sha256": "a26d1a3d1612cfb2de1a746857aa65b1ba277f3ac2edd4b8739b74196cd1fac6",
+      "bytes": 208
+    },
+    {
+      "path": "article/BIBLIOGRAPHY.json",
+      "role": "instructions or metadata",
+      "sha256": "efff7073acd6f52d467405c25a282ed390f2de6c72d7126a1994d3ceeeb75dd3",
+      "bytes": 13265
+    },
+    {
+      "path": "article/INPUT_CHECKLIST.txt",
+      "role": "instructions or metadata",
+      "sha256": "e397d3e57fc329d6d24a38620e47127bd813e153ecebb822b92b0578f15bb97b",
+      "bytes": 655
+    },
+    {
+      "path": "article/INPUTS.md",
+      "role": "instructions or metadata",
+      "sha256": "f1b73a11a8111226710651adc06da4b7fd65f2bd9a5ec03c1e21b387d7e62db5",
+      "bytes": 914
+    },
+    {
+      "path": "article/PREPARATION_REPORT.md",
+      "role": "instructions or metadata",
+      "sha256": "a1b0fdd0daf0ff0b8cc3e59a9942ba76f8439b1197c48aa70a9360f7d1f21f50",
+      "bytes": 2520
+    },
+    {
+      "path": "article/READ_ME.md",
+      "role": "instructions or metadata",
+      "sha256": "369c3f190ed5339feb571298945eff30c9d10a31a21d83dd3c76ba12b872c897",
+      "bytes": 1129
+    },
+    {
+      "path": "article/SCIENTIFIC_PROVENANCE.md",
+      "role": "instructions or metadata",
+      "sha256": "f6ca5c889268ccd5325a58699d5b16fd137dfb9a3a1c9375063df2998cfb7a19",
+      "bytes": 492
+    },
+    {
+      "path": "article/SENTENCE_PLAN.md",
+      "role": "instructions or metadata",
+      "sha256": "ebc263d19b2f58476e651da99c4765858b368fba7d604b729ec4f074236d41ad",
+      "bytes": 6036
+    },
+    {
+      "path": "environment/README.md",
+      "role": "instructions or metadata",
+      "sha256": "3dd119b9c82c2ba63a71d3c50328460be692519e5ecf87fdbe24cce157d990dc",
+      "bytes": 457
+    },
+    {
+      "path": "environment/requirements.in",
+      "role": "instructions or metadata",
+      "sha256": "5d28385086e4f80d4f6c4c00f14dc8dec0d28a8f44d8512aa92500a655ab95a6",
+      "bytes": 393
+    },
+    {
+      "path": "Figure_0_graphical_abstract_v33.png",
+      "role": "scientific input",
+      "sha256": "d30dd213798b6a2a575344dda5776a9ff04c07dfc98987b5eb4bed3c66c793f9",
+      "bytes": 762547
+    },
+    {
+      "path": "Figure_0_graphical_abstract_v33.py",
+      "role": "instructions or metadata",
+      "sha256": "815b05127fe2123e29bde7098c471953a10422367d203b5f6091181fdfdca368",
+      "bytes": 17787
+    },
+    {
+      "path": "Figure_1_writing_cycle_v11.ipynb",
+      "role": "scientific input",
+      "sha256": "cbebfefdf480f0d9463673566fa2f7f2f52203434a02109ae057a23d37f391db",
+      "bytes": 8024
+    },
+    {
+      "path": "Figure_1_writing_cycle_v11.png",
+      "role": "scientific input",
+      "sha256": "36524833a1c97665be8d16bfa8c4199f41e6317103d5e26d843afc5094363ae7",
+      "bytes": 528993
+    },
+    {
+      "path": "Figure_2_modular_design_space_v33.ipynb",
+      "role": "scientific input",
+      "sha256": "64ebeb99bc7d940b324c94e6e6f1e9779e76b42613531bf79c2f612fc3a7cf14",
+      "bytes": 310624
+    },
+    {
+      "path": "Figure_2_modular_design_space_v33.png",
+      "role": "scientific input",
+      "sha256": "8a3a9f4623099894a315776db0ca1229eee33d7d9af72f657d5b4fde25c8c23b",
+      "bytes": 658197
+    },
+    {
+      "path": "Figure_3_scaling_relations_v28.ipynb",
+      "role": "scientific input",
+      "sha256": "d28981ddc49c34b3fa73f8236dd9d540c575ca226e360b98b80ab16849bd6120",
+      "bytes": 1523283
+    },
+    {
+      "path": "Figure_3_scaling_relations_v28.png",
+      "role": "scientific input",
+      "sha256": "900c79993491de13ef9d9d8b953af85a5e20d62edbfe82d75653a75361d3f676",
+      "bytes": 555082
+    },
+    {
+      "path": "Figure_4_predicted_scaling_volcano_v25.ipynb",
+      "role": "scientific input",
+      "sha256": "a23d698616c9bcfae985e78c1ddbc640b6f70bab23d93f677d8662acde33f7b0",
+      "bytes": 28323
+    },
+    {
+      "path": "Figure_4_predicted_scaling_volcano_v25.png",
+      "role": "scientific input",
+      "sha256": "9f3a1f6a1d3f564b31e9ee57503e4a2157a403a3cd6c7ca1eb255896038ba488",
+      "bytes": 1327435
+    },
+    {
+      "path": "instructions/AUTHOR.md",
+      "role": "instructions or metadata",
+      "sha256": "39e78044113e39087215602c205461f9aea59d9ada959e1590015541a476b9ea",
+      "bytes": 15623
+    },
+    {
+      "path": "instructions/CODE_AND_ENVIRONMENT.md",
+      "role": "instructions or metadata",
+      "sha256": "4948d6c9f47fb66e6705e680ca10c036438cb21831632e36109a60cb97d50b40",
+      "bytes": 4459
+    },
+    {
+      "path": "instructions/DATA_AND_CORRECTIONS.md",
+      "role": "instructions or metadata",
+      "sha256": "8336834ae40ad53bb85ec601391c4687d395a8aa8774c1dc1ee329f7e8def5a7",
+      "bytes": 12757
+    },
+    {
+      "path": "instructions/DOCX_PRODUCTION.md",
+      "role": "instructions or metadata",
+      "sha256": "fa94026b53f0c4cd094487fb9c24ebf195e0ac1707e1a08d237b82fd02e536fb",
+      "bytes": 7383
+    },
+    {
+      "path": "instructions/FIGURE_PRODUCTION.md",
+      "role": "instructions or metadata",
+      "sha256": "cec8b916042e396a69a4586d32b4c2fc135fe22ec913fae20fb2a2fd5d6f44ab",
+      "bytes": 6332
+    },
+    {
+      "path": "instructions/INDEX.md",
+      "role": "instructions or metadata",
+      "sha256": "84d79b204e9e4399f7107cbf32dc052ccd891aa6a0690d17e1391caaf48d8448",
+      "bytes": 1702
+    },
+    {
+      "path": "instructions/JOURNAL_AND_EVIDENCE.md",
+      "role": "instructions or metadata",
+      "sha256": "0bbf95032854da2f4b4aab8c2abdfc619039708afcb6ec20b92cf517cf627fe2",
+      "bytes": 6833
+    },
+    {
+      "path": "instructions/JOURNAL_EDITOR.md",
+      "role": "instructions or metadata",
+      "sha256": "ad6857bdedf3b58070fbe4869323282b88616a8c4f618da82caa6f8eded124ae",
+      "bytes": 6033
+    },
+    {
+      "path": "instructions/LIBRARIAN.md",
+      "role": "instructions or metadata",
+      "sha256": "bd70789b2aba8aa5a016cd6483be7fc3c1ac55b846bd498b0cdb328e1bee0b4e",
+      "bytes": 5217
+    },
+    {
+      "path": "instructions/PYTHON_AND_COLAB_STYLE.md",
+      "role": "instructions or metadata",
+      "sha256": "cb24d11ed8c4b44afb1531a233917160e0932a20a83cc8c16a5cf0c51efe4f68",
+      "bytes": 8907
+    },
+    {
+      "path": "instructions/RELEASE_REVIEW.md",
+      "role": "instructions or metadata",
+      "sha256": "13cebbd7e4220a1d0e8578b48f5041da2b6c47f7cfd333653fc46fa3a75f9324",
+      "bytes": 5704
+    },
+    {
+      "path": "instructions/ROLE_COLLABORATION.md",
+      "role": "instructions or metadata",
+      "sha256": "4bf1aefcaaca9c377725146c9be3c335f71dd321188c79b5b7a981223788b88c",
+      "bytes": 9965
+    },
+    {
+      "path": "instructions/SCIENTIFIC_REVIEWER.md",
+      "role": "instructions or metadata",
+      "sha256": "ba81f5d78d2421c5dfe2cf344a6d1a5d55e13fdc4fa7ab994d78bc2e831d5531",
+      "bytes": 6259
+    },
+    {
+      "path": "instructions/SCIENTIFIC_STYLE_EDITOR.md",
+      "role": "instructions or metadata",
+      "sha256": "1bfb98af8941827d432a90e739cf8fe9da4011da359b265406448b983e88f078",
+      "bytes": 22557
+    },
+    {
+      "path": "instructions/SECTION_FUNCTIONS.md",
+      "role": "instructions or metadata",
+      "sha256": "39533caea05b9f17599b6362cab0b28ac0ec36bce7a65785e1a6cb10e9e77116",
+      "bytes": 7036
+    },
+    {
+      "path": "instructions/SUPERVISOR.md",
+      "role": "instructions or metadata",
+      "sha256": "19030bb166e7ad7b0b5ee8e4cae5154342259044c7736027af72c292c78a82f9",
+      "bytes": 5818
+    },
+    {
+      "path": "instructions/TERMINOLOGY.md",
+      "role": "instructions or metadata",
+      "sha256": "8ce0f270d04aaccb131b58a7389a7a29d90c30a1ffe0681ef0f43c78cfd8245b",
+      "bytes": 17697
+    },
+    {
+      "path": "instructions/VOICE_PROFILE.md",
+      "role": "instructions or metadata",
+      "sha256": "142ff3f2fbcb02bdf84c5cba910a9e6aca8d4eb401b26af64cac20b4247b31df",
+      "bytes": 4281
+    },
+    {
+      "path": "journal/EActa_supplied_guide_summary.md",
+      "role": "instructions or metadata",
+      "sha256": "38523333f658bfbf4879b7e50d6f4ed9c53e5c962f42914ef5b9372a1c3b86ed",
+      "bytes": 7846
+    },
+    {
+      "path": "literature/LITERATURE_ROLES.md",
+      "role": "instructions or metadata",
+      "sha256": "367d4171ab60dc86731e18fe2c16e0f4e529c2fc04b8f81a2531694cf01f9777",
+      "bytes": 230
+    },
+    {
+      "path": "PROMPT.txt",
+      "role": "instructions or metadata",
+      "sha256": "9f2504b9f132122b051ff526d82bab11b57e564ecbc75d8b993c33e814ac0940",
+      "bytes": 61167
+    },
+    {
+      "path": "source_data/reference_EActa_open_article_2020_page1.png",
+      "role": "scientific input",
+      "sha256": "3926287640b48c098dde61590134188acd757e737e0d06d3053ddbbf8eb98b5d",
+      "bytes": 474121
+    },
+    {
+      "path": "tools/prepare_manifest.py",
+      "role": "instructions or metadata",
+      "sha256": "8547e7107bcb67f6da0cfaf15b194e2325a252124c0bc1b2c6b3a8ce1e1769cc",
+      "bytes": 1022
+    },
+    {
+      "path": "tools/verify_package.py",
+      "role": "instructions or metadata",
+      "sha256": "e1cefad3e0afcb52438c7e9852f3a2cde9608144756a14d155f64e9d691bf720",
+      "bytes": 1167
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+SUPPLIED
+PROMPT.txt; AGENTS.md; four figure notebooks; comparison reference DOCX; role and writing instructions; article facts, sentence plan and bibliography; literature summaries; journal guide summary; environment guidance; TOC generator and publication-page image; manifest and checks.
+
+SUPPLIED IN THE WORKSPACE
+Five DASC databases in the workspace root and Figure 4 predictions in figure4/predictions.csv. Figure scripts use relative paths; no scientific data download or database verification is required.
+
+GENERATED AT EXECUTION
+Every generated file is saved under inputs/. Independent generation and subsequent human verification remain pending.
