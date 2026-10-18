@@ -12,7 +12,7 @@ Keep the user-designated filename exactly. Do not create a renamed copy unless a
 
 Treat an author- or student-supplied notebook as a protected source. For a narrowly scoped request (for example, changing a data host or removing a call to an older plotting script), make only the necessary cell-level edits. Preserve notebook filename, cell order, cell count, cell IDs, markdown, comment banners, deliberate spacing, and the separation between installation, setup, acquisition, analysis, plotting, and export. Never collapse an existing multi-cell notebook into one large cell or rebuild its analysis from scratch unless the author explicitly requests that restructuring. Before release, compare the notebook against its supplied source and report exactly which cells changed. A previous-script dependency should be removed by placing the required function in its proper existing analysis cell, not by replacing the notebook with an unrelated generated script.
 
-Keep each analysis notebook and its databases in the locations declared by the article manifest. For this project's ordinary revisions, notebooks stay in their designated figure output folders and ASE inputs in `databases/`; resolve paths relative to the notebook. During an isolated regeneration run, use the run's declared output directory. When downloads are authorized in Colab, use `/content/` directly and do not write implicitly to Google Drive. An offline execution must use supplied local files and skip network acquisition cells.
+Use the scientific input locations declared for the active run. In this article package, the five DASC databases are supplied in the workspace root, one directory above the package, and the prediction table is supplied at `../figure4/predictions.csv`. Resolve these paths relative to the package root. Do not download or refresh scientific inputs over the network in any environment, including Google Colab. If an expected local input is missing, stop with a clear error instead of trying a remote source.
 
 ## Notebook organization
 
@@ -29,15 +29,12 @@ Keep each analysis notebook and its databases in the locations declared by the a
 
 - Install Python packages with `!pip install` in the first executable cell.
 - Install system packages with `!apt-get` only when they are actually required.
-- When downloads are authorized, download databases directly to `/content/` with their exact filenames. Do not create an extra database subdirectory. Offline runs use the supplied files.
-- Replace stale runtime copies before downloading so the displayed results correspond to the declared links.
-- Verify that each downloaded database has the SQLite header before opening it with ASE.
+- Use the supplied local scientific inputs; do not download databases or prediction tables in Colab or any other environment. If an input is unavailable in the runtime, report the missing path and stop.
 - Configure Plotly explicitly for Colab and enable the custom widget manager when `ipywidgets` is used.
 - Use `%matplotlib inline` for static display.
 - Display plots explicitly with `plt.show()` or `figure.show(renderer=...)`.
 - By default, keep data and figures in memory and do not save analysis files. Add an export cell only when the author requests one.
 - Never write to Google Drive implicitly.
-- When a notebook is tied to a published release, resolve that release by its immutable tag and select assets by exact filename. Check the declared local path first; reuse a database only when its file signature and expected SHA-256 both match. If the file is absent or invalid, download the exact asset to a temporary sibling, validate it, and atomically replace the invalid or missing target only after validation succeeds. Report the release tag, asset identifier, whether it was reused or downloaded, byte size, row count where applicable, and SHA-256 hash. Support a token through an environment variable when a release is private; never embed credentials. A release webpage is not a file URL.
 - When figure export is requested, use collision-safe versions in the declared output folder. Never overwrite a prior image or interactive export. Export PNG with an opaque white background. Follow the active article figure brief for design and [`../figures/FIGURE_PRODUCTION_CORE.md`](../figures/FIGURE_PRODUCTION_CORE.md) for production; historical figure specifications are not implicit inputs to a fresh-generation run.
 
 ## Dependencies and imports
@@ -48,7 +45,7 @@ Keep each analysis notebook and its databases in the locations declared by the a
 - Import only packages used by the notebook.
 - Use `pathlib.Path` for local paths.
 - Keep database filenames, Google Drive file identifiers, physical constants, and plot-style maps in a clearly labeled configuration cell.
-- Fail with an informative error when a download, database signature, required column, unique-key condition, or validation check fails.
+- Fail with an informative error when a required local input is missing, a required column or unique-key condition is absent, or a validation check fails.
 
 ## Data-frame and numerical conventions
 
@@ -71,7 +68,7 @@ Keep each analysis notebook and its databases in the locations declared by the a
 
 ## Execution and verification
 
-- This package uses current GitHub inputs: resolve main to a full commit SHA at run start and share EACTA_DATA_COMMIT across the notebooks and TOC script. Refresh databases from that commit; validate SQLite integrity and the ASE systems table; record observed hashes, byte sizes, row counts and URLs. Historical hashes do not block newer input files. Record a failed network check accurately and stop affected acquisition rather than silently using an older local file.
+- This package uses supplied local inputs: read the five DASC databases from the workspace root and `figure4/predictions.csv` from the workspace's `figure4/` directory. Reference them through relative parent paths. Do not download, copy, validate, or hash the database files or prediction CSV, including in Colab. If a supplied file is missing, stop and report it.
 
 - The agent should run code and validation itself whenever the environment permits. Do not shift routine execution to the author.
 - For a notebook edit, validate JSON, inspect all changed cells, execute the relevant analysis if dependencies are available, and confirm that plots are explicitly displayed.
@@ -81,4 +78,4 @@ Keep each analysis notebook and its databases in the locations declared by the a
 
 ## Selected run policy
 
-PROMPT.txt supplies current facts and the execution contract. GitHub input downloads and relevant web research are authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.
+PROMPT.txt supplies current facts and the execution contract. Local scientific inputs are used without GitHub downloads; relevant web research remains authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.

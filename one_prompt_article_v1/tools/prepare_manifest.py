@@ -8,6 +8,6 @@ for path in sorted(root.rglob('*')):
         continue
     role='scientific input' if path.suffix in {'.db','.csv','.ipynb','.png','.svg','.pdf','.zip'} else 'instructions or metadata'
     files.append({'path':rel.as_posix(),'role':role,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'bytes':path.stat().st_size})
-manifest={'network':'GitHub downloads and relevant web research permitted','generation_executed':False,'excluded':['Electrochimica_Acta_research_article_refernce.docx','inputs/','outputs/'],'files':files}
+manifest={'network':'No scientific data downloads; relevant web research permitted','generation_executed':False,'excluded':['Electrochimica_Acta_research_article_refernce.docx','inputs/','outputs/'],'files':files}
 (root/'article/input_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('Registered',len(files),'files; reference and generated outputs excluded.')

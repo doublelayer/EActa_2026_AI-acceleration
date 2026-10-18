@@ -45,4 +45,4 @@ The release check covers source-table identity, plotted counts, physical dimensi
 
 ## Selected run policy
 
-PROMPT.txt supplies current facts and the execution contract. GitHub input downloads and relevant web research are authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.
+PROMPT.txt supplies current facts and the execution contract. Local scientific inputs are used without GitHub downloads; relevant web research remains authorized. Preserve supplied notebooks and use working copies for execution. The root `Electrochimica_Acta_research_article_refernce.docx` is reserved for comparison after generation and excluded from drafting inputs. Any historical offline examples in a reusable profile yield to this selected run policy.

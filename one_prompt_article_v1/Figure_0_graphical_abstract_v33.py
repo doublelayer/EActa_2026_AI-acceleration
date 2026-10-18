@@ -12,8 +12,6 @@ import shutil
 import sqlite3
 import sys
 from tempfile import TemporaryDirectory
-import urllib.parse
-import urllib.request
 
 # Some WSL Conda installations bundle a SQLite library older than the system
 # ASE database module expects. Restart once with the system SQLite preloaded.
@@ -274,77 +272,11 @@ def complete_structure(kind):
 
 
 def prediction_data():
-    """Download the catalyst roles and ML predictions from one GitHub commit."""
-    repository = "doublelayer/EActa_2026_AI-acceleration"
-    branch = "main"
-    headers = {"User-Agent": "EActa-2026-TOC-loader", "Cache-Control": "no-cache"}
-    commit = os.environ.get("EACTA_DATA_COMMIT", "").strip()
-    if not commit:
-        request = urllib.request.Request(
-            f"https://api.github.com/repos/{repository}/commits/{branch}",
-            headers=headers,
-        )
-        with urllib.request.urlopen(request, timeout=60) as response:
-            commit = json.load(response)["sha"]
-    if not re.fullmatch(r"[0-9a-fA-F]{40}", commit):
-        raise ValueError("EACTA_DATA_COMMIT must be a full GitHub commit SHA.")
-    raw_root = f"https://raw.githubusercontent.com/{repository}/{commit}"
-    data_dir = ROOT / "databases" / "github_main"
-    data_dir.mkdir(parents=True, exist_ok=True)
-
-    database_path = data_dir / "DASC_Bare_Catalysts_RPBE_D4.db"
-    partial = data_dir / ".DASC_Bare_Catalysts_RPBE_D4.db.part"
-    request = urllib.request.Request(
-        f"{raw_root}/DASC_Bare_Catalysts_RPBE_D4.db", headers=headers
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=120) as response, partial.open("wb") as handle:
-            shutil.copyfileobj(response, handle)
-        with partial.open("rb") as handle:
-            if handle.read(16) != b"SQLite format 3\x00":
-                raise RuntimeError("The downloaded ASE database is not valid SQLite.")
-        validation_database = sqlite3.connect(partial)
-        try:
-            if validation_database.execute("PRAGMA quick_check").fetchone()[0] != "ok":
-                raise RuntimeError("The downloaded ASE database failed SQLite validation.")
-        finally:
-            validation_database.close()
-        partial.replace(database_path)
-    finally:
-        partial.unlink(missing_ok=True)
-
-    tree_request = urllib.request.Request(
-        f"https://api.github.com/repos/{repository}/git/trees/{commit}?recursive=1",
-        headers=headers,
-    )
-    with urllib.request.urlopen(tree_request, timeout=60) as response:
-        tree = json.load(response)
-    candidates = [
-        item["path"] for item in tree.get("tree", [])
-        if item.get("type") == "blob" and item["path"].rsplit("/", 1)[-1] == "predictions.csv"
-    ]
-    required = {"name", "ads_site", "target", "predicted_eV"}
-    matches = []
-    for repository_path in candidates:
-        url = f"{raw_root}/" + urllib.parse.quote(repository_path)
-        request = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(request, timeout=120) as response:
-            payload = response.read()
-        candidate_path = data_dir / ".predictions_candidate.csv"
-        candidate_path.write_bytes(payload)
-        try:
-            candidate = pd.read_csv(candidate_path)
-        finally:
-            candidate_path.unlink(missing_ok=True)
-        if required <= set(candidate.columns) and set(candidate["target"]) == {"G_O", "G_OH", "G_OOH"}:
-            matches.append((repository_path, candidate, payload))
-    if len(matches) != 1:
-        raise RuntimeError(
-            f"Expected one prediction table with the required schema; found {len(matches)}."
-        )
-    repository_path, predictions, payload = matches[0]
-    predictions_path = data_dir / "predictions.csv"
-    predictions_path.write_bytes(payload)
+    """Load catalyst roles and ML predictions from the workspace input CSV."""
+    database_path = ROOT / "DASC_Bare_Catalysts_RPBE_D4.db"
+    predictions_path = ROOT / "figure4" / "predictions.csv"
+    predictions = pd.read_csv(predictions_path)
+    payload = predictions_path.read_bytes()
 
     roles = []
     with connect(str(database_path.resolve())) as database:
@@ -363,7 +295,7 @@ def prediction_data():
 
     keys = ["name", "ads_site"]
     if predictions.duplicated(keys + ["target"]).any():
-        raise ValueError("Duplicate prediction rows were downloaded.")
+        raise ValueError("Duplicate prediction rows were found in the supplied table.")
     predictions["predicted_eV"] = pd.to_numeric(predictions["predicted_eV"], errors="raise")
     frame = predictions.pivot(index=keys, columns="target", values="predicted_eV").reset_index()
     if frame[["G_OH", "G_O", "G_OOH"]].isna().any().any():
@@ -386,11 +318,7 @@ def prediction_data():
     frame["overpotential"] = 1.23 - steps.min(axis=1)
     data = frame.loc[frame["retained"]].copy()
     provenance = {
-        "repository": repository,
-        "branch": branch,
-        "commit": commit,
-        "prediction_repository_path": repository_path,
-        "database_sha256": hashlib.sha256(database_path.read_bytes()).hexdigest(),
+        "prediction_source": str(predictions_path.relative_to(ROOT)),
         "predictions_sha256": hashlib.sha256(payload).hexdigest(),
         "retained_points": int(len(data)),
         "retained_structures": int(data["name"].nunique()),
